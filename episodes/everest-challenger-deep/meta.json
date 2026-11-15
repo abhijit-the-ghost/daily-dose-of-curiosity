@@ -4,13 +4,23 @@
   "hook": "Which wins: Everest, or the deepest hole in the ocean?",
   "hookStyle": "question",
   "captionStyle": "karaoke-dim",
-  "endCard": false,
+  "endCard": true,
   "durationSec": 29.13,
   "wordCount": 66,
   "voice": "en-US-AriaNeural",
   "voiceRate": "+12%",
-  "posted": { "youtube": null, "instagram": null, "tiktok": null },
-  "tags": ["everest", "challengerdeep", "mariana", "verifiedfacts", "science"],
+  "posted": {
+    "youtube": null,
+    "instagram": null,
+    "tiktok": null
+  },
+  "tags": [
+    "everest",
+    "challengerdeep",
+    "mariana",
+    "verifiedfacts",
+    "science"
+  ],
   "covers": {
     "youtube": "cover_youtube.png",
     "tiktok": "cover_tiktok.png",

@@ -17,6 +17,14 @@ Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 f
 by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
 added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
 
+## 2026-11-15 (evening) — everest-challenger-deep rebuilt with end card
+
+`scene.json`: `endCard: false → true` by owner request (branded lockup + "+ FOLLOW" pill on the
+final ~2.6 s, matching milkyway/space-sound/minecraft-edge/never-touch packages). Two back-to-back
+renders produced **identical framemd5 (2,240/2,240 frames) but two different MP4 sha256s**
+(`7B3ADEDF…`, `DA00437D…`) — container-level encoder drift, not a visual change. Frame-identical
+is the determinism gate; package refreshed to `DA00437D…`.
+
 
 ## 2026-11-14 — minecraft-edge rebuilt with end card
 
