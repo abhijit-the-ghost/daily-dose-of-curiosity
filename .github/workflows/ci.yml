@@ -1,10 +1,6 @@
 # CI — Daily Dose of Curiosity pipeline
 #
-# Gates: type check + episode verification.
-# NOTE: `bun run lint` is intentionally not a blocking gate yet — the repo
-# currently carries 9 pre-existing lint errors (any-types in Episode/Dashboard,
-# react-refresh export rules in Hud/KaraokeCaption/Starfield). Lint is on the
-# debt list; add it here once `bun run lint` exits 0.
+# Gates: type check + lint + episode verification.
 name: ci
 
 on:
@@ -28,6 +24,9 @@ jobs:
 
       - name: Type check
         run: bunx tsc -b
+
+      - name: Lint
+        run: bun run lint
 
       - name: Verify episodes (anchors, banned strings, FACTS, tails)
         run: bun run verify

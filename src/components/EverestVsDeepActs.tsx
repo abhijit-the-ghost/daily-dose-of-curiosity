@@ -149,7 +149,7 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
 
         {/* ===== SEA-LEVEL LINE ===== */}
         <line x1="0" y1={seaY} x2="1080" y2={seaY} stroke={seaEmph > 0.5 ? INK : CYAN} strokeWidth={seaEmph > 0.5 ? 6 : 2} opacity={0.85} />
-        <text x="950" y={seaY - 12} textAnchor="end" fill={seaEmph > 0.5 ? INK : CYAN} fontSize="15" fontFamily={FONT_MONO} letterSpacing="3" opacity="0.85">SEA LEVEL · 0 m</text>
+        <text x="940" y={seaY - 12} textAnchor="end" fill={seaEmph > 0.5 ? INK : CYAN} fontSize="15" fontFamily={FONT_MONO} letterSpacing="3" opacity="0.85">SEA LEVEL · {FACTS.seaLevelM.display}</text>
 
         {/* ===== SCALE RULER =========
             1-km ticks, unlabelled except a 1 km scale bar + tag */}
@@ -161,7 +161,7 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
               <line key={i} x1="60" x2="80" y1={y} y2={y} stroke={INK} strokeWidth="1.5" />
             )
           })}
-          <text x="70" y={SPAN_TOP - 16} fill={INK} fontSize="13" fontFamily={FONT_MONO} letterSpacing="3" opacity="0.7">1 km</text>
+          <text x="70" y={SPAN_TOP - 16} fill={INK} fontSize="13" fontFamily={FONT_MONO} letterSpacing="3" opacity="0.7">{FACTS.rulerStepKm.display}</text>
           <text x="70" y={SPAN_BOT + 18} fill={INK} fontSize="11" fontFamily={FONT_MONO} letterSpacing="3" opacity="0.55">VERTICAL TO SCALE</text>
         </g>
 
@@ -172,7 +172,7 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
         <rect x="520" y={seaY} width="380" height={floorY - seaY} fill="rgba(0,0,0,0.35)" />
 
         {/* ===== PRESSURE BAR (right inner wall) ===== */}
-        <g opacity={anim(t, find('about', 2), 0.5) || (t > 13 ? 1 : 0)}>
+        <g opacity={anim(t, find('about', 2), 0.5) || (t > tChall2 ? 1 : 0)}>
           <rect x="905" y={seaY} width="18" height={floorY - seaY} fill="rgba(49,46,129,0.75)" />
           <text x="914" y={floorY + 40} textAnchor="middle" fill={INK} fontSize="10" fontFamily={FONT_MONO} letterSpacing="2" opacity="0.7">PRESSURE</text>
         </g>
@@ -249,7 +249,7 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
             <tspan fill={AMBER} fontSize="18" opacity={stampNP}>NEPAL</tspan>
             <tspan fill={AMBER} fontSize="18" opacity={stampCh}>{'  ·  CHINA'}</tspan>
           </text>
-          <text x="620" y="452" fill={AMBER} fontSize="36" fontFamily={FONT_DISPLAY} letterSpacing="8" opacity={stamp2020}>2020</text>
+          <text x="620" y="452" fill={AMBER} fontSize="36" fontFamily={FONT_DISPLAY} letterSpacing="8" opacity={stamp2020}>{FACTS.announceYr.display}</text>
         </g>
 
         {/* source chip */}
@@ -268,8 +268,8 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
           <line x1="520" y1={landedSummitY} x2="900" y2={landedSummitY} stroke={AMBER} strokeWidth="2" opacity="0.6" />
         </g>
         <g opacity={gapLabel}>
-          <text x="710" y={seaY + gapPx / 2 - 2} textAnchor="middle" fill={AMBER} fontSize="22" fontFamily={FONT_DISPLAY} letterSpacing="3">~2,086 m</text>
-          <text x="710" y={seaY + gapPx / 2 + 18} textAnchor="middle" fill={AMBER} fontSize="11" fontFamily={FONT_MONO} letterSpacing="4" opacity="0.9">≈ 2 km OF WATER</text>
+          <text x="710" y={seaY + gapPx / 2 - 2} textAnchor="middle" fill={AMBER} fontSize="22" fontFamily={FONT_DISPLAY} letterSpacing="3">{FACTS.gapM.display}</text>
+          <text x="710" y={seaY + gapPx / 2 + 18} textAnchor="middle" fill={AMBER} fontSize="11" fontFamily={FONT_MONO} letterSpacing="4" opacity="0.9">{FACTS.gapKm.display} OF WATER</text>
         </g>
         <text x="710" y={landedSummitY + 26} textAnchor="middle" fill={INK} fontSize="12" fontFamily={FONT_MONO} letterSpacing="3" opacity={stillUnder}>STILL UNDERWATER</text>
 
@@ -312,9 +312,9 @@ export default function EverestVsDeepActs({ t, meta }: EverestVsDeepActsProps) {
         })}
 
         {/* ===== FOOTNOTE ===== */}
-        <g opacity={0.78 * footnoteIn}>
-          {footnoteText.match(/.{1,86}(?:\s|$)/g)?.map((line, i) => (
-            <text key={i} x="60" y={1126 + i * 26} fontSize="16" fill={INK} fontFamily={FONT_MONO} opacity={0.9}>{line.trim()}</text>
+        <g opacity={0.75 * footnoteIn}>
+          {footnoteText.match(/.{1,60}(?:\s|$)/g)?.map((line, i) => (
+            <text key={i} x="60" y={1112 + i * 32} fontSize="24" fill={INK} fontFamily={FONT_MONO} opacity={0.9}>{line.trim()}</text>
           ))}
         </g>
       </svg>

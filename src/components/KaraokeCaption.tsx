@@ -1,12 +1,12 @@
-/* ==================================================================
-   KaraokeCaption — karaoke-dim captions: past = white, active = accent,
+﻿/* ==================================================================
+   KaraokeCaption â€” karaoke-dim captions: past = white, active = accent,
    upcoming = dim. Word boundaries come from WordBoundary events.
    `buildChunks()` lives in ./captionChunks; shared by every episode.
-   NOTE: all Tailwind values below must be LITERAL — Tailwind scans source
+   NOTE: all Tailwind values below must be LITERAL â€” Tailwind scans source
    text statically, so per-instance classes are passed as full strings.
    ================================================================== */
 
-import { clamp01, easeOutCubic, backOut } from '../motion/anim'
+import { clamp01, easeOutCubic } from '../motion/anim'
 
 type WordEase = (x: number) => number
 
@@ -33,17 +33,17 @@ export default function KaraokeCaption({
   pxClass?: 'px-12' | 'px-14'
   /** e.g. 'text-[54px]' */
   fontSizeClass: string
-  /** literal text-shadow utility incl brackets — active word */
+  /** literal text-shadow utility incl brackets â€” active word */
   activeShadowClass: string
-  /** literal text-shadow utility incl brackets — idle words (tone of the shadow, incl color) */
+  /** literal text-shadow utility incl brackets â€” idle words (tone of the shadow, incl color) */
   idleShadowClass: string
   /** how long a finished chunk lingers after its last word ends */
   holdSec?: number
-  /** easing applied to the active word's 0→1 entrance progress */
+  /** easing applied to the active word's 0â†’1 entrance progress */
   wordEase?: WordEase
   /** entrance duration of the active word (seconds) */
   wordDurationSec?: number
-  /** e.g. 'text-amber-400' — literal class per episode (Tailwind static scan) */
+  /** e.g. 'text-amber-400' â€” literal class per episode (Tailwind static scan) */
   activeTextClass?: string
 }) {
   let active: CaptionChunk | null = null
@@ -89,66 +89,3 @@ export default function KaraokeCaption({
   )
 }
 
-/** per-episode literal preset — guarantees Tailwind picks up every class */
-export const CAPTION_STYLES = {
-  milkyway: {
-    bottomClass: 'bottom-[150px]',
-    pxClass: 'px-12' as const,
-    fontSizeClass: 'text-[56px]',
-    activeShadowClass:
-      '[text-shadow:-2px_-2px_0_#241202,2px_-2px_0_#241202,-2px_2px_0_#241202,2px_2px_0_#241202,0_0_34px_rgba(251,191,36,0.55)]',
-    idleShadowClass:
-      '[text-shadow:-2px_-2px_0_#060a18,2px_-2px_0_#060a18,-2px_2px_0_#060a18,2px_2px_0_#060a18,0_8px_24px_rgba(0,0,0,0.9)]',
-    holdSec: 0.65,
-    wordEase: backOut,
-    wordDurationSec: 0.24,
-  },
-  spaceSound: {
-    bottomClass: 'bottom-[136px]',
-    pxClass: 'px-12' as const,
-    fontSizeClass: 'text-[54px]',
-    activeShadowClass:
-      '[text-shadow:-2px_-2px_0_#241202,2px_-2px_0_#241202,-2px_2px_0_#241202,2px_2px_0_#241202,0_0_30px_rgba(251,191,36,0.55)]',
-    idleShadowClass:
-      '[text-shadow:-2px_-2px_0_#070a14,2px_-2px_0_#070a14,-2px_2px_0_#070a14,2px_2px_0_#070a14,0_8px_24px_rgba(0,0,0,0.9)]',
-    holdSec: 0.6,
-  },
-  minecraftEdge: {
-    bottomClass: 'bottom-[140px]',
-    pxClass: 'px-14' as const,
-    fontSizeClass: 'text-[56px]',
-    activeShadowClass:
-      '[text-shadow:-2px_-2px_0_#241202,2px_-2px_0_#241202,-2px_2px_0_#241202,2px_2px_0_#241202,0_0_30px_rgba(251,191,36,0.55)]',
-    idleShadowClass:
-      '[text-shadow:-2px_-2px_0_#050a18,2px_-2px_0_#050a18,-2px_2px_0_#050a18,2px_2px_0_#050a18,0_8px_24px_rgba(0,0,0,0.9)]',
-    holdSec: 0.55,
-    wordEase: easeOutCubic,
-    wordDurationSec: 0.22,
-  },
-  neverTouch: {
-    bottomClass: 'bottom-[140px]',
-    pxClass: 'px-14' as const,
-    fontSizeClass: 'text-[56px]',
-    activeShadowClass:
-      '[text-shadow:-2px_-2px_0_#2497ab,2px_-2px_0_#2497ab,-2px_2px_0_#2497ab,2px_2px_0_#2497ab,0_0_30px_rgba(34,211,238,0.6)]',
-    idleShadowClass:
-      '[text-shadow:-2px_-2px_0_#050a18,2px_-2px_0_#050a18,-2px_2px_0_#050a18,2px_2px_0_#050a18,0_8px_24px_rgba(0,0,0,0.9)]',
-    activeTextClass: 'text-cyan-300',
-    holdSec: 0.55,
-    wordEase: easeOutCubic,
-    wordDurationSec: 0.22,
-  },
-  everestVsDeep: {
-    bottomClass: 'bottom-[140px]',
-    pxClass: 'px-14' as const,
-    fontSizeClass: 'text-[56px]',
-    activeShadowClass:
-      '[text-shadow:-2px_-2px_0_#241202,2px_-2px_0_#241202,-2px_2px_0_#241202,2px_2px_0_#241202,0_0_30px_rgba(251,191,36,0.55)]',
-    idleShadowClass:
-      '[text-shadow:-2px_-2px_0_#060a18,2px_-2px_0_#060a18,-2px_2px_0_#060a18,2px_2px_0_#060a18,0_8px_24px_rgba(0,0,0,0.9)]',
-    activeTextClass: 'text-amber-400',
-    holdSec: 0.55,
-    wordEase: easeOutCubic,
-    wordDurationSec: 0.22,
-  },
-} as const

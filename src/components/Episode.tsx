@@ -8,8 +8,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type React from 'react'
 import EndCard from './EndCard'
-import Hud, { HUD_PRESETS } from './Hud'
-import KaraokeCaption, { CAPTION_STYLES } from './KaraokeCaption'
+import Hud from './Hud'
+import { HUD_PRESETS } from '../theme/hudPresets'
+import KaraokeCaption from './KaraokeCaption'
+import { CAPTION_STYLES } from '../theme/captionStyles'
 import { buildChunks } from './captionChunks'
 import type { SceneConfig } from '../templates/types'
 import SpaceSoundActs, { type Metadata as SpaceSoundMetadata } from './SpaceSoundActs'
@@ -107,8 +109,10 @@ export default function Episode({ slug }: { slug: Slug }) {
   const rafRef = useRef(0)
   const forcedTimeRef = useRef<number | null>(null)
 
-  const words = meta?.words ?? []
-  const chunks = useMemo(() => (words.length ? buildChunks(words) : []), [words])
+  const chunks = useMemo(() => {
+    const w = meta?.words ?? []
+    return w.length ? buildChunks(w) : []
+  }, [meta])
   const totalDuration = meta?.totalDuration ?? 28.78
   const actIndex = def.actIndexOf(meta, time)
 

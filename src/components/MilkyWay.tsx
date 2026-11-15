@@ -2,10 +2,13 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import logoUrl from '../../shared-assets/brand/logo-alpha.png'
 import { clamp01, easeOutCubic, backOut } from '../motion/anim'
 import { COLORS } from '../theme/tokens'
-import Starfield, { STAR_SPECS } from './Starfield'
-import KaraokeCaption, { CAPTION_STYLES } from './KaraokeCaption'
+import Starfield from './Starfield'
+import { STAR_SPECS } from '../theme/starfield'
+import KaraokeCaption from './KaraokeCaption'
+import { CAPTION_STYLES } from '../theme/captionStyles'
 import { buildChunks } from './captionChunks'
-import Hud, { HUD_PRESETS } from './Hud'
+import Hud from './Hud'
+import { HUD_PRESETS } from '../theme/hudPresets'
 
 /* ==================================================================
    WHY YOU'VE NEVER SEEN A REAL PHOTO OF THE MILKY WAY

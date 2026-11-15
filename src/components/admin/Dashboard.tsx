@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Clock, FileText, MousePointer2, SquarePlay, Camera, Music2, FolderOpen, Film } from 'lucide-react'
+import { Clock, FileText, MousePointer2, SquarePlay, Camera, Music2, FolderOpen, Film, type LucideIcon } from 'lucide-react'
 import { useAdminManifest } from '../../admin/useAdminManifest'
 import type { ManifestVideo } from '../../admin/types'
 
@@ -14,7 +14,7 @@ const fmtPl = (iso: string) => {
   return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
 }
 
-function StatCard({ label, value, hint, Icon, tone }: { label: string; value: string | number; hint?: string; Icon: any; tone: string }) {
+function StatCard({ label, value, hint, Icon, tone }: { label: string; value: string | number; hint?: string; Icon: LucideIcon; tone: string }) {
   return (
     <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4 backdrop-blur">
       <div className="flex items-center justify-between">
@@ -29,7 +29,7 @@ function StatCard({ label, value, hint, Icon, tone }: { label: string; value: st
   )
 }
 
-function PlatformPill({ label, Icon, color }: { label: string; Icon: any; color: string }) {
+function PlatformPill({ label, Icon, color }: { label: string; Icon: LucideIcon; color: string }) {
   return (
     <span
       title={label}

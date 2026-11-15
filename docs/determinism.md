@@ -7,12 +7,15 @@ Owner: Ghost (Abhijit Guragain)
 
 Fresh episode (no baseline). Two back-to-back `bun run render` invocations produced:
 
-- 2,239 video frames each; `framemd5` identical across the two runs
-- MP4 `sha256` identical: `733F58B1353FFF5B0BDD6DCC0CC7BA0380A95939EA6B9DFC9309D0543088B100`
+- 2,240 video frames each; `framemd5` identical across the two runs
+- MP4 `sha256` identical: `74D6EC48C6C71EE8BE3C1DF9381828AF49401095701AB1DA4F5E7B7D7739C13D`
 - Duration 29.13s · 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz
 
 Promoted to the mandatory byte-exact gate class alongside `milkyway` and `minecraft-edge`.
 Packaged artifact `results/videos/everest-challenger-deep/video.mp4` is this exact build.
+Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 frames) — superseded
+by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
+added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
 
 
 ## 2026-11-14 — minecraft-edge rebuilt with end card

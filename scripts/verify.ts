@@ -25,16 +25,21 @@ const BANNED: Record<string, string[]> = {
   'everest-challenger-deep': ['rock height', 'true height', 'exact depth', 'exact'],
 }
 
-const readJSON = (p: string) => JSON.parse(fs.readFileSync(p, 'utf8'))
+const readJSON = (p: string) => JSON.parse(fs.readFileSync(p, 'utf8')) as unknown
 const exists = (p: string) => fs.existsSync(p)
-const wordsFor = (metadata: any): { w: string; start: number; end: number }[] => metadata?.words ?? []
+
+interface MetadataWord { w: string; start: number; end: number }
+interface MetadataDoc { words?: MetadataWord[]; totalDuration?: number }
+interface SceneDoc { anchors?: Record<string, number[]> }
+
+const wordsFor = (metadata: MetadataDoc | null | undefined): MetadataWord[] => metadata?.words ?? []
 
 const lower = (s: string) => s.toLowerCase().trim()
 
 const findAll = (words: { w: string }[], needle: string) =>
   words.filter((w) => lower(w.w) === lower(needle))
 
-const checkAnchors = (slug: string, scene: any, metadata: any) => {
+const checkAnchors = (slug: string, scene: SceneDoc, metadata: MetadataDoc | null) => {
   const issues: string[] = []
   const anchors: Record<string, number[]> = scene?.anchors ?? {}
   if (Object.keys(anchors).length === 0) {
@@ -100,9 +105,9 @@ const main = async () => {
     const scriptPath = path.join(episodesDir, slug, 'script.txt')
     const metaPath = path.join(ROOT, 'public', 'audio', slug, 'metadata.json')
     if (!exists(scenePath) || !exists(scriptPath)) { console.log(`[skip] ${slug} — missing scene.json or script.txt`); continue }
-    const scene = readJSON(scenePath)
+    const scene = readJSON(scenePath) as SceneDoc
     const script = fs.readFileSync(scriptPath, 'utf8')
-    const metadata = exists(metaPath) ? readJSON(metaPath) : null
+    const metadata = exists(metaPath) ? (readJSON(metaPath) as MetadataDoc) : null
     const words = metadata ? wordsFor(metadata) : []
     const failures: string[] = []
 

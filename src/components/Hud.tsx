@@ -1,8 +1,8 @@
-/* ==================================================================
-   Hud — the full episode HUD shell: corner brackets (optional), badge +
+﻿/* ==================================================================
+   Hud â€” the full episode HUD shell: corner brackets (optional), badge +
    timecode top bar, divider line, act kicker bottom, bottom watermark
    + progress bar. Every literal Tailwind class is inline (static scan).
-   Per-episode look comes from props; see `HUD_PRESETS` for the three
+   Per-episode look comes from props; see `src/theme/hudPresets.ts` for the five
    current episodes' exact class output.
    ================================================================== */
 
@@ -19,10 +19,10 @@ export interface HudProps {
   accent: 'cyan' | 'amber'
   /** milkyway used the cyan corner brackets; minecraft-edge has none; space-sound has them */
   cornerBrackets: boolean
-  /** milkyway passes its act chip classes… */
+  /** milkyway passes its act chip classesâ€¦ */
   kickerToneClass?: string
   kickerBarClass?: string
-  /** …the other two pass hex (rendered inline) */
+  /** â€¦the other two pass hex (rendered inline) */
   kickerAccentHex?: string
   kickerBottomClass: string
   pbBottomClass: 'pb-7' | 'pb-8'
@@ -114,52 +114,3 @@ export default function Hud({
   )
 }
 
-/** per-episode literal presets — Tailwind picks up every class */
-export const HUD_PRESETS = {
-  milkyway: {
-    accent: 'cyan' as const,
-    cornerBrackets: true,
-    badgeText: '[ COSMIC TELEMETRY // MILKY WAY ]',
-    kickerBottomClass: 'bottom-[290px]',
-    pbBottomClass: 'pb-8' as const,
-    progressGradientClass:
-      'from-cyan-400 via-sky-300 to-cyan-200 shadow-[0_0_14px_rgba(34,211,238,0.55)]',
-  },
-  spaceSound: {
-    accent: 'cyan' as const,
-    cornerBrackets: true,
-    badgeText: '[ GAME PHYSICS // SOUND ]',
-    kickerBottomClass: 'bottom-[312px]',
-    pbBottomClass: 'pb-7' as const,
-    progressGradientClass:
-      'from-amber-400 via-yellow-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
-  },
-  minecraftEdge: {
-    accent: 'amber' as const,
-    cornerBrackets: false,
-    badgeText: '[ GAME PHYSICS // SCALE ]',
-    kickerBottomClass: 'bottom-[312px]',
-    pbBottomClass: 'pb-7' as const,
-    progressGradientClass:
-      'from-amber-400 via-orange-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
-    pulseDot: false,
-  },
-  neverTouch: {
-    accent: 'cyan' as const,
-    cornerBrackets: true,
-    badgeText: '[ PHYSICS // MATTER ]',
-    kickerBottomClass: 'bottom-[312px]',
-    pbBottomClass: 'pb-7' as const,
-    progressGradientClass:
-      'from-cyan-400 via-violet-400 to-cyan-100 shadow-[0_0_14px_rgba(34,211,238,0.55)]',
-  },
-  everestVsDeep: {
-    accent: 'cyan' as const,
-    cornerBrackets: true,
-    badgeText: '[ COSMIC TELEMETRY // EVEREST VS DEEP ]',
-    kickerBottomClass: 'bottom-[312px]',
-    pbBottomClass: 'pb-7' as const,
-    progressGradientClass:
-      'from-amber-400 via-orange-400 to-yellow-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
-  },
-} as const

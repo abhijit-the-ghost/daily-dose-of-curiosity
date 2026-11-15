@@ -5,7 +5,8 @@
    lives in Episode.tsx — this file renders ONLY the act SVG + starfield.
    ================================================================== */
 
-import Starfield, { STAR_SPECS } from './Starfield'
+import Starfield from './Starfield'
+import { STAR_SPECS } from '../theme/starfield'
 import { clamp01, easeInOutCubic, easeOutCubic, anim } from '../motion/anim'
 
 interface Word { w: string; start: number; end: number }
