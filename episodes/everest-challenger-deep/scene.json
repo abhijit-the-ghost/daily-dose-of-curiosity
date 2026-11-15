@@ -1,0 +1,35 @@
+{
+  "series": "cosmic",
+  "title": "Everest dropped into Challenger Deep",
+  "slug": "everest-challenger-deep",
+  "acts": [
+    { "kicker": "01 // THE QUESTION", "template": "custom" },
+    { "kicker": "02 // THE NUMBERS",  "template": "custom" },
+    { "kicker": "03 // THE VERDICT",  "template": "custom" }
+  ],
+  "endCard": false,
+  "anchors": {
+    "Which": [1],
+    "wins": [1, 2],
+    "Everest": [1, 2, 3],
+    "ocean": [1, 2],
+    "Drop": [1],
+    "Challenger": [1, 2],
+    "Deep": [1, 2],
+    "tall": [1],
+    "forty-nine": [1],
+    "Nepal": [1],
+    "China": [1],
+    "twenty": [1, 2],
+    "plunges": [1],
+    "thirty-five": [1],
+    "NOAA": [1],
+    "the": [1, 2, 3, 4],
+    "gap": [1],
+    "kilometres": [1, 2],
+    "So": [1],
+    "summit": [1],
+    "underwater": [1],
+    "two": [1, 2]
+  }
+}

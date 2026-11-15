@@ -15,12 +15,14 @@ import type { SceneConfig } from '../templates/types'
 import SpaceSoundActs, { type Metadata as SpaceSoundMetadata } from './SpaceSoundActs'
 import MinecraftEdgeActs, { type Metadata as MinecraftEdgeMetadata } from './MinecraftEdgeActs'
 import NeverTouchActs, { type Metadata as NeverTouchMetadata } from './NeverTouchActs'
+import EverestVsDeepActs from './EverestVsDeepActs'
 
 import spaceSoundScene from '../../episodes/space-sound/scene.json'
 import minecraftEdgeScene from '../../episodes/minecraft-edge/scene.json'
 import neverTouchScene from '../../episodes/never-touch/scene.json'
+import everestVsDeepScene from '../../episodes/everest-challenger-deep/scene.json'
 
-type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch'
+type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch' | 'everest-challenger-deep'
 
 type Metadata = SpaceSoundMetadata & MinecraftEdgeMetadata & NeverTouchMetadata
 
@@ -83,6 +85,14 @@ const REGISTRY: Record<Slug, EpisodeDefinition> = {
     hudPreset: 'neverTouch',
     captionStyle: 'neverTouch',
     Acts: NeverTouchActs as never,
+    actIndexOf: actAt,
+  },
+  'everest-challenger-deep': {
+    scene: everestVsDeepScene as SceneConfig,
+    audioSrc: '/audio/everest-challenger-deep/full_voiceover.mp3',
+    hudPreset: 'everestVsDeep',
+    captionStyle: 'everestVsDeep',
+    Acts: EverestVsDeepActs as never,
     actIndexOf: actAt,
   },
 }

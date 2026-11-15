@@ -1,5 +1,6 @@
 import logoUrl from '../../shared-assets/brand/logo-alpha.png'
 import { CuriosityStickman } from '@shared-assets/brand/CuriosityStickman'
+import { FACTS } from '../../episodes/everest-challenger-deep/facts'
 
 /* ==================================================================
    Thumbnail — still still for YouTube / Instagram cover frames.
@@ -27,6 +28,12 @@ const COVERS: Record<
     kicker: '[ PHYSICS // MATTER ]',
     title: ['YOU HAVE', 'NEVER TOUCHED', 'ANYTHING'],
     accent: '#22d3ee',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
+  'everest-challenger-deep': {
+    kicker: '[ COSMIC TELEMETRY // EVEREST VS DEEP ]',
+    title: ['EVEREST', 'VS', 'THE OCEAN'],
+    accent: '#f59e0b',
     tagline: 'Gaming · Science · Verified Facts',
   },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
@@ -280,9 +287,70 @@ function NeverTouchScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
-function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' }) {
+/* ------- everest scene: sky + trench silhouettes side by side ------- */
+function EverestScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+
+  return (
+    <>
+      {/* deep void + cyan to black gradient */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(900px 560px at 50% -10%, rgba(10,58,90,0.56), transparent 58%),' +
+            'radial-gradient(720px 620px at 110% 100%, rgba(30,58,114,0.30), transparent 60%),' +
+            '#030712',
+        }}
+      />
+      <StarField />
+
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        <defs>
+          <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#0A3A5A" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#04101C" stopOpacity="0.9" />
+          </linearGradient>
+          <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#fde68a" />
+            <stop offset="100%" stopColor="#f59e0b" />
+          </linearGradient>
+        </defs>
+
+        {/* sea level line across the whole frame */}
+        {(is169 ? [178, 680] : [420, 1500]).map((_, i) => (
+          <line key={i} x1={0} x2={is169 ? 1280 : 1080} y1={is169 ? 360 : 960} y2={is169 ? 360 : 960} stroke="#22d3ee" strokeWidth={2} strokeOpacity={0.45} />
+        ))}
+
+        {/* Everest silhouette (sky half) */}
+        <g transform={`translate(${is169 ? 240 : 260}, ${is169 ? 330 : 880})`}>
+          <polygon points="0,-130 -210,130 210,130" fill="#141b33" stroke="#f59e0b" strokeWidth={4} />
+          <polygon points="0,-130 -30,-70 30,-70" fill="#e8edff" opacity={0.4} />
+          <text x={0} y={-145} textAnchor="middle" fill="#e8edff" fontSize={is169 ? 18 : 26} fontFamily="ui-monospace, Consolas, monospace" letterSpacing={4} opacity={0.9}>{FACTS.everestM.display}</text>
+        </g>
+
+        {/* trench shaft (water half) */}
+        <g transform={`translate(${is169 ? 1000 : 760}, ${is169 ? 480 : 1330})`}>
+          <rect x={-140} y={-190} width={280} height={380} fill="rgba(0,0,0,0.35)" stroke="#475569" strokeWidth={3} />
+          <line x1={-140} y1={-190} x2={140} y2={-190} stroke="#22d3ee" strokeWidth={4} opacity={0.8} />
+          <text x={0} y={-205} textAnchor="middle" fill="#22d3ee" fontSize={is169 ? 16 : 24} fontFamily="ui-monospace, Consolas, monospace" letterSpacing={4} opacity={0.9}>{FACTS.deepM.display}</text>
+          {/* depth ruler ticks */}
+          {[0, 1, 2, 3, 4].map((i) => {
+            const y = -190 + i * 95
+            return <line key={i} x1={-160} y1={y} x2={-140} y2={y} stroke="#e8edff" strokeWidth={2} opacity={0.5} />
+          })}
+        </g>
+      </svg>
+    </>
+  )
+}
+
+function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' }) {
   if (variant === 'minecraft') return <MinecraftScene ratio={ratio} />
   if (variant === 'neverTouch') return <NeverTouchScene ratio={ratio} />
+  if (variant === 'everest') return <EverestScene ratio={ratio} />
   const is169 = ratio === '16x9'
 
   // geometry per ratio
@@ -483,7 +551,7 @@ export default function Thumbnail() {
     >
       <Scene
         ratio={ratio}
-        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : undefined}
+        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : undefined}
       />
 
       {/* kicker chip top-left */}

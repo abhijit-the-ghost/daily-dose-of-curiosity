@@ -13,9 +13,12 @@
     "generate:space-sound": "uv run --with edge-tts,mutagen python scripts/generate_audio.py space-sound",
     "generate:minecraft-edge": "uv run --with edge-tts,mutagen python scripts/generate_audio.py minecraft-edge",
     "generate:never-touch": "uv run --with edge-tts,mutagen python scripts/generate_audio.py never-touch",
+    "generate:everest-challenger-deep": "uv run --with edge-tts,mutagen python scripts/generate_audio.py everest-challenger-deep",
     "generate:url-explainer": "uv run --with edge-tts,mutagen python scripts/generate_url_explainer_audio.py",
     "shot": "bun scripts/dev_shot.mjs",
     "render": "bun scripts/render_video.mjs",
+    "verify": "bun scripts/verify.ts",
+    "verify:anchors": "bun scripts/verify.ts",
     "render:smoke": "bun scripts/render_video.mjs --max-frames 90",
     "cover": "bun scripts/render_cover.mjs",
     "thumb": "bun scripts/render_thumb.mjs"

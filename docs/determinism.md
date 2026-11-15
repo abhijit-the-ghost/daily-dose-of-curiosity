@@ -1,7 +1,19 @@
 # Determinism report — video pipeline
 
-Date: 2026-11-11, updated 2026-11-12
+Date: 2026-11-11, updated 2026-11-12 ·- updated 2026-11-15
 Owner: Ghost (Abhijit Guragain)
+
+## 2026-11-15 — everest-challenger-deep is byte-exact
+
+Fresh episode (no baseline). Two back-to-back `bun run render` invocations produced:
+
+- 2,239 video frames each; `framemd5` identical across the two runs
+- MP4 `sha256` identical: `733F58B1353FFF5B0BDD6DCC0CC7BA0380A95939EA6B9DFC9309D0543088B100`
+- Duration 29.13s · 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz
+
+Promoted to the mandatory byte-exact gate class alongside `milkyway` and `minecraft-edge`.
+Packaged artifact `results/videos/everest-challenger-deep/video.mp4` is this exact build.
+
 
 ## 2026-11-14 — minecraft-edge rebuilt with end card
 

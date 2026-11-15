@@ -29,6 +29,12 @@ const COVERS: Record<
     accent: '#22d3ee',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'everest-challenger-deep': {
+    kicker: '[ COSMIC TELEMETRY // EVEREST VS DEEP ]',
+    title: ['EVEREST', 'VS', 'THE OCEAN'],
+    accent: '#f59e0b',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

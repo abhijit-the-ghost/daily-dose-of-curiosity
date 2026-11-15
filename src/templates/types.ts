@@ -10,8 +10,8 @@ export type ActTemplate = 'scaleCompare' | 'timeline' | 'diagram' | 'custom'
 export type ActConfig = {
   /** e.g. '01 // THE CLAIM' — rendered by the shared HUD */
   kicker: string
-  /** hex color for the kicker line + label */
-  kickerColor: string
+  /** hex colour for the kicker line — optional, falls back from theme tokens */
+  kickerColor?: string
   template: ActTemplate
   props?: Record<string, unknown>
   /** optional override; default derived from words[] */

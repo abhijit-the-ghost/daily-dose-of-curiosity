@@ -112,6 +112,7 @@ function EpisodePreview() {
   if (episode === 'space-sound') return <Episode slug="space-sound" />
   if (episode === 'minecraft-edge') return <Episode slug="minecraft-edge" />
   if (episode === 'never-touch') return <Episode slug="never-touch" />
+  if (episode === 'everest-challenger-deep') return <Episode slug="everest-challenger-deep" />
   return <MilkyWay />
 }
 

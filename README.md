@@ -1,90 +1,139 @@
 # Daily Dose of Curiosity — programmatic vertical videos
 
 Channel: **Daily Dose of Curiosity** — gaming · science · verified facts.
-Format: short-form (YouTube Shorts / Instagram Reels / TikTok, 9:16 1080×1920)
-generated with code: **React + deterministic scenes**, **free neural TTS**
-(edge-tts), **2D SVG composition**, **Tailwind CSS v4**, and **puppeteer + ffmpeg**
-for frame-capture encoding. (No 3D engine — SVG only.)
+Format: short-form (YouTube Shorts / Instagram Reels / TikTok / Facebook Reels),
+9:16 1080×1920, generated with code: **React + deterministic scenes**, **free neural TTS**
+(edge-tts, no API key), **2D SVG composition**, **Tailwind CSS v4**, and **puppeteer + ffmpeg**
+for frame-capture encoding. (SVG / Canvas / CSS only — no 3D engine.)
 
-Episodes:
-1. **“Why You've Never Seen a Real Photo of the Milky Way”** (default) — Act 1 · The Lie → Act 2 · The Scale Problem → Act 3 · Voyager 1 Reality Check → **branded end card** (logo + Pirata One lockup + FOLLOW + confetti). Pure 2D SVG: 3-layer parallax starfield, spiral vector galaxy, Voyager scale ruler, telemetry card, stamp overlay. Render: `bun run render` (view at `/`).
-   Voiceover: `uv run --with edge-tts,mutagen python scripts/generate_audio.py milkyway` (or `bun run generate:milkyway`)
-2. **“What actually happens when you type a URL?”** — Act 1 · DNS → Act 2 · Routing (2D) → Act 3 · Server response. Render: `bun run render -- --episode url-explainer` (view at `/episode?episode=url-explainer`).
-3. **“Space games make explosions loud — real space gives you silence.”** — Act 1 · The Lie → Act 2 · The Scale → Act 3 · The Truth. Render: `bun run render -- --episode space-sound` (view at `/episode?episode=space-sound`).
-4. **“How long to walk to the edge of Minecraft?”** — Act 1 · The Question → Act 2 · The Math → Act 3 · The Scale. ~29 s · 1080×1920 · verified facts (S1/S2/S3/D1/D2 in `results/videos/minecraft-edge/about.txt`). Render: `bun run render -- --episode minecraft-edge` (view at `/episode?episode=minecraft-edge`).
-5. **“You have never touched anything in your life”** — Act 1 · The Hook (hand vs neon barrier) → Act 2 · The Science (two electron clouds + electromagnetic repulsion + Pauli exclusion labels) → Act 3 · The Payoff (Curiosity stickman hovering over energy waves — "HOVERING."). cyan/violet palette · verified facts (S1/S2 in `results/videos/never-touch/about.txt`) · 29 s. Render: `bun run render -- --episode never-touch` (view at `/episode?episode=never-touch`).
+## Episodes shipped
 
-6. **Studio dashboard** — `bun run dev` and open `http://localhost:5173/`. Built with react-router-dom + TanStack Query + lucide-react. Routes: `/` (overview, latest-first), `/videos`, `/videos/:slug` (per-platform artwork + meta + about + MP4 download), `/assets` (shared-assets kit). Generated manifest: `bun scripts/admin_manifest.mjs` → `public/admin-manifest.json` (gitignored).
+| # | Slug | Hook | Facts |
+|---|------|------|------|
+| 1 | `milkyway` | "Why You've Never Seen a Real Photo of the Milky Way" | legacy, no per-claim tags yet (see `episodes/milkyway/sources.md`) |
+| 2 | `url-explainer` | "What actually happens when you type a URL?" | legacy, multi-file manifest (see `docs/url-explainer-sources.md`) |
+| 3 | `space-sound` | "Space games make explosions loud — real space gives you silence." | `episodes/space-sound/sources.md` |
+| 4 | `minecraft-edge` | "How long to walk to the edge of Minecraft?" | `episodes/minecraft-edge/sources.md` |
+| 5 | `never-touch` | "You have never touched anything in your life." | `episodes/never-touch/sources.md` |
+| 6 | `everest-challenger-deep` | "Which wins: Everest, or the deepest hole in the ocean?" | `episodes/everest-challenger-deep/sources.md` |
 
-See **VIDEO_PRODUCTION.md** for the full playbook + per-episode recipes.
+Source of truth for scripts: `episodes/<slug>/script.txt` · Scene choreography:
+`episodes/<slug>/scene.json` · Audio timeline: `public/audio/<slug>/metadata.json`
+(generated — never hand-edited) · Sources: `episodes/<slug>/sources.md`.
+Ready-to-post packages live under `results/videos/<slug>/` — **gitignored on purpose**;
+`results/` is treated as disposable output, not source.
 
-## Pipeline (run in order)
+Process design docs:
+
+- `docs/conventions.md` — anchors (`{word, occurrence}`), the FACTS rule, the fixed-safe-margin rule, the source-marker rule
+- `docs/brief-template.md` — brief template for new episodes (copy into `episodes/<slug>/brief.md`)
+- `docs/determinism.md` — frame-repeatability log
+- `docs/risks.md` — known risks (edge-tts ToS caveat, platform policies)
+- `docs/url-explainer-sources.md` — source list for the legacy URL-explainer episode
+
+## Pipeline
 
 | Step | Command | Output |
 | --- | --- | --- |
-| 1. Voiceover | `bun run generate:audio` | `public/audio/act{1,2,3}_*.mp3` + `manifest.json` |
-| 2. Preview | `bun run dev` | Interactive 9:16 stage at localhost:5173 (PLAY / scrub) |
-| 3. Frame check | `bun run shot "0.5,10,30"` | PNGs of any timeline point → `%TEMP%/internet-shorts-shots/` |
-| 4. Smoke render | `bun run render:smoke` | `output/…mp4`, first 3 s only |
-| 5. Full render | `bun run render` | `output/url-explainer-1080x1920.mp4` |
+| 1. Voiceover | `bun run generate:<slug>` | `public/audio/<slug>/full_voiceover.mp3` + `metadata.json` |
+| 2. Design the scene | edit `src/components/<Slug>Acts.tsx` | SVG/JSX per act |
+| 3. Preview | `bun run dev` | interactive stage at `http://localhost:5173/episode?episode=<slug>` |
+| 4. Frame check | `bun run shot "0.5,10,20" --episode <slug>` | PNGs at exact timestamps |
+| 5. Verify anchors | `bun run verify <slug>` | pass/fail table; fails on missing/ambiguous anchors or banned strings |
+| 6. Render | `bun run render -- --episode <slug>` | `output/<slug>-1080x1920.mp4` |
+| 7. Package | copy `output/<slug>-1080x1920.mp4` → `results/videos/<slug>/` (sha256 verified) | ready-to-post MP4 |
+| 8. Write `about.txt` | captions per platform + `meta.json` | `about.txt` + `meta.json` in the package |
 
-`bun run shot` and `bun run render` need no manual dev server — they spawn vite themselves.
+`bun run shot` and `bun run render` spawn vite themselves — no manual dev server needed.
 
 ## How it works
 
-1. **`scripts/generate_audio.py`** — unified edge-tts generator (Microsoft neural voices, free, no API key; `uv` manages the Python). Reads `episodes/<slug>/script.txt` + `scene.json`, measures each MP3 (mutagen), writes `public/audio/<slug>/metadata.json` (fps, totalDuration, per-act word streams with per-word `start`/`end`, act boundaries derived from token counts — never hand-tuned). The url-explainer legacy uses `scripts/generate_url_explainer_audio.py` (multi-file manifest layout).
-2. **`src/App.tsx`** — the 9:16 stage + *audio sync controller*. The whole visual stage is a
-   **pure function of `time`** (seconds). Nothing reads the wall clock: no CSS animations,
-   no `Date.now()`. Therefore `window.__seek(t)` renders the identical frame every time.
-   - preview mode: rAF clock + `<audio>` elements, Play/Pause/scrub.
-   - record mode (`?record=1`): no chrome or audio; external seek only.
-   - bottom **karaoke captions**: narration is embedded in the manifest as word-level
-     timings (edge-tts `WordBoundary`); the spoken word pops amber (Anton, block weight),
-     earlier words stay white, upcoming words stay dim. Chunks split at natural pauses.
-3. **`src/components/{DNSScene,RoutingScene,ServerScene}.tsx`** — the three acts.
-   All motion (typing, packet flight, pops, confetti) is computed inline from
-   `t`/`p` passed as props. **RoutingScene** embeds a three.js scene (globe, route
-   arcs, packet pulse, starfield) — rendered on each committed `time`, keeping the
-   determinism rule. A cinematic grade sits on top: vignette, deterministic film
-   grain (seeded per frame), `saturate/contrast` CSS filter, white flash at act cuts.
-4. **`scripts/render_video.mjs`** — vite build → vite preview → puppeteer 1080×1920;
-   for every frame: `__seek(t)` → wait for `window.__committedFrame === t` → JPEG,
-   then ffmpeg (`ffmpeg-static`) mixes the act MP3s at their manifest offsets
-   (`adelay` + `amix`) over the mjpeg sequence → H.264 High + AAC, `+faststart`.
+1. **`scripts/generate_audio.py`** — unified edge-tts generator (uv-managed CPython;
+   `en-US-AriaNeural`). Reads `episodes/<slug>/script.txt` + `scene.json`, writes
+   `public/audio/<slug>/metadata.json` (fps, totalDuration, WordBoundary per-word
+   `start`/`end`, act boundaries derived from per-act token counts — never hand-tuned).
+   Each act block starts with a `// ACT N` marker; facts that need on-screen display
+   must live in `episodes/<slug>/facts.ts` as a single `FACTS` constant and be
+   derived from it in scene code (no stray digit literals).
+2. **`src/App.tsx`** — episode router (`?episode=<slug>`; default `milkyway`) plus
+   `/`, `/videos`, `/videos/:slug`, `/assets` for the studio dashboard (see below).
+   `/episode?record=1&episode=<slug>` is the deterministic record surface.
+3. **`src/components/Episode.tsx`** — the generic shell. Reads `scene.json` +
+   `metadata.json`, drives recorder hooks (`__seek`, `__ready`, `__committedFrame`,
+   `data-rendering-complete`), preview scale, kicker text/colors from `scene.json`,
+   caption hold-out windows, and delegates the act SVG to the per-episode `Acts`
+   component registered in `REGISTRY`.
+4. **`src/components/{SpaceSoundActs,MinecraftEdgeActs,NeverTouchActs,EverestVsDeepActs}.tsx`** —
+   per-episode scene implementations. `custom` template acts today; shared primitives
+   live in `src/components/Starfield.tsx`, `KaraokeCaption.tsx`, `Hud.tsx`, `anim`.
+5. **`scripts/render_video.mjs`** — vite build → preview → puppeteer @ 1080×1920.
+   For every frame: `__seek(t)` → wait for `__committedFrame === t` → JPEG. ffmpeg
+   (`ffmpeg-static`) mixes the voiceover and encodes H.264 High + yuv420p + AAC 48 kHz,
+   `+faststart`, 1080×1920 @ 30 fps.
+6. **`scripts/verify.ts`** — fails if any anchor in an episode's `scene.json` /
+   `brief.md` is missing or ambiguous in `metadata.json`, and if any banned string
+   from the per-episode list appears in `script.txt`. Run it before every render.
+7. **`scripts/admin_manifest.mjs`** — generator for the studio dashboard
+   (`public/admin-manifest.json`, gitignored).
 
 ## Project layout
 
 ```
-public/audio/            generated MP3s + manifest.json (do not hand-edit)
-shared-assets/           channel-wide brand library (single source; imported via vite)
-  brand/logo.png         the channel logo (Daily Dose of Curiosity)
-  brand/fonts/           Pirata One (OFL) — end-card block calligraphy
-  LICENSES.md            attribution registry for every external asset
-scripts/generate_audio.py            unified TTS generator (scripts/generate_url_explainer_audio.py = url-ep legacy)
-scripts/render_video.mjs   frame capture + encode
-scripts/dev_shot.mjs       screenshot dev-tool (ephemeral ports, 127.0.0.1 binding)
-src/App.tsx                stage + sync controller + cinematic grade (vignette/grain/flash)
-src/components/            DNSScene / RoutingScene (three.js globe) / ServerScene (end card)
-results/videos/<topic>/    ready-to-post package: video.mp4 + about.txt
-frames/  output/           render working dir / final MP4s (gitignored)
+episodes/<slug>/           per-episode source (script.txt, scene.json, facts.ts, sources.md, meta.json)
+src/theme/                 tokens.ts (canvas + owner-confirmed safe zone) · series.ts (cosmic/game-physics)
+src/motion/                anim.ts (clamp01/easeOutCubic/easeInOutCubic/anim) · README.md (motion rules)
+src/components/            Episode.tsx (generic shell) · <Slug>Acts.tsx (per-episode scene)
+src/components/Starfield.tsx, KaraokeCaption.tsx, Hud.tsx, EndCard.tsx — shared primitives
+src/templates/types.ts     ActConfig / SceneConfig schema (`custom` | `scaleCompare` | `timeline` | `diagram`)
+public/audio/<slug>/       generated voiceover + metadata.json (do not hand-edit)
+scripts/                   generate_audio.py · render_video.mjs · dev_shot.mjs · verify.ts · admin_manifest.mjs
+docs/                      conventions · brief-template · determinism · risks
+results/videos/<slug>/     ready-to-post package (gitignored — disposable)
+output/  frames/           render working dirs (gitignored)
+shared-assets/brand/       channel logo, OFL fonts, Curiosity stickman (original artwork)
 ```
 
-## Gotchas on this machine
+## Verification and determinism
 
-- edge-tts runs via `uv run --with edge-tts,mutagen python …` — uv manages a private CPython,
-  so the Windows Store `python.exe` stub is no longer used.
-- Bun does not run untrusted lifecycle scripts by default; after `bun add -d ffmpeg-static`
-  run `bun node_modules/ffmpeg-static/install.js` once to fetch `ffmpeg.exe`.
-- `bun run shot "a,b,c"` — quote the time list, PowerShell parses commas as arrays otherwise.
+`bunx tsc -b` is the type gate. Record-time frames are byte-identical across
+runs of the same build (verified for `milkyway` and `minecraft-edge`; see
+`docs/determinism.md`). `space-sound` passes an SSIM ≈ 0.999 gate instead of
+byte-exact due to an Act 3 raster jitter that predates the refactor
+(also documented in `docs/determinism.md`).
 
-## Customizing the episode
+## Studio dashboard
 
-- New voice / faster pace: `uv run --with edge-tts,mutagen python scripts/generate_audio.py <slug> --force`
-  (voice/rate live in `episodes/<slug>/scene.json` — change them there, then re-render;
-  scenes read the timeline from metadata.json, nothing else to touch).
-- New topic: `episodes/<slug>/script.txt` (+ `scene.json`) → `bun run generate:<slug>` →
-  wire `src/components/<Ep>.tsx` and `?episode=<slug>` in `src/App.tsx`, then re-baseline (framemd5).
+Not an episode — a separate surface in this repo for owner use.
+`/` → overview · `/videos` → all videos (search, sort) · `/videos/:slug` → detail
+with per-platform artwork, meta.json breakdown and MP4 download · `/assets` → the
+`shared-assets/` kit with image/font/markdown/JSX previews. Regenerate with
+`bun scripts/admin_manifest.mjs`. Built with react-router-dom, TanStack Query,
+lucide-react. See `AGENTS.md` anti-goals note for why it's treated as an accepted
+exception to the "no dashboards" rule.
+
+## Customizing / contributing a new episode
+
+1. `episodes/<slug>/script.txt` (with `[src: …]` markers per `docs/conventions.md`),
+   `scene.json`, `facts.ts`.
+2. `bun run generate:<slug>` → `public/audio/<slug>/metadata.json`.
+3. `bun run verify <slug>` — must pass before anything renders.
+4. Register the `<Slug>Acts` component in `src/components/Episode.tsx` (`REGISTRY`),
+   add route in `src/App.tsx`, add `HUD_PRESETS`/`CAPTION_STYLES` entries.
+5. `bun run dev` — iterate with `bun run shot "0.5,10,20" --episode <slug>`.
+6. `bun run render -- --episode <slug>` → probe + package into `results/videos/<slug>/`.
+
+See `docs/brief-template.md` for the episode brief shape and `docs/conventions.md`
+for the anchor / FACTS rules.
+
+## Source-marker rule (every [src:] must be human-opened)
+
+`[src: x]` in a script means "a human opened URL x and verified every claim it covers."
+Links that were never opened cannot be shipped. Harvest the marked sources into
+`episodes/<slug>/sources.md` before declaring an episode ready; update it whenever
+a claim changes.
 
 ## Not included (yet)
 
-Auto-upload to Shorts/Reels/TikTok — planned as a separate phase (API credentials required).
+Auto-upload to Shorts / Reels / TikTok — planned as Phase 7, blocked until the
+manual analytics loop (Phase 6) has been running for a while. See `AGENTS.md`
+and `docs/risks.md`.

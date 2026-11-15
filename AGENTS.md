@@ -48,17 +48,19 @@ Channel niche (decision pending with owner, default to this until told otherwise
 
 ## 3. Diagnosis: what is wrong today
 
-| # | Problem | Why it matters | Fixed in |
-|---|---------|----------------|----------|
-| 1 | Goal says "script in → MP4 out", but each episode is a hand-built component + a per-episode audio script | Not scalable; each video costs hours | Phases 2–3 |
-| 2 | Hardcoded look/text: `COSMIC TELEMETRY` badge, "The Lie / Scale Problem / Reality Check" act names | Template is overfit to the MilkyWay episode | Phase 1 |
-| 3 | No theme tokens or motion rules | Inconsistent look, ad-hoc animation | Phase 1 |
-| 4 | `generate_<episode>_audio.py` copied per episode; Python invoked via PowerShell workaround because of the Windows Store `python.exe` stub | Duplicated code; symptom fix instead of root-cause fix | Phase 2 |
-| 5 | QA checklist is manual | Easy to skip, slow | Phase 4 |
-| 6 | Captions dim all upcoming words; branded end card adds dead time at the end | Likely hurts readability and retention (test, don't assume) | Phase 5 |
-| 7 | No post-publish measurement or iteration step | Can't learn what works | Phase 6 |
-| 8 | "Byte-for-byte reproducible" claim is unproven | Online TTS + Puppeteer + x264 may not give identical bytes | Phase 0 |
-| 9 | Act timings (4–5 + 6–8 + 6–8 s) don't add up to the stated 20–35 s | Contradictory spec | Phase 2 (config) |
+Status legend: **done** = implemented & verified · **open** = still outstanding · **deferred** = acknowledged, intentionally not doing it yet.
+
+| # | Problem | Why it matters | Fixed in | Status (2026-11) |
+|---|---------|----------------|----------|------------------|
+| 1 | Goal says "script in → MP4 out", but each episode is a hand-built component + a per-episode audio script | Not scalable; each video costs hours | Phases 2–3 | **done** (Phase 2 unified, Phase 3 generic shell + all three current episodes wired through it) |
+| 2 | Hardcoded look/text: `COSMIC TELEMETRY` badge, "The Lie / Scale Problem / Reality Check" act names | Template is overfit to the MilkyWay episode | Phase 1 | **done** (`src/components/Hud.tsx`, `HUD_PRESETS`, kicker derived from `scene.json`; `src/theme/series.ts`) |
+| 3 | No theme tokens or motion rules | Inconsistent look, ad-hoc animation | Phase 1 | **done** (`src/theme/tokens.ts`, `series.ts`, `src/motion/README.md`) |
+| 4 | `generate_<episode>_audio.py` copied per episode; Python invoked via PowerShell workaround | Duplicated code; symptom fix instead of root-cause fix | Phase 2 | **done** (`scripts/generate_audio.py`, `uv run --with edge-tts,mutagen`; per-episode generators deleted) |
+| 5 | QA checklist is manual | Easy to skip, slow | Phase 4 | **done (minimal)** (`scripts/verify.ts` — anchors + banned-strings; `bun run verify <slug>`. Full `ffprobe`-style verify.ts is Phase 4 and still pending) |
+| 6 | Captions dim all upcoming words; branded end card adds dead time at the end | Likely hurts readability and retention (test, don't assume) | Phase 5 | **open** — endCard is per-episode config (Phase 5 baseline). Current 4 episodes are `endCard: true` by explicit owner choice |
+| 7 | No post-publish measurement or iteration step | Can't learn what works | Phase 6 | **open** |
+| 8 | "Byte-for-byte reproducible" claim is unproven | Online TTS + Puppeteer + x264 may not give identical bytes | Phase 0 | **done** — frames are byte-identical for milkyway & minecraft-edge; space-sound is SSIM ≈ 0.999 gate instead (see `docs/determinism.md`) |
+| 9 | Act timings (4–5 + 6–8 + 6–8 s) don't add up to the stated 20–35 s | Contradictory spec | Phase 2 (config) | **done** — spec is now 20–35 s everywhere; no fixed per-act seconds; act boundaries derive from token counts |
 
 ---
 
@@ -113,7 +115,7 @@ Gate: baselines exist, determinism report written to `docs/determinism.md`, `bun
 ### Phase 1 — Theme tokens, series config, motion helpers
 
 Tasks:
-- Create `src/theme/tokens.ts`: background, text, one accent per series, type scale (Anton captions, Pirata One brand line only if kept, `ui-monospace` telemetry), spacing, safe margins for 1080×1920 (keep captions/HUD away from the bottom ~20% and right edge where platform UI overlaps; confirm exact values with the owner).
+- Create `src/theme/tokens.ts`: background, text, one accent per series, type scale (Anton captions, Pirata One brand line only if kept, `ui-monospace` telemetry), spacing, safe margins for 1080×1920 (keep captions/HUD away from the bottom ~20 % and right edge where platform UI overlaps; **confirmed with the owner 2026-11-12**: `xMin 60, xMax 1020, yMin 170, yMax 1536` — nothing below y=1536, captions inside that box).
 - Create `src/theme/series.ts`: each series defines badge text (replace hardcoded `COSMIC TELEMETRY`), accent, kicker format. Start with **one** series that reproduces MilkyWay exactly. Add a second only when the owner asks.
 - Create `src/motion/anim.ts`:
 
@@ -177,7 +179,7 @@ export type SceneConfig = {
 - Implement a generic `<Episode slug />` component that reads `scene.json` + `metadata.json`, renders HUD, captions and templates. Keep `custom` as an escape hatch so one-off visuals still work.
 - Migrate episodes one at a time. Do not delete a legacy component until its migrated version matches baseline frames.
 
-Gate: at least two episodes render through the generic `<Episode>`; frames match baselines.
+Gate: at least two episodes render through the generic `<Episode>`; frames match baselines. **Status 2026-11: done** — all three episodes (`space-sound`, `minecraft-edge`, `never-touch`) render through the generic `<Episode>`; minecraft-edge framemd5 identical, space-sound SSIM ≈ 0.999. Current focus is `milkyway` → keep bespoke until owner approves.
 
 ### Phase 4 — Automated verification and packaging
 
@@ -186,7 +188,7 @@ Tasks:
 - `scripts/package.ts` (`bun run package <slug>`): copies `output/<slug>-1080x1920.mp4` to `results/videos/<slug>/video.mp4`, verifies sha256 match, writes `meta.json` (see section 7) and an `about.txt` skeleton with 3 caption blocks (YouTube Shorts / Reels / TikTok) and a `SOURCES` section pulled from `script.txt` annotations (`[src: URL]` markers). Missing sources = packaging fails.
 - Source rule: every factual sentence in `script.txt` carries a `[src: …]` marker that points to a page the **human** has opened and confirmed. The agent must never invent or "recall" sources.
 
-Gate: `bun run verify milkyway` passes on a good file and fails on a deliberately broken one (test both).
+Gate: `bun run verify milkyway` passes on a good file and fails on a deliberately broken one (test both). **Status 2026-11: partially delivered** — `scripts/verify.ts` already implements the anchors presence/ambiguity check + banned-strings guard in `bun run verify <slug>`. The ffprobe side (1080×1920 / 30 fps / H.264+yuv420p / AAC 48 kHz / faststart / duration 20–35 s / framemd5) and `package.ts` (sha256-verified copy + meta.json + about.txt skeleton + missing-sources gate) are still open.
 
 ### Phase 5 — Caption and ending experiments (config flags, not hardcoded)
 
@@ -198,7 +200,7 @@ Tasks:
 - Record chosen options in `meta.json` so results can be compared later.
 - Do not declare either style "better". The feedback loop decides.
 
-Gate: both styles render; captions never clip long words (test with the longest word in the script) and don't collide with HUD.
+Gate: both styles render; captions never clip long words (test with the longest word in the script) and don't collide with HUD. **Status 2026-11: open** — current episodes all use `karaoke-dim`; `phrase` not yet implemented; `endCard` defaults `false` in code/config but every packaged episode was explicitly shipped with `endCard: true` by owner opt-in (milkyway, space-sound, minecraft-edge, never-touch).
 
 ### Phase 6 — Feedback loop
 
@@ -303,7 +305,7 @@ If a `bun add` package's postinstall is skipped (bun's security default), run th
 
 ## 11. Anti-goals (do NOT do these)
 
-- Don't build a video editor UI, a CMS, a database server, or a dashboard. Files and scripts are enough.
+- Don't build a video editor UI, a CMS, a database server, or a dashboard. Files and scripts are enough. **(Owner-accepted exception 2026-11)** A minimal "Daily Dose Studio" dashboard lives in `src/components/admin/` (`/`, `/videos`, `/videos/:slug`, `/assets`) for the owner to browse packages and brand assets — built on react-router-dom + TanStack Query. It is NOT a video editor, NOT a CMS, NOT a SaaS. Any feature beyond browsing/preview/downloading packages there is out of scope and requires explicit written approval.
 - Don't switch frameworks (e.g. to Remotion) or the TTS engine without a written proposal and owner approval.
 - Don't add posting automation before Phase 7 conditions are met.
 - Don't add more series, themes, or templates "for later".
