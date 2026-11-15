@@ -1,0 +1,1072 @@
+{
+  "title": "You have never touched anything in your life",
+  "series": "science",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "You have never touched anything in your life",
+      "file": "full_voiceover.mp3",
+      "duration": 26.736,
+      "start": 0.0,
+      "end": 26.736,
+      "words": [
+        {
+          "w": "You",
+          "start": 0.095,
+          "end": 0.273
+        },
+        {
+          "w": "have",
+          "start": 0.284,
+          "end": 0.463
+        },
+        {
+          "w": "never",
+          "start": 0.474,
+          "end": 0.943
+        },
+        {
+          "w": "Not",
+          "start": 1.708,
+          "end": 2.009
+        },
+        {
+          "w": "once",
+          "start": 2.02,
+          "end": 2.522
+        },
+        {
+          "w": "Physically",
+          "start": 3.292,
+          "end": 3.761
+        },
+        {
+          "w": "touched",
+          "start": 3.772,
+          "end": 4.074
+        },
+        {
+          "w": "a",
+          "start": 4.085,
+          "end": 4.141
+        },
+        {
+          "w": "single",
+          "start": 4.152,
+          "end": 4.453
+        },
+        {
+          "w": "thing",
+          "start": 4.464,
+          "end": 4.732
+        },
+        {
+          "w": "in",
+          "start": 4.743,
+          "end": 4.833
+        },
+        {
+          "w": "your",
+          "start": 4.844,
+          "end": 4.955
+        },
+        {
+          "w": "entire",
+          "start": 4.966,
+          "end": 5.357
+        },
+        {
+          "w": "life",
+          "start": 5.368,
+          "end": 5.781
+        },
+        {
+          "w": "Atoms",
+          "start": 6.551,
+          "end": 6.953
+        },
+        {
+          "w": "are",
+          "start": 6.964,
+          "end": 7.054
+        },
+        {
+          "w": "mostly",
+          "start": 7.065,
+          "end": 7.455
+        },
+        {
+          "w": "empty",
+          "start": 7.466,
+          "end": 7.757
+        },
+        {
+          "w": "space",
+          "start": 7.768,
+          "end": 8.27
+        },
+        {
+          "w": "When",
+          "start": 9.04,
+          "end": 9.208
+        },
+        {
+          "w": "your",
+          "start": 9.219,
+          "end": 9.319
+        },
+        {
+          "w": "hand",
+          "start": 9.33,
+          "end": 9.621
+        },
+        {
+          "w": "presses",
+          "start": 9.632,
+          "end": 9.944
+        },
+        {
+          "w": "a",
+          "start": 9.955,
+          "end": 10.022
+        },
+        {
+          "w": "wall",
+          "start": 10.034,
+          "end": 10.391
+        },
+        {
+          "w": "the",
+          "start": 10.603,
+          "end": 10.67
+        },
+        {
+          "w": "electrons",
+          "start": 10.681,
+          "end": 11.239
+        },
+        {
+          "w": "in",
+          "start": 11.25,
+          "end": 11.35
+        },
+        {
+          "w": "each",
+          "start": 11.362,
+          "end": 11.562
+        },
+        {
+          "w": "atom",
+          "start": 11.574,
+          "end": 11.886
+        },
+        {
+          "w": "push",
+          "start": 11.897,
+          "end": 12.132
+        },
+        {
+          "w": "each",
+          "start": 12.143,
+          "end": 12.255
+        },
+        {
+          "w": "other",
+          "start": 12.266,
+          "end": 12.466
+        },
+        {
+          "w": "back",
+          "start": 12.478,
+          "end": 12.801
+        },
+        {
+          "w": "through",
+          "start": 13.025,
+          "end": 13.17
+        },
+        {
+          "w": "electromagnetic",
+          "start": 13.181,
+          "end": 14.051
+        },
+        {
+          "w": "repulsion",
+          "start": 14.062,
+          "end": 14.654
+        },
+        {
+          "w": "and",
+          "start": 14.665,
+          "end": 14.777
+        },
+        {
+          "w": "the",
+          "start": 14.788,
+          "end": 14.866
+        },
+        {
+          "w": "Pauli",
+          "start": 14.877,
+          "end": 15.167
+        },
+        {
+          "w": "exclusion",
+          "start": 15.179,
+          "end": 15.703
+        },
+        {
+          "w": "principle",
+          "start": 15.714,
+          "end": 16.261
+        },
+        {
+          "w": "Identical",
+          "start": 17.042,
+          "end": 17.567
+        },
+        {
+          "w": "negative",
+          "start": 17.578,
+          "end": 17.946
+        },
+        {
+          "w": "charges",
+          "start": 17.958,
+          "end": 18.404
+        },
+        {
+          "w": "repel",
+          "start": 18.415,
+          "end": 18.75
+        },
+        {
+          "w": "each",
+          "start": 18.761,
+          "end": 18.895
+        },
+        {
+          "w": "other",
+          "start": 18.906,
+          "end": 19.163
+        },
+        {
+          "w": "before",
+          "start": 19.174,
+          "end": 19.498
+        },
+        {
+          "w": "they",
+          "start": 19.509,
+          "end": 19.609
+        },
+        {
+          "w": "can",
+          "start": 19.621,
+          "end": 19.766
+        },
+        {
+          "w": "meet",
+          "start": 19.777,
+          "end": 20.123
+        },
+        {
+          "w": "So",
+          "start": 20.893,
+          "end": 21.094
+        },
+        {
+          "w": "you",
+          "start": 21.105,
+          "end": 21.261
+        },
+        {
+          "w": "are",
+          "start": 21.272,
+          "end": 21.362
+        },
+        {
+          "w": "never",
+          "start": 21.373,
+          "end": 21.629
+        },
+        {
+          "w": "touching",
+          "start": 21.641,
+          "end": 22.02
+        },
+        {
+          "w": "anything",
+          "start": 22.031,
+          "end": 22.522
+        },
+        {
+          "w": "You",
+          "start": 23.304,
+          "end": 23.482
+        },
+        {
+          "w": "are",
+          "start": 23.493,
+          "end": 23.583
+        },
+        {
+          "w": "hovering",
+          "start": 23.594,
+          "end": 24.007
+        },
+        {
+          "w": "on",
+          "start": 24.163,
+          "end": 24.252
+        },
+        {
+          "w": "a",
+          "start": 24.263,
+          "end": 24.297
+        },
+        {
+          "w": "microscopic",
+          "start": 24.308,
+          "end": 25.022
+        },
+        {
+          "w": "cushion",
+          "start": 25.034,
+          "end": 25.346
+        },
+        {
+          "w": "of",
+          "start": 25.357,
+          "end": 25.435
+        },
+        {
+          "w": "energy",
+          "start": 25.446,
+          "end": 25.96
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE HOOK",
+      "caption": "// ACT 1 \u2014 THE HOOK",
+      "file": "full_voiceover.mp3",
+      "duration": 5.686,
+      "start": 0.095,
+      "end": 5.781,
+      "words": [
+        {
+          "w": "You",
+          "start": 0.095,
+          "end": 0.273
+        },
+        {
+          "w": "have",
+          "start": 0.284,
+          "end": 0.463
+        },
+        {
+          "w": "never",
+          "start": 0.474,
+          "end": 0.943
+        },
+        {
+          "w": "Not",
+          "start": 1.708,
+          "end": 2.009
+        },
+        {
+          "w": "once",
+          "start": 2.02,
+          "end": 2.522
+        },
+        {
+          "w": "Physically",
+          "start": 3.292,
+          "end": 3.761
+        },
+        {
+          "w": "touched",
+          "start": 3.772,
+          "end": 4.074
+        },
+        {
+          "w": "a",
+          "start": 4.085,
+          "end": 4.141
+        },
+        {
+          "w": "single",
+          "start": 4.152,
+          "end": 4.453
+        },
+        {
+          "w": "thing",
+          "start": 4.464,
+          "end": 4.732
+        },
+        {
+          "w": "in",
+          "start": 4.743,
+          "end": 4.833
+        },
+        {
+          "w": "your",
+          "start": 4.844,
+          "end": 4.955
+        },
+        {
+          "w": "entire",
+          "start": 4.966,
+          "end": 5.357
+        },
+        {
+          "w": "life",
+          "start": 5.368,
+          "end": 5.781
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE SCIENCE",
+      "caption": "// ACT 2 \u2014 THE SCIENCE",
+      "file": "full_voiceover.mp3",
+      "duration": 9.71,
+      "start": 6.551,
+      "end": 16.261,
+      "words": [
+        {
+          "w": "Atoms",
+          "start": 6.551,
+          "end": 6.953
+        },
+        {
+          "w": "are",
+          "start": 6.964,
+          "end": 7.054
+        },
+        {
+          "w": "mostly",
+          "start": 7.065,
+          "end": 7.455
+        },
+        {
+          "w": "empty",
+          "start": 7.466,
+          "end": 7.757
+        },
+        {
+          "w": "space",
+          "start": 7.768,
+          "end": 8.27
+        },
+        {
+          "w": "When",
+          "start": 9.04,
+          "end": 9.208
+        },
+        {
+          "w": "your",
+          "start": 9.219,
+          "end": 9.319
+        },
+        {
+          "w": "hand",
+          "start": 9.33,
+          "end": 9.621
+        },
+        {
+          "w": "presses",
+          "start": 9.632,
+          "end": 9.944
+        },
+        {
+          "w": "a",
+          "start": 9.955,
+          "end": 10.022
+        },
+        {
+          "w": "wall",
+          "start": 10.034,
+          "end": 10.391
+        },
+        {
+          "w": "the",
+          "start": 10.603,
+          "end": 10.67
+        },
+        {
+          "w": "electrons",
+          "start": 10.681,
+          "end": 11.239
+        },
+        {
+          "w": "in",
+          "start": 11.25,
+          "end": 11.35
+        },
+        {
+          "w": "each",
+          "start": 11.362,
+          "end": 11.562
+        },
+        {
+          "w": "atom",
+          "start": 11.574,
+          "end": 11.886
+        },
+        {
+          "w": "push",
+          "start": 11.897,
+          "end": 12.132
+        },
+        {
+          "w": "each",
+          "start": 12.143,
+          "end": 12.255
+        },
+        {
+          "w": "other",
+          "start": 12.266,
+          "end": 12.466
+        },
+        {
+          "w": "back",
+          "start": 12.478,
+          "end": 12.801
+        },
+        {
+          "w": "through",
+          "start": 13.025,
+          "end": 13.17
+        },
+        {
+          "w": "electromagnetic",
+          "start": 13.181,
+          "end": 14.051
+        },
+        {
+          "w": "repulsion",
+          "start": 14.062,
+          "end": 14.654
+        },
+        {
+          "w": "and",
+          "start": 14.665,
+          "end": 14.777
+        },
+        {
+          "w": "the",
+          "start": 14.788,
+          "end": 14.866
+        },
+        {
+          "w": "Pauli",
+          "start": 14.877,
+          "end": 15.167
+        },
+        {
+          "w": "exclusion",
+          "start": 15.179,
+          "end": 15.703
+        },
+        {
+          "w": "principle",
+          "start": 15.714,
+          "end": 16.261
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE PAYOFF",
+      "caption": "// ACT 3 \u2014 THE PAYOFF",
+      "file": "full_voiceover.mp3",
+      "duration": 8.918,
+      "start": 17.042,
+      "end": 25.96,
+      "words": [
+        {
+          "w": "Identical",
+          "start": 17.042,
+          "end": 17.567
+        },
+        {
+          "w": "negative",
+          "start": 17.578,
+          "end": 17.946
+        },
+        {
+          "w": "charges",
+          "start": 17.958,
+          "end": 18.404
+        },
+        {
+          "w": "repel",
+          "start": 18.415,
+          "end": 18.75
+        },
+        {
+          "w": "each",
+          "start": 18.761,
+          "end": 18.895
+        },
+        {
+          "w": "other",
+          "start": 18.906,
+          "end": 19.163
+        },
+        {
+          "w": "before",
+          "start": 19.174,
+          "end": 19.498
+        },
+        {
+          "w": "they",
+          "start": 19.509,
+          "end": 19.609
+        },
+        {
+          "w": "can",
+          "start": 19.621,
+          "end": 19.766
+        },
+        {
+          "w": "meet",
+          "start": 19.777,
+          "end": 20.123
+        },
+        {
+          "w": "So",
+          "start": 20.893,
+          "end": 21.094
+        },
+        {
+          "w": "you",
+          "start": 21.105,
+          "end": 21.261
+        },
+        {
+          "w": "are",
+          "start": 21.272,
+          "end": 21.362
+        },
+        {
+          "w": "never",
+          "start": 21.373,
+          "end": 21.629
+        },
+        {
+          "w": "touching",
+          "start": 21.641,
+          "end": 22.02
+        },
+        {
+          "w": "anything",
+          "start": 22.031,
+          "end": 22.522
+        },
+        {
+          "w": "You",
+          "start": 23.304,
+          "end": 23.482
+        },
+        {
+          "w": "are",
+          "start": 23.493,
+          "end": 23.583
+        },
+        {
+          "w": "hovering",
+          "start": 23.594,
+          "end": 24.007
+        },
+        {
+          "w": "on",
+          "start": 24.163,
+          "end": 24.252
+        },
+        {
+          "w": "a",
+          "start": 24.263,
+          "end": 24.297
+        },
+        {
+          "w": "microscopic",
+          "start": 24.308,
+          "end": 25.022
+        },
+        {
+          "w": "cushion",
+          "start": 25.034,
+          "end": 25.346
+        },
+        {
+          "w": "of",
+          "start": 25.357,
+          "end": 25.435
+        },
+        {
+          "w": "energy",
+          "start": 25.446,
+          "end": 25.96
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "You",
+      "start": 0.095,
+      "end": 0.273
+    },
+    {
+      "w": "have",
+      "start": 0.284,
+      "end": 0.463
+    },
+    {
+      "w": "never",
+      "start": 0.474,
+      "end": 0.943
+    },
+    {
+      "w": "Not",
+      "start": 1.708,
+      "end": 2.009
+    },
+    {
+      "w": "once",
+      "start": 2.02,
+      "end": 2.522
+    },
+    {
+      "w": "Physically",
+      "start": 3.292,
+      "end": 3.761
+    },
+    {
+      "w": "touched",
+      "start": 3.772,
+      "end": 4.074
+    },
+    {
+      "w": "a",
+      "start": 4.085,
+      "end": 4.141
+    },
+    {
+      "w": "single",
+      "start": 4.152,
+      "end": 4.453
+    },
+    {
+      "w": "thing",
+      "start": 4.464,
+      "end": 4.732
+    },
+    {
+      "w": "in",
+      "start": 4.743,
+      "end": 4.833
+    },
+    {
+      "w": "your",
+      "start": 4.844,
+      "end": 4.955
+    },
+    {
+      "w": "entire",
+      "start": 4.966,
+      "end": 5.357
+    },
+    {
+      "w": "life",
+      "start": 5.368,
+      "end": 5.781
+    },
+    {
+      "w": "Atoms",
+      "start": 6.551,
+      "end": 6.953
+    },
+    {
+      "w": "are",
+      "start": 6.964,
+      "end": 7.054
+    },
+    {
+      "w": "mostly",
+      "start": 7.065,
+      "end": 7.455
+    },
+    {
+      "w": "empty",
+      "start": 7.466,
+      "end": 7.757
+    },
+    {
+      "w": "space",
+      "start": 7.768,
+      "end": 8.27
+    },
+    {
+      "w": "When",
+      "start": 9.04,
+      "end": 9.208
+    },
+    {
+      "w": "your",
+      "start": 9.219,
+      "end": 9.319
+    },
+    {
+      "w": "hand",
+      "start": 9.33,
+      "end": 9.621
+    },
+    {
+      "w": "presses",
+      "start": 9.632,
+      "end": 9.944
+    },
+    {
+      "w": "a",
+      "start": 9.955,
+      "end": 10.022
+    },
+    {
+      "w": "wall",
+      "start": 10.034,
+      "end": 10.391
+    },
+    {
+      "w": "the",
+      "start": 10.603,
+      "end": 10.67
+    },
+    {
+      "w": "electrons",
+      "start": 10.681,
+      "end": 11.239
+    },
+    {
+      "w": "in",
+      "start": 11.25,
+      "end": 11.35
+    },
+    {
+      "w": "each",
+      "start": 11.362,
+      "end": 11.562
+    },
+    {
+      "w": "atom",
+      "start": 11.574,
+      "end": 11.886
+    },
+    {
+      "w": "push",
+      "start": 11.897,
+      "end": 12.132
+    },
+    {
+      "w": "each",
+      "start": 12.143,
+      "end": 12.255
+    },
+    {
+      "w": "other",
+      "start": 12.266,
+      "end": 12.466
+    },
+    {
+      "w": "back",
+      "start": 12.478,
+      "end": 12.801
+    },
+    {
+      "w": "through",
+      "start": 13.025,
+      "end": 13.17
+    },
+    {
+      "w": "electromagnetic",
+      "start": 13.181,
+      "end": 14.051
+    },
+    {
+      "w": "repulsion",
+      "start": 14.062,
+      "end": 14.654
+    },
+    {
+      "w": "and",
+      "start": 14.665,
+      "end": 14.777
+    },
+    {
+      "w": "the",
+      "start": 14.788,
+      "end": 14.866
+    },
+    {
+      "w": "Pauli",
+      "start": 14.877,
+      "end": 15.167
+    },
+    {
+      "w": "exclusion",
+      "start": 15.179,
+      "end": 15.703
+    },
+    {
+      "w": "principle",
+      "start": 15.714,
+      "end": 16.261
+    },
+    {
+      "w": "Identical",
+      "start": 17.042,
+      "end": 17.567
+    },
+    {
+      "w": "negative",
+      "start": 17.578,
+      "end": 17.946
+    },
+    {
+      "w": "charges",
+      "start": 17.958,
+      "end": 18.404
+    },
+    {
+      "w": "repel",
+      "start": 18.415,
+      "end": 18.75
+    },
+    {
+      "w": "each",
+      "start": 18.761,
+      "end": 18.895
+    },
+    {
+      "w": "other",
+      "start": 18.906,
+      "end": 19.163
+    },
+    {
+      "w": "before",
+      "start": 19.174,
+      "end": 19.498
+    },
+    {
+      "w": "they",
+      "start": 19.509,
+      "end": 19.609
+    },
+    {
+      "w": "can",
+      "start": 19.621,
+      "end": 19.766
+    },
+    {
+      "w": "meet",
+      "start": 19.777,
+      "end": 20.123
+    },
+    {
+      "w": "So",
+      "start": 20.893,
+      "end": 21.094
+    },
+    {
+      "w": "you",
+      "start": 21.105,
+      "end": 21.261
+    },
+    {
+      "w": "are",
+      "start": 21.272,
+      "end": 21.362
+    },
+    {
+      "w": "never",
+      "start": 21.373,
+      "end": 21.629
+    },
+    {
+      "w": "touching",
+      "start": 21.641,
+      "end": 22.02
+    },
+    {
+      "w": "anything",
+      "start": 22.031,
+      "end": 22.522
+    },
+    {
+      "w": "You",
+      "start": 23.304,
+      "end": 23.482
+    },
+    {
+      "w": "are",
+      "start": 23.493,
+      "end": 23.583
+    },
+    {
+      "w": "hovering",
+      "start": 23.594,
+      "end": 24.007
+    },
+    {
+      "w": "on",
+      "start": 24.163,
+      "end": 24.252
+    },
+    {
+      "w": "a",
+      "start": 24.263,
+      "end": 24.297
+    },
+    {
+      "w": "microscopic",
+      "start": 24.308,
+      "end": 25.022
+    },
+    {
+      "w": "cushion",
+      "start": 25.034,
+      "end": 25.346
+    },
+    {
+      "w": "of",
+      "start": 25.357,
+      "end": 25.435
+    },
+    {
+      "w": "energy",
+      "start": 25.446,
+      "end": 25.96
+    }
+  ],
+  "totalDuration": 28.736
+}

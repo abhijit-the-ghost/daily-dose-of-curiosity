@@ -1,0 +1,1200 @@
+{
+  "title": "Space games lie about sound",
+  "series": "game-physics",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0,
+  "gap": 0,
+  "tail": 3.4,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "Space games lie about sound",
+      "file": "full_voiceover.mp3",
+      "duration": 30.6,
+      "start": 0,
+      "end": 30.6,
+      "words": [
+        {
+          "w": "Many",
+          "start": 0.095,
+          "end": 0.396
+        },
+        {
+          "w": "space",
+          "start": 0.407,
+          "end": 0.72
+        },
+        {
+          "w": "games",
+          "start": 0.731,
+          "end": 1.054
+        },
+        {
+          "w": "make",
+          "start": 1.066,
+          "end": 1.233
+        },
+        {
+          "w": "explosions",
+          "start": 1.244,
+          "end": 1.88
+        },
+        {
+          "w": "loud",
+          "start": 1.891,
+          "end": 2.304
+        },
+        {
+          "w": "Real",
+          "start": 3.08,
+          "end": 3.371
+        },
+        {
+          "w": "space",
+          "start": 3.382,
+          "end": 3.717
+        },
+        {
+          "w": "would",
+          "start": 3.728,
+          "end": 3.839
+        },
+        {
+          "w": "give",
+          "start": 3.85,
+          "end": 4.007
+        },
+        {
+          "w": "you",
+          "start": 4.018,
+          "end": 4.13
+        },
+        {
+          "w": "silence",
+          "start": 4.141,
+          "end": 4.754
+        },
+        {
+          "w": "Sound",
+          "start": 5.525,
+          "end": 5.882
+        },
+        {
+          "w": "is",
+          "start": 5.893,
+          "end": 5.971
+        },
+        {
+          "w": "a",
+          "start": 5.982,
+          "end": 6.049
+        },
+        {
+          "w": "wave",
+          "start": 6.06,
+          "end": 6.306
+        },
+        {
+          "w": "that",
+          "start": 6.317,
+          "end": 6.417
+        },
+        {
+          "w": "needs",
+          "start": 6.429,
+          "end": 6.641
+        },
+        {
+          "w": "matter",
+          "start": 6.652,
+          "end": 6.998
+        },
+        {
+          "w": "a",
+          "start": 7.143,
+          "end": 7.188
+        },
+        {
+          "w": "solid",
+          "start": 7.199,
+          "end": 7.589
+        },
+        {
+          "w": "liquid",
+          "start": 7.768,
+          "end": 8.147
+        },
+        {
+          "w": "or",
+          "start": 8.281,
+          "end": 8.438
+        },
+        {
+          "w": "gas",
+          "start": 8.449,
+          "end": 8.906
+        },
+        {
+          "w": "Space",
+          "start": 9.688,
+          "end": 10.112
+        },
+        {
+          "w": "has",
+          "start": 10.123,
+          "end": 10.268
+        },
+        {
+          "w": "almost",
+          "start": 10.279,
+          "end": 10.614
+        },
+        {
+          "w": "none",
+          "start": 10.625,
+          "end": 10.982
+        },
+        {
+          "w": "Dead",
+          "start": 11.763,
+          "end": 12.042
+        },
+        {
+          "w": "Space",
+          "start": 12.054,
+          "end": 12.4
+        },
+        {
+          "w": "2",
+          "start": 12.411,
+          "end": 12.656
+        },
+        {
+          "w": "even",
+          "start": 12.667,
+          "end": 12.935
+        },
+        {
+          "w": "goes",
+          "start": 12.946,
+          "end": 13.192
+        },
+        {
+          "w": "nearly",
+          "start": 13.203,
+          "end": 13.504
+        },
+        {
+          "w": "silent",
+          "start": 13.516,
+          "end": 13.906
+        },
+        {
+          "w": "when",
+          "start": 13.917,
+          "end": 14.029
+        },
+        {
+          "w": "you",
+          "start": 14.04,
+          "end": 14.129
+        },
+        {
+          "w": "float",
+          "start": 14.141,
+          "end": 14.375
+        },
+        {
+          "w": "outside",
+          "start": 14.386,
+          "end": 14.989
+        },
+        {
+          "w": "But",
+          "start": 15.759,
+          "end": 15.904
+        },
+        {
+          "w": "here's",
+          "start": 15.915,
+          "end": 16.15
+        },
+        {
+          "w": "the",
+          "start": 16.161,
+          "end": 16.25
+        },
+        {
+          "w": "twist",
+          "start": 16.261,
+          "end": 16.741
+        },
+        {
+          "w": "A",
+          "start": 17.511,
+          "end": 17.634
+        },
+        {
+          "w": "galaxy",
+          "start": 17.645,
+          "end": 18.091
+        },
+        {
+          "w": "cluster",
+          "start": 18.103,
+          "end": 18.527
+        },
+        {
+          "w": "holds",
+          "start": 18.538,
+          "end": 18.772
+        },
+        {
+          "w": "enough",
+          "start": 18.784,
+          "end": 19.029
+        },
+        {
+          "w": "gas",
+          "start": 19.04,
+          "end": 19.341
+        },
+        {
+          "w": "to",
+          "start": 19.353,
+          "end": 19.442
+        },
+        {
+          "w": "carry",
+          "start": 19.453,
+          "end": 19.721
+        },
+        {
+          "w": "sound",
+          "start": 19.732,
+          "end": 20.212
+        },
+        {
+          "w": "NASA's",
+          "start": 20.993,
+          "end": 21.451
+        },
+        {
+          "w": "Chandra",
+          "start": 21.462,
+          "end": 21.763
+        },
+        {
+          "w": "telescope",
+          "start": 21.775,
+          "end": 22.344
+        },
+        {
+          "w": "spotted",
+          "start": 22.355,
+          "end": 22.723
+        },
+        {
+          "w": "ripples",
+          "start": 22.734,
+          "end": 23.047
+        },
+        {
+          "w": "astronomers",
+          "start": 23.058,
+          "end": 23.65
+        },
+        {
+          "w": "read",
+          "start": 23.661,
+          "end": 23.884
+        },
+        {
+          "w": "as",
+          "start": 23.895,
+          "end": 24.018
+        },
+        {
+          "w": "sound",
+          "start": 24.029,
+          "end": 24.297
+        },
+        {
+          "w": "waves",
+          "start": 24.308,
+          "end": 24.665
+        },
+        {
+          "w": "a",
+          "start": 24.933,
+          "end": 25.011
+        },
+        {
+          "w": "B-flat",
+          "start": 25.022,
+          "end": 25.547
+        },
+        {
+          "w": "fifty-seven",
+          "start": 25.781,
+          "end": 26.362
+        },
+        {
+          "w": "octaves",
+          "start": 26.373,
+          "end": 26.864
+        },
+        {
+          "w": "below",
+          "start": 26.875,
+          "end": 27.165
+        },
+        {
+          "w": "middle",
+          "start": 27.176,
+          "end": 27.411
+        },
+        {
+          "w": "C",
+          "start": 27.422,
+          "end": 27.779
+        },
+        {
+          "w": "Far",
+          "start": 28.56,
+          "end": 28.884
+        },
+        {
+          "w": "too",
+          "start": 28.895,
+          "end": 29.096
+        },
+        {
+          "w": "deep",
+          "start": 29.107,
+          "end": 29.341
+        },
+        {
+          "w": "to",
+          "start": 29.353,
+          "end": 29.42
+        },
+        {
+          "w": "hear",
+          "start": 29.431,
+          "end": 29.821
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "claim",
+      "index": 1,
+      "label": "ACT 1 — THE CLAIM",
+      "caption": "ACT 1 — THE CLAIM",
+      "file": "full_voiceover.mp3",
+      "duration": 4.659,
+      "start": 0.095,
+      "end": 4.754,
+      "words": [
+        {
+          "w": "Many",
+          "start": 0.095,
+          "end": 0.396
+        },
+        {
+          "w": "space",
+          "start": 0.407,
+          "end": 0.72
+        },
+        {
+          "w": "games",
+          "start": 0.731,
+          "end": 1.054
+        },
+        {
+          "w": "make",
+          "start": 1.066,
+          "end": 1.233
+        },
+        {
+          "w": "explosions",
+          "start": 1.244,
+          "end": 1.88
+        },
+        {
+          "w": "loud",
+          "start": 1.891,
+          "end": 2.304
+        },
+        {
+          "w": "Real",
+          "start": 3.08,
+          "end": 3.371
+        },
+        {
+          "w": "space",
+          "start": 3.382,
+          "end": 3.717
+        },
+        {
+          "w": "would",
+          "start": 3.728,
+          "end": 3.839
+        },
+        {
+          "w": "give",
+          "start": 3.85,
+          "end": 4.007
+        },
+        {
+          "w": "you",
+          "start": 4.018,
+          "end": 4.13
+        },
+        {
+          "w": "silence",
+          "start": 4.141,
+          "end": 4.754
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "index": 2,
+      "label": "ACT 2 — THE PHYSICS",
+      "caption": "ACT 2 — THE PHYSICS",
+      "file": "full_voiceover.mp3",
+      "duration": 9.464,
+      "start": 5.525,
+      "end": 14.989,
+      "words": [
+        {
+          "w": "Sound",
+          "start": 5.525,
+          "end": 5.882
+        },
+        {
+          "w": "is",
+          "start": 5.893,
+          "end": 5.971
+        },
+        {
+          "w": "a",
+          "start": 5.982,
+          "end": 6.049
+        },
+        {
+          "w": "wave",
+          "start": 6.06,
+          "end": 6.306
+        },
+        {
+          "w": "that",
+          "start": 6.317,
+          "end": 6.417
+        },
+        {
+          "w": "needs",
+          "start": 6.429,
+          "end": 6.641
+        },
+        {
+          "w": "matter",
+          "start": 6.652,
+          "end": 6.998
+        },
+        {
+          "w": "a",
+          "start": 7.143,
+          "end": 7.188
+        },
+        {
+          "w": "solid",
+          "start": 7.199,
+          "end": 7.589
+        },
+        {
+          "w": "liquid",
+          "start": 7.768,
+          "end": 8.147
+        },
+        {
+          "w": "or",
+          "start": 8.281,
+          "end": 8.438
+        },
+        {
+          "w": "gas",
+          "start": 8.449,
+          "end": 8.906
+        },
+        {
+          "w": "Space",
+          "start": 9.688,
+          "end": 10.112
+        },
+        {
+          "w": "has",
+          "start": 10.123,
+          "end": 10.268
+        },
+        {
+          "w": "almost",
+          "start": 10.279,
+          "end": 10.614
+        },
+        {
+          "w": "none",
+          "start": 10.625,
+          "end": 10.982
+        },
+        {
+          "w": "Dead",
+          "start": 11.763,
+          "end": 12.042
+        },
+        {
+          "w": "Space",
+          "start": 12.054,
+          "end": 12.4
+        },
+        {
+          "w": "2",
+          "start": 12.411,
+          "end": 12.656
+        },
+        {
+          "w": "even",
+          "start": 12.667,
+          "end": 12.935
+        },
+        {
+          "w": "goes",
+          "start": 12.946,
+          "end": 13.192
+        },
+        {
+          "w": "nearly",
+          "start": 13.203,
+          "end": 13.504
+        },
+        {
+          "w": "silent",
+          "start": 13.516,
+          "end": 13.906
+        },
+        {
+          "w": "when",
+          "start": 13.917,
+          "end": 14.029
+        },
+        {
+          "w": "you",
+          "start": 14.04,
+          "end": 14.129
+        },
+        {
+          "w": "float",
+          "start": 14.141,
+          "end": 14.375
+        },
+        {
+          "w": "outside",
+          "start": 14.386,
+          "end": 14.989
+        }
+      ]
+    },
+    {
+      "id": "twist",
+      "index": 3,
+      "label": "ACT 3 — THE TWIST",
+      "caption": "ACT 3 — THE TWIST",
+      "file": "full_voiceover.mp3",
+      "duration": 14.062,
+      "start": 15.759,
+      "end": 29.821,
+      "words": [
+        {
+          "w": "But",
+          "start": 15.759,
+          "end": 15.904
+        },
+        {
+          "w": "here's",
+          "start": 15.915,
+          "end": 16.15
+        },
+        {
+          "w": "the",
+          "start": 16.161,
+          "end": 16.25
+        },
+        {
+          "w": "twist",
+          "start": 16.261,
+          "end": 16.741
+        },
+        {
+          "w": "A",
+          "start": 17.511,
+          "end": 17.634
+        },
+        {
+          "w": "galaxy",
+          "start": 17.645,
+          "end": 18.091
+        },
+        {
+          "w": "cluster",
+          "start": 18.103,
+          "end": 18.527
+        },
+        {
+          "w": "holds",
+          "start": 18.538,
+          "end": 18.772
+        },
+        {
+          "w": "enough",
+          "start": 18.784,
+          "end": 19.029
+        },
+        {
+          "w": "gas",
+          "start": 19.04,
+          "end": 19.341
+        },
+        {
+          "w": "to",
+          "start": 19.353,
+          "end": 19.442
+        },
+        {
+          "w": "carry",
+          "start": 19.453,
+          "end": 19.721
+        },
+        {
+          "w": "sound",
+          "start": 19.732,
+          "end": 20.212
+        },
+        {
+          "w": "NASA's",
+          "start": 20.993,
+          "end": 21.451
+        },
+        {
+          "w": "Chandra",
+          "start": 21.462,
+          "end": 21.763
+        },
+        {
+          "w": "telescope",
+          "start": 21.775,
+          "end": 22.344
+        },
+        {
+          "w": "spotted",
+          "start": 22.355,
+          "end": 22.723
+        },
+        {
+          "w": "ripples",
+          "start": 22.734,
+          "end": 23.047
+        },
+        {
+          "w": "astronomers",
+          "start": 23.058,
+          "end": 23.65
+        },
+        {
+          "w": "read",
+          "start": 23.661,
+          "end": 23.884
+        },
+        {
+          "w": "as",
+          "start": 23.895,
+          "end": 24.018
+        },
+        {
+          "w": "sound",
+          "start": 24.029,
+          "end": 24.297
+        },
+        {
+          "w": "waves",
+          "start": 24.308,
+          "end": 24.665
+        },
+        {
+          "w": "a",
+          "start": 24.933,
+          "end": 25.011
+        },
+        {
+          "w": "B-flat",
+          "start": 25.022,
+          "end": 25.547
+        },
+        {
+          "w": "fifty-seven",
+          "start": 25.781,
+          "end": 26.362
+        },
+        {
+          "w": "octaves",
+          "start": 26.373,
+          "end": 26.864
+        },
+        {
+          "w": "below",
+          "start": 26.875,
+          "end": 27.165
+        },
+        {
+          "w": "middle",
+          "start": 27.176,
+          "end": 27.411
+        },
+        {
+          "w": "C",
+          "start": 27.422,
+          "end": 27.779
+        },
+        {
+          "w": "Far",
+          "start": 28.56,
+          "end": 28.884
+        },
+        {
+          "w": "too",
+          "start": 28.895,
+          "end": 29.096
+        },
+        {
+          "w": "deep",
+          "start": 29.107,
+          "end": 29.341
+        },
+        {
+          "w": "to",
+          "start": 29.353,
+          "end": 29.42
+        },
+        {
+          "w": "hear",
+          "start": 29.431,
+          "end": 29.821
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "Many",
+      "start": 0.095,
+      "end": 0.396
+    },
+    {
+      "w": "space",
+      "start": 0.407,
+      "end": 0.72
+    },
+    {
+      "w": "games",
+      "start": 0.731,
+      "end": 1.054
+    },
+    {
+      "w": "make",
+      "start": 1.066,
+      "end": 1.233
+    },
+    {
+      "w": "explosions",
+      "start": 1.244,
+      "end": 1.88
+    },
+    {
+      "w": "loud",
+      "start": 1.891,
+      "end": 2.304
+    },
+    {
+      "w": "Real",
+      "start": 3.08,
+      "end": 3.371
+    },
+    {
+      "w": "space",
+      "start": 3.382,
+      "end": 3.717
+    },
+    {
+      "w": "would",
+      "start": 3.728,
+      "end": 3.839
+    },
+    {
+      "w": "give",
+      "start": 3.85,
+      "end": 4.007
+    },
+    {
+      "w": "you",
+      "start": 4.018,
+      "end": 4.13
+    },
+    {
+      "w": "silence",
+      "start": 4.141,
+      "end": 4.754
+    },
+    {
+      "w": "Sound",
+      "start": 5.525,
+      "end": 5.882
+    },
+    {
+      "w": "is",
+      "start": 5.893,
+      "end": 5.971
+    },
+    {
+      "w": "a",
+      "start": 5.982,
+      "end": 6.049
+    },
+    {
+      "w": "wave",
+      "start": 6.06,
+      "end": 6.306
+    },
+    {
+      "w": "that",
+      "start": 6.317,
+      "end": 6.417
+    },
+    {
+      "w": "needs",
+      "start": 6.429,
+      "end": 6.641
+    },
+    {
+      "w": "matter",
+      "start": 6.652,
+      "end": 6.998
+    },
+    {
+      "w": "a",
+      "start": 7.143,
+      "end": 7.188
+    },
+    {
+      "w": "solid",
+      "start": 7.199,
+      "end": 7.589
+    },
+    {
+      "w": "liquid",
+      "start": 7.768,
+      "end": 8.147
+    },
+    {
+      "w": "or",
+      "start": 8.281,
+      "end": 8.438
+    },
+    {
+      "w": "gas",
+      "start": 8.449,
+      "end": 8.906
+    },
+    {
+      "w": "Space",
+      "start": 9.688,
+      "end": 10.112
+    },
+    {
+      "w": "has",
+      "start": 10.123,
+      "end": 10.268
+    },
+    {
+      "w": "almost",
+      "start": 10.279,
+      "end": 10.614
+    },
+    {
+      "w": "none",
+      "start": 10.625,
+      "end": 10.982
+    },
+    {
+      "w": "Dead",
+      "start": 11.763,
+      "end": 12.042
+    },
+    {
+      "w": "Space",
+      "start": 12.054,
+      "end": 12.4
+    },
+    {
+      "w": "2",
+      "start": 12.411,
+      "end": 12.656
+    },
+    {
+      "w": "even",
+      "start": 12.667,
+      "end": 12.935
+    },
+    {
+      "w": "goes",
+      "start": 12.946,
+      "end": 13.192
+    },
+    {
+      "w": "nearly",
+      "start": 13.203,
+      "end": 13.504
+    },
+    {
+      "w": "silent",
+      "start": 13.516,
+      "end": 13.906
+    },
+    {
+      "w": "when",
+      "start": 13.917,
+      "end": 14.029
+    },
+    {
+      "w": "you",
+      "start": 14.04,
+      "end": 14.129
+    },
+    {
+      "w": "float",
+      "start": 14.141,
+      "end": 14.375
+    },
+    {
+      "w": "outside",
+      "start": 14.386,
+      "end": 14.989
+    },
+    {
+      "w": "But",
+      "start": 15.759,
+      "end": 15.904
+    },
+    {
+      "w": "here's",
+      "start": 15.915,
+      "end": 16.15
+    },
+    {
+      "w": "the",
+      "start": 16.161,
+      "end": 16.25
+    },
+    {
+      "w": "twist",
+      "start": 16.261,
+      "end": 16.741
+    },
+    {
+      "w": "A",
+      "start": 17.511,
+      "end": 17.634
+    },
+    {
+      "w": "galaxy",
+      "start": 17.645,
+      "end": 18.091
+    },
+    {
+      "w": "cluster",
+      "start": 18.103,
+      "end": 18.527
+    },
+    {
+      "w": "holds",
+      "start": 18.538,
+      "end": 18.772
+    },
+    {
+      "w": "enough",
+      "start": 18.784,
+      "end": 19.029
+    },
+    {
+      "w": "gas",
+      "start": 19.04,
+      "end": 19.341
+    },
+    {
+      "w": "to",
+      "start": 19.353,
+      "end": 19.442
+    },
+    {
+      "w": "carry",
+      "start": 19.453,
+      "end": 19.721
+    },
+    {
+      "w": "sound",
+      "start": 19.732,
+      "end": 20.212
+    },
+    {
+      "w": "NASA's",
+      "start": 20.993,
+      "end": 21.451
+    },
+    {
+      "w": "Chandra",
+      "start": 21.462,
+      "end": 21.763
+    },
+    {
+      "w": "telescope",
+      "start": 21.775,
+      "end": 22.344
+    },
+    {
+      "w": "spotted",
+      "start": 22.355,
+      "end": 22.723
+    },
+    {
+      "w": "ripples",
+      "start": 22.734,
+      "end": 23.047
+    },
+    {
+      "w": "astronomers",
+      "start": 23.058,
+      "end": 23.65
+    },
+    {
+      "w": "read",
+      "start": 23.661,
+      "end": 23.884
+    },
+    {
+      "w": "as",
+      "start": 23.895,
+      "end": 24.018
+    },
+    {
+      "w": "sound",
+      "start": 24.029,
+      "end": 24.297
+    },
+    {
+      "w": "waves",
+      "start": 24.308,
+      "end": 24.665
+    },
+    {
+      "w": "a",
+      "start": 24.933,
+      "end": 25.011
+    },
+    {
+      "w": "B-flat",
+      "start": 25.022,
+      "end": 25.547
+    },
+    {
+      "w": "fifty-seven",
+      "start": 25.781,
+      "end": 26.362
+    },
+    {
+      "w": "octaves",
+      "start": 26.373,
+      "end": 26.864
+    },
+    {
+      "w": "below",
+      "start": 26.875,
+      "end": 27.165
+    },
+    {
+      "w": "middle",
+      "start": 27.176,
+      "end": 27.411
+    },
+    {
+      "w": "C",
+      "start": 27.422,
+      "end": 27.779
+    },
+    {
+      "w": "Far",
+      "start": 28.56,
+      "end": 28.884
+    },
+    {
+      "w": "too",
+      "start": 28.895,
+      "end": 29.096
+    },
+    {
+      "w": "deep",
+      "start": 29.107,
+      "end": 29.341
+    },
+    {
+      "w": "to",
+      "start": 29.353,
+      "end": 29.42
+    },
+    {
+      "w": "hear",
+      "start": 29.431,
+      "end": 29.821
+    }
+  ],
+  "totalDuration": 34,
+  "anchors": {
+    "act1": [
+      "explosions",
+      "Real",
+      "silence"
+    ],
+    "act2": [
+      "Sound",
+      "solid",
+      "liquid",
+      "gas",
+      "Space",
+      "Dead"
+    ],
+    "act3": [
+      "twist",
+      "cluster",
+      "Chandra",
+      "B-flat",
+      "fifty-seven",
+      "hear"
+    ]
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "title": "What actually happens when you type a URL?",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.4,
+  "gap": 0.6,
+  "tail": 1.6,
+  "acts": [
+    {
+      "id": "dns",
+      "index": 1,
+      "label": "ACT 1",
+      "caption": "DNS \u2014 the internet's phonebook",
+      "file": "act1_dns.mp3",
+      "duration": 20.76,
+      "start": 0.4,
+      "end": 21.16,
+      "words": [
+        {
+          "w": "You",
+          "start": 0.095,
+          "end": 0.251
+        },
+        {
+          "w": "type",
+          "start": 0.262,
+          "end": 0.541
+        },
+        {
+          "w": "google",
+          "start": 0.552,
+          "end": 0.82
+        },
+        {
+          "w": "dot",
+          "start": 0.831,
+          "end": 1.043
+        },
+        {
+          "w": "com",
+          "start": 1.054,
+          "end": 1.345
+        },
+        {
+          "w": "and",
+          "start": 1.356,
+          "end": 1.434
+        },
+        {
+          "w": "hit",
+          "start": 1.445,
+          "end": 1.657
+        },
+        {
+          "w": "enter",
+          "start": 1.668,
+          "end": 2.059
+        },
+        {
+          "w": "But",
+          "start": 2.835,
+          "end": 3.013
+        },
+        {
+          "w": "your",
+          "start": 3.025,
+          "end": 3.158
+        },
+        {
+          "w": "computer",
+          "start": 3.17,
+          "end": 3.594
+        },
+        {
+          "w": "has",
+          "start": 3.605,
+          "end": 3.795
+        },
+        {
+          "w": "no",
+          "start": 3.806,
+          "end": 3.996
+        },
+        {
+          "w": "idea",
+          "start": 4.007,
+          "end": 4.364
+        },
+        {
+          "w": "where",
+          "start": 4.375,
+          "end": 4.52
+        },
+        {
+          "w": "google",
+          "start": 4.531,
+          "end": 4.81
+        },
+        {
+          "w": "dot",
+          "start": 4.821,
+          "end": 5.045
+        },
+        {
+          "w": "com",
+          "start": 5.056,
+          "end": 5.324
+        },
+        {
+          "w": "actually",
+          "start": 5.335,
+          "end": 5.737
+        },
+        {
+          "w": "lives",
+          "start": 5.748,
+          "end": 6.239
+        },
+        {
+          "w": "So",
+          "start": 7.009,
+          "end": 7.288
+        },
+        {
+          "w": "first",
+          "start": 7.299,
+          "end": 7.69
+        },
+        {
+          "w": "it",
+          "start": 7.824,
+          "end": 7.913
+        },
+        {
+          "w": "asks",
+          "start": 7.924,
+          "end": 8.27
+        },
+        {
+          "w": "the",
+          "start": 8.281,
+          "end": 8.382
+        },
+        {
+          "w": "DNS",
+          "start": 8.393,
+          "end": 8.951
+        },
+        {
+          "w": "think",
+          "start": 9.107,
+          "end": 9.297
+        },
+        {
+          "w": "of",
+          "start": 9.308,
+          "end": 9.386
+        },
+        {
+          "w": "it",
+          "start": 9.397,
+          "end": 9.52
+        },
+        {
+          "w": "as",
+          "start": 9.531,
+          "end": 9.643
+        },
+        {
+          "w": "the",
+          "start": 9.654,
+          "end": 9.743
+        },
+        {
+          "w": "internet's",
+          "start": 9.754,
+          "end": 10.212
+        },
+        {
+          "w": "phonebook",
+          "start": 10.223,
+          "end": 10.714
+        },
+        {
+          "w": "and",
+          "start": 10.949,
+          "end": 11.027
+        },
+        {
+          "w": "the",
+          "start": 11.038,
+          "end": 11.116
+        },
+        {
+          "w": "DNS",
+          "start": 11.127,
+          "end": 11.562
+        },
+        {
+          "w": "answers",
+          "start": 11.574,
+          "end": 11.998
+        },
+        {
+          "w": "with",
+          "start": 12.009,
+          "end": 12.121
+        },
+        {
+          "w": "an",
+          "start": 12.132,
+          "end": 12.266
+        },
+        {
+          "w": "IP",
+          "start": 12.277,
+          "end": 12.6
+        },
+        {
+          "w": "address",
+          "start": 12.612,
+          "end": 13.036
+        },
+        {
+          "w": "142",
+          "start": 13.315,
+          "end": 14.33
+        },
+        {
+          "w": "dot",
+          "start": 14.341,
+          "end": 14.587
+        },
+        {
+          "w": "250",
+          "start": 14.598,
+          "end": 15.368
+        },
+        {
+          "w": "dot",
+          "start": 15.379,
+          "end": 15.603
+        },
+        {
+          "w": "72",
+          "start": 15.614,
+          "end": 16.205
+        },
+        {
+          "w": "dot",
+          "start": 16.216,
+          "end": 16.429
+        },
+        {
+          "w": "14",
+          "start": 16.44,
+          "end": 16.998
+        },
+        {
+          "w": "Now",
+          "start": 17.768,
+          "end": 18.002
+        },
+        {
+          "w": "your",
+          "start": 18.013,
+          "end": 18.17
+        },
+        {
+          "w": "computer",
+          "start": 18.181,
+          "end": 18.65
+        },
+        {
+          "w": "finally",
+          "start": 18.661,
+          "end": 19.04
+        },
+        {
+          "w": "knows",
+          "start": 19.051,
+          "end": 19.341
+        },
+        {
+          "w": "where",
+          "start": 19.353,
+          "end": 19.509
+        },
+        {
+          "w": "to",
+          "start": 19.52,
+          "end": 19.609
+        },
+        {
+          "w": "go",
+          "start": 19.621,
+          "end": 19.967
+        }
+      ]
+    },
+    {
+      "id": "routing",
+      "index": 2,
+      "label": "ACT 2",
+      "caption": "Routing \u2014 across the globe in milliseconds",
+      "file": "act2_routing.mp3",
+      "duration": 16.416,
+      "start": 21.76,
+      "end": 38.176,
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.095,
+          "end": 0.541
+        },
+        {
+          "w": "your",
+          "start": 0.664,
+          "end": 0.787
+        },
+        {
+          "w": "request",
+          "start": 0.798,
+          "end": 1.233
+        },
+        {
+          "w": "hits",
+          "start": 1.244,
+          "end": 1.456
+        },
+        {
+          "w": "the",
+          "start": 1.467,
+          "end": 1.568
+        },
+        {
+          "w": "road",
+          "start": 1.579,
+          "end": 1.97
+        },
+        {
+          "w": "It",
+          "start": 2.734,
+          "end": 2.913
+        },
+        {
+          "w": "travels",
+          "start": 2.924,
+          "end": 3.315
+        },
+        {
+          "w": "from",
+          "start": 3.326,
+          "end": 3.449
+        },
+        {
+          "w": "your",
+          "start": 3.46,
+          "end": 3.583
+        },
+        {
+          "w": "laptop",
+          "start": 3.594,
+          "end": 4.107
+        },
+        {
+          "w": "to",
+          "start": 4.263,
+          "end": 4.353
+        },
+        {
+          "w": "your",
+          "start": 4.364,
+          "end": 4.498
+        },
+        {
+          "w": "router",
+          "start": 4.509,
+          "end": 4.9
+        },
+        {
+          "w": "to",
+          "start": 5.034,
+          "end": 5.134
+        },
+        {
+          "w": "your",
+          "start": 5.145,
+          "end": 5.234
+        },
+        {
+          "w": "internet",
+          "start": 5.246,
+          "end": 5.681
+        },
+        {
+          "w": "provider",
+          "start": 5.692,
+          "end": 6.138
+        },
+        {
+          "w": "then",
+          "start": 6.339,
+          "end": 6.484
+        },
+        {
+          "w": "across",
+          "start": 6.496,
+          "end": 6.853
+        },
+        {
+          "w": "massive",
+          "start": 6.864,
+          "end": 7.254
+        },
+        {
+          "w": "backbone",
+          "start": 7.266,
+          "end": 7.712
+        },
+        {
+          "w": "cables",
+          "start": 7.723,
+          "end": 8.158
+        },
+        {
+          "w": "some",
+          "start": 8.359,
+          "end": 8.56
+        },
+        {
+          "w": "buried",
+          "start": 8.571,
+          "end": 8.94
+        },
+        {
+          "w": "under",
+          "start": 8.951,
+          "end": 9.129
+        },
+        {
+          "w": "the",
+          "start": 9.141,
+          "end": 9.23
+        },
+        {
+          "w": "ocean",
+          "start": 9.241,
+          "end": 9.554
+        },
+        {
+          "w": "floor",
+          "start": 9.565,
+          "end": 9.978
+        },
+        {
+          "w": "Bouncing",
+          "start": 10.759,
+          "end": 11.205
+        },
+        {
+          "w": "through",
+          "start": 11.216,
+          "end": 11.373
+        },
+        {
+          "w": "country",
+          "start": 11.384,
+          "end": 11.741
+        },
+        {
+          "w": "after",
+          "start": 11.752,
+          "end": 12.009
+        },
+        {
+          "w": "country",
+          "start": 12.02,
+          "end": 12.377
+        },
+        {
+          "w": "router",
+          "start": 12.645,
+          "end": 12.958
+        },
+        {
+          "w": "after",
+          "start": 12.969,
+          "end": 13.248
+        },
+        {
+          "w": "router",
+          "start": 13.259,
+          "end": 13.616
+        },
+        {
+          "w": "until",
+          "start": 13.862,
+          "end": 14.107
+        },
+        {
+          "w": "it",
+          "start": 14.118,
+          "end": 14.219
+        },
+        {
+          "w": "reaches",
+          "start": 14.23,
+          "end": 14.565
+        },
+        {
+          "w": "Google's",
+          "start": 14.576,
+          "end": 14.922
+        },
+        {
+          "w": "data",
+          "start": 14.933,
+          "end": 15.179
+        },
+        {
+          "w": "center",
+          "start": 15.19,
+          "end": 15.636
+        }
+      ]
+    },
+    {
+      "id": "server",
+      "index": 3,
+      "label": "ACT 3",
+      "caption": "Server \u2014 and back in a blink",
+      "file": "act3_server.mp3",
+      "duration": 19.08,
+      "start": 38.776,
+      "end": 57.856,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.095,
+          "end": 0.262
+        },
+        {
+          "w": "server",
+          "start": 0.273,
+          "end": 0.619
+        },
+        {
+          "w": "receives",
+          "start": 0.63,
+          "end": 1.01
+        },
+        {
+          "w": "your",
+          "start": 1.021,
+          "end": 1.121
+        },
+        {
+          "w": "request",
+          "start": 1.133,
+          "end": 1.679
+        },
+        {
+          "w": "whips",
+          "start": 1.847,
+          "end": 2.115
+        },
+        {
+          "w": "up",
+          "start": 2.126,
+          "end": 2.26
+        },
+        {
+          "w": "the",
+          "start": 2.271,
+          "end": 2.36
+        },
+        {
+          "w": "page",
+          "start": 2.371,
+          "end": 2.729
+        },
+        {
+          "w": "HTML",
+          "start": 2.874,
+          "end": 3.688
+        },
+        {
+          "w": "CSS",
+          "start": 3.811,
+          "end": 4.436
+        },
+        {
+          "w": "JavaScript",
+          "start": 4.637,
+          "end": 5.262
+        },
+        {
+          "w": "images",
+          "start": 5.396,
+          "end": 5.898
+        },
+        {
+          "w": "and",
+          "start": 6.066,
+          "end": 6.222
+        },
+        {
+          "w": "sends",
+          "start": 6.233,
+          "end": 6.557
+        },
+        {
+          "w": "everything",
+          "start": 6.568,
+          "end": 6.958
+        },
+        {
+          "w": "back",
+          "start": 6.97,
+          "end": 7.204
+        },
+        {
+          "w": "in",
+          "start": 7.215,
+          "end": 7.293
+        },
+        {
+          "w": "tiny",
+          "start": 7.304,
+          "end": 7.595
+        },
+        {
+          "w": "packets",
+          "start": 7.606,
+          "end": 8.108
+        },
+        {
+          "w": "right",
+          "start": 8.287,
+          "end": 8.454
+        },
+        {
+          "w": "along",
+          "start": 8.465,
+          "end": 8.711
+        },
+        {
+          "w": "the",
+          "start": 8.722,
+          "end": 8.8
+        },
+        {
+          "w": "same",
+          "start": 8.811,
+          "end": 9.046
+        },
+        {
+          "w": "path",
+          "start": 9.057,
+          "end": 9.492
+        },
+        {
+          "w": "Your",
+          "start": 10.268,
+          "end": 10.446
+        },
+        {
+          "w": "browser",
+          "start": 10.458,
+          "end": 10.871
+        },
+        {
+          "w": "stitches",
+          "start": 10.882,
+          "end": 11.239
+        },
+        {
+          "w": "them",
+          "start": 11.25,
+          "end": 11.395
+        },
+        {
+          "w": "all",
+          "start": 11.406,
+          "end": 11.574
+        },
+        {
+          "w": "together",
+          "start": 11.585,
+          "end": 11.998
+        },
+        {
+          "w": "and",
+          "start": 12.188,
+          "end": 12.31
+        },
+        {
+          "w": "boom",
+          "start": 12.321,
+          "end": 12.734
+        },
+        {
+          "w": "google",
+          "start": 13.504,
+          "end": 13.839
+        },
+        {
+          "w": "dot",
+          "start": 13.85,
+          "end": 14.074
+        },
+        {
+          "w": "com",
+          "start": 14.085,
+          "end": 14.353
+        },
+        {
+          "w": "loads",
+          "start": 14.364,
+          "end": 14.665
+        },
+        {
+          "w": "in",
+          "start": 14.676,
+          "end": 14.799
+        },
+        {
+          "w": "under",
+          "start": 14.81,
+          "end": 15.056
+        },
+        {
+          "w": "a",
+          "start": 15.067,
+          "end": 15.123
+        },
+        {
+          "w": "second",
+          "start": 15.134,
+          "end": 15.636
+        },
+        {
+          "w": "Follow",
+          "start": 16.406,
+          "end": 16.797
+        },
+        {
+          "w": "for",
+          "start": 16.808,
+          "end": 16.931
+        },
+        {
+          "w": "more",
+          "start": 16.942,
+          "end": 17.176
+        },
+        {
+          "w": "byte-sized",
+          "start": 17.188,
+          "end": 17.746
+        },
+        {
+          "w": "internet",
+          "start": 17.757,
+          "end": 18.281
+        }
+      ]
+    }
+  ],
+  "totalDuration": 59.456
+}

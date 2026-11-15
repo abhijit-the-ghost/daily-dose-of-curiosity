@@ -1,0 +1,1163 @@
+{
+  "title": "How long to walk to the edge of Minecraft?",
+  "series": "game-physics",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "How long to walk to the edge of Minecraft?",
+      "file": "full_voiceover.mp3",
+      "duration": 26.784,
+      "start": 0.0,
+      "end": 26.784,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.095,
+          "end": 0.273
+        },
+        {
+          "w": "long",
+          "start": 0.284,
+          "end": 0.541
+        },
+        {
+          "w": "does",
+          "start": 0.552,
+          "end": 0.664
+        },
+        {
+          "w": "it",
+          "start": 0.675,
+          "end": 0.753
+        },
+        {
+          "w": "take",
+          "start": 0.764,
+          "end": 0.987
+        },
+        {
+          "w": "to",
+          "start": 0.999,
+          "end": 1.077
+        },
+        {
+          "w": "walk",
+          "start": 1.088,
+          "end": 1.356
+        },
+        {
+          "w": "to",
+          "start": 1.367,
+          "end": 1.445
+        },
+        {
+          "w": "the",
+          "start": 1.456,
+          "end": 1.546
+        },
+        {
+          "w": "edge",
+          "start": 1.557,
+          "end": 1.802
+        },
+        {
+          "w": "of",
+          "start": 1.813,
+          "end": 1.88
+        },
+        {
+          "w": "Minecraft's",
+          "start": 1.891,
+          "end": 2.472
+        },
+        {
+          "w": "world",
+          "start": 2.483,
+          "end": 2.929
+        },
+        {
+          "w": "About",
+          "start": 3.694,
+          "end": 4.062
+        },
+        {
+          "w": "eighty",
+          "start": 4.074,
+          "end": 4.275
+        },
+        {
+          "w": "days",
+          "start": 4.286,
+          "end": 4.766
+        },
+        {
+          "w": "Nonstop",
+          "start": 5.547,
+          "end": 6.384
+        },
+        {
+          "w": "The",
+          "start": 7.143,
+          "end": 7.299
+        },
+        {
+          "w": "border",
+          "start": 7.31,
+          "end": 7.645
+        },
+        {
+          "w": "sits",
+          "start": 7.656,
+          "end": 7.891
+        },
+        {
+          "w": "about",
+          "start": 7.902,
+          "end": 8.17
+        },
+        {
+          "w": "thirty",
+          "start": 8.181,
+          "end": 8.426
+        },
+        {
+          "w": "million",
+          "start": 8.438,
+          "end": 8.784
+        },
+        {
+          "w": "blocks",
+          "start": 8.795,
+          "end": 9.163
+        },
+        {
+          "w": "from",
+          "start": 9.174,
+          "end": 9.297
+        },
+        {
+          "w": "the",
+          "start": 9.308,
+          "end": 9.375
+        },
+        {
+          "w": "center",
+          "start": 9.386,
+          "end": 9.844
+        },
+        {
+          "w": "The",
+          "start": 10.625,
+          "end": 10.781
+        },
+        {
+          "w": "player",
+          "start": 10.792,
+          "end": 11.116
+        },
+        {
+          "w": "walks",
+          "start": 11.127,
+          "end": 11.429
+        },
+        {
+          "w": "four",
+          "start": 11.44,
+          "end": 11.652
+        },
+        {
+          "w": "point",
+          "start": 11.663,
+          "end": 11.897
+        },
+        {
+          "w": "three",
+          "start": 11.909,
+          "end": 12.121
+        },
+        {
+          "w": "blocks",
+          "start": 12.132,
+          "end": 12.444
+        },
+        {
+          "w": "per",
+          "start": 12.455,
+          "end": 12.578
+        },
+        {
+          "w": "second",
+          "start": 12.589,
+          "end": 13.069
+        },
+        {
+          "w": "That's",
+          "start": 13.839,
+          "end": 14.141
+        },
+        {
+          "w": "roughly",
+          "start": 14.152,
+          "end": 14.498
+        },
+        {
+          "w": "seven",
+          "start": 14.509,
+          "end": 14.833
+        },
+        {
+          "w": "million",
+          "start": 14.844,
+          "end": 15.19
+        },
+        {
+          "w": "seconds",
+          "start": 15.201,
+          "end": 15.737
+        },
+        {
+          "w": "Sprint",
+          "start": 16.507,
+          "end": 16.886
+        },
+        {
+          "w": "on",
+          "start": 16.897,
+          "end": 17.02
+        },
+        {
+          "w": "flat",
+          "start": 17.031,
+          "end": 17.299
+        },
+        {
+          "w": "ground",
+          "start": 17.31,
+          "end": 17.667
+        },
+        {
+          "w": "and",
+          "start": 17.679,
+          "end": 17.812
+        },
+        {
+          "w": "it's",
+          "start": 17.824,
+          "end": 17.946
+        },
+        {
+          "w": "still",
+          "start": 17.958,
+          "end": 18.192
+        },
+        {
+          "w": "about",
+          "start": 18.203,
+          "end": 18.46
+        },
+        {
+          "w": "sixty-two",
+          "start": 18.471,
+          "end": 18.962
+        },
+        {
+          "w": "days",
+          "start": 18.973,
+          "end": 19.431
+        },
+        {
+          "w": "For",
+          "start": 20.212,
+          "end": 20.413
+        },
+        {
+          "w": "scale",
+          "start": 20.424,
+          "end": 20.871
+        },
+        {
+          "w": "that",
+          "start": 21.083,
+          "end": 21.272
+        },
+        {
+          "w": "border",
+          "start": 21.284,
+          "end": 21.596
+        },
+        {
+          "w": "is",
+          "start": 21.607,
+          "end": 21.741
+        },
+        {
+          "w": "thirty",
+          "start": 21.752,
+          "end": 22.009
+        },
+        {
+          "w": "thousand",
+          "start": 22.02,
+          "end": 22.433
+        },
+        {
+          "w": "kilometers",
+          "start": 22.444,
+          "end": 22.935
+        },
+        {
+          "w": "away",
+          "start": 22.946,
+          "end": 23.371
+        },
+        {
+          "w": "Earth",
+          "start": 24.152,
+          "end": 24.442
+        },
+        {
+          "w": "is",
+          "start": 24.453,
+          "end": 24.531
+        },
+        {
+          "w": "about",
+          "start": 24.542,
+          "end": 24.799
+        },
+        {
+          "w": "forty",
+          "start": 24.81,
+          "end": 25.078
+        },
+        {
+          "w": "thousand",
+          "start": 25.089,
+          "end": 25.491
+        },
+        {
+          "w": "around",
+          "start": 25.502,
+          "end": 26.005
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "question",
+      "index": 1,
+      "label": "ACT 1 \u2014 THE QUESTION",
+      "caption": "ACT 1 \u2014 THE QUESTION",
+      "file": "full_voiceover.mp3",
+      "duration": 6.289,
+      "start": 0.095,
+      "end": 6.384,
+      "words": [
+        {
+          "w": "How",
+          "start": 0.095,
+          "end": 0.273
+        },
+        {
+          "w": "long",
+          "start": 0.284,
+          "end": 0.541
+        },
+        {
+          "w": "does",
+          "start": 0.552,
+          "end": 0.664
+        },
+        {
+          "w": "it",
+          "start": 0.675,
+          "end": 0.753
+        },
+        {
+          "w": "take",
+          "start": 0.764,
+          "end": 0.987
+        },
+        {
+          "w": "to",
+          "start": 0.999,
+          "end": 1.077
+        },
+        {
+          "w": "walk",
+          "start": 1.088,
+          "end": 1.356
+        },
+        {
+          "w": "to",
+          "start": 1.367,
+          "end": 1.445
+        },
+        {
+          "w": "the",
+          "start": 1.456,
+          "end": 1.546
+        },
+        {
+          "w": "edge",
+          "start": 1.557,
+          "end": 1.802
+        },
+        {
+          "w": "of",
+          "start": 1.813,
+          "end": 1.88
+        },
+        {
+          "w": "Minecraft's",
+          "start": 1.891,
+          "end": 2.472
+        },
+        {
+          "w": "world",
+          "start": 2.483,
+          "end": 2.929
+        },
+        {
+          "w": "About",
+          "start": 3.694,
+          "end": 4.062
+        },
+        {
+          "w": "eighty",
+          "start": 4.074,
+          "end": 4.275
+        },
+        {
+          "w": "days",
+          "start": 4.286,
+          "end": 4.766
+        },
+        {
+          "w": "Nonstop",
+          "start": 5.547,
+          "end": 6.384
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "index": 2,
+      "label": "ACT 2 \u2014 THE MATH",
+      "caption": "ACT 2 \u2014 THE MATH",
+      "file": "full_voiceover.mp3",
+      "duration": 8.594,
+      "start": 7.143,
+      "end": 15.737,
+      "words": [
+        {
+          "w": "The",
+          "start": 7.143,
+          "end": 7.299
+        },
+        {
+          "w": "border",
+          "start": 7.31,
+          "end": 7.645
+        },
+        {
+          "w": "sits",
+          "start": 7.656,
+          "end": 7.891
+        },
+        {
+          "w": "about",
+          "start": 7.902,
+          "end": 8.17
+        },
+        {
+          "w": "thirty",
+          "start": 8.181,
+          "end": 8.426
+        },
+        {
+          "w": "million",
+          "start": 8.438,
+          "end": 8.784
+        },
+        {
+          "w": "blocks",
+          "start": 8.795,
+          "end": 9.163
+        },
+        {
+          "w": "from",
+          "start": 9.174,
+          "end": 9.297
+        },
+        {
+          "w": "the",
+          "start": 9.308,
+          "end": 9.375
+        },
+        {
+          "w": "center",
+          "start": 9.386,
+          "end": 9.844
+        },
+        {
+          "w": "The",
+          "start": 10.625,
+          "end": 10.781
+        },
+        {
+          "w": "player",
+          "start": 10.792,
+          "end": 11.116
+        },
+        {
+          "w": "walks",
+          "start": 11.127,
+          "end": 11.429
+        },
+        {
+          "w": "four",
+          "start": 11.44,
+          "end": 11.652
+        },
+        {
+          "w": "point",
+          "start": 11.663,
+          "end": 11.897
+        },
+        {
+          "w": "three",
+          "start": 11.909,
+          "end": 12.121
+        },
+        {
+          "w": "blocks",
+          "start": 12.132,
+          "end": 12.444
+        },
+        {
+          "w": "per",
+          "start": 12.455,
+          "end": 12.578
+        },
+        {
+          "w": "second",
+          "start": 12.589,
+          "end": 13.069
+        },
+        {
+          "w": "That's",
+          "start": 13.839,
+          "end": 14.141
+        },
+        {
+          "w": "roughly",
+          "start": 14.152,
+          "end": 14.498
+        },
+        {
+          "w": "seven",
+          "start": 14.509,
+          "end": 14.833
+        },
+        {
+          "w": "million",
+          "start": 14.844,
+          "end": 15.19
+        },
+        {
+          "w": "seconds",
+          "start": 15.201,
+          "end": 15.737
+        }
+      ]
+    },
+    {
+      "id": "scale",
+      "index": 3,
+      "label": "ACT 3 \u2014 THE SCALE",
+      "caption": "ACT 3 \u2014 THE SCALE",
+      "file": "full_voiceover.mp3",
+      "duration": 9.498,
+      "start": 16.507,
+      "end": 26.005,
+      "words": [
+        {
+          "w": "Sprint",
+          "start": 16.507,
+          "end": 16.886
+        },
+        {
+          "w": "on",
+          "start": 16.897,
+          "end": 17.02
+        },
+        {
+          "w": "flat",
+          "start": 17.031,
+          "end": 17.299
+        },
+        {
+          "w": "ground",
+          "start": 17.31,
+          "end": 17.667
+        },
+        {
+          "w": "and",
+          "start": 17.679,
+          "end": 17.812
+        },
+        {
+          "w": "it's",
+          "start": 17.824,
+          "end": 17.946
+        },
+        {
+          "w": "still",
+          "start": 17.958,
+          "end": 18.192
+        },
+        {
+          "w": "about",
+          "start": 18.203,
+          "end": 18.46
+        },
+        {
+          "w": "sixty-two",
+          "start": 18.471,
+          "end": 18.962
+        },
+        {
+          "w": "days",
+          "start": 18.973,
+          "end": 19.431
+        },
+        {
+          "w": "For",
+          "start": 20.212,
+          "end": 20.413
+        },
+        {
+          "w": "scale",
+          "start": 20.424,
+          "end": 20.871
+        },
+        {
+          "w": "that",
+          "start": 21.083,
+          "end": 21.272
+        },
+        {
+          "w": "border",
+          "start": 21.284,
+          "end": 21.596
+        },
+        {
+          "w": "is",
+          "start": 21.607,
+          "end": 21.741
+        },
+        {
+          "w": "thirty",
+          "start": 21.752,
+          "end": 22.009
+        },
+        {
+          "w": "thousand",
+          "start": 22.02,
+          "end": 22.433
+        },
+        {
+          "w": "kilometers",
+          "start": 22.444,
+          "end": 22.935
+        },
+        {
+          "w": "away",
+          "start": 22.946,
+          "end": 23.371
+        },
+        {
+          "w": "Earth",
+          "start": 24.152,
+          "end": 24.442
+        },
+        {
+          "w": "is",
+          "start": 24.453,
+          "end": 24.531
+        },
+        {
+          "w": "about",
+          "start": 24.542,
+          "end": 24.799
+        },
+        {
+          "w": "forty",
+          "start": 24.81,
+          "end": 25.078
+        },
+        {
+          "w": "thousand",
+          "start": 25.089,
+          "end": 25.491
+        },
+        {
+          "w": "around",
+          "start": 25.502,
+          "end": 26.005
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "How",
+      "start": 0.095,
+      "end": 0.273
+    },
+    {
+      "w": "long",
+      "start": 0.284,
+      "end": 0.541
+    },
+    {
+      "w": "does",
+      "start": 0.552,
+      "end": 0.664
+    },
+    {
+      "w": "it",
+      "start": 0.675,
+      "end": 0.753
+    },
+    {
+      "w": "take",
+      "start": 0.764,
+      "end": 0.987
+    },
+    {
+      "w": "to",
+      "start": 0.999,
+      "end": 1.077
+    },
+    {
+      "w": "walk",
+      "start": 1.088,
+      "end": 1.356
+    },
+    {
+      "w": "to",
+      "start": 1.367,
+      "end": 1.445
+    },
+    {
+      "w": "the",
+      "start": 1.456,
+      "end": 1.546
+    },
+    {
+      "w": "edge",
+      "start": 1.557,
+      "end": 1.802
+    },
+    {
+      "w": "of",
+      "start": 1.813,
+      "end": 1.88
+    },
+    {
+      "w": "Minecraft's",
+      "start": 1.891,
+      "end": 2.472
+    },
+    {
+      "w": "world",
+      "start": 2.483,
+      "end": 2.929
+    },
+    {
+      "w": "About",
+      "start": 3.694,
+      "end": 4.062
+    },
+    {
+      "w": "eighty",
+      "start": 4.074,
+      "end": 4.275
+    },
+    {
+      "w": "days",
+      "start": 4.286,
+      "end": 4.766
+    },
+    {
+      "w": "Nonstop",
+      "start": 5.547,
+      "end": 6.384
+    },
+    {
+      "w": "The",
+      "start": 7.143,
+      "end": 7.299
+    },
+    {
+      "w": "border",
+      "start": 7.31,
+      "end": 7.645
+    },
+    {
+      "w": "sits",
+      "start": 7.656,
+      "end": 7.891
+    },
+    {
+      "w": "about",
+      "start": 7.902,
+      "end": 8.17
+    },
+    {
+      "w": "thirty",
+      "start": 8.181,
+      "end": 8.426
+    },
+    {
+      "w": "million",
+      "start": 8.438,
+      "end": 8.784
+    },
+    {
+      "w": "blocks",
+      "start": 8.795,
+      "end": 9.163
+    },
+    {
+      "w": "from",
+      "start": 9.174,
+      "end": 9.297
+    },
+    {
+      "w": "the",
+      "start": 9.308,
+      "end": 9.375
+    },
+    {
+      "w": "center",
+      "start": 9.386,
+      "end": 9.844
+    },
+    {
+      "w": "The",
+      "start": 10.625,
+      "end": 10.781
+    },
+    {
+      "w": "player",
+      "start": 10.792,
+      "end": 11.116
+    },
+    {
+      "w": "walks",
+      "start": 11.127,
+      "end": 11.429
+    },
+    {
+      "w": "four",
+      "start": 11.44,
+      "end": 11.652
+    },
+    {
+      "w": "point",
+      "start": 11.663,
+      "end": 11.897
+    },
+    {
+      "w": "three",
+      "start": 11.909,
+      "end": 12.121
+    },
+    {
+      "w": "blocks",
+      "start": 12.132,
+      "end": 12.444
+    },
+    {
+      "w": "per",
+      "start": 12.455,
+      "end": 12.578
+    },
+    {
+      "w": "second",
+      "start": 12.589,
+      "end": 13.069
+    },
+    {
+      "w": "That's",
+      "start": 13.839,
+      "end": 14.141
+    },
+    {
+      "w": "roughly",
+      "start": 14.152,
+      "end": 14.498
+    },
+    {
+      "w": "seven",
+      "start": 14.509,
+      "end": 14.833
+    },
+    {
+      "w": "million",
+      "start": 14.844,
+      "end": 15.19
+    },
+    {
+      "w": "seconds",
+      "start": 15.201,
+      "end": 15.737
+    },
+    {
+      "w": "Sprint",
+      "start": 16.507,
+      "end": 16.886
+    },
+    {
+      "w": "on",
+      "start": 16.897,
+      "end": 17.02
+    },
+    {
+      "w": "flat",
+      "start": 17.031,
+      "end": 17.299
+    },
+    {
+      "w": "ground",
+      "start": 17.31,
+      "end": 17.667
+    },
+    {
+      "w": "and",
+      "start": 17.679,
+      "end": 17.812
+    },
+    {
+      "w": "it's",
+      "start": 17.824,
+      "end": 17.946
+    },
+    {
+      "w": "still",
+      "start": 17.958,
+      "end": 18.192
+    },
+    {
+      "w": "about",
+      "start": 18.203,
+      "end": 18.46
+    },
+    {
+      "w": "sixty-two",
+      "start": 18.471,
+      "end": 18.962
+    },
+    {
+      "w": "days",
+      "start": 18.973,
+      "end": 19.431
+    },
+    {
+      "w": "For",
+      "start": 20.212,
+      "end": 20.413
+    },
+    {
+      "w": "scale",
+      "start": 20.424,
+      "end": 20.871
+    },
+    {
+      "w": "that",
+      "start": 21.083,
+      "end": 21.272
+    },
+    {
+      "w": "border",
+      "start": 21.284,
+      "end": 21.596
+    },
+    {
+      "w": "is",
+      "start": 21.607,
+      "end": 21.741
+    },
+    {
+      "w": "thirty",
+      "start": 21.752,
+      "end": 22.009
+    },
+    {
+      "w": "thousand",
+      "start": 22.02,
+      "end": 22.433
+    },
+    {
+      "w": "kilometers",
+      "start": 22.444,
+      "end": 22.935
+    },
+    {
+      "w": "away",
+      "start": 22.946,
+      "end": 23.371
+    },
+    {
+      "w": "Earth",
+      "start": 24.152,
+      "end": 24.442
+    },
+    {
+      "w": "is",
+      "start": 24.453,
+      "end": 24.531
+    },
+    {
+      "w": "about",
+      "start": 24.542,
+      "end": 24.799
+    },
+    {
+      "w": "forty",
+      "start": 24.81,
+      "end": 25.078
+    },
+    {
+      "w": "thousand",
+      "start": 25.089,
+      "end": 25.491
+    },
+    {
+      "w": "around",
+      "start": 25.502,
+      "end": 26.005
+    }
+  ],
+  "anchors": {
+    "long_1": {
+      "ok": true,
+      "name": "long",
+      "occurrence": 1,
+      "index": 1,
+      "start": 0.284,
+      "end": 0.541
+    },
+    "eighty_1": {
+      "ok": true,
+      "name": "eighty",
+      "occurrence": 1,
+      "index": 14,
+      "start": 4.074,
+      "end": 4.275
+    },
+    "nonstop_1": {
+      "ok": true,
+      "name": "nonstop",
+      "occurrence": 1,
+      "index": 16,
+      "start": 5.547,
+      "end": 6.384
+    },
+    "border_1": {
+      "ok": true,
+      "name": "border",
+      "occurrence": 1,
+      "index": 18,
+      "start": 7.31,
+      "end": 7.645
+    },
+    "thirty_1": {
+      "ok": true,
+      "name": "thirty",
+      "occurrence": 1,
+      "index": 21,
+      "start": 8.181,
+      "end": 8.426
+    },
+    "four_1": {
+      "ok": true,
+      "name": "four",
+      "occurrence": 1,
+      "index": 30,
+      "start": 11.44,
+      "end": 11.652
+    },
+    "seven_1": {
+      "ok": true,
+      "name": "seven",
+      "occurrence": 1,
+      "index": 38,
+      "start": 14.509,
+      "end": 14.833
+    },
+    "sprint_1": {
+      "ok": true,
+      "name": "sprint",
+      "occurrence": 1,
+      "index": 41,
+      "start": 16.507,
+      "end": 16.886
+    },
+    "sixty-two_1": {
+      "ok": true,
+      "name": "sixty-two",
+      "occurrence": 1,
+      "index": 49,
+      "start": 18.471,
+      "end": 18.962
+    },
+    "flat_1": {
+      "ok": true,
+      "name": "flat",
+      "occurrence": 1,
+      "index": 43,
+      "start": 17.031,
+      "end": 17.299
+    },
+    "thirty_2": {
+      "ok": true,
+      "name": "thirty",
+      "occurrence": 2,
+      "index": 56,
+      "start": 21.752,
+      "end": 22.009
+    },
+    "earth_1": {
+      "ok": true,
+      "name": "earth",
+      "occurrence": 1,
+      "index": 60,
+      "start": 24.152,
+      "end": 24.442
+    },
+    "around_1": {
+      "ok": true,
+      "name": "around",
+      "occurrence": 1,
+      "index": 65,
+      "start": 25.502,
+      "end": 26.005
+    }
+  },
+  "totalDuration": 28.784
+}

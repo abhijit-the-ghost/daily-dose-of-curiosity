@@ -1,0 +1,12 @@
+// ACT 1 — THE QUESTION
+How long does it take to walk to the edge of Minecraft's world? About eighty days. Nonstop. [src: S1, S2, D1]
+
+// ACT 2 — THE MATH
+The border sits about thirty million blocks from the center. [src: S1]
+The player walks four point three blocks per second. [src: S2]
+That's roughly seven million seconds. [src: D1]
+
+// ACT 3 — THE SCALE
+Sprint on flat ground and it's still about sixty-two days. [src: S2, D1]
+For scale, that border is thirty thousand kilometers away. [src: S1, D2]
+Earth is about forty thousand around. [src: S3]

@@ -1,0 +1,13 @@
+{
+  "title": "Space games lie about sound",
+  "series": "game-physics",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 3.4,
+  "endCard": true,
+  "acts": [
+    { "kicker": "01 // THE CLAIM", "kickerColor": "#F59E0B", "template": "custom" },
+    { "kicker": "02 // THE PHYSICS", "kickerColor": "#22D3EE", "template": "custom" },
+    { "kicker": "03 // THE TWIST", "kickerColor": "#22D3EE", "template": "custom" }
+  ]
+}

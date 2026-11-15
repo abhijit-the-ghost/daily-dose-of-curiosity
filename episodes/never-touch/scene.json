@@ -1,0 +1,13 @@
+{
+  "title": "You have never touched anything in your life",
+  "series": "science",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 2.0,
+  "endCard": true,
+  "acts": [
+    { "kicker": "01 // THE HOOK", "kickerColor": "#22D3EE", "template": "custom" },
+    { "kicker": "02 // THE SCIENCE", "kickerColor": "#A78BFA", "template": "custom" },
+    { "kicker": "03 // THE PAYOFF", "kickerColor": "#22D3EE", "template": "custom" }
+  ]
+}

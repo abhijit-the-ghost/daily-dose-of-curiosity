@@ -1,0 +1,280 @@
+@import "tailwindcss";
+@source "../src/**/*.{tsx,ts,css}";
+@source "../index.html";
+
+/* ------------------------------------------------------------------
+   Internet Shorts — 1080x1920 (9:16) stage
+   NOTE (determinism): scenes never use CSS animations/transitions.
+   Every visual is computed inline from the `time` prop so that
+   window.__seek(t) renders an identical frame every time.
+------------------------------------------------------------------ */
+
+:root {
+  --bg: #050816;
+  --panel: #0b1030;
+  --panel-2: #111839;
+  --ink: #e8ecff;
+  --ink-dim: #8b93b8;
+  --cyan: #22d3ee;
+  --magenta: #f472b6;
+  --amber: #fbbf24;
+  --green: #34d399;
+  --mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  --sans: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #020410;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100svh;
+}
+
+/* ---------- viewport + stage ---------- */
+
+.viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(1200px 800px at 15% -10%, rgba(34, 211, 238, 0.08), transparent 60%),
+    radial-gradient(1000px 700px at 110% 110%, rgba(244, 114, 182, 0.08), transparent 60%),
+    #020410;
+}
+
+.stage {
+  position: relative;
+  width: 1080px;
+  height: 1920px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  transform-origin: center center;
+  background:
+    radial-gradient(900px 620px at 50% -8%, rgba(56, 189, 248, 0.16), transparent 55%),
+    radial-gradient(800px 700px at -25% 108%, rgba(217, 70, 239, 0.16), transparent 55%),
+    radial-gradient(700px 500px at 125% 65%, rgba(34, 211, 238, 0.10), transparent 55%),
+    var(--bg);
+  box-shadow: 0 0 0 1px rgba(139, 148, 184, 0.25), 0 40px 120px rgba(0, 0, 0, 0.6);
+}
+.viewport[data-record='1'] .stage { box-shadow: none; }
+
+/* dotted grid backdrop */
+.stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(139, 148, 184, 0.22) 1.3px, transparent 1.3px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 45%, black 35%, transparent 75%);
+  pointer-events: none;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  padding: 120px 64px 260px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* ---------- top chrome (inside stage) ---------- */
+
+.hud {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 34px 44px 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hud-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.watermark {
+  font-family: var(--mono);
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: rgba(232, 236, 255, 0.5);
+}
+
+.progress {
+  margin-top: 26px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(139, 148, 184, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+.progress > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--cyan), var(--magenta));
+}
+
+/* ---------- karaoke captions (word-level, synced to narration) ---------- */
+
+.karaoke {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 96px;
+  z-index: 5;
+  padding: 0 52px;
+  text-align: center;
+}
+.karaoke-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 16px;
+  row-gap: 2px;
+  line-height: 1.02;
+}
+.karaoke-word {
+  font-family: 'Anton', 'Impact', sans-serif;
+  font-size: 62px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(240, 244, 255, 0.34);
+  text-shadow:
+    -2px -2px 0 #070a1c, 2px -2px 0 #070a1c, -2px 2px 0 #070a1c, 2px 2px 0 #070a1c,
+    0 8px 26px rgba(0, 0, 0, 0.9);
+  will-change: transform;
+}
+.karaoke-word.done {
+  color: #f1f4ff;
+}
+.karaoke-word.active {
+  color: #fbbf24;
+  text-shadow:
+    -2px -2px 0 #2a1a02, 2px -2px 0 #2a1a02, -2px 2px 0 #2a1a02, 2px 2px 0 #2a1a02,
+    0 0 30px rgba(251, 191, 36, 0.55), 0 8px 26px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------- brand font (block calligraphy) ---------- */
+
+@font-face {
+  font-family: 'Pirata One';
+  src: url('../shared-assets/brand/fonts/PirataOne-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+.font-brand {
+  font-family: 'Pirata One', 'Georgia', serif;
+  font-weight: 400;
+}
+
+.font-block {
+  font-family: 'Anton', 'Impact', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('../shared-assets/brand/fonts/Anton-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* ---------- cinematic grade overlays ---------- */
+
+.stage-grade {
+  filter: saturate(1.14) contrast(1.07) brightness(0.97);
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 24;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 78% 62% at 50% 42%, transparent 52%, rgba(1, 2, 10, 0.58) 100%),
+    linear-gradient(to bottom, rgba(1, 2, 10, 0.52), transparent 14%, transparent 86%, rgba(1, 2, 10, 0.55));
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  image-rendering: pixelated;
+  opacity: 0.055;
+}
+
+.act-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 26;
+  background: #fff;
+  pointer-events: none;
+}
+
+/* ---------- preview chrome (never in record mode) ---------- */
+
+.preview-bar {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: rgba(11, 16, 48, 0.8);
+  border: 1px solid rgba(139, 148, 184, 0.3);
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+.preview-controls {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: rgba(11, 16, 48, 0.9);
+  border: 1px solid rgba(139, 148, 184, 0.35);
+  padding: 10px 16px;
+  border-radius: 14px;
+}
+.preview-controls button {
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  background: rgba(34, 211, 238, 0.14);
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  border-radius: 10px;
+  padding: 8px 18px;
+}
+.preview-controls button:hover { background: rgba(34, 211, 238, 0.25); }
+.preview-controls input[type='range'] { width: 380px; accent-color: var(--cyan); }
+.preview-controls .tc { font-family: var(--mono); font-size: 13px; color: var(--ink-dim); min-width: 108px; }

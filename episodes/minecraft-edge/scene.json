@@ -1,0 +1,27 @@
+{
+  "title": "How long to walk to the edge of Minecraft?",
+  "series": "game-physics",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 2.0,
+  "endCard": true,
+  "acts": [
+    { "kicker": "01 // THE QUESTION", "kickerColor": "#F59E0B", "template": "custom" },
+    { "kicker": "02 // THE MATH", "kickerColor": "#F59E0B", "template": "custom" },
+    { "kicker": "03 // THE SCALE", "kickerColor": "#22D3EE", "template": "custom" }
+  ],
+  "anchors": {
+    "long": [1],
+    "eighty": [1],
+    "Nonstop": [1],
+    "border": [1],
+    "thirty": [1, 2],
+    "four": [1],
+    "seven": [1],
+    "Sprint": [1],
+    "sixty-two": [1],
+    "flat": [1],
+    "Earth": [1],
+    "around": [1]
+  }
+}
