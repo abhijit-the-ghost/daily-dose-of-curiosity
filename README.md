@@ -6,6 +6,18 @@ Format: short-form (YouTube Shorts / Instagram Reels / TikTok / Facebook Reels),
 (edge-tts, no API key), **2D SVG composition**, **Tailwind CSS v4**, and **puppeteer + ffmpeg**
 for frame-capture encoding. (SVG / Canvas / CSS only — no 3D engine.)
 
+## Docs — start here
+
+| Doc | What it is |
+|---|---|
+| `docs/pipeline.md` | **From the prompt to the finished MP4** — step-by-step, with exact commands (generate → voice → render → verify → package) |
+| `VIDEO_PRODUCTION.md` | The playbook (rules, conventions, structure) |
+| `docs/brief-template.md` | The brief format (facts, art direction, beat sheet, QA) |
+| `docs/conventions.md` | Anchors, the FACTS rule, safe zones, banned strings |
+| `docs/determinism.md` | Frames-identical passes per episode |
+| `docs/risks.md` | edge-tts wildcard risk + alternatives to evaluate later |
+| `docs/url-explainer-sources.md` | Sources for the legacy URL explainer |
+
 ## Episodes shipped
 
 | # | Slug | Hook | Facts |

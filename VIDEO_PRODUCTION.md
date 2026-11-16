@@ -3,6 +3,9 @@
 > The goal of this project: **programmatic, fact-checked short-form videos for
 > YouTube Shorts / Instagram Reels / TikTok / Facebook Reels — generated 100% from code.**
 > No editing software, no stock footage, no screen recording by hand.
+>
+> → For a line-by-line "from the prompt to the finished MP4" walkthrough of every script,
+>   hook, and artifact involved, see `docs/pipeline.md`.
 
 Channel niche: **gaming · science · verified facts**, framed so every claim carries its source.
 Target format: **9:16 vertical, 1080×1920, 20–35 s**, one idea per video, captions always on.
