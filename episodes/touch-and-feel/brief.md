@@ -2,7 +2,7 @@
 
 slug: `touch-and-feel` · angle: **A+B merge** (comment-reply hook, mechanism chain) · hook style: question · series: existing `science` config (follow-up to `never-touch`)
 
-Script locked, 72 words (tags excluded; hyphenated = 1 word). ~34 s (hard cap 35 s; tail reduced to 1.5 s in scene.json to pass the 35 s gate).
+Script locked, 74 words (tags excluded; hyphenated = 1 word). ~34.7 s (hard cap 35 s; tail = 1.0 s in scene.json to pass the 35 s gate).
 
 Canvas 1080×1920 @ 30 fps · `series: science` · `captions: karaoke-dim` (Anton, uppercase, outlined; active word cyan) · `endCard: true` (owner default for packaged episodes).
 
@@ -81,7 +81,7 @@ No logo intro. No 3D. No raster assets. No pressure numbers. No fingerprint-bump
 | 3.1 | steady state | Finger still pressed; organ glows stay lit; end card fades in at end (owner default) | ambient only | |
 
 ## 4. Density and budget check
-Beats: act 1 ≈ 0.1–4.7 s (hook) · act 2 ≈ 5.4–25.5 s (chain) · act 3 ≈ 26.3–32.2 s (verdict). Slowest single beat stays ≥1 s with the rework (act 2 is ~20 s; the frequency sentences breathe).
+Beats: act 1 ≈ 0.1–4.7 s (hook) · act 2 ≈ 4.1–26.2 s (chain) · act 3 ≈ 27.0–32.9 s (verdict). Slowest single beat stays ≥1 s with the rework (act 2 is ~20 s; the frequency sentences breathe).
 
 ## 5. QA gate
 - [ ] `bunx tsc -b` passes.

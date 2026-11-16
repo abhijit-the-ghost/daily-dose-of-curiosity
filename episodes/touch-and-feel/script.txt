@@ -1,8 +1,8 @@
 // ACT 1 — THE QUESTION
-Someone asked: if atoms never touch, how do you feel a table? Watch. [src: ls, wtamu]
+Someone asked: if atoms never touch, how do you feel a table? [src: ls, wtamu]
 
 // ACT 2 — THE CHAIN
-Press. Electron clouds repel. Your skin dents in — opening mechanically gated ion channels. Your nerves fire. Merkel, Meissner, Ruffini, Pacinian — four sensors. Meissner feels the slow buzz — 40 to 60 times a second. Pacinian feels the fast buzz — 100 to 300. [src: openstax, pmc]
+Press. Electron clouds repel. Your skin dents in — opening mechanically gated ion channels. Your nerves fire. Merkel, Meissner, Ruffini, Pacinian — four sensors. Hertz means times a second. Meissner feels gentle flutter — 40 to 60 a second. Pacinian feels the deep rumble — 100 to 300. [src: openstax, pmc]
 
 // ACT 3 — THE VERDICT
 You never feel the table. You feel the push — the same force keeping atoms apart, delivered to nerves. [src: ls, openstax]

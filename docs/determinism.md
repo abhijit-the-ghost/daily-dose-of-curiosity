@@ -17,6 +17,17 @@ Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 f
 by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
 added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
 
+## 2026-11-16 (late) — touch-and-feel re-worded again (Hz explained)
+
+Owner request: "the narration is not proper — it did not say what those hertz means." Act 2 now
+explains the unit explicitly ("Hertz means times a second"; Meissner = gentle flutter, 40–60 a
+second; Pacinian = deep rumble, 100–300). Same takeaway; plainer language; zero on-screen/FACTS
+changes.
+
+TTS regenerated: 74 words, 34.67 s (tail set to 1.0 s in scene.json to hold the 35 s gate).
+Two back-to-back renders: **2,666 frames, framemd5 identical** (MP4 sha256 `6E524C7A…`; package
+refreshed). Verify PASS.
+
 ## 2026-11-16 (evening) — touch-and-feel reworked (plain-language pass)
 
 Owner request: the Meissner/Pacinian line was too dense — reworded act-2 narration to plain
