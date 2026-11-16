@@ -16,6 +16,7 @@ for frame-capture encoding. (SVG / Canvas / CSS only — no 3D engine.)
 | 4 | `minecraft-edge` | "How long to walk to the edge of Minecraft?" | `episodes/minecraft-edge/sources.md` |
 | 5 | `never-touch` | "You have never touched anything in your life." | `episodes/never-touch/sources.md` |
 | 6 | `everest-challenger-deep` | "Which wins: Everest, or the deepest hole in the ocean?" | `episodes/everest-challenger-deep/sources.md` |
+| 7 | `touch-and-feel` | "Someone asked: if atoms never touch, how do you feel a table?" | `episodes/touch-and-feel/sources.md` |
 
 Source of truth for scripts: `episodes/<slug>/script.txt` · Scene choreography:
 `episodes/<slug>/scene.json` · Audio timeline: `public/audio/<slug>/metadata.json`
@@ -63,7 +64,7 @@ Process design docs:
    `data-rendering-complete`), preview scale, kicker text/colors from `scene.json`,
    caption hold-out windows, and delegates the act SVG to the per-episode `Acts`
    component registered in `REGISTRY`.
-4. **`src/components/{SpaceSoundActs,MinecraftEdgeActs,NeverTouchActs,EverestVsDeepActs}.tsx`** —
+4. **`src/components/{SpaceSoundActs,MinecraftEdgeActs,NeverTouchActs,EverestVsDeepActs,TouchFeelActs}.tsx`** —
    per-episode scene implementations. `custom` template acts today; shared primitives
    live in `src/components/Starfield.tsx`, `KaraokeCaption.tsx`, `Hud.tsx`, `anim`.
 5. **`scripts/render_video.mjs`** — vite build → preview → puppeteer @ 1080×1920.

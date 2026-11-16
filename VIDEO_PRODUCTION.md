@@ -52,7 +52,7 @@ Type a script in → a finished, upload-ready `results/videos/<slug>/{video.mp4,
 ```bash
 # from repo root; uv manages a private, fully-featured python (never the Store stub)
 uv run --with edge-tts,mutagen python scripts/generate_audio.py <slug>    # or: bun run generate:<slug>
-# e.g.: bun run generate:milkyway · bun run generate:space-sound · bun run generate:minecraft-edge · bun run generate:never-touch · bun run generate:everest-challenger-deep
+# e.g.: bun run generate:milkyway · bun run generate:space-sound · bun run generate:minecraft-edge · bun run generate:never-touch · bun run generate:everest-challenger-deep · bun run generate:touch-and-feel
 ```
 This produces `public/audio/<slug>/full_voiceover.mp3` + `metadata.json`
 (`fps`, `totalDuration`, `acts[]`, `words[]` with per-word `start`/`end`).

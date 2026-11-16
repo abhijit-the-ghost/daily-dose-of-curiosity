@@ -1,6 +1,6 @@
 # Determinism report — video pipeline
 
-Date: 2026-11-11, updated 2026-11-12 ·- updated 2026-11-15
+Date: 2026-11-11, updated 2026-11-12 ·- updated 2026-11-15 ·- updated 2026-11-16
 Owner: Ghost (Abhijit Guragain)
 
 ## 2026-11-15 — everest-challenger-deep is byte-exact
@@ -16,6 +16,19 @@ Packaged artifact `results/videos/everest-challenger-deep/video.mp4` is this exa
 Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 frames) — superseded
 by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
 added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
+
+## 2026-11-16 — touch-and-feel (new episode)
+
+New science-series follow-up to `never-touch` ("if atoms never touch, how do you feel a table?").
+Script 68 words, 33.13 s (3 acts), endCard TRUE by house default.
+
+Two back-to-back `bun run render` invocations produced **2,547 frames, framemd5 identical**, but two
+different MP4 sha256s — same container-level encoder drift as everest-challenger-deep (frames are the
+gate; sha256 is per-build). Package kept the second build (sha256 `699F8445…`).
+
+| Episode | frames | Duration | Streams |
+|---|---|---|---|
+| `touch-and-feel` | 2547/2547 identical | 33.13s | 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz |
 
 ## 2026-11-15 (evening) — everest-challenger-deep rebuilt with end card
 

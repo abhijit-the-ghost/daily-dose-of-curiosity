@@ -35,6 +35,12 @@ const COVERS: Record<
     accent: '#f59e0b',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'touch-and-feel': {
+    kicker: '[ PHYSICS // SENSES ]',
+    title: ['IF ATOMS', 'NEVER TOUCH', 'HOW DO YOU FEEL?'],
+    accent: '#22d3ee',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

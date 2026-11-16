@@ -1,0 +1,1209 @@
+{
+  "title": "The Touch Illusion \u2014 how we feel a table when atoms never touch",
+  "series": "science",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "The Touch Illusion \u2014 how we feel a table when atoms never touch",
+      "file": "full_voiceover.mp3",
+      "duration": 31.128,
+      "start": 0.0,
+      "end": 31.128,
+      "words": [
+        {
+          "w": "Someone",
+          "start": 0.095,
+          "end": 0.485
+        },
+        {
+          "w": "asked",
+          "start": 0.496,
+          "end": 0.854
+        },
+        {
+          "w": "if",
+          "start": 1.01,
+          "end": 1.11
+        },
+        {
+          "w": "atoms",
+          "start": 1.121,
+          "end": 1.456
+        },
+        {
+          "w": "never",
+          "start": 1.467,
+          "end": 1.713
+        },
+        {
+          "w": "touch",
+          "start": 1.724,
+          "end": 2.115
+        },
+        {
+          "w": "how",
+          "start": 2.304,
+          "end": 2.405
+        },
+        {
+          "w": "do",
+          "start": 2.416,
+          "end": 2.494
+        },
+        {
+          "w": "you",
+          "start": 2.505,
+          "end": 2.617
+        },
+        {
+          "w": "feel",
+          "start": 2.628,
+          "end": 2.829
+        },
+        {
+          "w": "a",
+          "start": 2.84,
+          "end": 2.896
+        },
+        {
+          "w": "table",
+          "start": 2.907,
+          "end": 3.331
+        },
+        {
+          "w": "Watch",
+          "start": 4.096,
+          "end": 4.665
+        },
+        {
+          "w": "Press",
+          "start": 5.424,
+          "end": 5.982
+        },
+        {
+          "w": "Electron",
+          "start": 6.741,
+          "end": 7.288
+        },
+        {
+          "w": "clouds",
+          "start": 7.299,
+          "end": 7.667
+        },
+        {
+          "w": "repel",
+          "start": 7.679,
+          "end": 8.114
+        },
+        {
+          "w": "your",
+          "start": 8.404,
+          "end": 8.504
+        },
+        {
+          "w": "skin",
+          "start": 8.516,
+          "end": 8.806
+        },
+        {
+          "w": "dents",
+          "start": 8.817,
+          "end": 9.062
+        },
+        {
+          "w": "in",
+          "start": 9.074,
+          "end": 9.386
+        },
+        {
+          "w": "That",
+          "start": 10.167,
+          "end": 10.48
+        },
+        {
+          "w": "opens",
+          "start": 10.491,
+          "end": 10.826
+        },
+        {
+          "w": "mechanically",
+          "start": 10.837,
+          "end": 11.384
+        },
+        {
+          "w": "gated",
+          "start": 11.395,
+          "end": 11.708
+        },
+        {
+          "w": "ion",
+          "start": 11.719,
+          "end": 12.031
+        },
+        {
+          "w": "channels",
+          "start": 12.042,
+          "end": 12.478
+        },
+        {
+          "w": "and",
+          "start": 12.712,
+          "end": 12.835
+        },
+        {
+          "w": "the",
+          "start": 12.846,
+          "end": 12.924
+        },
+        {
+          "w": "push",
+          "start": 12.935,
+          "end": 13.225
+        },
+        {
+          "w": "becomes",
+          "start": 13.237,
+          "end": 13.605
+        },
+        {
+          "w": "a",
+          "start": 13.616,
+          "end": 13.65
+        },
+        {
+          "w": "nerve",
+          "start": 13.661,
+          "end": 13.895
+        },
+        {
+          "w": "signal",
+          "start": 13.906,
+          "end": 14.364
+        },
+        {
+          "w": "Merkel",
+          "start": 15.134,
+          "end": 15.58
+        },
+        {
+          "w": "Meissner",
+          "start": 15.725,
+          "end": 16.161
+        },
+        {
+          "w": "Ruffini",
+          "start": 16.328,
+          "end": 16.775
+        },
+        {
+          "w": "Pacinian",
+          "start": 16.909,
+          "end": 17.422
+        },
+        {
+          "w": "four",
+          "start": 17.567,
+          "end": 17.824
+        },
+        {
+          "w": "end",
+          "start": 17.835,
+          "end": 18.069
+        },
+        {
+          "w": "organs",
+          "start": 18.08,
+          "end": 18.616
+        },
+        {
+          "w": "Meissner",
+          "start": 19.386,
+          "end": 19.866
+        },
+        {
+          "w": "40",
+          "start": 19.877,
+          "end": 20.179
+        },
+        {
+          "w": "to",
+          "start": 20.19,
+          "end": 20.268
+        },
+        {
+          "w": "60",
+          "start": 20.279,
+          "end": 20.658
+        },
+        {
+          "w": "hertz",
+          "start": 20.67,
+          "end": 21.116
+        },
+        {
+          "w": "Pacinian",
+          "start": 21.886,
+          "end": 22.4
+        },
+        {
+          "w": "100",
+          "start": 22.411,
+          "end": 22.879
+        },
+        {
+          "w": "to",
+          "start": 22.891,
+          "end": 22.958
+        },
+        {
+          "w": "300",
+          "start": 22.969,
+          "end": 23.661
+        },
+        {
+          "w": "You",
+          "start": 24.431,
+          "end": 24.587
+        },
+        {
+          "w": "never",
+          "start": 24.598,
+          "end": 24.866
+        },
+        {
+          "w": "feel",
+          "start": 24.877,
+          "end": 25.1
+        },
+        {
+          "w": "the",
+          "start": 25.112,
+          "end": 25.201
+        },
+        {
+          "w": "table",
+          "start": 25.212,
+          "end": 25.636
+        },
+        {
+          "w": "You",
+          "start": 26.406,
+          "end": 26.585
+        },
+        {
+          "w": "feel",
+          "start": 26.596,
+          "end": 26.819
+        },
+        {
+          "w": "the",
+          "start": 26.83,
+          "end": 26.931
+        },
+        {
+          "w": "push",
+          "start": 26.942,
+          "end": 27.299
+        },
+        {
+          "w": "the",
+          "start": 27.433,
+          "end": 27.533
+        },
+        {
+          "w": "same",
+          "start": 27.545,
+          "end": 27.801
+        },
+        {
+          "w": "force",
+          "start": 27.812,
+          "end": 28.103
+        },
+        {
+          "w": "keeping",
+          "start": 28.114,
+          "end": 28.46
+        },
+        {
+          "w": "atoms",
+          "start": 28.471,
+          "end": 28.761
+        },
+        {
+          "w": "apart",
+          "start": 28.772,
+          "end": 29.129
+        },
+        {
+          "w": "delivered",
+          "start": 29.33,
+          "end": 29.721
+        },
+        {
+          "w": "to",
+          "start": 29.732,
+          "end": 29.81
+        },
+        {
+          "w": "nerves",
+          "start": 29.821,
+          "end": 30.346
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE QUESTION",
+      "caption": "// ACT 1 \u2014 THE QUESTION",
+      "file": "full_voiceover.mp3",
+      "duration": 4.57,
+      "start": 0.095,
+      "end": 4.665,
+      "words": [
+        {
+          "w": "Someone",
+          "start": 0.095,
+          "end": 0.485
+        },
+        {
+          "w": "asked",
+          "start": 0.496,
+          "end": 0.854
+        },
+        {
+          "w": "if",
+          "start": 1.01,
+          "end": 1.11
+        },
+        {
+          "w": "atoms",
+          "start": 1.121,
+          "end": 1.456
+        },
+        {
+          "w": "never",
+          "start": 1.467,
+          "end": 1.713
+        },
+        {
+          "w": "touch",
+          "start": 1.724,
+          "end": 2.115
+        },
+        {
+          "w": "how",
+          "start": 2.304,
+          "end": 2.405
+        },
+        {
+          "w": "do",
+          "start": 2.416,
+          "end": 2.494
+        },
+        {
+          "w": "you",
+          "start": 2.505,
+          "end": 2.617
+        },
+        {
+          "w": "feel",
+          "start": 2.628,
+          "end": 2.829
+        },
+        {
+          "w": "a",
+          "start": 2.84,
+          "end": 2.896
+        },
+        {
+          "w": "table",
+          "start": 2.907,
+          "end": 3.331
+        },
+        {
+          "w": "Watch",
+          "start": 4.096,
+          "end": 4.665
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE CHAIN",
+      "caption": "// ACT 2 \u2014 THE CHAIN",
+      "file": "full_voiceover.mp3",
+      "duration": 18.237,
+      "start": 5.424,
+      "end": 23.661,
+      "words": [
+        {
+          "w": "Press",
+          "start": 5.424,
+          "end": 5.982
+        },
+        {
+          "w": "Electron",
+          "start": 6.741,
+          "end": 7.288
+        },
+        {
+          "w": "clouds",
+          "start": 7.299,
+          "end": 7.667
+        },
+        {
+          "w": "repel",
+          "start": 7.679,
+          "end": 8.114
+        },
+        {
+          "w": "your",
+          "start": 8.404,
+          "end": 8.504
+        },
+        {
+          "w": "skin",
+          "start": 8.516,
+          "end": 8.806
+        },
+        {
+          "w": "dents",
+          "start": 8.817,
+          "end": 9.062
+        },
+        {
+          "w": "in",
+          "start": 9.074,
+          "end": 9.386
+        },
+        {
+          "w": "That",
+          "start": 10.167,
+          "end": 10.48
+        },
+        {
+          "w": "opens",
+          "start": 10.491,
+          "end": 10.826
+        },
+        {
+          "w": "mechanically",
+          "start": 10.837,
+          "end": 11.384
+        },
+        {
+          "w": "gated",
+          "start": 11.395,
+          "end": 11.708
+        },
+        {
+          "w": "ion",
+          "start": 11.719,
+          "end": 12.031
+        },
+        {
+          "w": "channels",
+          "start": 12.042,
+          "end": 12.478
+        },
+        {
+          "w": "and",
+          "start": 12.712,
+          "end": 12.835
+        },
+        {
+          "w": "the",
+          "start": 12.846,
+          "end": 12.924
+        },
+        {
+          "w": "push",
+          "start": 12.935,
+          "end": 13.225
+        },
+        {
+          "w": "becomes",
+          "start": 13.237,
+          "end": 13.605
+        },
+        {
+          "w": "a",
+          "start": 13.616,
+          "end": 13.65
+        },
+        {
+          "w": "nerve",
+          "start": 13.661,
+          "end": 13.895
+        },
+        {
+          "w": "signal",
+          "start": 13.906,
+          "end": 14.364
+        },
+        {
+          "w": "Merkel",
+          "start": 15.134,
+          "end": 15.58
+        },
+        {
+          "w": "Meissner",
+          "start": 15.725,
+          "end": 16.161
+        },
+        {
+          "w": "Ruffini",
+          "start": 16.328,
+          "end": 16.775
+        },
+        {
+          "w": "Pacinian",
+          "start": 16.909,
+          "end": 17.422
+        },
+        {
+          "w": "four",
+          "start": 17.567,
+          "end": 17.824
+        },
+        {
+          "w": "end",
+          "start": 17.835,
+          "end": 18.069
+        },
+        {
+          "w": "organs",
+          "start": 18.08,
+          "end": 18.616
+        },
+        {
+          "w": "Meissner",
+          "start": 19.386,
+          "end": 19.866
+        },
+        {
+          "w": "40",
+          "start": 19.877,
+          "end": 20.179
+        },
+        {
+          "w": "to",
+          "start": 20.19,
+          "end": 20.268
+        },
+        {
+          "w": "60",
+          "start": 20.279,
+          "end": 20.658
+        },
+        {
+          "w": "hertz",
+          "start": 20.67,
+          "end": 21.116
+        },
+        {
+          "w": "Pacinian",
+          "start": 21.886,
+          "end": 22.4
+        },
+        {
+          "w": "100",
+          "start": 22.411,
+          "end": 22.879
+        },
+        {
+          "w": "to",
+          "start": 22.891,
+          "end": 22.958
+        },
+        {
+          "w": "300",
+          "start": 22.969,
+          "end": 23.661
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE VERDICT",
+      "caption": "// ACT 3 \u2014 THE VERDICT",
+      "file": "full_voiceover.mp3",
+      "duration": 5.915,
+      "start": 24.431,
+      "end": 30.346,
+      "words": [
+        {
+          "w": "You",
+          "start": 24.431,
+          "end": 24.587
+        },
+        {
+          "w": "never",
+          "start": 24.598,
+          "end": 24.866
+        },
+        {
+          "w": "feel",
+          "start": 24.877,
+          "end": 25.1
+        },
+        {
+          "w": "the",
+          "start": 25.112,
+          "end": 25.201
+        },
+        {
+          "w": "table",
+          "start": 25.212,
+          "end": 25.636
+        },
+        {
+          "w": "You",
+          "start": 26.406,
+          "end": 26.585
+        },
+        {
+          "w": "feel",
+          "start": 26.596,
+          "end": 26.819
+        },
+        {
+          "w": "the",
+          "start": 26.83,
+          "end": 26.931
+        },
+        {
+          "w": "push",
+          "start": 26.942,
+          "end": 27.299
+        },
+        {
+          "w": "the",
+          "start": 27.433,
+          "end": 27.533
+        },
+        {
+          "w": "same",
+          "start": 27.545,
+          "end": 27.801
+        },
+        {
+          "w": "force",
+          "start": 27.812,
+          "end": 28.103
+        },
+        {
+          "w": "keeping",
+          "start": 28.114,
+          "end": 28.46
+        },
+        {
+          "w": "atoms",
+          "start": 28.471,
+          "end": 28.761
+        },
+        {
+          "w": "apart",
+          "start": 28.772,
+          "end": 29.129
+        },
+        {
+          "w": "delivered",
+          "start": 29.33,
+          "end": 29.721
+        },
+        {
+          "w": "to",
+          "start": 29.732,
+          "end": 29.81
+        },
+        {
+          "w": "nerves",
+          "start": 29.821,
+          "end": 30.346
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "Someone",
+      "start": 0.095,
+      "end": 0.485
+    },
+    {
+      "w": "asked",
+      "start": 0.496,
+      "end": 0.854
+    },
+    {
+      "w": "if",
+      "start": 1.01,
+      "end": 1.11
+    },
+    {
+      "w": "atoms",
+      "start": 1.121,
+      "end": 1.456
+    },
+    {
+      "w": "never",
+      "start": 1.467,
+      "end": 1.713
+    },
+    {
+      "w": "touch",
+      "start": 1.724,
+      "end": 2.115
+    },
+    {
+      "w": "how",
+      "start": 2.304,
+      "end": 2.405
+    },
+    {
+      "w": "do",
+      "start": 2.416,
+      "end": 2.494
+    },
+    {
+      "w": "you",
+      "start": 2.505,
+      "end": 2.617
+    },
+    {
+      "w": "feel",
+      "start": 2.628,
+      "end": 2.829
+    },
+    {
+      "w": "a",
+      "start": 2.84,
+      "end": 2.896
+    },
+    {
+      "w": "table",
+      "start": 2.907,
+      "end": 3.331
+    },
+    {
+      "w": "Watch",
+      "start": 4.096,
+      "end": 4.665
+    },
+    {
+      "w": "Press",
+      "start": 5.424,
+      "end": 5.982
+    },
+    {
+      "w": "Electron",
+      "start": 6.741,
+      "end": 7.288
+    },
+    {
+      "w": "clouds",
+      "start": 7.299,
+      "end": 7.667
+    },
+    {
+      "w": "repel",
+      "start": 7.679,
+      "end": 8.114
+    },
+    {
+      "w": "your",
+      "start": 8.404,
+      "end": 8.504
+    },
+    {
+      "w": "skin",
+      "start": 8.516,
+      "end": 8.806
+    },
+    {
+      "w": "dents",
+      "start": 8.817,
+      "end": 9.062
+    },
+    {
+      "w": "in",
+      "start": 9.074,
+      "end": 9.386
+    },
+    {
+      "w": "That",
+      "start": 10.167,
+      "end": 10.48
+    },
+    {
+      "w": "opens",
+      "start": 10.491,
+      "end": 10.826
+    },
+    {
+      "w": "mechanically",
+      "start": 10.837,
+      "end": 11.384
+    },
+    {
+      "w": "gated",
+      "start": 11.395,
+      "end": 11.708
+    },
+    {
+      "w": "ion",
+      "start": 11.719,
+      "end": 12.031
+    },
+    {
+      "w": "channels",
+      "start": 12.042,
+      "end": 12.478
+    },
+    {
+      "w": "and",
+      "start": 12.712,
+      "end": 12.835
+    },
+    {
+      "w": "the",
+      "start": 12.846,
+      "end": 12.924
+    },
+    {
+      "w": "push",
+      "start": 12.935,
+      "end": 13.225
+    },
+    {
+      "w": "becomes",
+      "start": 13.237,
+      "end": 13.605
+    },
+    {
+      "w": "a",
+      "start": 13.616,
+      "end": 13.65
+    },
+    {
+      "w": "nerve",
+      "start": 13.661,
+      "end": 13.895
+    },
+    {
+      "w": "signal",
+      "start": 13.906,
+      "end": 14.364
+    },
+    {
+      "w": "Merkel",
+      "start": 15.134,
+      "end": 15.58
+    },
+    {
+      "w": "Meissner",
+      "start": 15.725,
+      "end": 16.161
+    },
+    {
+      "w": "Ruffini",
+      "start": 16.328,
+      "end": 16.775
+    },
+    {
+      "w": "Pacinian",
+      "start": 16.909,
+      "end": 17.422
+    },
+    {
+      "w": "four",
+      "start": 17.567,
+      "end": 17.824
+    },
+    {
+      "w": "end",
+      "start": 17.835,
+      "end": 18.069
+    },
+    {
+      "w": "organs",
+      "start": 18.08,
+      "end": 18.616
+    },
+    {
+      "w": "Meissner",
+      "start": 19.386,
+      "end": 19.866
+    },
+    {
+      "w": "40",
+      "start": 19.877,
+      "end": 20.179
+    },
+    {
+      "w": "to",
+      "start": 20.19,
+      "end": 20.268
+    },
+    {
+      "w": "60",
+      "start": 20.279,
+      "end": 20.658
+    },
+    {
+      "w": "hertz",
+      "start": 20.67,
+      "end": 21.116
+    },
+    {
+      "w": "Pacinian",
+      "start": 21.886,
+      "end": 22.4
+    },
+    {
+      "w": "100",
+      "start": 22.411,
+      "end": 22.879
+    },
+    {
+      "w": "to",
+      "start": 22.891,
+      "end": 22.958
+    },
+    {
+      "w": "300",
+      "start": 22.969,
+      "end": 23.661
+    },
+    {
+      "w": "You",
+      "start": 24.431,
+      "end": 24.587
+    },
+    {
+      "w": "never",
+      "start": 24.598,
+      "end": 24.866
+    },
+    {
+      "w": "feel",
+      "start": 24.877,
+      "end": 25.1
+    },
+    {
+      "w": "the",
+      "start": 25.112,
+      "end": 25.201
+    },
+    {
+      "w": "table",
+      "start": 25.212,
+      "end": 25.636
+    },
+    {
+      "w": "You",
+      "start": 26.406,
+      "end": 26.585
+    },
+    {
+      "w": "feel",
+      "start": 26.596,
+      "end": 26.819
+    },
+    {
+      "w": "the",
+      "start": 26.83,
+      "end": 26.931
+    },
+    {
+      "w": "push",
+      "start": 26.942,
+      "end": 27.299
+    },
+    {
+      "w": "the",
+      "start": 27.433,
+      "end": 27.533
+    },
+    {
+      "w": "same",
+      "start": 27.545,
+      "end": 27.801
+    },
+    {
+      "w": "force",
+      "start": 27.812,
+      "end": 28.103
+    },
+    {
+      "w": "keeping",
+      "start": 28.114,
+      "end": 28.46
+    },
+    {
+      "w": "atoms",
+      "start": 28.471,
+      "end": 28.761
+    },
+    {
+      "w": "apart",
+      "start": 28.772,
+      "end": 29.129
+    },
+    {
+      "w": "delivered",
+      "start": 29.33,
+      "end": 29.721
+    },
+    {
+      "w": "to",
+      "start": 29.732,
+      "end": 29.81
+    },
+    {
+      "w": "nerves",
+      "start": 29.821,
+      "end": 30.346
+    }
+  ],
+  "anchors": {
+    "someone_1": {
+      "ok": true,
+      "name": "someone",
+      "occurrence": 1,
+      "index": 0,
+      "start": 0.095,
+      "end": 0.485
+    },
+    "atoms_1": {
+      "ok": true,
+      "name": "atoms",
+      "occurrence": 1,
+      "index": 3,
+      "start": 1.121,
+      "end": 1.456
+    },
+    "atoms_2": {
+      "ok": true,
+      "name": "atoms",
+      "occurrence": 2,
+      "index": 63,
+      "start": 28.471,
+      "end": 28.761
+    },
+    "press_1": {
+      "ok": true,
+      "name": "press",
+      "occurrence": 1,
+      "index": 13,
+      "start": 5.424,
+      "end": 5.982
+    },
+    "electron_1": {
+      "ok": true,
+      "name": "electron",
+      "occurrence": 1,
+      "index": 14,
+      "start": 6.741,
+      "end": 7.288
+    },
+    "mechanically_1": {
+      "ok": true,
+      "name": "mechanically",
+      "occurrence": 1,
+      "index": 23,
+      "start": 10.837,
+      "end": 11.384
+    },
+    "merkel_1": {
+      "ok": true,
+      "name": "merkel",
+      "occurrence": 1,
+      "index": 34,
+      "start": 15.134,
+      "end": 15.58
+    },
+    "meissner_1": {
+      "ok": true,
+      "name": "meissner",
+      "occurrence": 1,
+      "index": 35,
+      "start": 15.725,
+      "end": 16.161
+    },
+    "meissner_2": {
+      "ok": true,
+      "name": "meissner",
+      "occurrence": 2,
+      "index": 41,
+      "start": 19.386,
+      "end": 19.866
+    },
+    "pacinian_1": {
+      "ok": true,
+      "name": "pacinian",
+      "occurrence": 1,
+      "index": 37,
+      "start": 16.909,
+      "end": 17.422
+    },
+    "pacinian_2": {
+      "ok": true,
+      "name": "pacinian",
+      "occurrence": 2,
+      "index": 46,
+      "start": 21.886,
+      "end": 22.4
+    },
+    "you_1": {
+      "ok": true,
+      "name": "you",
+      "occurrence": 1,
+      "index": 8,
+      "start": 2.505,
+      "end": 2.617
+    },
+    "you_2": {
+      "ok": true,
+      "name": "you",
+      "occurrence": 2,
+      "index": 50,
+      "start": 24.431,
+      "end": 24.587
+    },
+    "push_1": {
+      "ok": true,
+      "name": "push",
+      "occurrence": 1,
+      "index": 29,
+      "start": 12.935,
+      "end": 13.225
+    },
+    "push_2": {
+      "ok": true,
+      "name": "push",
+      "occurrence": 2,
+      "index": 58,
+      "start": 26.942,
+      "end": 27.299
+    }
+  },
+  "totalDuration": 33.128
+}

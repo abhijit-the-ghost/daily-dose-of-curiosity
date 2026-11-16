@@ -1,0 +1,23 @@
+{
+  "series": "science",
+  "title": "The Touch Illusion — how we feel a table when atoms never touch",
+  "slug": "touch-and-feel",
+  "acts": [
+    { "kicker": "01 // THE QUESTION", "template": "custom" },
+    { "kicker": "02 // THE CHAIN",    "template": "custom" },
+    { "kicker": "03 // THE VERDICT",  "template": "custom" }
+  ],
+  "endCard": true,
+  "anchors": {
+    "Someone": [1],
+    "atoms": [1, 2],
+    "Press": [1],
+    "electron": [1],
+    "mechanically": [1],
+    "Merkel": [1],
+    "Meissner": [1, 2],
+    "Pacinian": [1, 2],
+    "You": [1, 2],
+    "push": [1, 2]
+  }
+}

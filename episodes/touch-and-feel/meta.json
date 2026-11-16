@@ -1,0 +1,37 @@
+{
+  "slug": "touch-and-feel",
+  "series": "science",
+  "hook": "Someone asked: if atoms never touch, how do you feel a table?",
+  "hookStyle": "question",
+  "captionStyle": "karaoke-dim",
+  "endCard": true,
+  "durationSec": 33.13,
+  "wordCount": 68,
+  "voice": "en-US-AriaNeural",
+  "voiceRate": "+12%",
+  "posted": {
+    "youtube": null,
+    "instagram": null,
+    "tiktok": null
+  },
+  "tags": [
+    "atoms",
+    "touch",
+    "pauli-exclusion",
+    "mechanoreceptors",
+    "neuroscience",
+    "science",
+    "verifiedfacts",
+    "dailydoseofcuriosity"
+  ],
+  "covers": {
+    "youtube": "cover_youtube.png",
+    "tiktok": "cover_tiktok.png",
+    "instagram": "cover_instagram.png"
+  },
+  "thumbnails": {
+    "youtube": "thumbnail_youtube.png",
+    "instagram": "thumbnail_instagram.png"
+  },
+  "assumptions": []
+}

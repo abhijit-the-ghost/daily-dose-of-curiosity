@@ -113,6 +113,7 @@ function EpisodePreview() {
   if (episode === 'minecraft-edge') return <Episode slug="minecraft-edge" />
   if (episode === 'never-touch') return <Episode slug="never-touch" />
   if (episode === 'everest-challenger-deep') return <Episode slug="everest-challenger-deep" />
+  if (episode === 'touch-and-feel') return <Episode slug="touch-and-feel" />
   return <MilkyWay />
 }
 

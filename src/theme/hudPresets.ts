@@ -51,4 +51,13 @@ export const HUD_PRESETS = {
     progressGradientClass:
       'from-amber-400 via-orange-400 to-yellow-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
   },
+  touchAndFeel: {
+    accent: 'cyan' as const,
+    cornerBrackets: true,
+    badgeText: '[ PHYSICS // SENSES ]',
+    kickerBottomClass: 'bottom-[312px]',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-cyan-400 via-violet-400 to-cyan-100 shadow-[0_0_14px_rgba(34,211,238,0.55)]',
+  },
 } as const

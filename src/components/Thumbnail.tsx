@@ -36,6 +36,12 @@ const COVERS: Record<
     accent: '#f59e0b',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'touch-and-feel': {
+    kicker: '[ PHYSICS // SENSES ]',
+    title: ['IF ATOMS', 'NEVER TOUCH', 'HOW DO YOU FEEL?'],
+    accent: '#22d3ee',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],
@@ -347,10 +353,45 @@ function EverestScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
-function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' }) {
+/* ------- touch-and-feel scene: skin cross-section + fingertip ------- */
+function TouchAndFeelScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(700px 620px at 50% 62%, rgba(34,211,238,0.12), transparent 60%),' +
+            '#030712',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        {/* skin layers */}
+        <rect x={0} y={is169 ? 470 : 1200} width={is169 ? 1280 : 1080} height={is169 ? 250 : 720} fill="#2a1810" />
+        <rect x={0} y={is169 ? 380 : 1000} width={is169 ? 1280 : 1080} height={is169 ? 170 : 400} fill="#8a5a3b" />
+        <path d={`M 0 ${is169 ? 380 : 1000} L ${(is169 ? 1280 : 1080) / 2 - 170} ${is169 ? 380 : 1000} Q ${(is169 ? 1280 : 1080) / 2} ${is169 ? 440 : 1120} ${(is169 ? 1280 : 1080) / 2 + 170} ${is169 ? 380 : 1000} L ${is169 ? 1280 : 1080} ${is169 ? 380 : 1000} L ${is169 ? 1280 : 1080} ${is169 ? 480 : 1220} L 0 ${is169 ? 480 : 1220} Z`} fill="#d9b08a" stroke="#2b1a10" strokeWidth={2} />
+        {/* fingertip */}
+        <path d={`M ${(is169 ? 1280 : 1080) / 2 - 120} ${is169 ? 180 : 640} L ${(is169 ? 1280 : 1080) / 2 - 120} ${is169 ? 380 : 1000} Q ${(is169 ? 1280 : 1080) / 2} ${is169 ? 420 : 1110} ${(is169 ? 1280 : 1080) / 2 + 120} ${is169 ? 380 : 1000} L ${(is169 ? 1280 : 1080) / 2 + 120} ${is169 ? 180 : 640} Z`} fill="#c98d5f" stroke="#5a3016" strokeWidth={4} />
+        {/* nail */}
+        <path d={`M ${(is169 ? 1280 : 1080) / 2 - 46} ${is169 ? 220 : 700} Q ${(is169 ? 1280 : 1080) / 2} ${is169 ? 200 : 672} ${(is169 ? 1280 : 1080) / 2 + 46} ${is169 ? 220 : 700} L ${(is169 ? 1280 : 1080) / 2 + 46} ${is169 ? 265 : 760} Q ${(is169 ? 1280 : 1080) / 2} ${is169 ? 245 : 735} ${(is169 ? 1280 : 1080) / 2 - 46} ${is169 ? 265 : 760} Z`} fill="#e8cdb8" opacity={0.9} />
+        {/* electron dots */}
+        <circle cx={(is169 ? 1280 : 1080) / 2 - 170} cy={is169 ? 340 : 985} r={is169 ? 10 : 18} fill="none" stroke="#f59e0b" strokeWidth={2.5} strokeDasharray="5 7" />
+        <circle cx={(is169 ? 1280 : 1080) / 2 + 170} cy={is169 ? 340 : 985} r={is169 ? 10 : 18} fill="none" stroke="#f59e0b" strokeWidth={2.5} strokeDasharray="5 7" />
+      </svg>
+    </>
+  )
+}
+
+function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' }) {
   if (variant === 'minecraft') return <MinecraftScene ratio={ratio} />
   if (variant === 'neverTouch') return <NeverTouchScene ratio={ratio} />
   if (variant === 'everest') return <EverestScene ratio={ratio} />
+  if (variant === 'touchAndFeel') return <TouchAndFeelScene ratio={ratio} />
   const is169 = ratio === '16x9'
 
   // geometry per ratio
@@ -551,7 +592,7 @@ export default function Thumbnail() {
     >
       <Scene
         ratio={ratio}
-        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : undefined}
+        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : undefined}
       />
 
       {/* kicker chip top-left */}
