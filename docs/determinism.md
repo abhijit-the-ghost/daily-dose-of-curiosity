@@ -17,7 +17,18 @@ Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 f
 by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
 added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
 
-## 2026-11-16 — touch-and-feel (new episode)
+## 2026-11-16 (evening) — touch-and-feel reworked (plain-language pass)
+
+Owner request: the Meissner/Pacinian line was too dense — reworded act-2 narration to plain
+language ("slow buzz" / "fast buzz" at 40–60 / 100–300 Hz). New TTS (34.52 s, 72 words, act 2
+5.4–25.5 s) required a `tail: 1.5` scene override to stay ≤ 35 s (verify PASS gate).
+
+Two back-to-back renders: **2,655 frames, framemd5 identical** (MP4 sha256 `A61241C3…` — differs
+from the prior build; frames are the gate). Package refreshed: video.mp4 + about.txt/meta.json
+updated with the new timings/sha. No visual-design changes; caption content differs only where
+the VO changed.
+
+## 2026-11-16 — touch-and-feel (first cut)
 
 New science-series follow-up to `never-touch` ("if atoms never touch, how do you feel a table?").
 Script 68 words, 33.13 s (3 acts), endCard TRUE by house default.
@@ -28,7 +39,7 @@ gate; sha256 is per-build). Package kept the second build (sha256 `699F8445…`)
 
 | Episode | frames | Duration | Streams |
 |---|---|---|---|
-| `touch-and-feel` | 2547/2547 identical | 33.13s | 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz |
+| `touch-and-feel` (first cut) | 2547/2547 identical | 33.13s | 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz |
 
 ## 2026-11-15 (evening) — everest-challenger-deep rebuilt with end card
 

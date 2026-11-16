@@ -2,9 +2,9 @@
 
 slug: `touch-and-feel` · angle: **A+B merge** (comment-reply hook, mechanism chain) · hook style: question · series: existing `science` config (follow-up to `never-touch`)
 
-Script locked, 71 words (tags excluded; hyphenated = 1 word). ~25–30 s (hard cap 35 s).
+Script locked, 72 words (tags excluded; hyphenated = 1 word). ~34 s (hard cap 35 s; tail reduced to 1.5 s in scene.json to pass the 35 s gate).
 
-Canvas 1080×1920 @ 30 fps · `series: science` · `captions: karaoke-dim` (Anton, uppercase, outlined; active word cyan — follow-up "mater" series accent is cyan) · `endCard: true` (channel default for packaged episodes, owner choice 2026-11).
+Canvas 1080×1920 @ 30 fps · `series: science` · `captions: karaoke-dim` (Anton, uppercase, outlined; active word cyan) · `endCard: true` (owner default for packaged episodes).
 
 ## 0. Conventions
 Clock: preview = `<audio>.currentTime` + rAF; record (`?record=1`) = `window.__seek(t)`.
@@ -75,14 +75,13 @@ No logo intro. No 3D. No raster assets. No pressure numbers. No fingerprint-bump
 | 2.1 | `{electron,1}` | Arcs/bipolar glow around contact; tag "ELECTRON REPULSION" | glow pulse 0.35 | ls |
 | 2.2 | `{mechanically,1}` | Channels glow — 4 organ icons light up (Merkel, Meissner, Ruffini, Pacinian) labeled | pop 0.35 staggered 80 ms | openstax, pmc |
 | 2.3 | `{Merkel,1}` | 4-organ banner sweeps under the section | 0.4 snap | openstax/pmc |
-| 2.4 | `{Meissner,1}` | Chip: `MEISSNER 40–60 Hz` | chip pop | pmc |
-| 2.5 | `{Pacinian,1}` | Chip: `PACINIAN 100–300 Hz` | chip pop | pmc |
-| 2.6 | `{never,1}`(?) — see file | Signal arrow runs from dermis to "NERVE IMPULSE" tag | trace 0.7 s | openstax |
-| 3.0 | `{You,2}` | Big stamp: `YOU FEEL THE PUSH.` drifts in, sits ~8 px below dermis bottom | stamp 0.35 | |
+| 2.4 | `{Meissner,1}` | Chip: `MEISSNER 40–60 Hz` (VO: "slow buzz") | chip pop | pmc |
+| 2.5 | `{Pacinian,1}` | Chip: `PACINIAN 100–300 Hz` (VO: "fast buzz") | chip pop | pmc |
+| 3.0 | `{You,2}` | Big stamp: `YOU FEEL THE PUSH.` drifts in, sits left of the finger | stamp 0.35 | |
 | 3.1 | steady state | Finger still pressed; organ glows stay lit; end card fades in at end (owner default) | ambient only | |
 
 ## 4. Density and budget check
-Beats: act 1 = 4, act 2 = 8, act 3 = 2 → every ~2 s a change. Act windows: act 1 ≈ 0.1–5 s, act 2 ≈ 5–17 s, act 3 ≈ 17–26 s. Estimated build: 2–3 h.
+Beats: act 1 ≈ 0.1–4.7 s (hook) · act 2 ≈ 5.4–25.5 s (chain) · act 3 ≈ 26.3–32.2 s (verdict). Slowest single beat stays ≥1 s with the rework (act 2 is ~20 s; the frequency sentences breathe).
 
 ## 5. QA gate
 - [ ] `bunx tsc -b` passes.
