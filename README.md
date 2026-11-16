@@ -6,17 +6,20 @@ Format: short-form (YouTube Shorts / Instagram Reels / TikTok / Facebook Reels),
 (edge-tts, no API key), **2D SVG composition**, **Tailwind CSS v4**, and **puppeteer + ffmpeg**
 for frame-capture encoding. (SVG / Canvas / CSS only — no 3D engine.)
 
-## Docs — start here
+## Documentation — where everything lives
 
-| Doc | What it is |
+| Doc | What it covers |
 |---|---|
-| `docs/pipeline.md` | **From the prompt to the finished MP4** — step-by-step, with exact commands (generate → voice → render → verify → package) |
-| `VIDEO_PRODUCTION.md` | The playbook (rules, conventions, structure) |
-| `docs/brief-template.md` | The brief format (facts, art direction, beat sheet, QA) |
-| `docs/conventions.md` | Anchors, the FACTS rule, safe zones, banned strings |
-| `docs/determinism.md` | Frames-identical passes per episode |
-| `docs/risks.md` | edge-tts wildcard risk + alternatives to evaluate later |
-| `docs/url-explainer-sources.md` | Sources for the legacy URL explainer |
+| [`docs/pipeline.md`](docs/pipeline.md) | **Prompt → finished MP4** — the full step-by-step, with the exact commands and file paths (generate → voice → render → verify → package) |
+| [`VIDEO_PRODUCTION.md`](VIDEO_PRODUCTION.md) | The playbook — rules, conventions and structure of the episode format |
+| [`AGENTS.md`](AGENTS.md) | Episode law for the agent — one idea, sourcing rules, hard gates, the anti-goals |
+| [`docs/brief-template.md`](docs/brief-template.md) | The episode brief format — facts, art direction, beat sheet, QA checklist |
+| [`docs/conventions.md`](docs/conventions.md) | Anchors (`{word, occurrence}`), the FACTS rule, safe-zone, source-marker rule, HUD layers |
+| [`docs/determinism.md`](docs/determinism.md) | Every run's determinism status — framemd5 log, known jitter, gate decisions |
+| [`docs/risks.md`](docs/risks.md) | Known risks — edge-tts's unofficial endpoint, platform policy, voice fragility |
+| [`docs/url-explainer-sources.md`](docs/url-explainer-sources.md) | Source list for the legacy URL-explainer episode |
+| [`LICENSE`](LICENSE) | MIT |
+| [`shared-assets/LICENSES.md`](shared-assets/LICENSES.md) | Every external asset, its author and license (OFL fonts, Curiosity artwork) |
 
 ## Episodes shipped
 
@@ -36,13 +39,9 @@ Source of truth for scripts: `episodes/<slug>/script.txt` · Scene choreography:
 Ready-to-post packages live under `results/videos/<slug>/` — **gitignored on purpose**;
 `results/` is treated as disposable output, not source.
 
-Process design docs:
-
-- `docs/conventions.md` — anchors (`{word, occurrence}`), the FACTS rule, the fixed-safe-margin rule, the source-marker rule
-- `docs/brief-template.md` — brief template for new episodes (copy into `episodes/<slug>/brief.md`)
-- `docs/determinism.md` — frame-repeatability log
-- `docs/risks.md` — known risks (edge-tts ToS caveat, platform policies)
-- `docs/url-explainer-sources.md` — source list for the legacy URL-explainer episode
+For the full chain (prompt → MP4) see [`docs/pipeline.md`](docs/pipeline.md);
+for the rules behind it see [`AGENTS.md`](AGENTS.md) and
+[`VIDEO_PRODUCTION.md`](VIDEO_PRODUCTION.md).
 
 ## Pipeline
 
@@ -100,7 +99,7 @@ src/components/Starfield.tsx, KaraokeCaption.tsx, Hud.tsx, EndCard.tsx — share
 src/templates/types.ts     ActConfig / SceneConfig schema (`custom` | `scaleCompare` | `timeline` | `diagram`)
 public/audio/<slug>/       generated voiceover + metadata.json (do not hand-edit)
 scripts/                   generate_audio.py · render_video.mjs · dev_shot.mjs · verify.ts · admin_manifest.mjs
-docs/                      conventions · brief-template · determinism · risks
+docs/                      pipeline (prompt→MP4) · conventions · brief-template · determinism · risks · url-explainer-sources
 results/videos/<slug>/     ready-to-post package (gitignored — disposable)
 output/  frames/           render working dirs (gitignored)
 shared-assets/brand/       channel logo, OFL fonts, Curiosity stickman (original artwork)
@@ -126,14 +125,17 @@ exception to the "no dashboards" rule.
 
 ## Customizing / contributing a new episode
 
+Follow [`docs/pipeline.md`](docs/pipeline.md) end-to-end; the short version:
+
 1. `episodes/<slug>/script.txt` (with `[src: …]` markers per `docs/conventions.md`),
-   `scene.json`, `facts.ts`.
+   `scene.json`, `facts.ts`, `sources.md`, `brief.md` (see `docs/brief-template.md`).
 2. `bun run generate:<slug>` → `public/audio/<slug>/metadata.json`.
 3. `bun run verify <slug>` — must pass before anything renders.
 4. Register the `<Slug>Acts` component in `src/components/Episode.tsx` (`REGISTRY`),
    add route in `src/App.tsx`, add `HUD_PRESETS`/`CAPTION_STYLES` entries.
 5. `bun run dev` — iterate with `bun run shot "0.5,10,20" --episode <slug>`.
-6. `bun run render -- --episode <slug>` → probe + package into `results/videos/<slug>/`.
+6. `bun run render -- --episode <slug>` → `output/<slug>-1080x1920.mp4` → probe + package
+   into `results/videos/<slug>/`.
 
 See `docs/brief-template.md` for the episode brief shape and `docs/conventions.md`
 for the anchor / FACTS rules.
