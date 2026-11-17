@@ -1,6 +1,6 @@
 # Determinism report — video pipeline
 
-Date: 2026-11-11, updated 2026-11-12 ·- updated 2026-11-15 ·- updated 2026-11-16
+Date: 2026-11-11, updated 2026-11-12 ·- updated 2026-11-15 ·- updated 2026-11-16 ·- updated 2026-11-17
 Owner: Ghost (Abhijit Guragain)
 
 ## 2026-11-15 — everest-challenger-deep is byte-exact
@@ -16,6 +16,25 @@ Packaged artifact `results/videos/everest-challenger-deep/video.mp4` is this exa
 Note: an earlier build of this episode verified at sha256 `733F58B1…` (2,239 frames) — superseded
 by the FACTS-literal cleanup pass (no displayed digit outside FACTS / brighter footnote); new build
 added one frame (2,240) purely from container metadata drift between encoder runs, not a visual change.
+
+## 2026-11-17 — nuclear-gandhi (new episode)
+
+New game-physics-series myth-check episode: "The most famous bug never existed." Follows the TV
+Tropes 2012 "Tunafish" edit history (archived 2012-09-01) as the origin, debunks with Sid Meier's
+memoir (quoted via Wikipedia) and Brian Reynolds (Grand Designer Civ II via NZ Skeptics), and re-
+introduces the actual mechanism — Jon Shafer deliberately set Gandhi's Build Nuke and Use Nuke to
+12 on Civilization V.
+
+TTS: 71 words, 34.42 s (house tail = 2.0 s; within cap). Scenes custom (NOT Remotion or other engine),
+HUD preset `nuclearGandhi` (amber+cyan), EndCard TRUE.
+
+Double render: **2,647/2,647 frames framemd5 identical**; MP4 sha256 `AD6F7396…` (no content drift,
+container-level drift only). Package refreshed with about.txt (all sources marked NEEDS HUMAN
+CONFIRMATION) + meta.json + all covers + thumbnails.
+
+| Episode | frames | Duration | Streams |
+|---|---|---|---|
+| `nuclear-gandhi` | 2647/2647 identical | 34.42s | 1080x1920 · 30 fps · H.264 High · yuv420p · AAC 48 kHz |
 
 ## 2026-11-16 (late) — touch-and-feel re-worded again (Hz explained)
 

@@ -1,0 +1,8 @@
+// ACT 1 — THE MYTH
+The most famous game bug never existed. Gandhi's rating: 1. Democracy drops it by 2 — integer wraps to 255. Pacifist turns maniac. [src: sk, wp, kk]
+
+// ACT 2 — THE DEBUNK
+Sid Meier says C and C++ ints are signed — no underflow. Government never changed AI aggression. Brian Reynolds, CIV II's designer, remembers just three levels. [src: wp, sk]
+
+// ACT 3 — THE TRUTH
+Then CIV V's designer set Gandhi's Build Nuke and Use Nuke to 12 and 12 — on purpose. The bug never happened. The joke did. [src: wp]

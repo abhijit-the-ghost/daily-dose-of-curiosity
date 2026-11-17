@@ -1,0 +1,1230 @@
+{
+  "title": "Nuclear Gandhi \u2014 the bug that never existed",
+  "series": "game-physics",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "Nuclear Gandhi \u2014 the bug that never existed",
+      "file": "full_voiceover.mp3",
+      "duration": 32.424,
+      "start": 0.0,
+      "end": 32.424,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.095,
+          "end": 0.24
+        },
+        {
+          "w": "most",
+          "start": 0.251,
+          "end": 0.496
+        },
+        {
+          "w": "famous",
+          "start": 0.508,
+          "end": 0.82
+        },
+        {
+          "w": "game",
+          "start": 0.831,
+          "end": 1.066
+        },
+        {
+          "w": "bug",
+          "start": 1.077,
+          "end": 1.345
+        },
+        {
+          "w": "never",
+          "start": 1.356,
+          "end": 1.612
+        },
+        {
+          "w": "existed",
+          "start": 1.624,
+          "end": 2.204
+        },
+        {
+          "w": "Gandhi's",
+          "start": 2.98,
+          "end": 3.449
+        },
+        {
+          "w": "rating",
+          "start": 3.46,
+          "end": 3.772
+        },
+        {
+          "w": "1",
+          "start": 3.984,
+          "end": 4.252
+        },
+        {
+          "w": "Democracy",
+          "start": 4.442,
+          "end": 5.011
+        },
+        {
+          "w": "drops",
+          "start": 5.022,
+          "end": 5.346
+        },
+        {
+          "w": "it",
+          "start": 5.357,
+          "end": 5.446
+        },
+        {
+          "w": "by",
+          "start": 5.458,
+          "end": 5.569
+        },
+        {
+          "w": "2",
+          "start": 5.58,
+          "end": 5.893
+        },
+        {
+          "w": "integer",
+          "start": 6.06,
+          "end": 6.44
+        },
+        {
+          "w": "wraps",
+          "start": 6.451,
+          "end": 6.752
+        },
+        {
+          "w": "to",
+          "start": 6.763,
+          "end": 6.864
+        },
+        {
+          "w": "255",
+          "start": 6.875,
+          "end": 8.125
+        },
+        {
+          "w": "Pacifist",
+          "start": 8.895,
+          "end": 9.509
+        },
+        {
+          "w": "turns",
+          "start": 9.52,
+          "end": 9.799
+        },
+        {
+          "w": "maniac",
+          "start": 9.81,
+          "end": 10.424
+        },
+        {
+          "w": "Sid",
+          "start": 11.194,
+          "end": 11.462
+        },
+        {
+          "w": "Meier",
+          "start": 11.473,
+          "end": 11.786
+        },
+        {
+          "w": "says",
+          "start": 11.797,
+          "end": 12.054
+        },
+        {
+          "w": "C",
+          "start": 12.065,
+          "end": 12.243
+        },
+        {
+          "w": "and",
+          "start": 12.254,
+          "end": 12.355
+        },
+        {
+          "w": "C++",
+          "start": 12.366,
+          "end": 13.036
+        },
+        {
+          "w": "ints",
+          "start": 13.047,
+          "end": 13.56
+        },
+        {
+          "w": "are",
+          "start": 13.571,
+          "end": 13.694
+        },
+        {
+          "w": "signed",
+          "start": 13.705,
+          "end": 14.085
+        },
+        {
+          "w": "no",
+          "start": 14.341,
+          "end": 14.587
+        },
+        {
+          "w": "underflow",
+          "start": 14.598,
+          "end": 15.167
+        },
+        {
+          "w": "Government",
+          "start": 15.949,
+          "end": 16.417
+        },
+        {
+          "w": "never",
+          "start": 16.429,
+          "end": 16.708
+        },
+        {
+          "w": "changed",
+          "start": 16.719,
+          "end": 17.121
+        },
+        {
+          "w": "AI",
+          "start": 17.132,
+          "end": 17.411
+        },
+        {
+          "w": "aggression",
+          "start": 17.422,
+          "end": 17.969
+        },
+        {
+          "w": "Brian",
+          "start": 18.75,
+          "end": 19.096
+        },
+        {
+          "w": "Reynolds",
+          "start": 19.107,
+          "end": 19.487
+        },
+        {
+          "w": "CIV",
+          "start": 19.665,
+          "end": 20.134
+        },
+        {
+          "w": "II's",
+          "start": 20.145,
+          "end": 20.368
+        },
+        {
+          "w": "designer",
+          "start": 20.379,
+          "end": 20.826
+        },
+        {
+          "w": "remembers",
+          "start": 20.993,
+          "end": 21.406
+        },
+        {
+          "w": "just",
+          "start": 21.417,
+          "end": 21.652
+        },
+        {
+          "w": "three",
+          "start": 21.663,
+          "end": 21.864
+        },
+        {
+          "w": "levels",
+          "start": 21.875,
+          "end": 22.377
+        },
+        {
+          "w": "Then",
+          "start": 23.147,
+          "end": 23.46
+        },
+        {
+          "w": "CIV",
+          "start": 23.471,
+          "end": 23.929
+        },
+        {
+          "w": "V's",
+          "start": 23.94,
+          "end": 24.163
+        },
+        {
+          "w": "designer",
+          "start": 24.174,
+          "end": 24.587
+        },
+        {
+          "w": "set",
+          "start": 24.598,
+          "end": 24.799
+        },
+        {
+          "w": "Gandhi's",
+          "start": 24.81,
+          "end": 25.223
+        },
+        {
+          "w": "Build",
+          "start": 25.234,
+          "end": 25.469
+        },
+        {
+          "w": "Nuke",
+          "start": 25.48,
+          "end": 25.781
+        },
+        {
+          "w": "and",
+          "start": 25.792,
+          "end": 25.882
+        },
+        {
+          "w": "Use",
+          "start": 25.893,
+          "end": 26.105
+        },
+        {
+          "w": "Nuke",
+          "start": 26.116,
+          "end": 26.339
+        },
+        {
+          "w": "to",
+          "start": 26.35,
+          "end": 26.417
+        },
+        {
+          "w": "12",
+          "start": 26.429,
+          "end": 26.73
+        },
+        {
+          "w": "and",
+          "start": 26.741,
+          "end": 26.819
+        },
+        {
+          "w": "12",
+          "start": 26.83,
+          "end": 27.199
+        },
+        {
+          "w": "on",
+          "start": 27.4,
+          "end": 27.511
+        },
+        {
+          "w": "purpose",
+          "start": 27.522,
+          "end": 28.069
+        },
+        {
+          "w": "The",
+          "start": 28.85,
+          "end": 28.996
+        },
+        {
+          "w": "bug",
+          "start": 29.007,
+          "end": 29.241
+        },
+        {
+          "w": "never",
+          "start": 29.252,
+          "end": 29.52
+        },
+        {
+          "w": "happened",
+          "start": 29.531,
+          "end": 30.034
+        },
+        {
+          "w": "The",
+          "start": 30.804,
+          "end": 30.96
+        },
+        {
+          "w": "joke",
+          "start": 30.971,
+          "end": 31.272
+        },
+        {
+          "w": "did",
+          "start": 31.284,
+          "end": 31.641
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE MYTH",
+      "caption": "// ACT 1 \u2014 THE MYTH",
+      "file": "full_voiceover.mp3",
+      "duration": 10.329,
+      "start": 0.095,
+      "end": 10.424,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.095,
+          "end": 0.24
+        },
+        {
+          "w": "most",
+          "start": 0.251,
+          "end": 0.496
+        },
+        {
+          "w": "famous",
+          "start": 0.508,
+          "end": 0.82
+        },
+        {
+          "w": "game",
+          "start": 0.831,
+          "end": 1.066
+        },
+        {
+          "w": "bug",
+          "start": 1.077,
+          "end": 1.345
+        },
+        {
+          "w": "never",
+          "start": 1.356,
+          "end": 1.612
+        },
+        {
+          "w": "existed",
+          "start": 1.624,
+          "end": 2.204
+        },
+        {
+          "w": "Gandhi's",
+          "start": 2.98,
+          "end": 3.449
+        },
+        {
+          "w": "rating",
+          "start": 3.46,
+          "end": 3.772
+        },
+        {
+          "w": "1",
+          "start": 3.984,
+          "end": 4.252
+        },
+        {
+          "w": "Democracy",
+          "start": 4.442,
+          "end": 5.011
+        },
+        {
+          "w": "drops",
+          "start": 5.022,
+          "end": 5.346
+        },
+        {
+          "w": "it",
+          "start": 5.357,
+          "end": 5.446
+        },
+        {
+          "w": "by",
+          "start": 5.458,
+          "end": 5.569
+        },
+        {
+          "w": "2",
+          "start": 5.58,
+          "end": 5.893
+        },
+        {
+          "w": "integer",
+          "start": 6.06,
+          "end": 6.44
+        },
+        {
+          "w": "wraps",
+          "start": 6.451,
+          "end": 6.752
+        },
+        {
+          "w": "to",
+          "start": 6.763,
+          "end": 6.864
+        },
+        {
+          "w": "255",
+          "start": 6.875,
+          "end": 8.125
+        },
+        {
+          "w": "Pacifist",
+          "start": 8.895,
+          "end": 9.509
+        },
+        {
+          "w": "turns",
+          "start": 9.52,
+          "end": 9.799
+        },
+        {
+          "w": "maniac",
+          "start": 9.81,
+          "end": 10.424
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE DEBUNK",
+      "caption": "// ACT 2 \u2014 THE DEBUNK",
+      "file": "full_voiceover.mp3",
+      "duration": 11.183,
+      "start": 11.194,
+      "end": 22.377,
+      "words": [
+        {
+          "w": "Sid",
+          "start": 11.194,
+          "end": 11.462
+        },
+        {
+          "w": "Meier",
+          "start": 11.473,
+          "end": 11.786
+        },
+        {
+          "w": "says",
+          "start": 11.797,
+          "end": 12.054
+        },
+        {
+          "w": "C",
+          "start": 12.065,
+          "end": 12.243
+        },
+        {
+          "w": "and",
+          "start": 12.254,
+          "end": 12.355
+        },
+        {
+          "w": "C++",
+          "start": 12.366,
+          "end": 13.036
+        },
+        {
+          "w": "ints",
+          "start": 13.047,
+          "end": 13.56
+        },
+        {
+          "w": "are",
+          "start": 13.571,
+          "end": 13.694
+        },
+        {
+          "w": "signed",
+          "start": 13.705,
+          "end": 14.085
+        },
+        {
+          "w": "no",
+          "start": 14.341,
+          "end": 14.587
+        },
+        {
+          "w": "underflow",
+          "start": 14.598,
+          "end": 15.167
+        },
+        {
+          "w": "Government",
+          "start": 15.949,
+          "end": 16.417
+        },
+        {
+          "w": "never",
+          "start": 16.429,
+          "end": 16.708
+        },
+        {
+          "w": "changed",
+          "start": 16.719,
+          "end": 17.121
+        },
+        {
+          "w": "AI",
+          "start": 17.132,
+          "end": 17.411
+        },
+        {
+          "w": "aggression",
+          "start": 17.422,
+          "end": 17.969
+        },
+        {
+          "w": "Brian",
+          "start": 18.75,
+          "end": 19.096
+        },
+        {
+          "w": "Reynolds",
+          "start": 19.107,
+          "end": 19.487
+        },
+        {
+          "w": "CIV",
+          "start": 19.665,
+          "end": 20.134
+        },
+        {
+          "w": "II's",
+          "start": 20.145,
+          "end": 20.368
+        },
+        {
+          "w": "designer",
+          "start": 20.379,
+          "end": 20.826
+        },
+        {
+          "w": "remembers",
+          "start": 20.993,
+          "end": 21.406
+        },
+        {
+          "w": "just",
+          "start": 21.417,
+          "end": 21.652
+        },
+        {
+          "w": "three",
+          "start": 21.663,
+          "end": 21.864
+        },
+        {
+          "w": "levels",
+          "start": 21.875,
+          "end": 22.377
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE TRUTH",
+      "caption": "// ACT 3 \u2014 THE TRUTH",
+      "file": "full_voiceover.mp3",
+      "duration": 8.494,
+      "start": 23.147,
+      "end": 31.641,
+      "words": [
+        {
+          "w": "Then",
+          "start": 23.147,
+          "end": 23.46
+        },
+        {
+          "w": "CIV",
+          "start": 23.471,
+          "end": 23.929
+        },
+        {
+          "w": "V's",
+          "start": 23.94,
+          "end": 24.163
+        },
+        {
+          "w": "designer",
+          "start": 24.174,
+          "end": 24.587
+        },
+        {
+          "w": "set",
+          "start": 24.598,
+          "end": 24.799
+        },
+        {
+          "w": "Gandhi's",
+          "start": 24.81,
+          "end": 25.223
+        },
+        {
+          "w": "Build",
+          "start": 25.234,
+          "end": 25.469
+        },
+        {
+          "w": "Nuke",
+          "start": 25.48,
+          "end": 25.781
+        },
+        {
+          "w": "and",
+          "start": 25.792,
+          "end": 25.882
+        },
+        {
+          "w": "Use",
+          "start": 25.893,
+          "end": 26.105
+        },
+        {
+          "w": "Nuke",
+          "start": 26.116,
+          "end": 26.339
+        },
+        {
+          "w": "to",
+          "start": 26.35,
+          "end": 26.417
+        },
+        {
+          "w": "12",
+          "start": 26.429,
+          "end": 26.73
+        },
+        {
+          "w": "and",
+          "start": 26.741,
+          "end": 26.819
+        },
+        {
+          "w": "12",
+          "start": 26.83,
+          "end": 27.199
+        },
+        {
+          "w": "on",
+          "start": 27.4,
+          "end": 27.511
+        },
+        {
+          "w": "purpose",
+          "start": 27.522,
+          "end": 28.069
+        },
+        {
+          "w": "The",
+          "start": 28.85,
+          "end": 28.996
+        },
+        {
+          "w": "bug",
+          "start": 29.007,
+          "end": 29.241
+        },
+        {
+          "w": "never",
+          "start": 29.252,
+          "end": 29.52
+        },
+        {
+          "w": "happened",
+          "start": 29.531,
+          "end": 30.034
+        },
+        {
+          "w": "The",
+          "start": 30.804,
+          "end": 30.96
+        },
+        {
+          "w": "joke",
+          "start": 30.971,
+          "end": 31.272
+        },
+        {
+          "w": "did",
+          "start": 31.284,
+          "end": 31.641
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "The",
+      "start": 0.095,
+      "end": 0.24
+    },
+    {
+      "w": "most",
+      "start": 0.251,
+      "end": 0.496
+    },
+    {
+      "w": "famous",
+      "start": 0.508,
+      "end": 0.82
+    },
+    {
+      "w": "game",
+      "start": 0.831,
+      "end": 1.066
+    },
+    {
+      "w": "bug",
+      "start": 1.077,
+      "end": 1.345
+    },
+    {
+      "w": "never",
+      "start": 1.356,
+      "end": 1.612
+    },
+    {
+      "w": "existed",
+      "start": 1.624,
+      "end": 2.204
+    },
+    {
+      "w": "Gandhi's",
+      "start": 2.98,
+      "end": 3.449
+    },
+    {
+      "w": "rating",
+      "start": 3.46,
+      "end": 3.772
+    },
+    {
+      "w": "1",
+      "start": 3.984,
+      "end": 4.252
+    },
+    {
+      "w": "Democracy",
+      "start": 4.442,
+      "end": 5.011
+    },
+    {
+      "w": "drops",
+      "start": 5.022,
+      "end": 5.346
+    },
+    {
+      "w": "it",
+      "start": 5.357,
+      "end": 5.446
+    },
+    {
+      "w": "by",
+      "start": 5.458,
+      "end": 5.569
+    },
+    {
+      "w": "2",
+      "start": 5.58,
+      "end": 5.893
+    },
+    {
+      "w": "integer",
+      "start": 6.06,
+      "end": 6.44
+    },
+    {
+      "w": "wraps",
+      "start": 6.451,
+      "end": 6.752
+    },
+    {
+      "w": "to",
+      "start": 6.763,
+      "end": 6.864
+    },
+    {
+      "w": "255",
+      "start": 6.875,
+      "end": 8.125
+    },
+    {
+      "w": "Pacifist",
+      "start": 8.895,
+      "end": 9.509
+    },
+    {
+      "w": "turns",
+      "start": 9.52,
+      "end": 9.799
+    },
+    {
+      "w": "maniac",
+      "start": 9.81,
+      "end": 10.424
+    },
+    {
+      "w": "Sid",
+      "start": 11.194,
+      "end": 11.462
+    },
+    {
+      "w": "Meier",
+      "start": 11.473,
+      "end": 11.786
+    },
+    {
+      "w": "says",
+      "start": 11.797,
+      "end": 12.054
+    },
+    {
+      "w": "C",
+      "start": 12.065,
+      "end": 12.243
+    },
+    {
+      "w": "and",
+      "start": 12.254,
+      "end": 12.355
+    },
+    {
+      "w": "C++",
+      "start": 12.366,
+      "end": 13.036
+    },
+    {
+      "w": "ints",
+      "start": 13.047,
+      "end": 13.56
+    },
+    {
+      "w": "are",
+      "start": 13.571,
+      "end": 13.694
+    },
+    {
+      "w": "signed",
+      "start": 13.705,
+      "end": 14.085
+    },
+    {
+      "w": "no",
+      "start": 14.341,
+      "end": 14.587
+    },
+    {
+      "w": "underflow",
+      "start": 14.598,
+      "end": 15.167
+    },
+    {
+      "w": "Government",
+      "start": 15.949,
+      "end": 16.417
+    },
+    {
+      "w": "never",
+      "start": 16.429,
+      "end": 16.708
+    },
+    {
+      "w": "changed",
+      "start": 16.719,
+      "end": 17.121
+    },
+    {
+      "w": "AI",
+      "start": 17.132,
+      "end": 17.411
+    },
+    {
+      "w": "aggression",
+      "start": 17.422,
+      "end": 17.969
+    },
+    {
+      "w": "Brian",
+      "start": 18.75,
+      "end": 19.096
+    },
+    {
+      "w": "Reynolds",
+      "start": 19.107,
+      "end": 19.487
+    },
+    {
+      "w": "CIV",
+      "start": 19.665,
+      "end": 20.134
+    },
+    {
+      "w": "II's",
+      "start": 20.145,
+      "end": 20.368
+    },
+    {
+      "w": "designer",
+      "start": 20.379,
+      "end": 20.826
+    },
+    {
+      "w": "remembers",
+      "start": 20.993,
+      "end": 21.406
+    },
+    {
+      "w": "just",
+      "start": 21.417,
+      "end": 21.652
+    },
+    {
+      "w": "three",
+      "start": 21.663,
+      "end": 21.864
+    },
+    {
+      "w": "levels",
+      "start": 21.875,
+      "end": 22.377
+    },
+    {
+      "w": "Then",
+      "start": 23.147,
+      "end": 23.46
+    },
+    {
+      "w": "CIV",
+      "start": 23.471,
+      "end": 23.929
+    },
+    {
+      "w": "V's",
+      "start": 23.94,
+      "end": 24.163
+    },
+    {
+      "w": "designer",
+      "start": 24.174,
+      "end": 24.587
+    },
+    {
+      "w": "set",
+      "start": 24.598,
+      "end": 24.799
+    },
+    {
+      "w": "Gandhi's",
+      "start": 24.81,
+      "end": 25.223
+    },
+    {
+      "w": "Build",
+      "start": 25.234,
+      "end": 25.469
+    },
+    {
+      "w": "Nuke",
+      "start": 25.48,
+      "end": 25.781
+    },
+    {
+      "w": "and",
+      "start": 25.792,
+      "end": 25.882
+    },
+    {
+      "w": "Use",
+      "start": 25.893,
+      "end": 26.105
+    },
+    {
+      "w": "Nuke",
+      "start": 26.116,
+      "end": 26.339
+    },
+    {
+      "w": "to",
+      "start": 26.35,
+      "end": 26.417
+    },
+    {
+      "w": "12",
+      "start": 26.429,
+      "end": 26.73
+    },
+    {
+      "w": "and",
+      "start": 26.741,
+      "end": 26.819
+    },
+    {
+      "w": "12",
+      "start": 26.83,
+      "end": 27.199
+    },
+    {
+      "w": "on",
+      "start": 27.4,
+      "end": 27.511
+    },
+    {
+      "w": "purpose",
+      "start": 27.522,
+      "end": 28.069
+    },
+    {
+      "w": "The",
+      "start": 28.85,
+      "end": 28.996
+    },
+    {
+      "w": "bug",
+      "start": 29.007,
+      "end": 29.241
+    },
+    {
+      "w": "never",
+      "start": 29.252,
+      "end": 29.52
+    },
+    {
+      "w": "happened",
+      "start": 29.531,
+      "end": 30.034
+    },
+    {
+      "w": "The",
+      "start": 30.804,
+      "end": 30.96
+    },
+    {
+      "w": "joke",
+      "start": 30.971,
+      "end": 31.272
+    },
+    {
+      "w": "did",
+      "start": 31.284,
+      "end": 31.641
+    }
+  ],
+  "anchors": {
+    "gandhi's_1": {
+      "ok": true,
+      "name": "gandhi's",
+      "occurrence": 1,
+      "index": 7,
+      "start": 2.98,
+      "end": 3.449
+    },
+    "gandhi's_2": {
+      "ok": true,
+      "name": "gandhi's",
+      "occurrence": 2,
+      "index": 52,
+      "start": 24.81,
+      "end": 25.223
+    },
+    "civ_1": {
+      "ok": true,
+      "name": "civ",
+      "occurrence": 1,
+      "index": 40,
+      "start": 19.665,
+      "end": 20.134
+    },
+    "civ_2": {
+      "ok": true,
+      "name": "civ",
+      "occurrence": 2,
+      "index": 48,
+      "start": 23.471,
+      "end": 23.929
+    },
+    "democracy_1": {
+      "ok": true,
+      "name": "democracy",
+      "occurrence": 1,
+      "index": 10,
+      "start": 4.442,
+      "end": 5.011
+    },
+    "wraps_1": {
+      "ok": true,
+      "name": "wraps",
+      "occurrence": 1,
+      "index": 16,
+      "start": 6.451,
+      "end": 6.752
+    },
+    "meier_1": {
+      "ok": true,
+      "name": "meier",
+      "occurrence": 1,
+      "index": 23,
+      "start": 11.473,
+      "end": 11.786
+    },
+    "reynolds_1": {
+      "ok": true,
+      "name": "reynolds",
+      "occurrence": 1,
+      "index": 39,
+      "start": 19.107,
+      "end": 19.487
+    },
+    "levels_1": {
+      "ok": true,
+      "name": "levels",
+      "occurrence": 1,
+      "index": 46,
+      "start": 21.875,
+      "end": 22.377
+    },
+    "bug_1": {
+      "ok": true,
+      "name": "bug",
+      "occurrence": 1,
+      "index": 4,
+      "start": 1.077,
+      "end": 1.345
+    },
+    "bug_2": {
+      "ok": true,
+      "name": "bug",
+      "occurrence": 2,
+      "index": 65,
+      "start": 29.007,
+      "end": 29.241
+    },
+    "joke_1": {
+      "ok": true,
+      "name": "joke",
+      "occurrence": 1,
+      "index": 69,
+      "start": 30.971,
+      "end": 31.272
+    }
+  },
+  "totalDuration": 34.424
+}

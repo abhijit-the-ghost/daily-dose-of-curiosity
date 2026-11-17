@@ -42,6 +42,12 @@ const COVERS: Record<
     accent: '#22d3ee',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'nuclear-gandhi': {
+    kicker: '[ GAME MYTHS // CIV ]',
+    title: ['THE BUG', 'THAT NEVER', 'EXISTED'],
+    accent: '#22d3ee',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],
@@ -387,11 +393,48 @@ function TouchAndFeelScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
-function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' }) {
+/* ------- nuclear-gandhi scene: NO BUG stamp + glitch 255 tile ------- */
+function NuclearGandhiScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+  const cx = is169 ? 640 : 540
+  const cy = is169 ? 360 : 940
+  const S  = is169 ? 0.9 : 1.4
+
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(720px 620px at 60% 34%, rgba(34,211,238,0.12), transparent 58%),' +
+            'radial-gradient(640px 620px at 40% 92%, rgba(239,68,68,0.10), transparent 60%),' +
+            '#030712',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        {/* false numeral tile */}
+        <rect x={cx - 240 * S} y={cy - 210 * S} width={480 * S} height={420 * S} fill="#0b1220" stroke="#ef4444" strokeWidth={4 * S} />
+        <text x={cx} y={cy + 72 * S} textAnchor="middle" fill="#f59e0b" fontSize={is169 ? 160 : 250} fontFamily="Anton, Impact, sans-serif" letterSpacing={4 * S} opacity="0.92">255</text>
+        <text x={cx} y={cy + 118 * S} textAnchor="middle" fill="#ef4444" fontSize={is169 ? 14 : 22} fontFamily="ui-monospace, Consolas, monospace" letterSpacing={10 * S} opacity="0.85">RUMORED</text>
+        {/* stamp */}
+        <g transform={`translate(${cx}, ${cy + 185 * S}) rotate(-4)`}>
+          <rect x={is169 ? -185 : -280} y={-62} width={is169 ? 370 : 560} height={124} fill="#030712" stroke="#22d3ee" strokeWidth={is169 ? 3 : 6} />
+          <text x={0} y={34} textAnchor="middle" fill="#22d3ee" fontSize={is169 ? 30 : 56} fontFamily="Anton, Impact, sans-serif" letterSpacing={is169 ? 4 : 8}>NO BUG</text>
+        </g>
+      </svg>
+    </>
+  )
+}
+
+function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' | 'nuclearGandhi' }) {
   if (variant === 'minecraft') return <MinecraftScene ratio={ratio} />
   if (variant === 'neverTouch') return <NeverTouchScene ratio={ratio} />
   if (variant === 'everest') return <EverestScene ratio={ratio} />
   if (variant === 'touchAndFeel') return <TouchAndFeelScene ratio={ratio} />
+  if (variant === 'nuclearGandhi') return <NuclearGandhiScene ratio={ratio} />
   const is169 = ratio === '16x9'
 
   // geometry per ratio
@@ -592,7 +635,7 @@ export default function Thumbnail() {
     >
       <Scene
         ratio={ratio}
-        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : undefined}
+        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : slug === 'nuclear-gandhi' ? 'nuclearGandhi' : undefined}
       />
 
       {/* kicker chip top-left */}

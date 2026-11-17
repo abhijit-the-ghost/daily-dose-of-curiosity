@@ -41,6 +41,12 @@ const COVERS: Record<
     accent: '#22d3ee',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'nuclear-gandhi': {
+    kicker: '[ GAME MYTHS // CIV ]',
+    title: ['THE BUG', 'THAT NEVER', 'EXISTED'],
+    accent: '#22d3ee',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

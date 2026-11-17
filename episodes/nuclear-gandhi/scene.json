@@ -1,0 +1,22 @@
+{
+  "series": "game-physics",
+  "title": "Nuclear Gandhi — the bug that never existed",
+  "slug": "nuclear-gandhi",
+  "acts": [
+    { "kicker": "01 // THE MYTH",   "template": "custom" },
+    { "kicker": "02 // THE DEBUNK", "template": "custom" },
+    { "kicker": "03 // THE TRUTH",  "template": "custom" }
+  ],
+  "endCard": true,
+  "anchors": {
+    "Gandhi's": [1, 2],
+    "CIV": [1, 2],
+    "democracy": [1],
+    "wraps": [1],
+    "Meier": [1],
+    "Reynolds": [1],
+    "levels": [1],
+    "bug": [1, 2],
+    "joke": [1]
+  }
+}

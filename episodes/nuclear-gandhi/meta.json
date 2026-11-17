@@ -1,0 +1,39 @@
+{
+  "slug": "nuclear-gandhi",
+  "series": "game-physics",
+  "hook": "The most famous game bug never existed.",
+  "hookStyle": "claim",
+  "captionStyle": "karaoke-dim",
+  "endCard": true,
+  "durationSec": 34.42,
+  "wordCount": 71,
+  "voice": "en-US-AriaNeural",
+  "voiceRate": "+12%",
+  "posted": {
+    "youtube": null,
+    "instagram": null,
+    "tiktok": null
+  },
+  "tags": [
+    "civilization",
+    "games",
+    "debunked",
+    "myth-check",
+    "nuclear-gandhi",
+    "gandhi",
+    "programming",
+    "code-myth",
+    "verifiedfacts",
+    "dailydoseofcuriosity"
+  ],
+  "covers": {
+    "youtube": "cover_youtube.png",
+    "tiktok": "cover_tiktok.png",
+    "instagram": "cover_instagram.png"
+  },
+  "thumbnails": {
+    "youtube": "thumbnail_youtube.png",
+    "instagram": "thumbnail_instagram.png"
+  },
+  "assumptions": []
+}
