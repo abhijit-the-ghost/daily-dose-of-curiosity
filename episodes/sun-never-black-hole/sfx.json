@@ -1,0 +1,10 @@
+{
+  "comment": "SFX events for sun-never-black-hole, anchored to metadata.json word beats. Vocabulary: sub_drop = emphasis (\"this matters\"), riser = anticipation (\"watch closely\"). Gains sit under the voice (-12..-22 dB); mixed with normalize=0 at encode time.",
+  "events": [
+    { "t": 0.88,  "file": "sub_drop.wav", "gainDb": -20 },
+    { "t": 11.31, "file": "sub_drop.wav", "gainDb": -22 },
+    { "t": 20.2,  "file": "riser.wav",    "gainDb": -12 },
+    { "t": 22.81, "file": "sub_drop.wav", "gainDb": -14 },
+    { "t": 38.98, "file": "sub_drop.wav", "gainDb": -16 }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "series": "star-scale",
+  "title": "Why our Sun will never become a black hole",
+  "slug": "sun-never-black-hole",
+  "acts": [
+    { "kicker": "", "template": "custom" },
+    { "kicker": "", "template": "custom" },
+    { "kicker": "", "template": "custom" },
+    { "kicker": "", "template": "custom" }
+  ],
+  "endCard": true,
+  "anchors": {
+    "hole": [1, 2],
+    "barely": [1],
+    "giant": [1],
+    "Mercury": [1],
+    "sheds": [1],
+    "white": [1],
+    "whisper": [1]
+  }
+}
