@@ -47,6 +47,12 @@ const COVERS: Record<
     accent: '#22d3ee',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'sun-never-black-hole': {
+    kicker: '[ STELLAR SCIENCE ]',
+    title: ['WHY OUR SUN', 'WILL NEVER', 'BE A BLACK HOLE'],
+    accent: '#a78bfa',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

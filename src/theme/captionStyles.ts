@@ -93,4 +93,18 @@ export const CAPTION_STYLES = {
     wordEase: easeOutCubic,
     wordDurationSec: 0.22,
   },
+  starScale: {
+    bottomClass: 'bottom-[140px]',
+    pxClass: 'px-14' as const,
+    fontSizeClass: 'text-[54px]',
+    activeShadowClass:
+      '[text-shadow:-2px_-2px_0_#1a1030,2px_-2px_0_#1a1030,-2px_2px_0_#1a1030,2px_2px_0_#1a1030,0_0_30px_rgba(167,139,250,0.65)]',
+    idleShadowClass:
+      '[text-shadow:-2px_-2px_0_#050a18,2px_-2px_0_#050a18,-2px_2px_0_#050a18,2px_2px_0_#050a18,0_8px_24px_rgba(0,0,0,0.9)]',
+    activeTextClass: 'text-violet-300',
+    holdSec: 0.55,
+    wordEase: easeOutCubic,
+    wordDurationSec: 0.22,
+    entrance: 'slam' as const,
+  },
 } as const

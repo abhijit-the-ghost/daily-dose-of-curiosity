@@ -1,0 +1,1885 @@
+{
+  "title": "Why our Sun will never become a black hole",
+  "series": "star-scale",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "Why our Sun will never become a black hole",
+      "file": "full_voiceover.mp3",
+      "duration": 41.088,
+      "start": 0.0,
+      "end": 41.088,
+      "words": [
+        {
+          "w": "Every",
+          "start": 0.095,
+          "end": 0.385
+        },
+        {
+          "w": "star",
+          "start": 0.396,
+          "end": 0.798
+        },
+        {
+          "w": "sooner",
+          "start": 0.943,
+          "end": 1.278
+        },
+        {
+          "w": "or",
+          "start": 1.289,
+          "end": 1.389
+        },
+        {
+          "w": "later",
+          "start": 1.4,
+          "end": 1.724
+        },
+        {
+          "w": "runs",
+          "start": 1.914,
+          "end": 2.182
+        },
+        {
+          "w": "out",
+          "start": 2.193,
+          "end": 2.316
+        },
+        {
+          "w": "of",
+          "start": 2.327,
+          "end": 2.383
+        },
+        {
+          "w": "fuel",
+          "start": 2.394,
+          "end": 2.818
+        },
+        {
+          "w": "Even",
+          "start": 3.583,
+          "end": 3.873
+        },
+        {
+          "w": "our",
+          "start": 3.884,
+          "end": 4.007
+        },
+        {
+          "w": "Sun.",
+          "start": 4.018,
+          "end": 4.431
+        },
+        {
+          "w": "But",
+          "start": 5.212,
+          "end": 5.368
+        },
+        {
+          "w": "here's",
+          "start": 5.379,
+          "end": 5.636
+        },
+        {
+          "w": "what",
+          "start": 5.647,
+          "end": 5.77
+        },
+        {
+          "w": "nobody",
+          "start": 5.781,
+          "end": 6.127
+        },
+        {
+          "w": "tells",
+          "start": 6.138,
+          "end": 6.417
+        },
+        {
+          "w": "you",
+          "start": 6.429,
+          "end": 6.607
+        },
+        {
+          "w": "it",
+          "start": 6.819,
+          "end": 6.931
+        },
+        {
+          "w": "will",
+          "start": 6.942,
+          "end": 7.065
+        },
+        {
+          "w": "never",
+          "start": 7.076,
+          "end": 7.333
+        },
+        {
+          "w": "become",
+          "start": 7.344,
+          "end": 7.623
+        },
+        {
+          "w": "a",
+          "start": 7.634,
+          "end": 7.69
+        },
+        {
+          "w": "black",
+          "start": 7.701,
+          "end": 7.946
+        },
+        {
+          "w": "hole",
+          "start": 7.958,
+          "end": 8.304
+        },
+        {
+          "w": "Not",
+          "start": 9.085,
+          "end": 9.397
+        },
+        {
+          "w": "in",
+          "start": 9.409,
+          "end": 9.498
+        },
+        {
+          "w": "this",
+          "start": 9.509,
+          "end": 9.665
+        },
+        {
+          "w": "life",
+          "start": 9.676,
+          "end": 10.112
+        },
+        {
+          "w": "A",
+          "start": 10.882,
+          "end": 11.004
+        },
+        {
+          "w": "black",
+          "start": 11.016,
+          "end": 11.295
+        },
+        {
+          "w": "hole",
+          "start": 11.306,
+          "end": 11.529
+        },
+        {
+          "w": "needs",
+          "start": 11.54,
+          "end": 11.741
+        },
+        {
+          "w": "an",
+          "start": 11.752,
+          "end": 11.819
+        },
+        {
+          "w": "entire",
+          "start": 11.83,
+          "end": 12.232
+        },
+        {
+          "w": "star",
+          "start": 12.243,
+          "end": 12.578
+        },
+        {
+          "w": "to",
+          "start": 12.589,
+          "end": 12.679
+        },
+        {
+          "w": "collapse",
+          "start": 12.69,
+          "end": 13.103
+        },
+        {
+          "w": "under",
+          "start": 13.114,
+          "end": 13.315
+        },
+        {
+          "w": "its",
+          "start": 13.326,
+          "end": 13.46
+        },
+        {
+          "w": "own",
+          "start": 13.471,
+          "end": 13.627
+        },
+        {
+          "w": "gravity",
+          "start": 13.638,
+          "end": 14.129
+        },
+        {
+          "w": "at",
+          "start": 14.33,
+          "end": 14.442
+        },
+        {
+          "w": "least",
+          "start": 14.453,
+          "end": 14.71
+        },
+        {
+          "w": "two",
+          "start": 14.721,
+          "end": 14.888
+        },
+        {
+          "w": "to",
+          "start": 14.9,
+          "end": 14.966
+        },
+        {
+          "w": "three",
+          "start": 14.978,
+          "end": 15.212
+        },
+        {
+          "w": "solar",
+          "start": 15.223,
+          "end": 15.502
+        },
+        {
+          "w": "masses",
+          "start": 15.513,
+          "end": 16.06
+        },
+        {
+          "w": "The",
+          "start": 16.841,
+          "end": 16.998
+        },
+        {
+          "w": "Sun",
+          "start": 17.009,
+          "end": 17.266
+        },
+        {
+          "w": "has",
+          "start": 17.277,
+          "end": 17.444
+        },
+        {
+          "w": "barely",
+          "start": 17.455,
+          "end": 17.768
+        },
+        {
+          "w": "one",
+          "start": 17.779,
+          "end": 18.136
+        },
+        {
+          "w": "In",
+          "start": 18.906,
+          "end": 19.096
+        },
+        {
+          "w": "five",
+          "start": 19.107,
+          "end": 19.42
+        },
+        {
+          "w": "billion",
+          "start": 19.431,
+          "end": 19.766
+        },
+        {
+          "w": "years",
+          "start": 19.777,
+          "end": 20.089
+        },
+        {
+          "w": "the",
+          "start": 20.1,
+          "end": 20.19
+        },
+        {
+          "w": "hydrogen",
+          "start": 20.201,
+          "end": 20.714
+        },
+        {
+          "w": "runs",
+          "start": 20.725,
+          "end": 20.96
+        },
+        {
+          "w": "out",
+          "start": 20.971,
+          "end": 21.217
+        },
+        {
+          "w": "the",
+          "start": 21.529,
+          "end": 21.618
+        },
+        {
+          "w": "Sun",
+          "start": 21.629,
+          "end": 21.897
+        },
+        {
+          "w": "swells",
+          "start": 21.909,
+          "end": 22.277
+        },
+        {
+          "w": "into",
+          "start": 22.288,
+          "end": 22.467
+        },
+        {
+          "w": "a",
+          "start": 22.478,
+          "end": 22.545
+        },
+        {
+          "w": "red",
+          "start": 22.556,
+          "end": 22.801
+        },
+        {
+          "w": "giant",
+          "start": 22.812,
+          "end": 23.203
+        },
+        {
+          "w": "swallowing",
+          "start": 23.449,
+          "end": 23.94
+        },
+        {
+          "w": "Mercury",
+          "start": 23.951,
+          "end": 24.364
+        },
+        {
+          "w": "and",
+          "start": 24.375,
+          "end": 24.487
+        },
+        {
+          "w": "Venus",
+          "start": 24.498,
+          "end": 24.933
+        },
+        {
+          "w": "then",
+          "start": 25.234,
+          "end": 25.424
+        },
+        {
+          "w": "sheds",
+          "start": 25.435,
+          "end": 25.737
+        },
+        {
+          "w": "its",
+          "start": 25.748,
+          "end": 25.859
+        },
+        {
+          "w": "outer",
+          "start": 25.871,
+          "end": 26.15
+        },
+        {
+          "w": "layers",
+          "start": 26.161,
+          "end": 26.484
+        },
+        {
+          "w": "in",
+          "start": 26.496,
+          "end": 26.607
+        },
+        {
+          "w": "an",
+          "start": 26.618,
+          "end": 26.708
+        },
+        {
+          "w": "expanding",
+          "start": 26.719,
+          "end": 27.21
+        },
+        {
+          "w": "cloud",
+          "start": 27.221,
+          "end": 27.478
+        },
+        {
+          "w": "of",
+          "start": 27.489,
+          "end": 27.567
+        },
+        {
+          "w": "gas",
+          "start": 27.578,
+          "end": 28.036
+        },
+        {
+          "w": "What",
+          "start": 28.817,
+          "end": 29.04
+        },
+        {
+          "w": "remains",
+          "start": 29.051,
+          "end": 29.464
+        },
+        {
+          "w": "is",
+          "start": 29.475,
+          "end": 29.554
+        },
+        {
+          "w": "a",
+          "start": 29.565,
+          "end": 29.632
+        },
+        {
+          "w": "white",
+          "start": 29.643,
+          "end": 29.888
+        },
+        {
+          "w": "dwarf",
+          "start": 29.9,
+          "end": 30.29
+        },
+        {
+          "w": "an",
+          "start": 30.502,
+          "end": 30.636
+        },
+        {
+          "w": "Earth-sized",
+          "start": 30.647,
+          "end": 31.228
+        },
+        {
+          "w": "ember",
+          "start": 31.239,
+          "end": 31.484
+        },
+        {
+          "w": "of",
+          "start": 31.496,
+          "end": 31.574
+        },
+        {
+          "w": "leftover",
+          "start": 31.585,
+          "end": 32.02
+        },
+        {
+          "w": "carbon",
+          "start": 32.031,
+          "end": 32.411
+        },
+        {
+          "w": "fading",
+          "start": 32.623,
+          "end": 32.958
+        },
+        {
+          "w": "slowly",
+          "start": 32.969,
+          "end": 33.449
+        },
+        {
+          "w": "It",
+          "start": 34.23,
+          "end": 34.375
+        },
+        {
+          "w": "was",
+          "start": 34.386,
+          "end": 34.52
+        },
+        {
+          "w": "never",
+          "start": 34.531,
+          "end": 34.81
+        },
+        {
+          "w": "massive",
+          "start": 34.821,
+          "end": 35.156
+        },
+        {
+          "w": "enough",
+          "start": 35.167,
+          "end": 35.558
+        },
+        {
+          "w": "It",
+          "start": 36.328,
+          "end": 36.507
+        },
+        {
+          "w": "never",
+          "start": 36.518,
+          "end": 36.853
+        },
+        {
+          "w": "will",
+          "start": 36.864,
+          "end": 37.02
+        },
+        {
+          "w": "be",
+          "start": 37.031,
+          "end": 37.321
+        },
+        {
+          "w": "The",
+          "start": 38.103,
+          "end": 38.259
+        },
+        {
+          "w": "Sun",
+          "start": 38.27,
+          "end": 38.516
+        },
+        {
+          "w": "ends",
+          "start": 38.527,
+          "end": 38.761
+        },
+        {
+          "w": "as",
+          "start": 38.772,
+          "end": 38.862
+        },
+        {
+          "w": "a",
+          "start": 38.873,
+          "end": 38.94
+        },
+        {
+          "w": "whisper",
+          "start": 38.951,
+          "end": 39.364
+        },
+        {
+          "w": "not",
+          "start": 39.565,
+          "end": 39.743
+        },
+        {
+          "w": "a",
+          "start": 39.754,
+          "end": 39.799
+        },
+        {
+          "w": "scream",
+          "start": 39.81,
+          "end": 40.301
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE HOOK",
+      "caption": "// ACT 1 \u2014 THE HOOK",
+      "file": "full_voiceover.mp3",
+      "duration": 10.017,
+      "start": 0.095,
+      "end": 10.112,
+      "words": [
+        {
+          "w": "Every",
+          "start": 0.095,
+          "end": 0.385
+        },
+        {
+          "w": "star",
+          "start": 0.396,
+          "end": 0.798
+        },
+        {
+          "w": "sooner",
+          "start": 0.943,
+          "end": 1.278
+        },
+        {
+          "w": "or",
+          "start": 1.289,
+          "end": 1.389
+        },
+        {
+          "w": "later",
+          "start": 1.4,
+          "end": 1.724
+        },
+        {
+          "w": "runs",
+          "start": 1.914,
+          "end": 2.182
+        },
+        {
+          "w": "out",
+          "start": 2.193,
+          "end": 2.316
+        },
+        {
+          "w": "of",
+          "start": 2.327,
+          "end": 2.383
+        },
+        {
+          "w": "fuel",
+          "start": 2.394,
+          "end": 2.818
+        },
+        {
+          "w": "Even",
+          "start": 3.583,
+          "end": 3.873
+        },
+        {
+          "w": "our",
+          "start": 3.884,
+          "end": 4.007
+        },
+        {
+          "w": "Sun.",
+          "start": 4.018,
+          "end": 4.431
+        },
+        {
+          "w": "But",
+          "start": 5.212,
+          "end": 5.368
+        },
+        {
+          "w": "here's",
+          "start": 5.379,
+          "end": 5.636
+        },
+        {
+          "w": "what",
+          "start": 5.647,
+          "end": 5.77
+        },
+        {
+          "w": "nobody",
+          "start": 5.781,
+          "end": 6.127
+        },
+        {
+          "w": "tells",
+          "start": 6.138,
+          "end": 6.417
+        },
+        {
+          "w": "you",
+          "start": 6.429,
+          "end": 6.607
+        },
+        {
+          "w": "it",
+          "start": 6.819,
+          "end": 6.931
+        },
+        {
+          "w": "will",
+          "start": 6.942,
+          "end": 7.065
+        },
+        {
+          "w": "never",
+          "start": 7.076,
+          "end": 7.333
+        },
+        {
+          "w": "become",
+          "start": 7.344,
+          "end": 7.623
+        },
+        {
+          "w": "a",
+          "start": 7.634,
+          "end": 7.69
+        },
+        {
+          "w": "black",
+          "start": 7.701,
+          "end": 7.946
+        },
+        {
+          "w": "hole",
+          "start": 7.958,
+          "end": 8.304
+        },
+        {
+          "w": "Not",
+          "start": 9.085,
+          "end": 9.397
+        },
+        {
+          "w": "in",
+          "start": 9.409,
+          "end": 9.498
+        },
+        {
+          "w": "this",
+          "start": 9.509,
+          "end": 9.665
+        },
+        {
+          "w": "life",
+          "start": 9.676,
+          "end": 10.112
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE BAR",
+      "caption": "// ACT 2 \u2014 THE BAR",
+      "file": "full_voiceover.mp3",
+      "duration": 7.254,
+      "start": 10.882,
+      "end": 18.136,
+      "words": [
+        {
+          "w": "A",
+          "start": 10.882,
+          "end": 11.004
+        },
+        {
+          "w": "black",
+          "start": 11.016,
+          "end": 11.295
+        },
+        {
+          "w": "hole",
+          "start": 11.306,
+          "end": 11.529
+        },
+        {
+          "w": "needs",
+          "start": 11.54,
+          "end": 11.741
+        },
+        {
+          "w": "an",
+          "start": 11.752,
+          "end": 11.819
+        },
+        {
+          "w": "entire",
+          "start": 11.83,
+          "end": 12.232
+        },
+        {
+          "w": "star",
+          "start": 12.243,
+          "end": 12.578
+        },
+        {
+          "w": "to",
+          "start": 12.589,
+          "end": 12.679
+        },
+        {
+          "w": "collapse",
+          "start": 12.69,
+          "end": 13.103
+        },
+        {
+          "w": "under",
+          "start": 13.114,
+          "end": 13.315
+        },
+        {
+          "w": "its",
+          "start": 13.326,
+          "end": 13.46
+        },
+        {
+          "w": "own",
+          "start": 13.471,
+          "end": 13.627
+        },
+        {
+          "w": "gravity",
+          "start": 13.638,
+          "end": 14.129
+        },
+        {
+          "w": "at",
+          "start": 14.33,
+          "end": 14.442
+        },
+        {
+          "w": "least",
+          "start": 14.453,
+          "end": 14.71
+        },
+        {
+          "w": "two",
+          "start": 14.721,
+          "end": 14.888
+        },
+        {
+          "w": "to",
+          "start": 14.9,
+          "end": 14.966
+        },
+        {
+          "w": "three",
+          "start": 14.978,
+          "end": 15.212
+        },
+        {
+          "w": "solar",
+          "start": 15.223,
+          "end": 15.502
+        },
+        {
+          "w": "masses",
+          "start": 15.513,
+          "end": 16.06
+        },
+        {
+          "w": "The",
+          "start": 16.841,
+          "end": 16.998
+        },
+        {
+          "w": "Sun",
+          "start": 17.009,
+          "end": 17.266
+        },
+        {
+          "w": "has",
+          "start": 17.277,
+          "end": 17.444
+        },
+        {
+          "w": "barely",
+          "start": 17.455,
+          "end": 17.768
+        },
+        {
+          "w": "one",
+          "start": 17.779,
+          "end": 18.136
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE RED GIANT",
+      "caption": "// ACT 3 \u2014 THE RED GIANT",
+      "file": "full_voiceover.mp3",
+      "duration": 9.13,
+      "start": 18.906,
+      "end": 28.036,
+      "words": [
+        {
+          "w": "In",
+          "start": 18.906,
+          "end": 19.096
+        },
+        {
+          "w": "five",
+          "start": 19.107,
+          "end": 19.42
+        },
+        {
+          "w": "billion",
+          "start": 19.431,
+          "end": 19.766
+        },
+        {
+          "w": "years",
+          "start": 19.777,
+          "end": 20.089
+        },
+        {
+          "w": "the",
+          "start": 20.1,
+          "end": 20.19
+        },
+        {
+          "w": "hydrogen",
+          "start": 20.201,
+          "end": 20.714
+        },
+        {
+          "w": "runs",
+          "start": 20.725,
+          "end": 20.96
+        },
+        {
+          "w": "out",
+          "start": 20.971,
+          "end": 21.217
+        },
+        {
+          "w": "the",
+          "start": 21.529,
+          "end": 21.618
+        },
+        {
+          "w": "Sun",
+          "start": 21.629,
+          "end": 21.897
+        },
+        {
+          "w": "swells",
+          "start": 21.909,
+          "end": 22.277
+        },
+        {
+          "w": "into",
+          "start": 22.288,
+          "end": 22.467
+        },
+        {
+          "w": "a",
+          "start": 22.478,
+          "end": 22.545
+        },
+        {
+          "w": "red",
+          "start": 22.556,
+          "end": 22.801
+        },
+        {
+          "w": "giant",
+          "start": 22.812,
+          "end": 23.203
+        },
+        {
+          "w": "swallowing",
+          "start": 23.449,
+          "end": 23.94
+        },
+        {
+          "w": "Mercury",
+          "start": 23.951,
+          "end": 24.364
+        },
+        {
+          "w": "and",
+          "start": 24.375,
+          "end": 24.487
+        },
+        {
+          "w": "Venus",
+          "start": 24.498,
+          "end": 24.933
+        },
+        {
+          "w": "then",
+          "start": 25.234,
+          "end": 25.424
+        },
+        {
+          "w": "sheds",
+          "start": 25.435,
+          "end": 25.737
+        },
+        {
+          "w": "its",
+          "start": 25.748,
+          "end": 25.859
+        },
+        {
+          "w": "outer",
+          "start": 25.871,
+          "end": 26.15
+        },
+        {
+          "w": "layers",
+          "start": 26.161,
+          "end": 26.484
+        },
+        {
+          "w": "in",
+          "start": 26.496,
+          "end": 26.607
+        },
+        {
+          "w": "an",
+          "start": 26.618,
+          "end": 26.708
+        },
+        {
+          "w": "expanding",
+          "start": 26.719,
+          "end": 27.21
+        },
+        {
+          "w": "cloud",
+          "start": 27.221,
+          "end": 27.478
+        },
+        {
+          "w": "of",
+          "start": 27.489,
+          "end": 27.567
+        },
+        {
+          "w": "gas",
+          "start": 27.578,
+          "end": 28.036
+        }
+      ]
+    },
+    {
+      "id": "act4",
+      "index": 4,
+      "label": "// ACT 4 \u2014 THE WHITE DWARF",
+      "caption": "// ACT 4 \u2014 THE WHITE DWARF",
+      "file": "full_voiceover.mp3",
+      "duration": 11.484,
+      "start": 28.817,
+      "end": 40.301,
+      "words": [
+        {
+          "w": "What",
+          "start": 28.817,
+          "end": 29.04
+        },
+        {
+          "w": "remains",
+          "start": 29.051,
+          "end": 29.464
+        },
+        {
+          "w": "is",
+          "start": 29.475,
+          "end": 29.554
+        },
+        {
+          "w": "a",
+          "start": 29.565,
+          "end": 29.632
+        },
+        {
+          "w": "white",
+          "start": 29.643,
+          "end": 29.888
+        },
+        {
+          "w": "dwarf",
+          "start": 29.9,
+          "end": 30.29
+        },
+        {
+          "w": "an",
+          "start": 30.502,
+          "end": 30.636
+        },
+        {
+          "w": "Earth-sized",
+          "start": 30.647,
+          "end": 31.228
+        },
+        {
+          "w": "ember",
+          "start": 31.239,
+          "end": 31.484
+        },
+        {
+          "w": "of",
+          "start": 31.496,
+          "end": 31.574
+        },
+        {
+          "w": "leftover",
+          "start": 31.585,
+          "end": 32.02
+        },
+        {
+          "w": "carbon",
+          "start": 32.031,
+          "end": 32.411
+        },
+        {
+          "w": "fading",
+          "start": 32.623,
+          "end": 32.958
+        },
+        {
+          "w": "slowly",
+          "start": 32.969,
+          "end": 33.449
+        },
+        {
+          "w": "It",
+          "start": 34.23,
+          "end": 34.375
+        },
+        {
+          "w": "was",
+          "start": 34.386,
+          "end": 34.52
+        },
+        {
+          "w": "never",
+          "start": 34.531,
+          "end": 34.81
+        },
+        {
+          "w": "massive",
+          "start": 34.821,
+          "end": 35.156
+        },
+        {
+          "w": "enough",
+          "start": 35.167,
+          "end": 35.558
+        },
+        {
+          "w": "It",
+          "start": 36.328,
+          "end": 36.507
+        },
+        {
+          "w": "never",
+          "start": 36.518,
+          "end": 36.853
+        },
+        {
+          "w": "will",
+          "start": 36.864,
+          "end": 37.02
+        },
+        {
+          "w": "be",
+          "start": 37.031,
+          "end": 37.321
+        },
+        {
+          "w": "The",
+          "start": 38.103,
+          "end": 38.259
+        },
+        {
+          "w": "Sun",
+          "start": 38.27,
+          "end": 38.516
+        },
+        {
+          "w": "ends",
+          "start": 38.527,
+          "end": 38.761
+        },
+        {
+          "w": "as",
+          "start": 38.772,
+          "end": 38.862
+        },
+        {
+          "w": "a",
+          "start": 38.873,
+          "end": 38.94
+        },
+        {
+          "w": "whisper",
+          "start": 38.951,
+          "end": 39.364
+        },
+        {
+          "w": "not",
+          "start": 39.565,
+          "end": 39.743
+        },
+        {
+          "w": "a",
+          "start": 39.754,
+          "end": 39.799
+        },
+        {
+          "w": "scream",
+          "start": 39.81,
+          "end": 40.301
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "Every",
+      "start": 0.095,
+      "end": 0.385
+    },
+    {
+      "w": "star",
+      "start": 0.396,
+      "end": 0.798
+    },
+    {
+      "w": "sooner",
+      "start": 0.943,
+      "end": 1.278
+    },
+    {
+      "w": "or",
+      "start": 1.289,
+      "end": 1.389
+    },
+    {
+      "w": "later",
+      "start": 1.4,
+      "end": 1.724
+    },
+    {
+      "w": "runs",
+      "start": 1.914,
+      "end": 2.182
+    },
+    {
+      "w": "out",
+      "start": 2.193,
+      "end": 2.316
+    },
+    {
+      "w": "of",
+      "start": 2.327,
+      "end": 2.383
+    },
+    {
+      "w": "fuel",
+      "start": 2.394,
+      "end": 2.818
+    },
+    {
+      "w": "Even",
+      "start": 3.583,
+      "end": 3.873
+    },
+    {
+      "w": "our",
+      "start": 3.884,
+      "end": 4.007
+    },
+    {
+      "w": "Sun.",
+      "start": 4.018,
+      "end": 4.431
+    },
+    {
+      "w": "But",
+      "start": 5.212,
+      "end": 5.368
+    },
+    {
+      "w": "here's",
+      "start": 5.379,
+      "end": 5.636
+    },
+    {
+      "w": "what",
+      "start": 5.647,
+      "end": 5.77
+    },
+    {
+      "w": "nobody",
+      "start": 5.781,
+      "end": 6.127
+    },
+    {
+      "w": "tells",
+      "start": 6.138,
+      "end": 6.417
+    },
+    {
+      "w": "you",
+      "start": 6.429,
+      "end": 6.607
+    },
+    {
+      "w": "it",
+      "start": 6.819,
+      "end": 6.931
+    },
+    {
+      "w": "will",
+      "start": 6.942,
+      "end": 7.065
+    },
+    {
+      "w": "never",
+      "start": 7.076,
+      "end": 7.333
+    },
+    {
+      "w": "become",
+      "start": 7.344,
+      "end": 7.623
+    },
+    {
+      "w": "a",
+      "start": 7.634,
+      "end": 7.69
+    },
+    {
+      "w": "black",
+      "start": 7.701,
+      "end": 7.946
+    },
+    {
+      "w": "hole",
+      "start": 7.958,
+      "end": 8.304
+    },
+    {
+      "w": "Not",
+      "start": 9.085,
+      "end": 9.397
+    },
+    {
+      "w": "in",
+      "start": 9.409,
+      "end": 9.498
+    },
+    {
+      "w": "this",
+      "start": 9.509,
+      "end": 9.665
+    },
+    {
+      "w": "life",
+      "start": 9.676,
+      "end": 10.112
+    },
+    {
+      "w": "A",
+      "start": 10.882,
+      "end": 11.004
+    },
+    {
+      "w": "black",
+      "start": 11.016,
+      "end": 11.295
+    },
+    {
+      "w": "hole",
+      "start": 11.306,
+      "end": 11.529
+    },
+    {
+      "w": "needs",
+      "start": 11.54,
+      "end": 11.741
+    },
+    {
+      "w": "an",
+      "start": 11.752,
+      "end": 11.819
+    },
+    {
+      "w": "entire",
+      "start": 11.83,
+      "end": 12.232
+    },
+    {
+      "w": "star",
+      "start": 12.243,
+      "end": 12.578
+    },
+    {
+      "w": "to",
+      "start": 12.589,
+      "end": 12.679
+    },
+    {
+      "w": "collapse",
+      "start": 12.69,
+      "end": 13.103
+    },
+    {
+      "w": "under",
+      "start": 13.114,
+      "end": 13.315
+    },
+    {
+      "w": "its",
+      "start": 13.326,
+      "end": 13.46
+    },
+    {
+      "w": "own",
+      "start": 13.471,
+      "end": 13.627
+    },
+    {
+      "w": "gravity",
+      "start": 13.638,
+      "end": 14.129
+    },
+    {
+      "w": "at",
+      "start": 14.33,
+      "end": 14.442
+    },
+    {
+      "w": "least",
+      "start": 14.453,
+      "end": 14.71
+    },
+    {
+      "w": "two",
+      "start": 14.721,
+      "end": 14.888
+    },
+    {
+      "w": "to",
+      "start": 14.9,
+      "end": 14.966
+    },
+    {
+      "w": "three",
+      "start": 14.978,
+      "end": 15.212
+    },
+    {
+      "w": "solar",
+      "start": 15.223,
+      "end": 15.502
+    },
+    {
+      "w": "masses",
+      "start": 15.513,
+      "end": 16.06
+    },
+    {
+      "w": "The",
+      "start": 16.841,
+      "end": 16.998
+    },
+    {
+      "w": "Sun",
+      "start": 17.009,
+      "end": 17.266
+    },
+    {
+      "w": "has",
+      "start": 17.277,
+      "end": 17.444
+    },
+    {
+      "w": "barely",
+      "start": 17.455,
+      "end": 17.768
+    },
+    {
+      "w": "one",
+      "start": 17.779,
+      "end": 18.136
+    },
+    {
+      "w": "In",
+      "start": 18.906,
+      "end": 19.096
+    },
+    {
+      "w": "five",
+      "start": 19.107,
+      "end": 19.42
+    },
+    {
+      "w": "billion",
+      "start": 19.431,
+      "end": 19.766
+    },
+    {
+      "w": "years",
+      "start": 19.777,
+      "end": 20.089
+    },
+    {
+      "w": "the",
+      "start": 20.1,
+      "end": 20.19
+    },
+    {
+      "w": "hydrogen",
+      "start": 20.201,
+      "end": 20.714
+    },
+    {
+      "w": "runs",
+      "start": 20.725,
+      "end": 20.96
+    },
+    {
+      "w": "out",
+      "start": 20.971,
+      "end": 21.217
+    },
+    {
+      "w": "the",
+      "start": 21.529,
+      "end": 21.618
+    },
+    {
+      "w": "Sun",
+      "start": 21.629,
+      "end": 21.897
+    },
+    {
+      "w": "swells",
+      "start": 21.909,
+      "end": 22.277
+    },
+    {
+      "w": "into",
+      "start": 22.288,
+      "end": 22.467
+    },
+    {
+      "w": "a",
+      "start": 22.478,
+      "end": 22.545
+    },
+    {
+      "w": "red",
+      "start": 22.556,
+      "end": 22.801
+    },
+    {
+      "w": "giant",
+      "start": 22.812,
+      "end": 23.203
+    },
+    {
+      "w": "swallowing",
+      "start": 23.449,
+      "end": 23.94
+    },
+    {
+      "w": "Mercury",
+      "start": 23.951,
+      "end": 24.364
+    },
+    {
+      "w": "and",
+      "start": 24.375,
+      "end": 24.487
+    },
+    {
+      "w": "Venus",
+      "start": 24.498,
+      "end": 24.933
+    },
+    {
+      "w": "then",
+      "start": 25.234,
+      "end": 25.424
+    },
+    {
+      "w": "sheds",
+      "start": 25.435,
+      "end": 25.737
+    },
+    {
+      "w": "its",
+      "start": 25.748,
+      "end": 25.859
+    },
+    {
+      "w": "outer",
+      "start": 25.871,
+      "end": 26.15
+    },
+    {
+      "w": "layers",
+      "start": 26.161,
+      "end": 26.484
+    },
+    {
+      "w": "in",
+      "start": 26.496,
+      "end": 26.607
+    },
+    {
+      "w": "an",
+      "start": 26.618,
+      "end": 26.708
+    },
+    {
+      "w": "expanding",
+      "start": 26.719,
+      "end": 27.21
+    },
+    {
+      "w": "cloud",
+      "start": 27.221,
+      "end": 27.478
+    },
+    {
+      "w": "of",
+      "start": 27.489,
+      "end": 27.567
+    },
+    {
+      "w": "gas",
+      "start": 27.578,
+      "end": 28.036
+    },
+    {
+      "w": "What",
+      "start": 28.817,
+      "end": 29.04
+    },
+    {
+      "w": "remains",
+      "start": 29.051,
+      "end": 29.464
+    },
+    {
+      "w": "is",
+      "start": 29.475,
+      "end": 29.554
+    },
+    {
+      "w": "a",
+      "start": 29.565,
+      "end": 29.632
+    },
+    {
+      "w": "white",
+      "start": 29.643,
+      "end": 29.888
+    },
+    {
+      "w": "dwarf",
+      "start": 29.9,
+      "end": 30.29
+    },
+    {
+      "w": "an",
+      "start": 30.502,
+      "end": 30.636
+    },
+    {
+      "w": "Earth-sized",
+      "start": 30.647,
+      "end": 31.228
+    },
+    {
+      "w": "ember",
+      "start": 31.239,
+      "end": 31.484
+    },
+    {
+      "w": "of",
+      "start": 31.496,
+      "end": 31.574
+    },
+    {
+      "w": "leftover",
+      "start": 31.585,
+      "end": 32.02
+    },
+    {
+      "w": "carbon",
+      "start": 32.031,
+      "end": 32.411
+    },
+    {
+      "w": "fading",
+      "start": 32.623,
+      "end": 32.958
+    },
+    {
+      "w": "slowly",
+      "start": 32.969,
+      "end": 33.449
+    },
+    {
+      "w": "It",
+      "start": 34.23,
+      "end": 34.375
+    },
+    {
+      "w": "was",
+      "start": 34.386,
+      "end": 34.52
+    },
+    {
+      "w": "never",
+      "start": 34.531,
+      "end": 34.81
+    },
+    {
+      "w": "massive",
+      "start": 34.821,
+      "end": 35.156
+    },
+    {
+      "w": "enough",
+      "start": 35.167,
+      "end": 35.558
+    },
+    {
+      "w": "It",
+      "start": 36.328,
+      "end": 36.507
+    },
+    {
+      "w": "never",
+      "start": 36.518,
+      "end": 36.853
+    },
+    {
+      "w": "will",
+      "start": 36.864,
+      "end": 37.02
+    },
+    {
+      "w": "be",
+      "start": 37.031,
+      "end": 37.321
+    },
+    {
+      "w": "The",
+      "start": 38.103,
+      "end": 38.259
+    },
+    {
+      "w": "Sun",
+      "start": 38.27,
+      "end": 38.516
+    },
+    {
+      "w": "ends",
+      "start": 38.527,
+      "end": 38.761
+    },
+    {
+      "w": "as",
+      "start": 38.772,
+      "end": 38.862
+    },
+    {
+      "w": "a",
+      "start": 38.873,
+      "end": 38.94
+    },
+    {
+      "w": "whisper",
+      "start": 38.951,
+      "end": 39.364
+    },
+    {
+      "w": "not",
+      "start": 39.565,
+      "end": 39.743
+    },
+    {
+      "w": "a",
+      "start": 39.754,
+      "end": 39.799
+    },
+    {
+      "w": "scream",
+      "start": 39.81,
+      "end": 40.301
+    }
+  ],
+  "anchors": {
+    "hole_1": {
+      "ok": true,
+      "name": "hole",
+      "occurrence": 1,
+      "index": 24,
+      "start": 7.958,
+      "end": 8.304
+    },
+    "hole_2": {
+      "ok": true,
+      "name": "hole",
+      "occurrence": 2,
+      "index": 31,
+      "start": 11.306,
+      "end": 11.529
+    },
+    "barely_1": {
+      "ok": true,
+      "name": "barely",
+      "occurrence": 1,
+      "index": 52,
+      "start": 17.455,
+      "end": 17.768
+    },
+    "giant_1": {
+      "ok": true,
+      "name": "giant",
+      "occurrence": 1,
+      "index": 68,
+      "start": 22.812,
+      "end": 23.203
+    },
+    "mercury_1": {
+      "ok": true,
+      "name": "mercury",
+      "occurrence": 1,
+      "index": 70,
+      "start": 23.951,
+      "end": 24.364
+    },
+    "sheds_1": {
+      "ok": true,
+      "name": "sheds",
+      "occurrence": 1,
+      "index": 74,
+      "start": 25.435,
+      "end": 25.737
+    },
+    "white_1": {
+      "ok": true,
+      "name": "white",
+      "occurrence": 1,
+      "index": 88,
+      "start": 29.643,
+      "end": 29.888
+    },
+    "whisper_1": {
+      "ok": true,
+      "name": "whisper",
+      "occurrence": 1,
+      "index": 112,
+      "start": 38.951,
+      "end": 39.364
+    }
+  },
+  "totalDuration": 43.088
+}

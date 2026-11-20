@@ -5,7 +5,7 @@
    per-episode in the scene components.
    ================================================================== */
 
-export type SeriesKey = 'cosmic' | 'game-physics'
+export type SeriesKey = 'cosmic' | 'game-physics' | 'star-scale'
 
 export interface Series {
   key: SeriesKey
@@ -29,6 +29,12 @@ export const SERIES: Record<SeriesKey, Series> = {
     badge: 'GAME PHYSICS',
     accent: '#F59E0B',
     accentBright: '#F59E0B',
+  },
+  'star-scale': {
+    key: 'star-scale',
+    badge: 'STELLAR SCIENCE',
+    accent: '#A78BFA',
+    accentBright: '#C4B5FD',
   },
 } as const
 

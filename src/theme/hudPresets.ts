@@ -69,4 +69,14 @@ export const HUD_PRESETS = {
     progressGradientClass:
       'from-cyan-400 via-violet-400 to-cyan-100 shadow-[0_0_14px_rgba(34,211,238,0.55)]',
   },
+  starScale: {
+    accent: 'cyan' as const,
+    cornerBrackets: true,
+    badgeText: '[ STELLAR SCIENCE ]',
+    /** kicker fully hidden — this format is a single continuous morph, no act chips */
+    kickerBottomClass: 'hidden',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-violet-400 via-violet-300 to-fuchsia-100 shadow-[0_0_14px_rgba(167,139,250,0.55)]',
+  },
 } as const

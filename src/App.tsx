@@ -115,6 +115,7 @@ function EpisodePreview() {
   if (episode === 'everest-challenger-deep') return <Episode slug="everest-challenger-deep" />
   if (episode === 'touch-and-feel') return <Episode slug="touch-and-feel" />
   if (episode === 'nuclear-gandhi') return <Episode slug="nuclear-gandhi" />
+  if (episode === 'sun-never-black-hole') return <Episode slug="sun-never-black-hole" />
   return <MilkyWay />
 }
 

@@ -25,6 +25,7 @@ import ffmpegPath from 'ffmpeg-static'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const FRAMES_DIR = path.join(ROOT, 'frames')
 const OUT_DIR = path.join(ROOT, 'output')
+const SFX_DIR = path.join(ROOT, 'shared-assets', 'sfx')
 
 const argv = process.argv.slice(2)
 const flag = (name) => argv.includes(`--${name}`)
@@ -156,6 +157,27 @@ const main = async () => {
     }
     await browser.close()
 
+    /* ---------------- 2b. SFX events (optional episodes/<slug>/sfx.json) ---------------- */
+    const SFX_PATH = path.join(ROOT, 'episodes', EPISODE, 'sfx.json')
+    const sfxEvents = []
+    if (fs.existsSync(SFX_PATH)) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(SFX_PATH, 'utf8'))
+        for (const e of Array.isArray(parsed?.events) ? parsed.events : []) {
+          const file = path.basename(String(e?.file ?? ''))
+          const full = path.join(SFX_DIR, file)
+          const t = Number(e?.t)
+          const gainDb = Number.isFinite(Number(e?.gainDb)) ? Number(e.gainDb) : -18
+          if (!file || !Number.isFinite(t) || t < 0) { log(`sfx: skipping malformed event ${JSON.stringify(e)}`); continue }
+          if (!fs.existsSync(full)) { log(`sfx: missing file shared-assets/sfx/${file} — skipping`); continue }
+          sfxEvents.push({ file, full, t, gainDb })
+        }
+        if (sfxEvents.length) log(`sfx: ${sfxEvents.length} event(s) <- ${path.relative(ROOT, SFX_PATH)}`)
+      } catch (err) {
+        log(`sfx: sfx.json unreadable, continuing without SFX (${err.message})`)
+      }
+    }
+
     /* ---------------- 3. encode ---------------- */
     fs.mkdirSync(OUT_DIR, { recursive: true })
     const outPath = path.join(OUT_DIR, OUT_NAME)
@@ -164,9 +186,13 @@ const main = async () => {
     // mix the act MP3s at their manifest positions (preroll included), pad with
     // silence to the full timeline so -shortest doesn't trim the end-card tail
     const delays = manifest.acts.map((a) => Math.round(a.start * 1000))
+    const voiceBranches = manifest.acts.map((_, i) => `[${i + 1}:a]adelay=${delays[i]}:all=1[a${i}]`)
+    const voiceCount = manifest.acts.length
+    const sfxBranches = sfxEvents.map((e, k) => `[${voiceCount + 1 + k}:a]adelay=${Math.round(e.t * 1000)}:all=1,volume=${e.gainDb}dB[s${k}]`)
+    const mixRefs = [...manifest.acts.map((_, i) => `[a${i}]`), ...sfxEvents.map((_, k) => `[s${k}]`)]
     const filter =
-      manifest.acts.map((_, i) => `[${i + 1}:a]adelay=${delays[i]}:all=1[a${i}]`).join(';') +
-      `;${manifest.acts.map((_, i) => `[a${i}]`).join('')}amix=inputs=${manifest.acts.length}:normalize=0,apad=whole_dur=${totalDuration}[aout]`
+      [...voiceBranches, ...sfxBranches].join(';') +
+      `;${mixRefs.join('')}amix=inputs=${mixRefs.length}:normalize=0,apad=whole_dur=${totalDuration}[aout]`
 
     const ffmpegArgs = [
       '-y',
@@ -174,6 +200,7 @@ const main = async () => {
       '-framerate', String(fps),
       '-i', framePattern,
       ...manifest.acts.flatMap((a) => ['-i', path.join(EPISODE_AUDIO_DIR, a.file)]),
+      ...sfxEvents.flatMap((e) => ['-i', e.full]),
       '-filter_complex', filter,
       '-map', '0:v:0',
       '-map', '[aout]',

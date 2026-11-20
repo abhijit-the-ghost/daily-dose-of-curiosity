@@ -19,6 +19,7 @@ import MinecraftEdgeActs, { type Metadata as MinecraftEdgeMetadata } from './Min
 import NeverTouchActs, { type Metadata as NeverTouchMetadata } from './NeverTouchActs'
 import TouchAndFeelActs from './TouchFeelActs'
 import NuclearGandhiActs from './NuclearGandhiActs'
+import SunNeverBlackHoleActs from './SunNeverBlackHoleActs'
 import EverestVsDeepActs from './EverestVsDeepActs'
 
 import spaceSoundScene from '../../episodes/space-sound/scene.json'
@@ -26,9 +27,10 @@ import minecraftEdgeScene from '../../episodes/minecraft-edge/scene.json'
 import neverTouchScene from '../../episodes/never-touch/scene.json'
 import touchAndFeelScene from '../../episodes/touch-and-feel/scene.json'
 import nuclearGandhiScene from '../../episodes/nuclear-gandhi/scene.json'
+import sunNeverBlackHoleScene from '../../episodes/sun-never-black-hole/scene.json'
 import everestVsDeepScene from '../../episodes/everest-challenger-deep/scene.json'
 
-type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch' | 'everest-challenger-deep' | 'touch-and-feel' | 'nuclear-gandhi'
+type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch' | 'everest-challenger-deep' | 'touch-and-feel' | 'nuclear-gandhi' | 'sun-never-black-hole'
 
 type Metadata = SpaceSoundMetadata & MinecraftEdgeMetadata & NeverTouchMetadata
 
@@ -115,6 +117,14 @@ const REGISTRY: Record<Slug, EpisodeDefinition> = {
     hudPreset: 'nuclearGandhi',
     captionStyle: 'nuclearGandhi',
     Acts: NuclearGandhiActs as never,
+    actIndexOf: actAt,
+  },
+  'sun-never-black-hole': {
+    scene: sunNeverBlackHoleScene as SceneConfig,
+    audioSrc: '/audio/sun-never-black-hole/full_voiceover.mp3',
+    hudPreset: 'starScale',
+    captionStyle: 'starScale',
+    Acts: SunNeverBlackHoleActs as never,
     actIndexOf: actAt,
   },
 }

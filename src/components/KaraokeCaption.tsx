@@ -6,7 +6,7 @@
    text statically, so per-instance classes are passed as full strings.
    ================================================================== */
 
-import { clamp01, easeOutCubic } from '../motion/anim'
+import { clamp01, easeOutCubic, backOut } from '../motion/anim'
 
 type WordEase = (x: number) => number
 
@@ -25,6 +25,7 @@ export default function KaraokeCaption({
   wordEase = easeOutCubic,
   wordDurationSec = 0.22,
   activeTextClass = 'text-amber-400',
+  entrance,
 }: {
   t: number
   chunks: CaptionChunk[]
@@ -45,6 +46,8 @@ export default function KaraokeCaption({
   wordDurationSec?: number
   /** e.g. 'text-amber-400' â€” literal class per episode (Tailwind static scan) */
   activeTextClass?: string
+  /** 'slam': each chunk slams in from an alternating side (text-reel style) */
+  entrance?: 'slam'
 }) {
   let active: CaptionChunk | null = null
   for (let i = chunks.length - 1; i >= 0; i--) {
@@ -56,9 +59,23 @@ export default function KaraokeCaption({
   }
   if (!active) return null
 
+  /* 'slam' entrance — chunk slams in from an alternating side with a back-out
+     rotation, text-reel style. Pure function of t (recorder-safe). */
+  const activeIdx = entrance === 'slam' ? chunks.indexOf(active) : 0
+  const dir = activeIdx % 2 === 0 ? 1 : -1
+  const slamLocal = clamp01((t - active.start) / 0.42)
+  const slamE = backOut(slamLocal)
+  const slamTx = entrance === 'slam' ? dir * 78 * (1 - slamE) : 0
+  const slamRot = entrance === 'slam' ? dir * -2.4 * (1 - slamE) : 0
+  const slamScale = entrance === 'slam' ? 0.9 + 0.1 * slamE : 1
+  const slamOpacity = entrance === 'slam' ? 0.45 + 0.55 * clamp01(slamLocal * 2.4) : 1
+
   return (
     <div className={`pointer-events-none absolute inset-x-0 ${bottomClass} z-10 ${pxClass} text-center`}>
-      <div className="flex flex-wrap items-baseline justify-center gap-x-4 gap-y-1 leading-[0.98]">
+      <div
+        className="flex flex-wrap items-baseline justify-center gap-x-4 gap-y-1 leading-[0.98] will-change-transform"
+        style={{ transform: `translateX(${slamTx.toFixed(2)}px) rotate(${slamRot.toFixed(3)}deg) scale(${slamScale.toFixed(3)})`, opacity: slamOpacity }}
+      >
         {active.words.map((w, i) => {
           const done = t >= w.end
           const isActive = !done && t >= w.start

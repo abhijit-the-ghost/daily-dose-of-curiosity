@@ -48,6 +48,12 @@ const COVERS: Record<
     accent: '#22d3ee',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'sun-never-black-hole': {
+    kicker: '[ STELLAR SCIENCE ]',
+    title: ['WHY OUR SUN', 'WILL NEVER', 'BE A BLACK HOLE'],
+    accent: '#a78bfa',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],
@@ -429,12 +435,50 @@ function NuclearGandhiScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
-function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' | 'nuclearGandhi' }) {
+/* ------- sun-never-black-hole scene: the red giant + faint ember ------- */
+function SunRedGiantScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+  const cx = is169 ? 640 : 540
+  const cy = is169 ? 360 : 960
+  const S  = is169 ? 0.85 : 1.4
+
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(820px 640px at 50% 46%, rgba(239,68,68,0.16), transparent 58%),' +
+            'radial-gradient(640px 560px at 30% 85%, rgba(167,139,250,0.14), transparent 60%),' +
+            '#030712',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        <defs>
+          <radialGradient id="giant" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#fde68a" />
+            <stop offset="36%" stopColor="#fb923c" />
+            <stop offset="72%" stopColor="#ef4444" stopOpacity="0.95" />
+            <stop offset="100%" stopColor="#7f1d1d" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <circle cx={cx} cy={cy} r={300 * S} fill="url(#giant)" />
+        <circle cx={cx} cy={cy} r={118 * S} fill="#fdba74" stroke="#7c2d12" strokeWidth={3 * S} />
+      </svg>
+    </>
+  )
+}
+
+function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' | 'nuclearGandhi' | 'sunNeverBlackHole' }) {
   if (variant === 'minecraft') return <MinecraftScene ratio={ratio} />
   if (variant === 'neverTouch') return <NeverTouchScene ratio={ratio} />
   if (variant === 'everest') return <EverestScene ratio={ratio} />
   if (variant === 'touchAndFeel') return <TouchAndFeelScene ratio={ratio} />
   if (variant === 'nuclearGandhi') return <NuclearGandhiScene ratio={ratio} />
+  if (variant === 'sunNeverBlackHole') return <SunRedGiantScene ratio={ratio} />
   const is169 = ratio === '16x9'
 
   // geometry per ratio
@@ -635,7 +679,7 @@ export default function Thumbnail() {
     >
       <Scene
         ratio={ratio}
-        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : slug === 'nuclear-gandhi' ? 'nuclearGandhi' : undefined}
+        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : slug === 'nuclear-gandhi' ? 'nuclearGandhi' : slug === 'sun-never-black-hole' ? 'sunNeverBlackHole' : undefined}
       />
 
       {/* kicker chip top-left */}

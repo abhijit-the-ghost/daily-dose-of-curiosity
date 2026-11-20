@@ -25,6 +25,12 @@ const BANNED: Record<string, string[]> = {
   'everest-challenger-deep': ['rock height', 'true height', 'exact depth', 'exact'],
 }
 
+// Per-format override for word-count and duration bands. Formats introduced this session:
+//   long-form-45 (`star-scale` series, 45 s cap, ~100–125 words)
+const FORMAT_LIMITS: Record<string, { words: [number, number]; seconds: [number, number] }> = {
+  'sun-never-black-hole': { words: [80, 125], seconds: [20, 45] },
+}
+
 const readJSON = (p: string) => JSON.parse(fs.readFileSync(p, 'utf8')) as unknown
 const exists = (p: string) => fs.existsSync(p)
 
@@ -60,12 +66,15 @@ const checkAnchors = (slug: string, scene: SceneDoc, metadata: MetadataDoc | nul
   return { issues, rows }
 }
 
-const checkTails = (words: unknown[], duration: number) => {
+const checkTails = (slug: string, words: unknown[], duration: number) => {
   const issues: string[] = []
-  if (words.length < 60) issues.push(`word-count ${words.length} < 60`)
-  if (words.length > 75) issues.push(`word-count ${words.length} > 75`)
-  if (duration < 20) issues.push(`duration ${duration.toFixed(2)}s < 20s`)
-  if (duration > 35) issues.push(`duration ${duration.toFixed(2)}s > 35s`)
+  const cfg = FORMAT_LIMITS[slug] ?? { words: [60, 75], seconds: [20, 35] }
+  const [wMin, wMax] = cfg.words
+  const [sMin, sMax] = cfg.seconds
+  if (words.length < wMin) issues.push(`word-count ${words.length} < ${wMin}`)
+  if (words.length > wMax) issues.push(`word-count ${words.length} > ${wMax}`)
+  if (duration < sMin) issues.push(`duration ${duration.toFixed(2)}s < ${sMin}s`)
+  if (duration > sMax) issues.push(`duration ${duration.toFixed(2)}s > ${sMax}s`)
   return issues
 }
 
@@ -112,7 +121,7 @@ const main = async () => {
     const failures: string[] = []
 
     // Tails
-    failures.push(...checkTails(words, metadata?.totalDuration ?? 0))
+    failures.push(...checkTails(slug, words, metadata?.totalDuration ?? 0))
     // Banned strings
     failures.push(...checkBanned(slug, script))
     // FACTS

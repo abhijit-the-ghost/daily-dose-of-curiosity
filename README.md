@@ -33,6 +33,7 @@ for frame-capture encoding. (SVG / Canvas / CSS only — no 3D engine.)
 | 6 | `everest-challenger-deep` | "Which wins: Everest, or the deepest hole in the ocean?" | `episodes/everest-challenger-deep/sources.md` |
 | 7 | `touch-and-feel` | "Someone asked: if atoms never touch, how do you feel a table?" | `episodes/touch-and-feel/sources.md` |
 | 8 | `nuclear-gandhi` | "The most famous game bug never existed." | `episodes/nuclear-gandhi/sources.md` |
+| 9 | `sun-never-black-hole` | "Why our Sun will never become a black hole." | `episodes/sun-never-black-hole/sources.md` |
 
 Source of truth for scripts: `episodes/<slug>/script.txt` · Scene choreography:
 `episodes/<slug>/scene.json` · Audio timeline: `public/audio/<slug>/metadata.json`
@@ -76,7 +77,7 @@ for the rules behind it see [`AGENTS.md`](AGENTS.md) and
    `data-rendering-complete`), preview scale, kicker text/colors from `scene.json`,
    caption hold-out windows, and delegates the act SVG to the per-episode `Acts`
    component registered in `REGISTRY`.
-4. **`src/components/{SpaceSoundActs,MinecraftEdgeActs,NeverTouchActs,EverestVsDeepActs,TouchFeelActs,NuclearGandhiActs}.tsx`** —
+4. **`src/components/{SpaceSoundActs,MinecraftEdgeActs,NeverTouchActs,EverestVsDeepActs,TouchFeelActs,NuclearGandhiActs,SunNeverBlackHoleActs}.tsx`** —
    per-episode scene implementations. `custom` template acts today; shared primitives
    live in `src/components/Starfield.tsx`, `KaraokeCaption.tsx`, `Hud.tsx`, `anim`.
 5. **`scripts/render_video.mjs`** — vite build → preview → puppeteer @ 1080×1920.
