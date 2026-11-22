@@ -107,4 +107,17 @@ export const CAPTION_STYLES = {
     wordDurationSec: 0.22,
     entrance: 'slam' as const,
   },
+  earthNeverMadeGold: {
+    bottomClass: 'bottom-[140px]',
+    pxClass: 'px-14' as const,
+    fontSizeClass: 'text-[56px]',
+    activeShadowClass:
+      '[text-shadow:-2px_-2px_0_#241202,2px_-2px_0_#241202,-2px_2px_0_#241202,2px_2px_0_#241202,0_0_30px_rgba(251,191,36,0.55)]',
+    idleShadowClass:
+      '[text-shadow:-2px_-2px_0_#050a18,2px_-2px_0_#050a18,-2px_2px_0_#050a18,2px_2px_0_#050a18,0_8px_24px_rgba(0,0,0,0.9)]',
+    activeTextClass: 'text-amber-400',
+    holdSec: 0.55,
+    wordEase: easeOutCubic,
+    wordDurationSec: 0.22,
+  },
 } as const

@@ -73,10 +73,19 @@ export const HUD_PRESETS = {
     accent: 'cyan' as const,
     cornerBrackets: true,
     badgeText: '[ STELLAR SCIENCE ]',
-    /** kicker fully hidden — this format is a single continuous morph, no act chips */
+    /** kicker fully hidden - this format is a single continuous morph, no act chips */
     kickerBottomClass: 'hidden',
     pbBottomClass: 'pb-7' as const,
     progressGradientClass:
       'from-violet-400 via-violet-300 to-fuchsia-100 shadow-[0_0_14px_rgba(167,139,250,0.55)]',
+  },
+  earthNeverMadeGold: {
+    accent: 'amber' as const,
+    cornerBrackets: true,
+    badgeText: '[ COSMIC TELEMETRY // GOLD ]',
+    kickerBottomClass: 'bottom-[312px]',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-amber-400 via-yellow-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
   },
 } as const

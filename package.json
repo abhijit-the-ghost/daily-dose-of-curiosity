@@ -17,6 +17,7 @@
     "generate:touch-and-feel": "uv run --with edge-tts,mutagen python scripts/generate_audio.py touch-and-feel",
     "generate:nuclear-gandhi": "uv run --with edge-tts,mutagen python scripts/generate_audio.py nuclear-gandhi",
     "generate:sun-never-black-hole": "uv run --with edge-tts,mutagen python scripts/generate_audio.py sun-never-black-hole",
+    "generate:earth-never-made-gold": "uv run --with edge-tts,mutagen python scripts/generate_audio.py earth-never-made-gold",
     "generate:url-explainer": "uv run --with edge-tts,mutagen python scripts/generate_url_explainer_audio.py",
     "shot": "bun scripts/dev_shot.mjs",
     "render": "bun scripts/render_video.mjs",

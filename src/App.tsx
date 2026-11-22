@@ -116,6 +116,7 @@ function EpisodePreview() {
   if (episode === 'touch-and-feel') return <Episode slug="touch-and-feel" />
   if (episode === 'nuclear-gandhi') return <Episode slug="nuclear-gandhi" />
   if (episode === 'sun-never-black-hole') return <Episode slug="sun-never-black-hole" />
+  if (episode === 'earth-never-made-gold') return <Episode slug="earth-never-made-gold" />
   return <MilkyWay />
 }
 

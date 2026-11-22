@@ -1,0 +1,15 @@
+{
+  "series": "cosmic",
+  "title": "Earth Never Made Its Own Gold",
+  "slug": "earth-never-made-gold",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 2.0,
+  "endCard": true,
+  "endCardRationale": "Branded shared end screen (logo + channel name) shows in the final ~2.6s, then fades out in the last 0.4s to reveal the hook frame for a seamless loop.",
+  "acts": [
+    { "kicker": "01 // THE HOOK", "template": "custom" },
+    { "kicker": "02 // THE FORGE", "template": "custom" },
+    { "kicker": "03 // THE DELIVERY", "template": "custom" }
+  ]
+}

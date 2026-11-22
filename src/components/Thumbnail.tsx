@@ -54,6 +54,12 @@ const COVERS: Record<
     accent: '#a78bfa',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'earth-never-made-gold': {
+    kicker: '[ COSMIC TELEMETRY // GOLD ]',
+    title: ['EARTH NEVER', 'MADE ITS', 'OWN GOLD'],
+    accent: '#f59e0b',
+    tagline: 'Gaming · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

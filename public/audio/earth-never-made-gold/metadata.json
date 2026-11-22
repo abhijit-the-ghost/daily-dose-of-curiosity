@@ -1,0 +1,1057 @@
+{
+  "title": "Earth Never Made Its Own Gold",
+  "series": "cosmic",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 2.0,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "Earth Never Made Its Own Gold",
+      "file": "full_voiceover.mp3",
+      "duration": 23.136,
+      "start": 0.0,
+      "end": 23.136,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.095,
+          "end": 0.24
+        },
+        {
+          "w": "gold",
+          "start": 0.251,
+          "end": 0.508
+        },
+        {
+          "w": "in",
+          "start": 0.519,
+          "end": 0.597
+        },
+        {
+          "w": "your",
+          "start": 0.608,
+          "end": 0.742
+        },
+        {
+          "w": "ring",
+          "start": 0.753,
+          "end": 0.988
+        },
+        {
+          "w": "was",
+          "start": 0.999,
+          "end": 1.144
+        },
+        {
+          "w": "never",
+          "start": 1.155,
+          "end": 1.423
+        },
+        {
+          "w": "made",
+          "start": 1.434,
+          "end": 1.612
+        },
+        {
+          "w": "on",
+          "start": 1.624,
+          "end": 1.758
+        },
+        {
+          "w": "Earth",
+          "start": 1.769,
+          "end": 2.137
+        },
+        {
+          "w": "Our",
+          "start": 2.913,
+          "end": 3.092
+        },
+        {
+          "w": "planet",
+          "start": 3.103,
+          "end": 3.471
+        },
+        {
+          "w": "can't",
+          "start": 3.482,
+          "end": 3.716
+        },
+        {
+          "w": "forge",
+          "start": 3.728,
+          "end": 4.029
+        },
+        {
+          "w": "it",
+          "start": 4.04,
+          "end": 4.208
+        },
+        {
+          "w": "it",
+          "start": 4.364,
+          "end": 4.453
+        },
+        {
+          "w": "only",
+          "start": 4.464,
+          "end": 4.71
+        },
+        {
+          "w": "collects",
+          "start": 4.721,
+          "end": 5.1
+        },
+        {
+          "w": "it",
+          "start": 5.112,
+          "end": 5.402
+        },
+        {
+          "w": "Gold",
+          "start": 6.183,
+          "end": 6.484
+        },
+        {
+          "w": "was",
+          "start": 6.496,
+          "end": 6.618
+        },
+        {
+          "w": "born",
+          "start": 6.629,
+          "end": 6.875
+        },
+        {
+          "w": "in",
+          "start": 6.886,
+          "end": 6.987
+        },
+        {
+          "w": "cosmic",
+          "start": 6.998,
+          "end": 7.388
+        },
+        {
+          "w": "violence",
+          "start": 7.4,
+          "end": 7.935
+        },
+        {
+          "w": "most",
+          "start": 8.237,
+          "end": 8.527
+        },
+        {
+          "w": "likely",
+          "start": 8.538,
+          "end": 8.85
+        },
+        {
+          "w": "when",
+          "start": 8.862,
+          "end": 9.029
+        },
+        {
+          "w": "two",
+          "start": 9.04,
+          "end": 9.241
+        },
+        {
+          "w": "neutron",
+          "start": 9.252,
+          "end": 9.699
+        },
+        {
+          "w": "stars",
+          "start": 9.71,
+          "end": 10.033
+        },
+        {
+          "w": "collided",
+          "start": 10.045,
+          "end": 10.48
+        },
+        {
+          "w": "in",
+          "start": 10.491,
+          "end": 10.603
+        },
+        {
+          "w": "a",
+          "start": 10.614,
+          "end": 10.67
+        },
+        {
+          "w": "kilonova",
+          "start": 10.681,
+          "end": 11.362
+        },
+        {
+          "w": "and",
+          "start": 11.373,
+          "end": 11.507
+        },
+        {
+          "w": "blasted",
+          "start": 11.518,
+          "end": 11.931
+        },
+        {
+          "w": "heavy",
+          "start": 11.942,
+          "end": 12.199
+        },
+        {
+          "w": "elements",
+          "start": 12.21,
+          "end": 12.656
+        },
+        {
+          "w": "into",
+          "start": 12.667,
+          "end": 12.857
+        },
+        {
+          "w": "space",
+          "start": 12.868,
+          "end": 13.382
+        },
+        {
+          "w": "When",
+          "start": 14.152,
+          "end": 14.342
+        },
+        {
+          "w": "young",
+          "start": 14.353,
+          "end": 14.587
+        },
+        {
+          "w": "Earth",
+          "start": 14.598,
+          "end": 14.777
+        },
+        {
+          "w": "formed",
+          "start": 14.788,
+          "end": 15.167
+        },
+        {
+          "w": "most",
+          "start": 15.324,
+          "end": 15.614
+        },
+        {
+          "w": "of",
+          "start": 15.625,
+          "end": 15.681
+        },
+        {
+          "w": "its",
+          "start": 15.692,
+          "end": 15.826
+        },
+        {
+          "w": "gold",
+          "start": 15.837,
+          "end": 16.161
+        },
+        {
+          "w": "sank",
+          "start": 16.172,
+          "end": 16.417
+        },
+        {
+          "w": "to",
+          "start": 16.429,
+          "end": 16.496
+        },
+        {
+          "w": "the",
+          "start": 16.507,
+          "end": 16.596
+        },
+        {
+          "w": "core",
+          "start": 16.607,
+          "end": 16.998
+        },
+        {
+          "w": "The",
+          "start": 17.779,
+          "end": 17.935
+        },
+        {
+          "w": "gold",
+          "start": 17.946,
+          "end": 18.17
+        },
+        {
+          "w": "we",
+          "start": 18.181,
+          "end": 18.27
+        },
+        {
+          "w": "mine",
+          "start": 18.281,
+          "end": 18.571
+        },
+        {
+          "w": "was",
+          "start": 18.583,
+          "end": 18.728
+        },
+        {
+          "w": "likely",
+          "start": 18.739,
+          "end": 19.051
+        },
+        {
+          "w": "delivered",
+          "start": 19.062,
+          "end": 19.464
+        },
+        {
+          "w": "later",
+          "start": 19.475,
+          "end": 19.732
+        },
+        {
+          "w": "by",
+          "start": 19.743,
+          "end": 19.866
+        },
+        {
+          "w": "meteorites",
+          "start": 19.877,
+          "end": 20.67
+        },
+        {
+          "w": "Earth",
+          "start": 21.44,
+          "end": 21.674
+        },
+        {
+          "w": "collects",
+          "start": 21.685,
+          "end": 22.054
+        },
+        {
+          "w": "it",
+          "start": 22.065,
+          "end": 22.366
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE HOOK",
+      "caption": "// ACT 1 \u2014 THE HOOK",
+      "file": "full_voiceover.mp3",
+      "duration": 5.307,
+      "start": 0.095,
+      "end": 5.402,
+      "words": [
+        {
+          "w": "The",
+          "start": 0.095,
+          "end": 0.24
+        },
+        {
+          "w": "gold",
+          "start": 0.251,
+          "end": 0.508
+        },
+        {
+          "w": "in",
+          "start": 0.519,
+          "end": 0.597
+        },
+        {
+          "w": "your",
+          "start": 0.608,
+          "end": 0.742
+        },
+        {
+          "w": "ring",
+          "start": 0.753,
+          "end": 0.988
+        },
+        {
+          "w": "was",
+          "start": 0.999,
+          "end": 1.144
+        },
+        {
+          "w": "never",
+          "start": 1.155,
+          "end": 1.423
+        },
+        {
+          "w": "made",
+          "start": 1.434,
+          "end": 1.612
+        },
+        {
+          "w": "on",
+          "start": 1.624,
+          "end": 1.758
+        },
+        {
+          "w": "Earth",
+          "start": 1.769,
+          "end": 2.137
+        },
+        {
+          "w": "Our",
+          "start": 2.913,
+          "end": 3.092
+        },
+        {
+          "w": "planet",
+          "start": 3.103,
+          "end": 3.471
+        },
+        {
+          "w": "can't",
+          "start": 3.482,
+          "end": 3.716
+        },
+        {
+          "w": "forge",
+          "start": 3.728,
+          "end": 4.029
+        },
+        {
+          "w": "it",
+          "start": 4.04,
+          "end": 4.208
+        },
+        {
+          "w": "it",
+          "start": 4.364,
+          "end": 4.453
+        },
+        {
+          "w": "only",
+          "start": 4.464,
+          "end": 4.71
+        },
+        {
+          "w": "collects",
+          "start": 4.721,
+          "end": 5.1
+        },
+        {
+          "w": "it",
+          "start": 5.112,
+          "end": 5.402
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE FORGE",
+      "caption": "// ACT 2 \u2014 THE FORGE",
+      "file": "full_voiceover.mp3",
+      "duration": 7.199,
+      "start": 6.183,
+      "end": 13.382,
+      "words": [
+        {
+          "w": "Gold",
+          "start": 6.183,
+          "end": 6.484
+        },
+        {
+          "w": "was",
+          "start": 6.496,
+          "end": 6.618
+        },
+        {
+          "w": "born",
+          "start": 6.629,
+          "end": 6.875
+        },
+        {
+          "w": "in",
+          "start": 6.886,
+          "end": 6.987
+        },
+        {
+          "w": "cosmic",
+          "start": 6.998,
+          "end": 7.388
+        },
+        {
+          "w": "violence",
+          "start": 7.4,
+          "end": 7.935
+        },
+        {
+          "w": "most",
+          "start": 8.237,
+          "end": 8.527
+        },
+        {
+          "w": "likely",
+          "start": 8.538,
+          "end": 8.85
+        },
+        {
+          "w": "when",
+          "start": 8.862,
+          "end": 9.029
+        },
+        {
+          "w": "two",
+          "start": 9.04,
+          "end": 9.241
+        },
+        {
+          "w": "neutron",
+          "start": 9.252,
+          "end": 9.699
+        },
+        {
+          "w": "stars",
+          "start": 9.71,
+          "end": 10.033
+        },
+        {
+          "w": "collided",
+          "start": 10.045,
+          "end": 10.48
+        },
+        {
+          "w": "in",
+          "start": 10.491,
+          "end": 10.603
+        },
+        {
+          "w": "a",
+          "start": 10.614,
+          "end": 10.67
+        },
+        {
+          "w": "kilonova",
+          "start": 10.681,
+          "end": 11.362
+        },
+        {
+          "w": "and",
+          "start": 11.373,
+          "end": 11.507
+        },
+        {
+          "w": "blasted",
+          "start": 11.518,
+          "end": 11.931
+        },
+        {
+          "w": "heavy",
+          "start": 11.942,
+          "end": 12.199
+        },
+        {
+          "w": "elements",
+          "start": 12.21,
+          "end": 12.656
+        },
+        {
+          "w": "into",
+          "start": 12.667,
+          "end": 12.857
+        },
+        {
+          "w": "space",
+          "start": 12.868,
+          "end": 13.382
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE DELIVERY",
+      "caption": "// ACT 3 \u2014 THE DELIVERY",
+      "file": "full_voiceover.mp3",
+      "duration": 8.214,
+      "start": 14.152,
+      "end": 22.366,
+      "words": [
+        {
+          "w": "When",
+          "start": 14.152,
+          "end": 14.342
+        },
+        {
+          "w": "young",
+          "start": 14.353,
+          "end": 14.587
+        },
+        {
+          "w": "Earth",
+          "start": 14.598,
+          "end": 14.777
+        },
+        {
+          "w": "formed",
+          "start": 14.788,
+          "end": 15.167
+        },
+        {
+          "w": "most",
+          "start": 15.324,
+          "end": 15.614
+        },
+        {
+          "w": "of",
+          "start": 15.625,
+          "end": 15.681
+        },
+        {
+          "w": "its",
+          "start": 15.692,
+          "end": 15.826
+        },
+        {
+          "w": "gold",
+          "start": 15.837,
+          "end": 16.161
+        },
+        {
+          "w": "sank",
+          "start": 16.172,
+          "end": 16.417
+        },
+        {
+          "w": "to",
+          "start": 16.429,
+          "end": 16.496
+        },
+        {
+          "w": "the",
+          "start": 16.507,
+          "end": 16.596
+        },
+        {
+          "w": "core",
+          "start": 16.607,
+          "end": 16.998
+        },
+        {
+          "w": "The",
+          "start": 17.779,
+          "end": 17.935
+        },
+        {
+          "w": "gold",
+          "start": 17.946,
+          "end": 18.17
+        },
+        {
+          "w": "we",
+          "start": 18.181,
+          "end": 18.27
+        },
+        {
+          "w": "mine",
+          "start": 18.281,
+          "end": 18.571
+        },
+        {
+          "w": "was",
+          "start": 18.583,
+          "end": 18.728
+        },
+        {
+          "w": "likely",
+          "start": 18.739,
+          "end": 19.051
+        },
+        {
+          "w": "delivered",
+          "start": 19.062,
+          "end": 19.464
+        },
+        {
+          "w": "later",
+          "start": 19.475,
+          "end": 19.732
+        },
+        {
+          "w": "by",
+          "start": 19.743,
+          "end": 19.866
+        },
+        {
+          "w": "meteorites",
+          "start": 19.877,
+          "end": 20.67
+        },
+        {
+          "w": "Earth",
+          "start": 21.44,
+          "end": 21.674
+        },
+        {
+          "w": "collects",
+          "start": 21.685,
+          "end": 22.054
+        },
+        {
+          "w": "it",
+          "start": 22.065,
+          "end": 22.366
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "The",
+      "start": 0.095,
+      "end": 0.24
+    },
+    {
+      "w": "gold",
+      "start": 0.251,
+      "end": 0.508
+    },
+    {
+      "w": "in",
+      "start": 0.519,
+      "end": 0.597
+    },
+    {
+      "w": "your",
+      "start": 0.608,
+      "end": 0.742
+    },
+    {
+      "w": "ring",
+      "start": 0.753,
+      "end": 0.988
+    },
+    {
+      "w": "was",
+      "start": 0.999,
+      "end": 1.144
+    },
+    {
+      "w": "never",
+      "start": 1.155,
+      "end": 1.423
+    },
+    {
+      "w": "made",
+      "start": 1.434,
+      "end": 1.612
+    },
+    {
+      "w": "on",
+      "start": 1.624,
+      "end": 1.758
+    },
+    {
+      "w": "Earth",
+      "start": 1.769,
+      "end": 2.137
+    },
+    {
+      "w": "Our",
+      "start": 2.913,
+      "end": 3.092
+    },
+    {
+      "w": "planet",
+      "start": 3.103,
+      "end": 3.471
+    },
+    {
+      "w": "can't",
+      "start": 3.482,
+      "end": 3.716
+    },
+    {
+      "w": "forge",
+      "start": 3.728,
+      "end": 4.029
+    },
+    {
+      "w": "it",
+      "start": 4.04,
+      "end": 4.208
+    },
+    {
+      "w": "it",
+      "start": 4.364,
+      "end": 4.453
+    },
+    {
+      "w": "only",
+      "start": 4.464,
+      "end": 4.71
+    },
+    {
+      "w": "collects",
+      "start": 4.721,
+      "end": 5.1
+    },
+    {
+      "w": "it",
+      "start": 5.112,
+      "end": 5.402
+    },
+    {
+      "w": "Gold",
+      "start": 6.183,
+      "end": 6.484
+    },
+    {
+      "w": "was",
+      "start": 6.496,
+      "end": 6.618
+    },
+    {
+      "w": "born",
+      "start": 6.629,
+      "end": 6.875
+    },
+    {
+      "w": "in",
+      "start": 6.886,
+      "end": 6.987
+    },
+    {
+      "w": "cosmic",
+      "start": 6.998,
+      "end": 7.388
+    },
+    {
+      "w": "violence",
+      "start": 7.4,
+      "end": 7.935
+    },
+    {
+      "w": "most",
+      "start": 8.237,
+      "end": 8.527
+    },
+    {
+      "w": "likely",
+      "start": 8.538,
+      "end": 8.85
+    },
+    {
+      "w": "when",
+      "start": 8.862,
+      "end": 9.029
+    },
+    {
+      "w": "two",
+      "start": 9.04,
+      "end": 9.241
+    },
+    {
+      "w": "neutron",
+      "start": 9.252,
+      "end": 9.699
+    },
+    {
+      "w": "stars",
+      "start": 9.71,
+      "end": 10.033
+    },
+    {
+      "w": "collided",
+      "start": 10.045,
+      "end": 10.48
+    },
+    {
+      "w": "in",
+      "start": 10.491,
+      "end": 10.603
+    },
+    {
+      "w": "a",
+      "start": 10.614,
+      "end": 10.67
+    },
+    {
+      "w": "kilonova",
+      "start": 10.681,
+      "end": 11.362
+    },
+    {
+      "w": "and",
+      "start": 11.373,
+      "end": 11.507
+    },
+    {
+      "w": "blasted",
+      "start": 11.518,
+      "end": 11.931
+    },
+    {
+      "w": "heavy",
+      "start": 11.942,
+      "end": 12.199
+    },
+    {
+      "w": "elements",
+      "start": 12.21,
+      "end": 12.656
+    },
+    {
+      "w": "into",
+      "start": 12.667,
+      "end": 12.857
+    },
+    {
+      "w": "space",
+      "start": 12.868,
+      "end": 13.382
+    },
+    {
+      "w": "When",
+      "start": 14.152,
+      "end": 14.342
+    },
+    {
+      "w": "young",
+      "start": 14.353,
+      "end": 14.587
+    },
+    {
+      "w": "Earth",
+      "start": 14.598,
+      "end": 14.777
+    },
+    {
+      "w": "formed",
+      "start": 14.788,
+      "end": 15.167
+    },
+    {
+      "w": "most",
+      "start": 15.324,
+      "end": 15.614
+    },
+    {
+      "w": "of",
+      "start": 15.625,
+      "end": 15.681
+    },
+    {
+      "w": "its",
+      "start": 15.692,
+      "end": 15.826
+    },
+    {
+      "w": "gold",
+      "start": 15.837,
+      "end": 16.161
+    },
+    {
+      "w": "sank",
+      "start": 16.172,
+      "end": 16.417
+    },
+    {
+      "w": "to",
+      "start": 16.429,
+      "end": 16.496
+    },
+    {
+      "w": "the",
+      "start": 16.507,
+      "end": 16.596
+    },
+    {
+      "w": "core",
+      "start": 16.607,
+      "end": 16.998
+    },
+    {
+      "w": "The",
+      "start": 17.779,
+      "end": 17.935
+    },
+    {
+      "w": "gold",
+      "start": 17.946,
+      "end": 18.17
+    },
+    {
+      "w": "we",
+      "start": 18.181,
+      "end": 18.27
+    },
+    {
+      "w": "mine",
+      "start": 18.281,
+      "end": 18.571
+    },
+    {
+      "w": "was",
+      "start": 18.583,
+      "end": 18.728
+    },
+    {
+      "w": "likely",
+      "start": 18.739,
+      "end": 19.051
+    },
+    {
+      "w": "delivered",
+      "start": 19.062,
+      "end": 19.464
+    },
+    {
+      "w": "later",
+      "start": 19.475,
+      "end": 19.732
+    },
+    {
+      "w": "by",
+      "start": 19.743,
+      "end": 19.866
+    },
+    {
+      "w": "meteorites",
+      "start": 19.877,
+      "end": 20.67
+    },
+    {
+      "w": "Earth",
+      "start": 21.44,
+      "end": 21.674
+    },
+    {
+      "w": "collects",
+      "start": 21.685,
+      "end": 22.054
+    },
+    {
+      "w": "it",
+      "start": 22.065,
+      "end": 22.366
+    }
+  ],
+  "totalDuration": 25.136
+}
