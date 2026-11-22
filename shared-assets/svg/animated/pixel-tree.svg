@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128" shape-rendering="crispEdges" data-duration="1.2">
+  <title>Pixel art tree</title>
+  <desc>A small pixel-art tree with leaf clusters that drift left and right by one or two pixels.</desc>
+
+  <style>
+    .leaf-a { animation: swayA 1.2s steps(2, end) infinite; }
+    .leaf-b { animation: swayB 1.4s steps(2, end) infinite; animation-delay: -0.3s; }
+    .leaf-c { animation: swayC 1.0s steps(2, end) infinite; animation-delay: -0.6s; }
+
+    @keyframes swayA {
+      0%, 100% { transform: translateX(0px); }
+      50%      { transform: translateX(1px); }
+    }
+    @keyframes swayB {
+      0%, 100% { transform: translateX(0px); }
+      50%      { transform: translateX(2px); }
+    }
+    @keyframes swayC {
+      0%, 100% { transform: translateX(0px); }
+      50%      { transform: translateX(-1px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .leaf-a, .leaf-b, .leaf-c { animation: none; }
+    }
+  </style>
+
+  <!-- ground -->
+  <rect x="18" y="56" width="28" height="2" fill="#4b3b2a"/>
+  <rect x="22" y="58" width="20" height="2" fill="#6b5a3e"/>
+
+  <!-- trunk and branches -->
+  <rect x="29" y="40" width="6" height="16" fill="#6b4423"/>
+  <rect x="29" y="40" width="2" height="16" fill="#4a2f18"/>
+  <rect x="33" y="44" width="2" height="8" fill="#8b5a2b"/>
+  <rect x="24" y="38" width="5" height="2" fill="#6b4423"/>
+  <rect x="35" y="34" width="5" height="2" fill="#6b4423"/>
+
+  <!-- canopy base -->
+  <g fill="#1f7a3d">
+    <rect x="26" y="18" width="12" height="4"/>
+    <rect x="20" y="22" width="24" height="4"/>
+    <rect x="16" y="26" width="32" height="8"/>
+    <rect x="20" y="34" width="24" height="4"/>
+    <rect x="24" y="38" width="16" height="2"/>
+  </g>
+
+  <!-- canopy mid-tones -->
+  <g fill="#2f9e4f">
+    <rect x="22" y="22" width="8" height="4"/>
+    <rect x="34" y="24" width="8" height="4"/>
+    <rect x="26" y="30" width="10" height="4"/>
+    <rect x="18" y="28" width="4" height="4"/>
+    <rect x="42" y="30" width="4" height="4"/>
+  </g>
+
+  <!-- canopy highlights -->
+  <g fill="#57c96b">
+    <rect x="28" y="20" width="4" height="2"/>
+    <rect x="20" y="26" width="4" height="2"/>
+    <rect x="36" y="28" width="4" height="2"/>
+  </g>
+
+  <!-- gently drifting leaf clusters -->
+  <g class="leaf-a" fill="#2f9e4f">
+    <rect x="14" y="28" width="4" height="4"/>
+    <rect x="16" y="32" width="2" height="2" fill="#57c96b"/>
+  </g>
+  <g class="leaf-b" fill="#2f9e4f">
+    <rect x="46" y="24" width="4" height="4"/>
+    <rect x="48" y="28" width="2" height="2" fill="#57c96b"/>
+  </g>
+  <g class="leaf-c" fill="#57c96b">
+    <rect x="28" y="14" width="6" height="2"/>
+    <rect x="30" y="16" width="4" height="2"/>
+  </g>
+</svg>

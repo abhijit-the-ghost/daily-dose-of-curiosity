@@ -7,6 +7,7 @@ is logged here. Ours stay ours; everything else keeps its license terms.
 | --- | --- | --- | --- |
 | `brand/logo.png` | original channel artwork | © Daily Dose of Curiosity | channel logo; do not redistribute |
 | `brand/CuriosityStickman.tsx` | original channel artwork | © Daily Dose of Curiosity | poseable Curiosity stickman (React/TSX SVG component); do not redistribute |
+| `svg/animated/pixel-tree.svg` | original, generated locally with OpenCode SVG Studio | © Daily Dose of Curiosity | subtle 1–2px CSS leaf sway; reduced-motion safe |
 | `brand/fonts/PirataOne-Regular.ttf` | https://github.com/google/fonts (ofl/pirataone) | SIL Open Font License 1.1 | https://fonts.google.com/specimen/Pirata+One |
 | `brand/fonts/Anton-Regular.ttf` | https://github.com/google/fonts (ofl/anton) | SIL Open Font License 1.1 | https://fonts.google.com/specimen/Anton (karaoke captions) |
 | (narration MP3s, `public/audio/`) | generated with edge-tts | Microsoft Speech service terms (free tier) | voices: en-US-AriaNeural |
