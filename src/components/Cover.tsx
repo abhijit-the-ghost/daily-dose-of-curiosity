@@ -59,6 +59,24 @@ const COVERS: Record<
     accent: '#f59e0b',
     tagline: 'Gaming · Science · Verified Facts',
   },
+  'uranus-tilted-sideways': {
+    kicker: '[ COSMIC TELEMETRY // URANUS ]',
+    title: ['URANUS', 'ROLLS ON', 'ITS SIDE'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
+  },
+  'venus-sun-rises-west': {
+    kicker: '[ COSMIC TELEMETRY // VENUS ]',
+    title: ['DAY BEATS', 'YEAR', '243'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
+  },
+  'solar-system-flat-plane': {
+    kicker: '[ COSMIC TELEMETRY // FLAT PLANE ]',
+    title: ['ONE FLAT', 'PLANE', 'NOT ATOMS'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
+  },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
     title: ['EVERY PHOTO', 'OF OUR GALAXY', 'IS A LIE'],

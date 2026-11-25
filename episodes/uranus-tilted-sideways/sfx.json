@@ -1,0 +1,6 @@
+{
+  "comment": "SFX for uranus-tilted-sideways. Follow CTA plays at end-card onset (duration-2.6s). Mixed under voice at encode time.",
+  "events": [
+    { "t": 24.192, "file": "follow_for_more.mp3", "gainDb": -6 }
+  ]
+}

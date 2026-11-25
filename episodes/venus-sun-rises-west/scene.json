@@ -1,0 +1,427 @@
+{
+  "series": "cosmic",
+  "title": "Why the Sun Rises in the West on Venus",
+  "slug": "venus-sun-rises-west",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 0.35,
+  "endCard": false,
+  "captionStyle": "phrase",
+  "coverTitle": "DAY BEATS YEAR 243",
+  "palette": {
+    "ground": "#05070F",
+    "groundAlt": "#0B1022",
+    "primary": "#F59E0B",
+    "secondary": "#60A5FA",
+    "ink": "#F8FAFC"
+  },
+  "acts": [
+    {
+      "kicker": "01 // THE HOOK",
+      "template": "custom"
+    },
+    {
+      "kicker": "02 // THE ASSUMPTION",
+      "template": "custom"
+    },
+    {
+      "kicker": "03 // THE FLIP",
+      "template": "custom"
+    },
+    {
+      "kicker": "04 // TWO FORCES",
+      "template": "custom"
+    },
+    {
+      "kicker": "05 // THE PAYOFF",
+      "template": "custom"
+    },
+    {
+      "kicker": "06 // THE VIEW",
+      "template": "custom"
+    }
+  ],
+  "question": {
+    "text": "East or west sunrise — which would you rather wake up to?",
+    "questionAt": 38.884,
+    "pinnedComment": "East or west sunrise — which would you rather wake up to?",
+    "ctaStyle": "question"
+  },
+  "beats": [
+    {
+      "kind": "chip",
+      "text": "SUN RISES WEST",
+      "note": "frame 1 = content: huge Venus, west horizon, CW arrow drawing on; anchor word On [WordBoundary #0: \"On\" @ 0.095s]",
+      "at": 0.095
+    },
+    {
+      "kind": "camera",
+      "scale": 1.6,
+      "to": [
+        0.5,
+        0.46
+      ],
+      "note": "hero passes 55% of frame width; anchor word west [WordBoundary #7: \"west\" @ 1.836s]",
+      "at": 1.836
+    },
+    {
+      "kind": "shape",
+      "id": "day-stretch",
+      "note": "\"lasts\" — day length stretches as a shape, not a second number [WordBoundary #17: \"lasts\" @ 4.023s]",
+      "at": 4.023
+    },
+    {
+      "kind": "chip",
+      "text": "SPIN OUTLASTS YEAR",
+      "note": "\"year\" — hook contradiction part 2, no numeral [WordBoundary #22: \"year\" @ 5.418s]",
+      "at": 5.418
+    },
+    {
+      "kind": "chip",
+      "text": "ORBIT SAME WAY",
+      "note": "\"assume\" — kill the orbits-backward belief first [WordBoundary #25: \"assume\" @ 7.188s]",
+      "at": 7.188
+    },
+    {
+      "kind": "chip",
+      "text": "NOT BACKWARD",
+      "note": "\"backward\" — explicit denial before the same-direction proof [WordBoundary #32: \"backward\" @ 9.085s]",
+      "at": 9.085
+    },
+    {
+      "kind": "shape",
+      "id": "orbit-lane-pair",
+      "note": "\"It\" — Venus and Earth orbit lanes appear [WordBoundary #33: \"It\" @ 10.402s]",
+      "at": 10.402
+    },
+    {
+      "kind": "camera",
+      "scale": 1.15,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "\"It travels\" — pull back from the push-in [WordBoundary #35: \"It\" @ 11.864s]",
+      "at": 11.864
+    },
+    {
+      "kind": "shape",
+      "id": "matching-orbit-arrows",
+      "note": "\"same\" — both orbit arrows draw CCW together [WordBoundary #43: \"same\" @ 13.694s]",
+      "at": 13.694
+    },
+    {
+      "kind": "shape",
+      "id": "spin-direction-pair",
+      "note": "\"backward\" — Earth CCW vs Venus CW spin arrows [WordBoundary #48: \"backward\" @ 15.904s]",
+      "at": 15.904
+    },
+    {
+      "kind": "chip",
+      "text": "SPIN BACKWARD",
+      "note": "\"spin\" — claim lands on the spoken word [WordBoundary #51: \"spin\" @ 16.629s]",
+      "at": 16.629
+    },
+    {
+      "kind": "palette",
+      "ground": "secondary",
+      "note": "\"While\" — full-bleed ground flip #1, cool #60A5FA [WordBoundary #52: \"While\" @ 17.824s]",
+      "at": 17.824
+    },
+    {
+      "kind": "chip",
+      "text": "UPRIGHT TOP",
+      "note": "\"planet\" — reference state before the flip; no Uranus number [WordBoundary #56: \"planet\" @ 18.940s]",
+      "at": 18.94
+    },
+    {
+      "kind": "shape",
+      "id": "axis-upright",
+      "note": "\"upright\" — dashed upright axis through Venus [WordBoundary #61: \"upright\" @ 20.737s]",
+      "at": 20.737
+    },
+    {
+      "kind": "shape",
+      "id": "axis-flip",
+      "note": "\"flipped\" — axis rotates to the retrograde convention [WordBoundary #65: \"flipped\" @ 22.254s]",
+      "at": 22.254
+    },
+    {
+      "kind": "chip",
+      "text": "FACT:obliquityDeg",
+      "note": "\"177-degree\" — STATIC chip: resolves FACTS.obliquityDeg.display; not the proof [WordBoundary #71: \"177-degree\" @ 23.750s]",
+      "at": 23.75
+    },
+    {
+      "kind": "camera",
+      "scale": 1.45,
+      "to": [
+        0.5,
+        0.42
+      ],
+      "note": "\"tilt\" — push into the axis so the flip is a camera move [WordBoundary #72: \"tilt\" @ 25.212s]",
+      "at": 25.212
+    },
+    {
+      "kind": "palette",
+      "ground": "primary",
+      "note": "\"slow\" — full-bleed ground flip #2, amber #F59E0B [WordBoundary #77: \"slow\" @ 27.478s]",
+      "at": 27.478
+    },
+    {
+      "kind": "chip",
+      "text": "TWO FORCES",
+      "note": "\"two\" — hedge frame for the mechanism [WordBoundary #81: \"two\" @ 29.855s]",
+      "at": 29.855
+    },
+    {
+      "kind": "shape",
+      "id": "impact-field",
+      "note": "\"cosmic\" — off-center impact field enters [WordBoundary #86: \"cosmic\" @ 31.127s]",
+      "at": 31.127
+    },
+    {
+      "kind": "shape",
+      "id": "off-center-hit",
+      "note": "\"First\" — protoplanet dot hits off-center [WordBoundary #88: \"First\" @ 32.712s]",
+      "at": 32.712
+    },
+    {
+      "kind": "chip",
+      "text": "LIKELY IMPACT",
+      "note": "\"slammed\" — hedge stays in the chip; never a settled-cause claim [WordBoundary #93: \"slammed\" @ 34.665s]",
+      "at": 34.665
+    },
+    {
+      "kind": "shape",
+      "id": "spin-recoil",
+      "note": "\"knocking\" — recoil tips the spin [WordBoundary #98: \"knocking\" @ 36.696s]",
+      "at": 36.696
+    },
+    {
+      "kind": "question",
+      "text": "EAST OR WEST, WHICH SUNRISE?",
+      "note": "\"Then\" — one question at 58.6% of runtime; replaces the claim chip [WordBoundary #103: \"Then\" @ 38.884s]",
+      "at": 38.884
+    },
+    {
+      "kind": "shape",
+      "id": "tidal-vectors",
+      "note": "\"Sun’s\" — gravity arrows pull on the atmosphere [WordBoundary #109: \"Sun’s\" @ 40.837s]",
+      "at": 40.837
+    },
+    {
+      "kind": "shape",
+      "id": "atmosphere-shell",
+      "note": "\"thick\" — CO2 shell wraps Venus; pressure shown as geometry, not a second number [WordBoundary #114: \"thick\" @ 42.455s]",
+      "at": 42.455
+    },
+    {
+      "kind": "chip",
+      "text": "TIDAL BRAKE",
+      "note": "\"slow-motion\" — mechanism chip, no numeral [WordBoundary #120: \"slow-motion\" @ 44.766s]",
+      "at": 44.766
+    },
+    {
+      "kind": "camera",
+      "scale": 0.92,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "\"reversed\" — pull back during the brake [WordBoundary #124: \"reversed\" @ 46.339s]",
+      "at": 46.339
+    },
+    {
+      "kind": "chip",
+      "text": "SPIN VS YEAR",
+      "note": "\"That\" — claim chip before the proof; hidden during the panel [WordBoundary #128: \"That\" @ 48.728s]",
+      "at": 48.728
+    },
+    {
+      "kind": "shape",
+      "id": "two-clocks",
+      "note": "\"one\" — paired clock rails appear [WordBoundary #134: \"one\" @ 50.078s]",
+      "at": 50.078
+    },
+    {
+      "kind": "counter",
+      "factKeys": [
+        "spinDays",
+        "orbitDays"
+      ],
+      "suffix": "EARTH DAYS",
+      "dur": 1.2,
+      "note": "\"243\" — THE ONE visual proof; no second counter/dots/bar [WordBoundary #140: \"243\" @ 51.607s]",
+      "at": 51.607
+    },
+    {
+      "kind": "shape",
+      "id": "year-lane",
+      "note": "\"while\" — year rail stays visible as the spin rail passes it [WordBoundary #143: \"while\" @ 53.527s]",
+      "at": 53.527
+    },
+    {
+      "kind": "shape",
+      "id": "proof-crosshair",
+      "note": "\"225\" — crosshair pins the crossing; still one proof [WordBoundary #152: \"225\" @ 55.379s]",
+      "at": 55.379
+    },
+    {
+      "kind": "chip",
+      "text": "SPIN BEATS YEAR",
+      "note": "\"Meaning\" — verdict chip returns after the proof panel exits [WordBoundary #153: \"Meaning\" @ 57.299s]",
+      "at": 57.299
+    },
+    {
+      "kind": "shape",
+      "id": "west-horizon-return",
+      "note": "\"rise\" — Act 1 horizon and Sun return at their final loop state [WordBoundary #163: \"rise\" @ 59.688s]",
+      "at": 59.688
+    },
+    {
+      "kind": "palette",
+      "ground": "ground",
+      "note": "\"west\" — full-bleed return to void ground; prepares the loop frame [WordBoundary #166: \"west\" @ 60.089s]",
+      "at": 60.089
+    },
+    {
+      "kind": "chip",
+      "text": "FACT:sunsetApproxDays",
+      "note": "\"nearly\" — STATIC chip: resolves FACTS.sunsetApproxDays.display; not a counted proof [WordBoundary #169: \"nearly\" @ 61.016s]",
+      "at": 61.016
+    },
+    {
+      "kind": "shape",
+      "id": "sun-east-set",
+      "note": "\"sunset\" — Sun dips below the RIGHT/east horizon; completes the west-rise mirror [WordBoundary #174: \"sunset\" @ 62.221s]",
+      "at": 62.221
+    },
+    {
+      "kind": "camera",
+      "scale": 1,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "\"spin\" — camera geometry locked back to frame 1 [WordBoundary #178: \"spin\" @ 63.605s]",
+      "at": 63.605
+    },
+    {
+      "kind": "chip",
+      "text": "SUN RISES WEST",
+      "note": "\"year\" — loop chip identical to t=first; 1.5 s tail cuts to frame 1 [WordBoundary #182: \"year\" @ 64.900s]",
+      "at": 64.9
+    }
+  ],
+  "anchors": {
+    "225": [
+      1
+    ],
+    "243": [
+      1
+    ],
+    "on": [
+      1
+    ],
+    "west": [
+      1,
+      2
+    ],
+    "lasts": [
+      1
+    ],
+    "year": [
+      1,
+      2
+    ],
+    "assume": [
+      1
+    ],
+    "backward": [
+      1,
+      2
+    ],
+    "it": [
+      1,
+      2
+    ],
+    "same": [
+      1
+    ],
+    "spin": [
+      1,
+      4
+    ],
+    "while": [
+      1,
+      2
+    ],
+    "planet": [
+      1
+    ],
+    "upright": [
+      1
+    ],
+    "flipped": [
+      1
+    ],
+    "177-degree": [
+      1
+    ],
+    "tilt": [
+      1
+    ],
+    "slow": [
+      1
+    ],
+    "two": [
+      1
+    ],
+    "cosmic": [
+      1
+    ],
+    "first": [
+      1
+    ],
+    "slammed": [
+      1
+    ],
+    "knocking": [
+      1
+    ],
+    "then": [
+      1
+    ],
+    "sun’s": [
+      1
+    ],
+    "thick": [
+      1
+    ],
+    "slow-motion": [
+      1
+    ],
+    "reversed": [
+      1
+    ],
+    "that": [
+      2
+    ],
+    "one": [
+      1
+    ],
+    "meaning": [
+      1
+    ],
+    "rise": [
+      1
+    ],
+    "nearly": [
+      2
+    ],
+    "sunset": [
+      1
+    ]
+  }
+}

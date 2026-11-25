@@ -18,6 +18,9 @@
     "generate:nuclear-gandhi": "uv run --with edge-tts,mutagen python scripts/generate_audio.py nuclear-gandhi",
     "generate:sun-never-black-hole": "uv run --with edge-tts,mutagen python scripts/generate_audio.py sun-never-black-hole",
     "generate:earth-never-made-gold": "uv run --with edge-tts,mutagen python scripts/generate_audio.py earth-never-made-gold",
+    "generate:uranus-tilted-sideways": "uv run --with edge-tts,mutagen python scripts/generate_audio.py uranus-tilted-sideways",
+    "generate:venus-sun-rises-west": "uv run --with edge-tts,mutagen python scripts/generate_audio.py venus-sun-rises-west",
+    "generate:solar-system-flat-plane": "uv run --with edge-tts,mutagen python scripts/generate_audio.py solar-system-flat-plane",
     "generate:url-explainer": "uv run --with edge-tts,mutagen python scripts/generate_url_explainer_audio.py",
     "shot": "bun scripts/dev_shot.mjs",
     "render": "bun scripts/render_video.mjs",
@@ -25,7 +28,10 @@
     "verify:anchors": "bun scripts/verify.ts",
     "render:smoke": "bun scripts/render_video.mjs --max-frames 90",
     "cover": "bun scripts/render_cover.mjs",
-    "thumb": "bun scripts/render_thumb.mjs"
+    "thumb": "bun scripts/render_thumb.mjs",
+    "bed": "uv run --with numpy python scripts/synth_bed.py",
+    "sfx": "uv run --with numpy python scripts/synth_sfx.py",
+    "qa": "bun scripts/qa_metrics.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.5",

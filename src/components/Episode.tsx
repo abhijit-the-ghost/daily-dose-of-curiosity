@@ -22,6 +22,9 @@ import NuclearGandhiActs from './NuclearGandhiActs'
 import SunNeverBlackHoleActs from './SunNeverBlackHoleActs'
 import EverestVsDeepActs from './EverestVsDeepActs'
 import EarthNeverMadeGoldActs from './EarthNeverMadeGoldActs'
+import UranusTiltedSidewaysActs from './UranusTiltedSidewaysActs'
+import VenusSunRisesWestActs from './VenusSunRisesWestActs'
+import FlatPlaneActs from './FlatPlaneActs'
 
 import spaceSoundScene from '../../episodes/space-sound/scene.json'
 import minecraftEdgeScene from '../../episodes/minecraft-edge/scene.json'
@@ -31,8 +34,11 @@ import nuclearGandhiScene from '../../episodes/nuclear-gandhi/scene.json'
 import sunNeverBlackHoleScene from '../../episodes/sun-never-black-hole/scene.json'
 import everestVsDeepScene from '../../episodes/everest-challenger-deep/scene.json'
 import earthNeverMadeGoldScene from '../../episodes/earth-never-made-gold/scene.json'
+import uranusTiltedSidewaysScene from '../../episodes/uranus-tilted-sideways/scene.json'
+import venusSunRisesWestScene from '../../episodes/venus-sun-rises-west/scene.json'
+import flatPlaneScene from '../../episodes/solar-system-flat-plane/scene.json'
 
-type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch' | 'everest-challenger-deep' | 'touch-and-feel' | 'nuclear-gandhi' | 'sun-never-black-hole' | 'earth-never-made-gold'
+type Slug = 'space-sound' | 'minecraft-edge' | 'never-touch' | 'everest-challenger-deep' | 'touch-and-feel' | 'nuclear-gandhi' | 'sun-never-black-hole' | 'earth-never-made-gold' | 'uranus-tilted-sideways' | 'venus-sun-rises-west' | 'solar-system-flat-plane'
 
 type Metadata = SpaceSoundMetadata & MinecraftEdgeMetadata & NeverTouchMetadata
 
@@ -53,6 +59,24 @@ const actAt = (meta: Metadata | null, t: number): number => {
   const a1 = meta.actBreakdown?.[1]?.words?.[0]?.start ?? 5.5
   const a2 = meta.actBreakdown?.[2]?.words?.[0]?.start ?? 15.7
   return t < a1 ? 0 : t < a2 ? 1 : 2
+}
+
+/** venus-sun-rises-west has six measured acts; pick the current one from WordBoundary starts. */
+const venusActAt = (meta: Metadata | null, t: number): number => {
+  const starts = (meta?.actBreakdown ?? []).map((a) => a.words?.[0]?.start).filter((v): v is number => typeof v === 'number')
+  if (!starts.length) return 0
+  let idx = 0
+  for (let i = 0; i < starts.length; i++) if (t >= starts[i]) idx = i
+  return idx
+}
+
+/** solar-system-flat-plane has five measured acts; same WordBoundary picker. */
+const flatPlaneActAt = (meta: Metadata | null, t: number): number => {
+  const starts = (meta?.actBreakdown ?? []).map((a) => a.words?.[0]?.start).filter((v): v is number => typeof v === 'number')
+  if (!starts.length) return 0
+  let idx = 0
+  for (let i = 0; i < starts.length; i++) if (t >= starts[i]) idx = i
+  return idx
 }
 
 const mcActAt = (meta: Metadata | null, t: number): number => {
@@ -137,6 +161,30 @@ const REGISTRY: Record<Slug, EpisodeDefinition> = {
     Acts: EarthNeverMadeGoldActs as never,
     actIndexOf: actAt,
   },
+  'uranus-tilted-sideways': {
+    scene: uranusTiltedSidewaysScene as SceneConfig,
+    audioSrc: '/audio/uranus-tilted-sideways/full_voiceover.mp3',
+    hudPreset: 'uranusTiltedSideways',
+    captionStyle: 'uranusTiltedSideways',
+    Acts: UranusTiltedSidewaysActs as never,
+    actIndexOf: actAt,
+  },
+  'venus-sun-rises-west': {
+    scene: venusSunRisesWestScene as SceneConfig,
+    audioSrc: '/audio/venus-sun-rises-west/full_voiceover.mp3',
+    hudPreset: 'venusSunRisesWest',
+    captionStyle: 'phrase',
+    Acts: VenusSunRisesWestActs as never,
+    actIndexOf: venusActAt,
+  },
+  'solar-system-flat-plane': {
+    scene: flatPlaneScene as SceneConfig,
+    audioSrc: '/audio/solar-system-flat-plane/full_voiceover.mp3',
+    hudPreset: 'solarSystemFlatPlane',
+    captionStyle: 'phrase',
+    Acts: FlatPlaneActs as never,
+    actIndexOf: flatPlaneActAt,
+  },
 }
 
 export default function Episode({ slug }: { slug: Slug }) {
@@ -149,10 +197,18 @@ export default function Episode({ slug }: { slug: Slug }) {
   const rafRef = useRef(0)
   const forcedTimeRef = useRef<number | null>(null)
 
+  /* Caption styles can opt into shorter chunks + no grey upcoming words.
+     Defaults 6/true reproduce the legacy karaoke behaviour exactly. */
+  const captionStyle = useMemo(
+    () => ({ maxWords: 6, dimUpcoming: true, ...CAPTION_STYLES[def.captionStyle] }),
+    [def.captionStyle],
+  )
+  const { maxWords: captionMaxWords, ...captionProps } = captionStyle
+
   const chunks = useMemo(() => {
     const w = meta?.words ?? []
-    return w.length ? buildChunks(w) : []
-  }, [meta])
+    return w.length ? buildChunks(w, captionMaxWords) : []
+  }, [meta, captionMaxWords])
   const totalDuration = meta?.totalDuration ?? 28.78
   const actIndex = def.actIndexOf(meta, time)
 
@@ -257,7 +313,7 @@ export default function Episode({ slug }: { slug: Slug }) {
           kickerAccentHex={kicker?.kickerColor}
         />
 
-        {captionsVisible && <KaraokeCaption {...CAPTION_STYLES[def.captionStyle]} t={time} chunks={chunks} />}
+        {captionsVisible && <KaraokeCaption {...captionProps} t={time} chunks={chunks} />}
 
         {def.scene.endCard && <EndCard t={time} duration={totalDuration} />}
       </div>

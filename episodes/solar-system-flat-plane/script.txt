@@ -1,0 +1,14 @@
+// ACT 1 — THE HOOK
+Gravity pulls equally in every direction—so why do all eight planets orbit the Sun on a flat pancake instead of crisscrossing in 3D like electrons around an atom? [src: S3, S5]
+
+// ACT 2 — THE CLOUD
+Four and a half billion years ago, our solar system wasn't flat at all. It was a giant, chaotic sphere of gas and dust, tumbling through space with a slight net spin. [src: S1, S3, S4]
+
+// ACT 3 — THE COLLAPSE & COLLISIONS
+As gravity pulled that cloud inward, conservation of angular momentum forced it to spin faster. Meanwhile, particles orbiting at wild up-and-down angles kept slamming into each other—canceling out their vertical motion while preserving their shared sideways spin. [src: S2, S3, S6]
+
+// ACT 4 — THE DISK
+Over millions of years, that cosmic traffic jam flattened the entire cloud into a razor-thin spinning disk where the planets formed. [src: S1, S2, S4]
+
+// ACT 5 — THE PAYOFF & LOOP
+Today, Mercury tilts by just seven degrees, and every other planet sits within three and a half—locked into one flat lane because they all inherited the exact same spin. [src: S1, S3, S5]

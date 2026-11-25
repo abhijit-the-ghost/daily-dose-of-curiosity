@@ -117,6 +117,9 @@ function EpisodePreview() {
   if (episode === 'nuclear-gandhi') return <Episode slug="nuclear-gandhi" />
   if (episode === 'sun-never-black-hole') return <Episode slug="sun-never-black-hole" />
   if (episode === 'earth-never-made-gold') return <Episode slug="earth-never-made-gold" />
+  if (episode === 'uranus-tilted-sideways') return <Episode slug="uranus-tilted-sideways" />
+  if (episode === 'venus-sun-rises-west') return <Episode slug="venus-sun-rises-west" />
+  if (episode === 'solar-system-flat-plane') return <Episode slug="solar-system-flat-plane" />
   return <MilkyWay />
 }
 

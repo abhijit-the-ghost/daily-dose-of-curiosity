@@ -1,0 +1,405 @@
+{
+  "series": "cosmic",
+  "title": "Why the Solar System Is Flat",
+  "slug": "solar-system-flat-plane",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 0.35,
+  "endCard": false,
+  "endCardRationale": "Seamless loop back to frame 1; ghosted atom shells return in the final 0.6 s.",
+  "captionStyle": "phrase",
+  "coverTitle": "ONE FLAT PLANE",
+  "palette": {
+    "ground": "#05070F",
+    "groundAlt": "#0B1022",
+    "primary": "#F59E0B",
+    "secondary": "#60A5FA",
+    "ink": "#F8FAFC"
+  },
+  "acts": [
+    {
+      "kicker": "01 // THE HOOK",
+      "template": "custom"
+    },
+    {
+      "kicker": "02 // THE CLOUD",
+      "template": "custom"
+    },
+    {
+      "kicker": "03 // THE COLLAPSE",
+      "template": "custom"
+    },
+    {
+      "kicker": "04 // THE DISK",
+      "template": "custom"
+    },
+    {
+      "kicker": "05 // THE PAYOFF",
+      "template": "custom"
+    }
+  ],
+  "question": {
+    "text": "Why do all the planets orbit the Sun in a flat plane instead of crisscrossing in 3D like electrons around an atom?",
+    "questionAt": 30.58,
+    "pinnedComment": "Oort Cloud comets still come from every direction — why didn't they flatten?",
+    "ctaStyle": "question"
+  },
+  "beats": [
+    {
+      "kind": "chip",
+      "text": "ONE FLAT PLANE",
+      "note": "Frame 1 already has content: crossed atom shells + flat amber disk [WordBoundary #0: \"Gravity\" @ 0.095s]",
+      "at": 0.095
+    },
+    {
+      "kind": "camera",
+      "scale": 1.12,
+      "to": [
+        0.5,
+        0.44
+      ],
+      "note": "Act 1 push; hero disk passes 55% of frame width [WordBoundary #6: \"so\" @ 2.450s]",
+      "at": 2.45
+    },
+    {
+      "kind": "shape",
+      "id": "atom-shell-rotate",
+      "note": "Dashed shells rotate through 0/60/120 degrees [WordBoundary #14: \"Sun\" @ 4.202s]",
+      "at": 4.202
+    },
+    {
+      "kind": "chip",
+      "text": "3D CRISSCROSS?",
+      "note": "Hook contradiction swaps chip; false atom model only [WordBoundary #21: \"crisscrossing\" @ 5.954s]",
+      "at": 5.954
+    },
+    {
+      "kind": "palette",
+      "ground": "secondary",
+      "note": "Full-bleed ground flip #1; cool before-state [WordBoundary #25: \"electrons\" @ 7.405s]",
+      "at": 7.405
+    },
+    {
+      "kind": "shape",
+      "id": "nebula-sphere",
+      "note": "Atom shells dissolve into a chaotic sphere [WordBoundary #29: \"Four\" @ 9.453s]",
+      "at": 9.453
+    },
+    {
+      "kind": "chip",
+      "text": "NOT FLAT YET",
+      "note": "Act 2 claim chip; sphere state [WordBoundary #38: \"system\" @ 11.752s]",
+      "at": 11.752
+    },
+    {
+      "kind": "camera",
+      "scale": 0.92,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "Act 2 pull-back; room for the whole cloud [WordBoundary #43: \"It\" @ 13.839s]",
+      "at": 13.839
+    },
+    {
+      "kind": "shape",
+      "id": "nebula-cloud-body",
+      "note": "Cloud body gains definition; no new label [WordBoundary #49: \"of\" @ 15.547s]",
+      "at": 15.547
+    },
+    {
+      "kind": "shape",
+      "id": "net-spin-arrow",
+      "note": "Slight net spin arrow appears [WordBoundary #58: \"slight\" @ 17.790s]",
+      "at": 17.79
+    },
+    {
+      "kind": "shape",
+      "id": "gravity-inward-vectors",
+      "note": "Inward gravity vectors appear; no new label [WordBoundary #63: \"pulled\" @ 20.067s]",
+      "at": 20.067
+    },
+    {
+      "kind": "chip",
+      "text": "SPIN KEPT",
+      "note": "Angular momentum claim lands as chip [WordBoundary #69: \"angular\" @ 22.254s]",
+      "at": 22.254
+    },
+    {
+      "kind": "shape",
+      "id": "spin-accelerate",
+      "note": "Particle spin rate begins to climb [WordBoundary #71: \"forced\" @ 23.125s]",
+      "at": 23.125
+    },
+    {
+      "kind": "shape",
+      "id": "wild-angle-field",
+      "note": "Faint wild-angle field appears before the collision ticks [WordBoundary #76: \"Meanwhile\" @ 25.301s]",
+      "at": 25.301
+    },
+    {
+      "kind": "shape",
+      "id": "vertical-vy-arrows",
+      "note": "Wild vertical velocity arrows become explicit [WordBoundary #81: \"up-and-down\" @ 27.623s]",
+      "at": 27.623
+    },
+    {
+      "kind": "shape",
+      "id": "collision-microflash-1",
+      "note": "Collision tick 1; vertical arrow damps [WordBoundary #84: \"slamming\" @ 28.716s]",
+      "at": 28.716
+    },
+    {
+      "kind": "shape",
+      "id": "collision-microflash-2",
+      "note": "Collision tick 2; another vertical arrow damps [WordBoundary #88: \"canceling\" @ 30.100s]",
+      "at": 30.1
+    },
+    {
+      "kind": "question",
+      "text": "WHY ONE FLAT PLANE?",
+      "note": "The one on-screen question at 58.7% of measured runtime [WordBoundary #89: \"out\" @ 30.580s]",
+      "at": 30.58
+    },
+    {
+      "kind": "camera",
+      "id": "edge-on-tilt",
+      "scale": 1.05,
+      "to": [
+        0.5,
+        0.42
+      ],
+      "note": "Act 3 camera begins edge-on tilt from level to near-side-on [WordBoundary #93: \"while\" @ 31.618s]",
+      "at": 31.618
+    },
+    {
+      "kind": "shape",
+      "id": "sideways-vx-accelerate",
+      "note": "Shared sideways spin accelerates while vertical motion falls [WordBoundary #97: \"sideways\" @ 32.690s]",
+      "at": 32.69
+    },
+    {
+      "kind": "chip",
+      "text": "VERTICAL CANCELED",
+      "note": "Mechanism chip; hedge stays in narration [WordBoundary #98: \"spin\" @ 33.170s]",
+      "at": 33.17
+    },
+    {
+      "kind": "palette",
+      "ground": "primary",
+      "note": "Full-bleed ground flip #2; amber result state [WordBoundary #103: \"that\" @ 35.670s]",
+      "at": 35.67
+    },
+    {
+      "kind": "shape",
+      "id": "disk-collapse",
+      "note": "Cloud flattens into the persistent ecliptic disk [WordBoundary #107: \"flattened\" @ 36.964s]",
+      "at": 36.964
+    },
+    {
+      "kind": "chip",
+      "text": "COSMIC TRAFFIC JAM",
+      "note": "Act 4 mechanism chip [WordBoundary #109: \"entire\" @ 37.467s]",
+      "at": 37.467
+    },
+    {
+      "kind": "shape",
+      "id": "disk-spinning",
+      "note": "Flattened disk visibly gains a second rotation rail [WordBoundary #114: \"spinning\" @ 39.174s]",
+      "at": 39.174
+    },
+    {
+      "kind": "shape",
+      "id": "planet-seeds",
+      "note": "Planets condense inside the disk [WordBoundary #118: \"planets\" @ 40.078s]",
+      "at": 40.078
+    },
+    {
+      "kind": "camera",
+      "scale": 1,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "Camera settles before the payoff push [WordBoundary #119: \"formed\" @ 40.480s]",
+      "at": 40.48
+    },
+    {
+      "kind": "chip",
+      "text": "ONE LANE",
+      "note": "Act 5 claim chip before the wedge [WordBoundary #120: \"Today\" @ 41.741s]",
+      "at": 41.741
+    },
+    {
+      "kind": "shape",
+      "id": "ecliptic-wedge-rig",
+      "note": "Edge-on inclination wedge enters; geometry derives from facts.ts [WordBoundary #121: \"Mercury\" @ 42.433s]",
+      "at": 42.433
+    },
+    {
+      "kind": "camera",
+      "scale": 1.18,
+      "to": [
+        0.5,
+        0.46
+      ],
+      "note": "Push into the inclination wedge [WordBoundary #122: \"tilts\" @ 42.824s]",
+      "at": 42.824
+    },
+    {
+      "kind": "chip",
+      "text": "FACT:bandDeg",
+      "note": "Static chip; renders FACTS.bandDeg.display; telemetry click 1 [WordBoundary #124: \"just\" @ 43.326s]",
+      "at": 43.326
+    },
+    {
+      "kind": "counter",
+      "factKeys": [
+        "bandDeg",
+        "otherPlanetsDeg"
+      ],
+      "suffix": "°",
+      "dur": 1,
+      "label": "TILT BAND",
+      "note": "The one visual proof: wedge morphs between the facts values; chip hidden [WordBoundary #126: \"degrees\" @ 43.873s]",
+      "at": 43.873
+    },
+    {
+      "kind": "chip",
+      "text": "FACT:otherPlanetsDeg",
+      "note": "Static chip; renders FACTS.otherPlanetsDeg.display; telemetry click 2 [WordBoundary #133: \"three\" @ 46.272s]",
+      "at": 46.272
+    },
+    {
+      "kind": "camera",
+      "id": "edge-on-return",
+      "scale": 1,
+      "to": [
+        0.5,
+        0.5
+      ],
+      "note": "Loop line: level camera returns to frame-1 geometry [WordBoundary #141: \"lane\" @ 48.326s]",
+      "at": 48.326
+    },
+    {
+      "kind": "chip",
+      "text": "ONE FLAT PLANE",
+      "note": "Loop chip identical to t=first [WordBoundary #142: \"because\" @ 48.594s]",
+      "at": 48.594
+    },
+    {
+      "kind": "shape",
+      "id": "atom-shells-return",
+      "note": "Beat lands on the last word; ghost opacity is drawn from end-0.6s [WordBoundary #149: \"spin\" @ 50.491s]",
+      "at": 50.491
+    }
+  ],
+  "anchors": {
+    "gravity": [
+      1
+    ],
+    "so": [
+      1
+    ],
+    "sun": [
+      1
+    ],
+    "crisscrossing": [
+      1
+    ],
+    "electrons": [
+      1
+    ],
+    "four": [
+      1
+    ],
+    "system": [
+      1
+    ],
+    "it": [
+      1
+    ],
+    "of": [
+      2
+    ],
+    "slight": [
+      1
+    ],
+    "pulled": [
+      1
+    ],
+    "angular": [
+      1
+    ],
+    "forced": [
+      1
+    ],
+    "meanwhile": [
+      1
+    ],
+    "up-and-down": [
+      1
+    ],
+    "slamming": [
+      1
+    ],
+    "canceling": [
+      1
+    ],
+    "out": [
+      1
+    ],
+    "while": [
+      1
+    ],
+    "sideways": [
+      1
+    ],
+    "spin": [
+      3,
+      4
+    ],
+    "that": [
+      2
+    ],
+    "flattened": [
+      1
+    ],
+    "entire": [
+      1
+    ],
+    "spinning": [
+      1
+    ],
+    "planets": [
+      2
+    ],
+    "formed": [
+      1
+    ],
+    "today": [
+      1
+    ],
+    "mercury": [
+      1
+    ],
+    "tilts": [
+      1
+    ],
+    "just": [
+      1
+    ],
+    "degrees": [
+      1
+    ],
+    "three": [
+      1
+    ],
+    "lane": [
+      1
+    ],
+    "because": [
+      1
+    ]
+  }
+}

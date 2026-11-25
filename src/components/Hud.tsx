@@ -30,6 +30,15 @@ export interface HudProps {
   progressGradientClass: string
   /** when false, the top-left dot renders at full opacity with no pulse animation */
   pulseDot?: boolean
+  /** H6 "no timecode" episodes: hide the top-right TC readout */
+  hideTimecode?: boolean
+  /** H6 "≤3 text zones" episodes: keep the progress bar but drop its text row */
+  hideBottomMeta?: boolean
+  /** looping episodes: no progress bar, so t=end matches t=0 exactly */
+  hideProgress?: boolean
+  /** optional safe-box placement for episodes whose badge must sit below y=170 */
+  badgeLeft?: number
+  badgeTop?: number
 }
 
 export default function Hud({
@@ -46,6 +55,11 @@ export default function Hud({
   pbBottomClass,
   progressGradientClass,
   pulseDot = true,
+  hideTimecode = false,
+  hideBottomMeta = false,
+  hideProgress = false,
+  badgeLeft = 32,
+  badgeTop = 32,
 }: HudProps) {
   const tcS = Math.floor(t)
   const tcF = Math.floor((t - tcS) * 30)
@@ -77,12 +91,17 @@ export default function Hud({
         </>
       )}
 
-      <div className="absolute inset-x-0 top-0 flex items-center justify-between px-8 pt-8">
+      <div
+        className="absolute inset-x-0 top-0 flex items-center justify-between"
+        style={{ paddingLeft: badgeLeft, paddingRight: 32, paddingTop: badgeTop }}
+      >
         <div className="flex items-center gap-3">
           <span className={`inline-block h-2.5 w-2.5 rounded-full ${dotClass}`} style={pulseDot ? { opacity: pulse, ...dotShadowStyle } : dotShadowStyle} />
           <span className={`font-mono text-[12px] font-semibold tracking-[0.26em] ${badgeClass}`}>{badgeText}</span>
         </div>
-        <div className="font-mono text-[12px] tracking-[0.2em] text-white/45">TC 00:00:{String(tcS).padStart(2, '0')}:{String(tcF).padStart(2, '0')}</div>
+        {!hideTimecode && (
+          <div className="font-mono text-[12px] tracking-[0.2em] text-white/45">TC 00:00:{String(tcS).padStart(2, '0')}:{String(tcF).padStart(2, '0')}</div>
+        )}
       </div>
       <div className={`absolute inset-x-8 top-[66px] h-px bg-gradient-to-r from-transparent ${dividerClass} to-transparent`} />
 
@@ -101,15 +120,19 @@ export default function Hud({
         </div>
       </div>
 
-      <div className={`absolute inset-x-0 bottom-0 px-8 ${pbBottomClass}`}>
-        <div className="mb-2 flex items-end justify-between font-mono text-[12px] tracking-[0.18em] text-white/50">
-          <span>DAILY DOSE <span className="text-amber-400">OF CURIOSITY</span></span>
-          <span>{String(tcS).padStart(2, '0')}s <span className="text-white/25">/ {Math.floor(duration)}s</span></span>
+      {!hideProgress && (
+        <div className={`absolute inset-x-0 bottom-0 px-8 ${pbBottomClass}`}>
+          {!hideBottomMeta && (
+            <div className="mb-2 flex items-end justify-between font-mono text-[12px] tracking-[0.18em] text-white/50">
+              <span>DAILY DOSE <span className="text-amber-400">OF CURIOSITY</span></span>
+              <span>{String(tcS).padStart(2, '0')}s <span className="text-white/25">/ {Math.floor(duration)}s</span></span>
+            </div>
+          )}
+          <div className="h-[5px] w-full overflow-hidden rounded-full bg-white/10">
+            <div className={`h-full rounded-full bg-gradient-to-r ${progressGradientClass}`} style={{ width: `${progress}%` }} />
+          </div>
         </div>
-        <div className="h-[5px] w-full overflow-hidden rounded-full bg-white/10">
-          <div className={`h-full rounded-full bg-gradient-to-r ${progressGradientClass}`} style={{ width: `${progress}%` }} />
-        </div>
-      </div>
+      )}
     </div>
   )
 }

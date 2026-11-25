@@ -56,8 +56,8 @@ Status legend: **done** = implemented & verified · **open** = still outstanding
 | 2 | Hardcoded look/text: `COSMIC TELEMETRY` badge, "The Lie / Scale Problem / Reality Check" act names | Template is overfit to the MilkyWay episode | Phase 1 | **done** (`src/components/Hud.tsx`, `HUD_PRESETS`, kicker derived from `scene.json`; `src/theme/series.ts`) |
 | 3 | No theme tokens or motion rules | Inconsistent look, ad-hoc animation | Phase 1 | **done** (`src/theme/tokens.ts`, `series.ts`, `src/motion/README.md`) |
 | 4 | `generate_<episode>_audio.py` copied per episode; Python invoked via PowerShell workaround | Duplicated code; symptom fix instead of root-cause fix | Phase 2 | **done** (`scripts/generate_audio.py`, `uv run --with edge-tts,mutagen`; per-episode generators deleted) |
-| 5 | QA checklist is manual | Easy to skip, slow | Phase 4 | **done (minimal)** (`scripts/verify.ts` — anchors + banned-strings; `bun run verify <slug>`. Full `ffprobe`-style verify.ts is Phase 4 and still pending) |
-| 6 | Captions dim all upcoming words; branded end card adds dead time at the end | Likely hurts readability and retention (test, don't assume) | Phase 5 | **open** — endCard is per-episode config (Phase 5 baseline). Current 4 episodes are `endCard: true` by explicit owner choice |
+| 5 | QA checklist is manual | Easy to skip, slow | Phase 4 | **done (verify side)** — `scripts/verify.ts` now checks anchors, banned strings, MP4 spec/faststart and decodes two PNGs; `scripts/qa_metrics.mjs` prints the §9 gate. `package.ts` remains open |
+| 6 | Captions dim all upcoming words; branded end card adds dead time at the end | Likely hurts readability and retention (test, don't assume) | Phase 5 | **partial** — `phrase` style implemented and gate-checked; existing episodes remain on their legacy styles and `endCard: true` by explicit owner choice |
 | 7 | No post-publish measurement or iteration step | Can't learn what works | Phase 6 | **open** |
 | 8 | "Byte-for-byte reproducible" claim is unproven | Online TTS + Puppeteer + x264 may not give identical bytes | Phase 0 | **done** — frames are byte-identical for milkyway & minecraft-edge; space-sound is SSIM ≈ 0.999 gate instead (see `docs/determinism.md`) |
 | 9 | Act timings (4–5 + 6–8 + 6–8 s) don't add up to the stated 20–35 s | Contradictory spec | Phase 2 (config) | **done** — spec is now 20–35 s everywhere; no fixed per-act seconds; act boundaries derive from token counts |
@@ -188,7 +188,7 @@ Tasks:
 - `scripts/package.ts` (`bun run package <slug>`): copies `output/<slug>-1080x1920.mp4` to `results/videos/<slug>/video.mp4`, verifies sha256 match, writes `meta.json` (see section 7) and an `about.txt` skeleton with 3 caption blocks (YouTube Shorts / Reels / TikTok) and a `SOURCES` section pulled from `script.txt` annotations (`[src: URL]` markers). Missing sources = packaging fails.
 - Source rule: every factual sentence in `script.txt` carries a `[src: …]` marker that points to a page the **human** has opened and confirmed. The agent must never invent or "recall" sources.
 
-Gate: `bun run verify milkyway` passes on a good file and fails on a deliberately broken one (test both). **Status 2026-11: partially delivered** — `scripts/verify.ts` already implements the anchors presence/ambiguity check + banned-strings guard in `bun run verify <slug>`. The ffprobe side (1080×1920 / 30 fps / H.264+yuv420p / AAC 48 kHz / faststart / duration 20–35 s / framemd5) and `package.ts` (sha256-verified copy + meta.json + about.txt skeleton + missing-sources gate) are still open.
+Gate: `bun run verify milkyway` passes on a good file and fails on a deliberately broken one (test both). **Status 2026-11-25: verify side delivered** — anchors, banned strings, MP4 spec (1080×1920 / 30 fps / H.264+yuv420p / AAC 48 kHz / duration, with the 45 s long-form override) and `faststart` all checked; t=1 s and t=3 s PNGs decoded into `output/.verify/`. Good file passed, deliberately broken file failed. `scripts/qa_metrics.mjs` covers the §9.1 numeric gate. `framemd5` stays in `docs/determinism.md`; `package.ts` (sha256-verified copy + meta.json + about.txt skeleton + missing-sources gate) is still open.
 
 ### Phase 5 — Caption and ending experiments (config flags, not hardcoded)
 
@@ -200,7 +200,7 @@ Tasks:
 - Record chosen options in `meta.json` so results can be compared later.
 - Do not declare either style "better". The feedback loop decides.
 
-Gate: both styles render; captions never clip long words (test with the longest word in the script) and don't collide with HUD. **Status 2026-11: open** — current episodes all use `karaoke-dim`; `phrase` not yet implemented; `endCard` defaults `false` in code/config but every packaged episode was explicitly shipped with `endCard: true` by owner opt-in (milkyway, space-sound, minecraft-edge, never-touch).
+Gate: both styles render; captions never clip long words (test with the longest word in the script) and don't collide with HUD. **Status 2026-11-25: style implemented, adoption still experimental** — `CAPTION_STYLES.phrase` renders 3-word chunks at 92 px with no dim upcoming words; a temporary swap on `uranus-tilted-sideways` was DOM-checked at 10 timestamps (inside x 60–1020 / y ≤1536) and smoke-rendered, then reverted. Existing episodes remain on their legacy styles; `endCard` still defaults `false` in code/config but every packaged episode was explicitly shipped with `endCard: true` by owner opt-in. No style is declared better without post data.
 
 ### Phase 6 — Feedback loop
 
@@ -283,8 +283,12 @@ bun run dev                      # preview at localhost:5173
 bun run shot "1,5,9,14,19"       # headless PNGs at exact timestamps
 bun run render                   # full episode -> output/<episode>-1080x1920.mp4
 bun run render:smoke             # first ~3 s sanity check
-bun run verify <slug>            # (Phase 4) automated QA gate
-bun run package <slug>           # (Phase 4) results/ package + meta.json + about.txt
+bun run cover -- --episode <slug> # seven cover targets + legacy aliases
+bun run bed                      # regenerate the deterministic music bed WAV
+bun run sfx                      # regenerate the synthesized SFX WAVs
+bun run qa -- --slug <slug>      # §9.1 measured gate table (or --video <path>)
+bun run verify <slug>            # (Phase 4) anchors + spec/faststart + decoded stills
+bun run package <slug>           # (Phase 4, still open) results/ package + meta.json + about.txt
 bun run stats add <slug>         # (Phase 6)
 bun run stats report             # (Phase 6)
 bunx tsc -b                      # type gate

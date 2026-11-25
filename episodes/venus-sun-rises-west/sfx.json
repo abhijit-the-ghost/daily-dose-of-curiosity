@@ -1,0 +1,35 @@
+{
+  "comment": "SFX for venus-sun-rises-west, anchored to exact WordBoundary starts. Synthesized in repo; no downloads.",
+  "events": [
+    {
+      "t": 0.095,
+      "file": "sub_drop.wav",
+      "gainDb": -14,
+      "anchor": "On"
+    },
+    {
+      "t": 15.904,
+      "file": "riser.wav",
+      "gainDb": -18,
+      "anchor": "backward"
+    },
+    {
+      "t": 38.884,
+      "file": "riser.wav",
+      "gainDb": -18,
+      "anchor": "Then"
+    },
+    {
+      "t": 44.766,
+      "file": "riser.wav",
+      "gainDb": -18,
+      "anchor": "slow-motion"
+    },
+    {
+      "t": 51.607,
+      "file": "sub_drop.wav",
+      "gainDb": -12,
+      "anchor": "243"
+    }
+  ]
+}

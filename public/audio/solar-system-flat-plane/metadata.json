@@ -1,0 +1,2341 @@
+{
+  "title": "Why the Solar System Is Flat",
+  "series": "cosmic",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "preroll": 0.0,
+  "gap": 0.0,
+  "tail": 0.35,
+  "acts": [
+    {
+      "id": "full",
+      "index": 1,
+      "label": "FULL VOICEOVER",
+      "caption": "Why the Solar System Is Flat",
+      "file": "full_voiceover.mp3",
+      "duration": 51.72,
+      "start": 0.0,
+      "end": 51.72,
+      "words": [
+        {
+          "w": "Gravity",
+          "start": 0.095,
+          "end": 0.508
+        },
+        {
+          "w": "pulls",
+          "start": 0.519,
+          "end": 0.831
+        },
+        {
+          "w": "equally",
+          "start": 0.842,
+          "end": 1.188
+        },
+        {
+          "w": "in",
+          "start": 1.2,
+          "end": 1.333
+        },
+        {
+          "w": "every",
+          "start": 1.345,
+          "end": 1.557
+        },
+        {
+          "w": "direction",
+          "start": 1.568,
+          "end": 2.104
+        },
+        {
+          "w": "so",
+          "start": 2.45,
+          "end": 2.606
+        },
+        {
+          "w": "why",
+          "start": 2.617,
+          "end": 2.807
+        },
+        {
+          "w": "do",
+          "start": 2.818,
+          "end": 2.941
+        },
+        {
+          "w": "all",
+          "start": 2.952,
+          "end": 3.186
+        },
+        {
+          "w": "eight",
+          "start": 3.197,
+          "end": 3.365
+        },
+        {
+          "w": "planets",
+          "start": 3.376,
+          "end": 3.789
+        },
+        {
+          "w": "orbit",
+          "start": 3.8,
+          "end": 4.101
+        },
+        {
+          "w": "the",
+          "start": 4.112,
+          "end": 4.191
+        },
+        {
+          "w": "Sun",
+          "start": 4.202,
+          "end": 4.481
+        },
+        {
+          "w": "on",
+          "start": 4.492,
+          "end": 4.592
+        },
+        {
+          "w": "a",
+          "start": 4.604,
+          "end": 4.659
+        },
+        {
+          "w": "flat",
+          "start": 4.671,
+          "end": 4.972
+        },
+        {
+          "w": "pancake",
+          "start": 4.983,
+          "end": 5.485
+        },
+        {
+          "w": "instead",
+          "start": 5.496,
+          "end": 5.854
+        },
+        {
+          "w": "of",
+          "start": 5.865,
+          "end": 5.943
+        },
+        {
+          "w": "crisscrossing",
+          "start": 5.954,
+          "end": 6.601
+        },
+        {
+          "w": "in",
+          "start": 6.612,
+          "end": 6.713
+        },
+        {
+          "w": "3D",
+          "start": 6.724,
+          "end": 7.193
+        },
+        {
+          "w": "like",
+          "start": 7.204,
+          "end": 7.394
+        },
+        {
+          "w": "electrons",
+          "start": 7.405,
+          "end": 7.929
+        },
+        {
+          "w": "around",
+          "start": 7.941,
+          "end": 8.209
+        },
+        {
+          "w": "an",
+          "start": 8.22,
+          "end": 8.309
+        },
+        {
+          "w": "atom",
+          "start": 8.32,
+          "end": 8.677
+        },
+        {
+          "w": "Four",
+          "start": 9.453,
+          "end": 9.732
+        },
+        {
+          "w": "and",
+          "start": 9.743,
+          "end": 9.833
+        },
+        {
+          "w": "a",
+          "start": 9.844,
+          "end": 9.877
+        },
+        {
+          "w": "half",
+          "start": 9.888,
+          "end": 10.179
+        },
+        {
+          "w": "billion",
+          "start": 10.19,
+          "end": 10.525
+        },
+        {
+          "w": "years",
+          "start": 10.536,
+          "end": 10.781
+        },
+        {
+          "w": "ago",
+          "start": 10.792,
+          "end": 11.083
+        },
+        {
+          "w": "our",
+          "start": 11.284,
+          "end": 11.406
+        },
+        {
+          "w": "solar",
+          "start": 11.417,
+          "end": 11.741
+        },
+        {
+          "w": "system",
+          "start": 11.752,
+          "end": 12.098
+        },
+        {
+          "w": "wasn't",
+          "start": 12.109,
+          "end": 12.388
+        },
+        {
+          "w": "flat",
+          "start": 12.4,
+          "end": 12.679
+        },
+        {
+          "w": "at",
+          "start": 12.69,
+          "end": 12.757
+        },
+        {
+          "w": "all",
+          "start": 12.768,
+          "end": 13.058
+        },
+        {
+          "w": "It",
+          "start": 13.839,
+          "end": 13.996
+        },
+        {
+          "w": "was",
+          "start": 14.007,
+          "end": 14.129
+        },
+        {
+          "w": "a",
+          "start": 14.141,
+          "end": 14.208
+        },
+        {
+          "w": "giant",
+          "start": 14.219,
+          "end": 14.621
+        },
+        {
+          "w": "chaotic",
+          "start": 14.788,
+          "end": 15.212
+        },
+        {
+          "w": "sphere",
+          "start": 15.223,
+          "end": 15.536
+        },
+        {
+          "w": "of",
+          "start": 15.547,
+          "end": 15.625
+        },
+        {
+          "w": "gas",
+          "start": 15.636,
+          "end": 15.926
+        },
+        {
+          "w": "and",
+          "start": 15.938,
+          "end": 16.027
+        },
+        {
+          "w": "dust",
+          "start": 16.038,
+          "end": 16.395
+        },
+        {
+          "w": "tumbling",
+          "start": 16.641,
+          "end": 17.031
+        },
+        {
+          "w": "through",
+          "start": 17.042,
+          "end": 17.199
+        },
+        {
+          "w": "space",
+          "start": 17.21,
+          "end": 17.589
+        },
+        {
+          "w": "with",
+          "start": 17.6,
+          "end": 17.712
+        },
+        {
+          "w": "a",
+          "start": 17.723,
+          "end": 17.779
+        },
+        {
+          "w": "slight",
+          "start": 17.79,
+          "end": 18.058
+        },
+        {
+          "w": "net",
+          "start": 18.069,
+          "end": 18.259
+        },
+        {
+          "w": "spin",
+          "start": 18.27,
+          "end": 18.661
+        },
+        {
+          "w": "As",
+          "start": 19.442,
+          "end": 19.643
+        },
+        {
+          "w": "gravity",
+          "start": 19.654,
+          "end": 20.056
+        },
+        {
+          "w": "pulled",
+          "start": 20.067,
+          "end": 20.335
+        },
+        {
+          "w": "that",
+          "start": 20.346,
+          "end": 20.513
+        },
+        {
+          "w": "cloud",
+          "start": 20.525,
+          "end": 20.804
+        },
+        {
+          "w": "inward",
+          "start": 20.815,
+          "end": 21.194
+        },
+        {
+          "w": "conservation",
+          "start": 21.473,
+          "end": 22.143
+        },
+        {
+          "w": "of",
+          "start": 22.154,
+          "end": 22.243
+        },
+        {
+          "w": "angular",
+          "start": 22.254,
+          "end": 22.634
+        },
+        {
+          "w": "momentum",
+          "start": 22.645,
+          "end": 23.114
+        },
+        {
+          "w": "forced",
+          "start": 23.125,
+          "end": 23.482
+        },
+        {
+          "w": "it",
+          "start": 23.493,
+          "end": 23.616
+        },
+        {
+          "w": "to",
+          "start": 23.627,
+          "end": 23.717
+        },
+        {
+          "w": "spin",
+          "start": 23.728,
+          "end": 23.996
+        },
+        {
+          "w": "faster",
+          "start": 24.007,
+          "end": 24.52
+        },
+        {
+          "w": "Meanwhile",
+          "start": 25.301,
+          "end": 25.926
+        },
+        {
+          "w": "particles",
+          "start": 26.239,
+          "end": 26.741
+        },
+        {
+          "w": "orbiting",
+          "start": 26.752,
+          "end": 27.132
+        },
+        {
+          "w": "at",
+          "start": 27.143,
+          "end": 27.255
+        },
+        {
+          "w": "wild",
+          "start": 27.266,
+          "end": 27.612
+        },
+        {
+          "w": "up-and-down",
+          "start": 27.623,
+          "end": 28.091
+        },
+        {
+          "w": "angles",
+          "start": 28.103,
+          "end": 28.449
+        },
+        {
+          "w": "kept",
+          "start": 28.46,
+          "end": 28.705
+        },
+        {
+          "w": "slamming",
+          "start": 28.716,
+          "end": 29.107
+        },
+        {
+          "w": "into",
+          "start": 29.118,
+          "end": 29.33
+        },
+        {
+          "w": "each",
+          "start": 29.341,
+          "end": 29.498
+        },
+        {
+          "w": "other",
+          "start": 29.509,
+          "end": 29.799
+        },
+        {
+          "w": "canceling",
+          "start": 30.1,
+          "end": 30.569
+        },
+        {
+          "w": "out",
+          "start": 30.58,
+          "end": 30.725
+        },
+        {
+          "w": "their",
+          "start": 30.737,
+          "end": 30.859
+        },
+        {
+          "w": "vertical",
+          "start": 30.871,
+          "end": 31.217
+        },
+        {
+          "w": "motion",
+          "start": 31.228,
+          "end": 31.607
+        },
+        {
+          "w": "while",
+          "start": 31.618,
+          "end": 31.763
+        },
+        {
+          "w": "preserving",
+          "start": 31.775,
+          "end": 32.221
+        },
+        {
+          "w": "their",
+          "start": 32.232,
+          "end": 32.355
+        },
+        {
+          "w": "shared",
+          "start": 32.366,
+          "end": 32.679
+        },
+        {
+          "w": "sideways",
+          "start": 32.69,
+          "end": 33.158
+        },
+        {
+          "w": "spin",
+          "start": 33.17,
+          "end": 33.56
+        },
+        {
+          "w": "Over",
+          "start": 34.33,
+          "end": 34.609
+        },
+        {
+          "w": "millions",
+          "start": 34.621,
+          "end": 35.0
+        },
+        {
+          "w": "of",
+          "start": 35.011,
+          "end": 35.078
+        },
+        {
+          "w": "years",
+          "start": 35.089,
+          "end": 35.458
+        },
+        {
+          "w": "that",
+          "start": 35.67,
+          "end": 35.815
+        },
+        {
+          "w": "cosmic",
+          "start": 35.826,
+          "end": 36.228
+        },
+        {
+          "w": "traffic",
+          "start": 36.239,
+          "end": 36.629
+        },
+        {
+          "w": "jam",
+          "start": 36.641,
+          "end": 36.953
+        },
+        {
+          "w": "flattened",
+          "start": 36.964,
+          "end": 37.388
+        },
+        {
+          "w": "the",
+          "start": 37.4,
+          "end": 37.455
+        },
+        {
+          "w": "entire",
+          "start": 37.467,
+          "end": 37.924
+        },
+        {
+          "w": "cloud",
+          "start": 37.935,
+          "end": 38.281
+        },
+        {
+          "w": "into",
+          "start": 38.292,
+          "end": 38.493
+        },
+        {
+          "w": "a",
+          "start": 38.504,
+          "end": 38.571
+        },
+        {
+          "w": "razor-thin",
+          "start": 38.583,
+          "end": 39.163
+        },
+        {
+          "w": "spinning",
+          "start": 39.174,
+          "end": 39.498
+        },
+        {
+          "w": "disk",
+          "start": 39.509,
+          "end": 39.844
+        },
+        {
+          "w": "where",
+          "start": 39.855,
+          "end": 39.978
+        },
+        {
+          "w": "the",
+          "start": 39.989,
+          "end": 40.067
+        },
+        {
+          "w": "planets",
+          "start": 40.078,
+          "end": 40.469
+        },
+        {
+          "w": "formed",
+          "start": 40.48,
+          "end": 40.971
+        },
+        {
+          "w": "Today",
+          "start": 41.741,
+          "end": 42.165
+        },
+        {
+          "w": "Mercury",
+          "start": 42.433,
+          "end": 42.812
+        },
+        {
+          "w": "tilts",
+          "start": 42.824,
+          "end": 43.158
+        },
+        {
+          "w": "by",
+          "start": 43.17,
+          "end": 43.315
+        },
+        {
+          "w": "just",
+          "start": 43.326,
+          "end": 43.56
+        },
+        {
+          "w": "seven",
+          "start": 43.571,
+          "end": 43.862
+        },
+        {
+          "w": "degrees",
+          "start": 43.873,
+          "end": 44.364
+        },
+        {
+          "w": "and",
+          "start": 44.632,
+          "end": 44.821
+        },
+        {
+          "w": "every",
+          "start": 44.833,
+          "end": 45.078
+        },
+        {
+          "w": "other",
+          "start": 45.089,
+          "end": 45.312
+        },
+        {
+          "w": "planet",
+          "start": 45.324,
+          "end": 45.692
+        },
+        {
+          "w": "sits",
+          "start": 45.703,
+          "end": 45.971
+        },
+        {
+          "w": "within",
+          "start": 45.982,
+          "end": 46.261
+        },
+        {
+          "w": "three",
+          "start": 46.272,
+          "end": 46.518
+        },
+        {
+          "w": "and",
+          "start": 46.529,
+          "end": 46.596
+        },
+        {
+          "w": "a",
+          "start": 46.607,
+          "end": 46.641
+        },
+        {
+          "w": "half",
+          "start": 46.652,
+          "end": 47.02
+        },
+        {
+          "w": "locked",
+          "start": 47.277,
+          "end": 47.589
+        },
+        {
+          "w": "into",
+          "start": 47.6,
+          "end": 47.768
+        },
+        {
+          "w": "one",
+          "start": 47.779,
+          "end": 48.002
+        },
+        {
+          "w": "flat",
+          "start": 48.013,
+          "end": 48.315
+        },
+        {
+          "w": "lane",
+          "start": 48.326,
+          "end": 48.583
+        },
+        {
+          "w": "because",
+          "start": 48.594,
+          "end": 48.85
+        },
+        {
+          "w": "they",
+          "start": 48.862,
+          "end": 48.973
+        },
+        {
+          "w": "all",
+          "start": 48.984,
+          "end": 49.23
+        },
+        {
+          "w": "inherited",
+          "start": 49.241,
+          "end": 49.732
+        },
+        {
+          "w": "the",
+          "start": 49.743,
+          "end": 49.799
+        },
+        {
+          "w": "exact",
+          "start": 49.81,
+          "end": 50.234
+        },
+        {
+          "w": "same",
+          "start": 50.246,
+          "end": 50.48
+        },
+        {
+          "w": "spin",
+          "start": 50.491,
+          "end": 50.915
+        }
+      ]
+    }
+  ],
+  "actBreakdown": [
+    {
+      "id": "act1",
+      "index": 1,
+      "label": "// ACT 1 \u2014 THE HOOK",
+      "caption": "// ACT 1 \u2014 THE HOOK",
+      "file": "full_voiceover.mp3",
+      "duration": 8.582,
+      "start": 0.095,
+      "end": 8.677,
+      "words": [
+        {
+          "w": "Gravity",
+          "start": 0.095,
+          "end": 0.508
+        },
+        {
+          "w": "pulls",
+          "start": 0.519,
+          "end": 0.831
+        },
+        {
+          "w": "equally",
+          "start": 0.842,
+          "end": 1.188
+        },
+        {
+          "w": "in",
+          "start": 1.2,
+          "end": 1.333
+        },
+        {
+          "w": "every",
+          "start": 1.345,
+          "end": 1.557
+        },
+        {
+          "w": "direction",
+          "start": 1.568,
+          "end": 2.104
+        },
+        {
+          "w": "so",
+          "start": 2.45,
+          "end": 2.606
+        },
+        {
+          "w": "why",
+          "start": 2.617,
+          "end": 2.807
+        },
+        {
+          "w": "do",
+          "start": 2.818,
+          "end": 2.941
+        },
+        {
+          "w": "all",
+          "start": 2.952,
+          "end": 3.186
+        },
+        {
+          "w": "eight",
+          "start": 3.197,
+          "end": 3.365
+        },
+        {
+          "w": "planets",
+          "start": 3.376,
+          "end": 3.789
+        },
+        {
+          "w": "orbit",
+          "start": 3.8,
+          "end": 4.101
+        },
+        {
+          "w": "the",
+          "start": 4.112,
+          "end": 4.191
+        },
+        {
+          "w": "Sun",
+          "start": 4.202,
+          "end": 4.481
+        },
+        {
+          "w": "on",
+          "start": 4.492,
+          "end": 4.592
+        },
+        {
+          "w": "a",
+          "start": 4.604,
+          "end": 4.659
+        },
+        {
+          "w": "flat",
+          "start": 4.671,
+          "end": 4.972
+        },
+        {
+          "w": "pancake",
+          "start": 4.983,
+          "end": 5.485
+        },
+        {
+          "w": "instead",
+          "start": 5.496,
+          "end": 5.854
+        },
+        {
+          "w": "of",
+          "start": 5.865,
+          "end": 5.943
+        },
+        {
+          "w": "crisscrossing",
+          "start": 5.954,
+          "end": 6.601
+        },
+        {
+          "w": "in",
+          "start": 6.612,
+          "end": 6.713
+        },
+        {
+          "w": "3D",
+          "start": 6.724,
+          "end": 7.193
+        },
+        {
+          "w": "like",
+          "start": 7.204,
+          "end": 7.394
+        },
+        {
+          "w": "electrons",
+          "start": 7.405,
+          "end": 7.929
+        },
+        {
+          "w": "around",
+          "start": 7.941,
+          "end": 8.209
+        },
+        {
+          "w": "an",
+          "start": 8.22,
+          "end": 8.309
+        },
+        {
+          "w": "atom",
+          "start": 8.32,
+          "end": 8.677
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "index": 2,
+      "label": "// ACT 2 \u2014 THE CLOUD",
+      "caption": "// ACT 2 \u2014 THE CLOUD",
+      "file": "full_voiceover.mp3",
+      "duration": 9.208,
+      "start": 9.453,
+      "end": 18.661,
+      "words": [
+        {
+          "w": "Four",
+          "start": 9.453,
+          "end": 9.732
+        },
+        {
+          "w": "and",
+          "start": 9.743,
+          "end": 9.833
+        },
+        {
+          "w": "a",
+          "start": 9.844,
+          "end": 9.877
+        },
+        {
+          "w": "half",
+          "start": 9.888,
+          "end": 10.179
+        },
+        {
+          "w": "billion",
+          "start": 10.19,
+          "end": 10.525
+        },
+        {
+          "w": "years",
+          "start": 10.536,
+          "end": 10.781
+        },
+        {
+          "w": "ago",
+          "start": 10.792,
+          "end": 11.083
+        },
+        {
+          "w": "our",
+          "start": 11.284,
+          "end": 11.406
+        },
+        {
+          "w": "solar",
+          "start": 11.417,
+          "end": 11.741
+        },
+        {
+          "w": "system",
+          "start": 11.752,
+          "end": 12.098
+        },
+        {
+          "w": "wasn't",
+          "start": 12.109,
+          "end": 12.388
+        },
+        {
+          "w": "flat",
+          "start": 12.4,
+          "end": 12.679
+        },
+        {
+          "w": "at",
+          "start": 12.69,
+          "end": 12.757
+        },
+        {
+          "w": "all",
+          "start": 12.768,
+          "end": 13.058
+        },
+        {
+          "w": "It",
+          "start": 13.839,
+          "end": 13.996
+        },
+        {
+          "w": "was",
+          "start": 14.007,
+          "end": 14.129
+        },
+        {
+          "w": "a",
+          "start": 14.141,
+          "end": 14.208
+        },
+        {
+          "w": "giant",
+          "start": 14.219,
+          "end": 14.621
+        },
+        {
+          "w": "chaotic",
+          "start": 14.788,
+          "end": 15.212
+        },
+        {
+          "w": "sphere",
+          "start": 15.223,
+          "end": 15.536
+        },
+        {
+          "w": "of",
+          "start": 15.547,
+          "end": 15.625
+        },
+        {
+          "w": "gas",
+          "start": 15.636,
+          "end": 15.926
+        },
+        {
+          "w": "and",
+          "start": 15.938,
+          "end": 16.027
+        },
+        {
+          "w": "dust",
+          "start": 16.038,
+          "end": 16.395
+        },
+        {
+          "w": "tumbling",
+          "start": 16.641,
+          "end": 17.031
+        },
+        {
+          "w": "through",
+          "start": 17.042,
+          "end": 17.199
+        },
+        {
+          "w": "space",
+          "start": 17.21,
+          "end": 17.589
+        },
+        {
+          "w": "with",
+          "start": 17.6,
+          "end": 17.712
+        },
+        {
+          "w": "a",
+          "start": 17.723,
+          "end": 17.779
+        },
+        {
+          "w": "slight",
+          "start": 17.79,
+          "end": 18.058
+        },
+        {
+          "w": "net",
+          "start": 18.069,
+          "end": 18.259
+        },
+        {
+          "w": "spin",
+          "start": 18.27,
+          "end": 18.661
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "index": 3,
+      "label": "// ACT 3 \u2014 THE COLLAPSE & COLLISIONS",
+      "caption": "// ACT 3 \u2014 THE COLLAPSE & COLLISIONS",
+      "file": "full_voiceover.mp3",
+      "duration": 14.118,
+      "start": 19.442,
+      "end": 33.56,
+      "words": [
+        {
+          "w": "As",
+          "start": 19.442,
+          "end": 19.643
+        },
+        {
+          "w": "gravity",
+          "start": 19.654,
+          "end": 20.056
+        },
+        {
+          "w": "pulled",
+          "start": 20.067,
+          "end": 20.335
+        },
+        {
+          "w": "that",
+          "start": 20.346,
+          "end": 20.513
+        },
+        {
+          "w": "cloud",
+          "start": 20.525,
+          "end": 20.804
+        },
+        {
+          "w": "inward",
+          "start": 20.815,
+          "end": 21.194
+        },
+        {
+          "w": "conservation",
+          "start": 21.473,
+          "end": 22.143
+        },
+        {
+          "w": "of",
+          "start": 22.154,
+          "end": 22.243
+        },
+        {
+          "w": "angular",
+          "start": 22.254,
+          "end": 22.634
+        },
+        {
+          "w": "momentum",
+          "start": 22.645,
+          "end": 23.114
+        },
+        {
+          "w": "forced",
+          "start": 23.125,
+          "end": 23.482
+        },
+        {
+          "w": "it",
+          "start": 23.493,
+          "end": 23.616
+        },
+        {
+          "w": "to",
+          "start": 23.627,
+          "end": 23.717
+        },
+        {
+          "w": "spin",
+          "start": 23.728,
+          "end": 23.996
+        },
+        {
+          "w": "faster",
+          "start": 24.007,
+          "end": 24.52
+        },
+        {
+          "w": "Meanwhile",
+          "start": 25.301,
+          "end": 25.926
+        },
+        {
+          "w": "particles",
+          "start": 26.239,
+          "end": 26.741
+        },
+        {
+          "w": "orbiting",
+          "start": 26.752,
+          "end": 27.132
+        },
+        {
+          "w": "at",
+          "start": 27.143,
+          "end": 27.255
+        },
+        {
+          "w": "wild",
+          "start": 27.266,
+          "end": 27.612
+        },
+        {
+          "w": "up-and-down",
+          "start": 27.623,
+          "end": 28.091
+        },
+        {
+          "w": "angles",
+          "start": 28.103,
+          "end": 28.449
+        },
+        {
+          "w": "kept",
+          "start": 28.46,
+          "end": 28.705
+        },
+        {
+          "w": "slamming",
+          "start": 28.716,
+          "end": 29.107
+        },
+        {
+          "w": "into",
+          "start": 29.118,
+          "end": 29.33
+        },
+        {
+          "w": "each",
+          "start": 29.341,
+          "end": 29.498
+        },
+        {
+          "w": "other",
+          "start": 29.509,
+          "end": 29.799
+        },
+        {
+          "w": "canceling",
+          "start": 30.1,
+          "end": 30.569
+        },
+        {
+          "w": "out",
+          "start": 30.58,
+          "end": 30.725
+        },
+        {
+          "w": "their",
+          "start": 30.737,
+          "end": 30.859
+        },
+        {
+          "w": "vertical",
+          "start": 30.871,
+          "end": 31.217
+        },
+        {
+          "w": "motion",
+          "start": 31.228,
+          "end": 31.607
+        },
+        {
+          "w": "while",
+          "start": 31.618,
+          "end": 31.763
+        },
+        {
+          "w": "preserving",
+          "start": 31.775,
+          "end": 32.221
+        },
+        {
+          "w": "their",
+          "start": 32.232,
+          "end": 32.355
+        },
+        {
+          "w": "shared",
+          "start": 32.366,
+          "end": 32.679
+        },
+        {
+          "w": "sideways",
+          "start": 32.69,
+          "end": 33.158
+        },
+        {
+          "w": "spin",
+          "start": 33.17,
+          "end": 33.56
+        }
+      ]
+    },
+    {
+      "id": "act4",
+      "index": 4,
+      "label": "// ACT 4 \u2014 THE DISK",
+      "caption": "// ACT 4 \u2014 THE DISK",
+      "file": "full_voiceover.mp3",
+      "duration": 6.641,
+      "start": 34.33,
+      "end": 40.971,
+      "words": [
+        {
+          "w": "Over",
+          "start": 34.33,
+          "end": 34.609
+        },
+        {
+          "w": "millions",
+          "start": 34.621,
+          "end": 35.0
+        },
+        {
+          "w": "of",
+          "start": 35.011,
+          "end": 35.078
+        },
+        {
+          "w": "years",
+          "start": 35.089,
+          "end": 35.458
+        },
+        {
+          "w": "that",
+          "start": 35.67,
+          "end": 35.815
+        },
+        {
+          "w": "cosmic",
+          "start": 35.826,
+          "end": 36.228
+        },
+        {
+          "w": "traffic",
+          "start": 36.239,
+          "end": 36.629
+        },
+        {
+          "w": "jam",
+          "start": 36.641,
+          "end": 36.953
+        },
+        {
+          "w": "flattened",
+          "start": 36.964,
+          "end": 37.388
+        },
+        {
+          "w": "the",
+          "start": 37.4,
+          "end": 37.455
+        },
+        {
+          "w": "entire",
+          "start": 37.467,
+          "end": 37.924
+        },
+        {
+          "w": "cloud",
+          "start": 37.935,
+          "end": 38.281
+        },
+        {
+          "w": "into",
+          "start": 38.292,
+          "end": 38.493
+        },
+        {
+          "w": "a",
+          "start": 38.504,
+          "end": 38.571
+        },
+        {
+          "w": "razor-thin",
+          "start": 38.583,
+          "end": 39.163
+        },
+        {
+          "w": "spinning",
+          "start": 39.174,
+          "end": 39.498
+        },
+        {
+          "w": "disk",
+          "start": 39.509,
+          "end": 39.844
+        },
+        {
+          "w": "where",
+          "start": 39.855,
+          "end": 39.978
+        },
+        {
+          "w": "the",
+          "start": 39.989,
+          "end": 40.067
+        },
+        {
+          "w": "planets",
+          "start": 40.078,
+          "end": 40.469
+        },
+        {
+          "w": "formed",
+          "start": 40.48,
+          "end": 40.971
+        }
+      ]
+    },
+    {
+      "id": "act5",
+      "index": 5,
+      "label": "// ACT 5 \u2014 THE PAYOFF & LOOP",
+      "caption": "// ACT 5 \u2014 THE PAYOFF & LOOP",
+      "file": "full_voiceover.mp3",
+      "duration": 9.174,
+      "start": 41.741,
+      "end": 50.915,
+      "words": [
+        {
+          "w": "Today",
+          "start": 41.741,
+          "end": 42.165
+        },
+        {
+          "w": "Mercury",
+          "start": 42.433,
+          "end": 42.812
+        },
+        {
+          "w": "tilts",
+          "start": 42.824,
+          "end": 43.158
+        },
+        {
+          "w": "by",
+          "start": 43.17,
+          "end": 43.315
+        },
+        {
+          "w": "just",
+          "start": 43.326,
+          "end": 43.56
+        },
+        {
+          "w": "seven",
+          "start": 43.571,
+          "end": 43.862
+        },
+        {
+          "w": "degrees",
+          "start": 43.873,
+          "end": 44.364
+        },
+        {
+          "w": "and",
+          "start": 44.632,
+          "end": 44.821
+        },
+        {
+          "w": "every",
+          "start": 44.833,
+          "end": 45.078
+        },
+        {
+          "w": "other",
+          "start": 45.089,
+          "end": 45.312
+        },
+        {
+          "w": "planet",
+          "start": 45.324,
+          "end": 45.692
+        },
+        {
+          "w": "sits",
+          "start": 45.703,
+          "end": 45.971
+        },
+        {
+          "w": "within",
+          "start": 45.982,
+          "end": 46.261
+        },
+        {
+          "w": "three",
+          "start": 46.272,
+          "end": 46.518
+        },
+        {
+          "w": "and",
+          "start": 46.529,
+          "end": 46.596
+        },
+        {
+          "w": "a",
+          "start": 46.607,
+          "end": 46.641
+        },
+        {
+          "w": "half",
+          "start": 46.652,
+          "end": 47.02
+        },
+        {
+          "w": "locked",
+          "start": 47.277,
+          "end": 47.589
+        },
+        {
+          "w": "into",
+          "start": 47.6,
+          "end": 47.768
+        },
+        {
+          "w": "one",
+          "start": 47.779,
+          "end": 48.002
+        },
+        {
+          "w": "flat",
+          "start": 48.013,
+          "end": 48.315
+        },
+        {
+          "w": "lane",
+          "start": 48.326,
+          "end": 48.583
+        },
+        {
+          "w": "because",
+          "start": 48.594,
+          "end": 48.85
+        },
+        {
+          "w": "they",
+          "start": 48.862,
+          "end": 48.973
+        },
+        {
+          "w": "all",
+          "start": 48.984,
+          "end": 49.23
+        },
+        {
+          "w": "inherited",
+          "start": 49.241,
+          "end": 49.732
+        },
+        {
+          "w": "the",
+          "start": 49.743,
+          "end": 49.799
+        },
+        {
+          "w": "exact",
+          "start": 49.81,
+          "end": 50.234
+        },
+        {
+          "w": "same",
+          "start": 50.246,
+          "end": 50.48
+        },
+        {
+          "w": "spin",
+          "start": 50.491,
+          "end": 50.915
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "w": "Gravity",
+      "start": 0.095,
+      "end": 0.508
+    },
+    {
+      "w": "pulls",
+      "start": 0.519,
+      "end": 0.831
+    },
+    {
+      "w": "equally",
+      "start": 0.842,
+      "end": 1.188
+    },
+    {
+      "w": "in",
+      "start": 1.2,
+      "end": 1.333
+    },
+    {
+      "w": "every",
+      "start": 1.345,
+      "end": 1.557
+    },
+    {
+      "w": "direction",
+      "start": 1.568,
+      "end": 2.104
+    },
+    {
+      "w": "so",
+      "start": 2.45,
+      "end": 2.606
+    },
+    {
+      "w": "why",
+      "start": 2.617,
+      "end": 2.807
+    },
+    {
+      "w": "do",
+      "start": 2.818,
+      "end": 2.941
+    },
+    {
+      "w": "all",
+      "start": 2.952,
+      "end": 3.186
+    },
+    {
+      "w": "eight",
+      "start": 3.197,
+      "end": 3.365
+    },
+    {
+      "w": "planets",
+      "start": 3.376,
+      "end": 3.789
+    },
+    {
+      "w": "orbit",
+      "start": 3.8,
+      "end": 4.101
+    },
+    {
+      "w": "the",
+      "start": 4.112,
+      "end": 4.191
+    },
+    {
+      "w": "Sun",
+      "start": 4.202,
+      "end": 4.481
+    },
+    {
+      "w": "on",
+      "start": 4.492,
+      "end": 4.592
+    },
+    {
+      "w": "a",
+      "start": 4.604,
+      "end": 4.659
+    },
+    {
+      "w": "flat",
+      "start": 4.671,
+      "end": 4.972
+    },
+    {
+      "w": "pancake",
+      "start": 4.983,
+      "end": 5.485
+    },
+    {
+      "w": "instead",
+      "start": 5.496,
+      "end": 5.854
+    },
+    {
+      "w": "of",
+      "start": 5.865,
+      "end": 5.943
+    },
+    {
+      "w": "crisscrossing",
+      "start": 5.954,
+      "end": 6.601
+    },
+    {
+      "w": "in",
+      "start": 6.612,
+      "end": 6.713
+    },
+    {
+      "w": "3D",
+      "start": 6.724,
+      "end": 7.193
+    },
+    {
+      "w": "like",
+      "start": 7.204,
+      "end": 7.394
+    },
+    {
+      "w": "electrons",
+      "start": 7.405,
+      "end": 7.929
+    },
+    {
+      "w": "around",
+      "start": 7.941,
+      "end": 8.209
+    },
+    {
+      "w": "an",
+      "start": 8.22,
+      "end": 8.309
+    },
+    {
+      "w": "atom",
+      "start": 8.32,
+      "end": 8.677
+    },
+    {
+      "w": "Four",
+      "start": 9.453,
+      "end": 9.732
+    },
+    {
+      "w": "and",
+      "start": 9.743,
+      "end": 9.833
+    },
+    {
+      "w": "a",
+      "start": 9.844,
+      "end": 9.877
+    },
+    {
+      "w": "half",
+      "start": 9.888,
+      "end": 10.179
+    },
+    {
+      "w": "billion",
+      "start": 10.19,
+      "end": 10.525
+    },
+    {
+      "w": "years",
+      "start": 10.536,
+      "end": 10.781
+    },
+    {
+      "w": "ago",
+      "start": 10.792,
+      "end": 11.083
+    },
+    {
+      "w": "our",
+      "start": 11.284,
+      "end": 11.406
+    },
+    {
+      "w": "solar",
+      "start": 11.417,
+      "end": 11.741
+    },
+    {
+      "w": "system",
+      "start": 11.752,
+      "end": 12.098
+    },
+    {
+      "w": "wasn't",
+      "start": 12.109,
+      "end": 12.388
+    },
+    {
+      "w": "flat",
+      "start": 12.4,
+      "end": 12.679
+    },
+    {
+      "w": "at",
+      "start": 12.69,
+      "end": 12.757
+    },
+    {
+      "w": "all",
+      "start": 12.768,
+      "end": 13.058
+    },
+    {
+      "w": "It",
+      "start": 13.839,
+      "end": 13.996
+    },
+    {
+      "w": "was",
+      "start": 14.007,
+      "end": 14.129
+    },
+    {
+      "w": "a",
+      "start": 14.141,
+      "end": 14.208
+    },
+    {
+      "w": "giant",
+      "start": 14.219,
+      "end": 14.621
+    },
+    {
+      "w": "chaotic",
+      "start": 14.788,
+      "end": 15.212
+    },
+    {
+      "w": "sphere",
+      "start": 15.223,
+      "end": 15.536
+    },
+    {
+      "w": "of",
+      "start": 15.547,
+      "end": 15.625
+    },
+    {
+      "w": "gas",
+      "start": 15.636,
+      "end": 15.926
+    },
+    {
+      "w": "and",
+      "start": 15.938,
+      "end": 16.027
+    },
+    {
+      "w": "dust",
+      "start": 16.038,
+      "end": 16.395
+    },
+    {
+      "w": "tumbling",
+      "start": 16.641,
+      "end": 17.031
+    },
+    {
+      "w": "through",
+      "start": 17.042,
+      "end": 17.199
+    },
+    {
+      "w": "space",
+      "start": 17.21,
+      "end": 17.589
+    },
+    {
+      "w": "with",
+      "start": 17.6,
+      "end": 17.712
+    },
+    {
+      "w": "a",
+      "start": 17.723,
+      "end": 17.779
+    },
+    {
+      "w": "slight",
+      "start": 17.79,
+      "end": 18.058
+    },
+    {
+      "w": "net",
+      "start": 18.069,
+      "end": 18.259
+    },
+    {
+      "w": "spin",
+      "start": 18.27,
+      "end": 18.661
+    },
+    {
+      "w": "As",
+      "start": 19.442,
+      "end": 19.643
+    },
+    {
+      "w": "gravity",
+      "start": 19.654,
+      "end": 20.056
+    },
+    {
+      "w": "pulled",
+      "start": 20.067,
+      "end": 20.335
+    },
+    {
+      "w": "that",
+      "start": 20.346,
+      "end": 20.513
+    },
+    {
+      "w": "cloud",
+      "start": 20.525,
+      "end": 20.804
+    },
+    {
+      "w": "inward",
+      "start": 20.815,
+      "end": 21.194
+    },
+    {
+      "w": "conservation",
+      "start": 21.473,
+      "end": 22.143
+    },
+    {
+      "w": "of",
+      "start": 22.154,
+      "end": 22.243
+    },
+    {
+      "w": "angular",
+      "start": 22.254,
+      "end": 22.634
+    },
+    {
+      "w": "momentum",
+      "start": 22.645,
+      "end": 23.114
+    },
+    {
+      "w": "forced",
+      "start": 23.125,
+      "end": 23.482
+    },
+    {
+      "w": "it",
+      "start": 23.493,
+      "end": 23.616
+    },
+    {
+      "w": "to",
+      "start": 23.627,
+      "end": 23.717
+    },
+    {
+      "w": "spin",
+      "start": 23.728,
+      "end": 23.996
+    },
+    {
+      "w": "faster",
+      "start": 24.007,
+      "end": 24.52
+    },
+    {
+      "w": "Meanwhile",
+      "start": 25.301,
+      "end": 25.926
+    },
+    {
+      "w": "particles",
+      "start": 26.239,
+      "end": 26.741
+    },
+    {
+      "w": "orbiting",
+      "start": 26.752,
+      "end": 27.132
+    },
+    {
+      "w": "at",
+      "start": 27.143,
+      "end": 27.255
+    },
+    {
+      "w": "wild",
+      "start": 27.266,
+      "end": 27.612
+    },
+    {
+      "w": "up-and-down",
+      "start": 27.623,
+      "end": 28.091
+    },
+    {
+      "w": "angles",
+      "start": 28.103,
+      "end": 28.449
+    },
+    {
+      "w": "kept",
+      "start": 28.46,
+      "end": 28.705
+    },
+    {
+      "w": "slamming",
+      "start": 28.716,
+      "end": 29.107
+    },
+    {
+      "w": "into",
+      "start": 29.118,
+      "end": 29.33
+    },
+    {
+      "w": "each",
+      "start": 29.341,
+      "end": 29.498
+    },
+    {
+      "w": "other",
+      "start": 29.509,
+      "end": 29.799
+    },
+    {
+      "w": "canceling",
+      "start": 30.1,
+      "end": 30.569
+    },
+    {
+      "w": "out",
+      "start": 30.58,
+      "end": 30.725
+    },
+    {
+      "w": "their",
+      "start": 30.737,
+      "end": 30.859
+    },
+    {
+      "w": "vertical",
+      "start": 30.871,
+      "end": 31.217
+    },
+    {
+      "w": "motion",
+      "start": 31.228,
+      "end": 31.607
+    },
+    {
+      "w": "while",
+      "start": 31.618,
+      "end": 31.763
+    },
+    {
+      "w": "preserving",
+      "start": 31.775,
+      "end": 32.221
+    },
+    {
+      "w": "their",
+      "start": 32.232,
+      "end": 32.355
+    },
+    {
+      "w": "shared",
+      "start": 32.366,
+      "end": 32.679
+    },
+    {
+      "w": "sideways",
+      "start": 32.69,
+      "end": 33.158
+    },
+    {
+      "w": "spin",
+      "start": 33.17,
+      "end": 33.56
+    },
+    {
+      "w": "Over",
+      "start": 34.33,
+      "end": 34.609
+    },
+    {
+      "w": "millions",
+      "start": 34.621,
+      "end": 35.0
+    },
+    {
+      "w": "of",
+      "start": 35.011,
+      "end": 35.078
+    },
+    {
+      "w": "years",
+      "start": 35.089,
+      "end": 35.458
+    },
+    {
+      "w": "that",
+      "start": 35.67,
+      "end": 35.815
+    },
+    {
+      "w": "cosmic",
+      "start": 35.826,
+      "end": 36.228
+    },
+    {
+      "w": "traffic",
+      "start": 36.239,
+      "end": 36.629
+    },
+    {
+      "w": "jam",
+      "start": 36.641,
+      "end": 36.953
+    },
+    {
+      "w": "flattened",
+      "start": 36.964,
+      "end": 37.388
+    },
+    {
+      "w": "the",
+      "start": 37.4,
+      "end": 37.455
+    },
+    {
+      "w": "entire",
+      "start": 37.467,
+      "end": 37.924
+    },
+    {
+      "w": "cloud",
+      "start": 37.935,
+      "end": 38.281
+    },
+    {
+      "w": "into",
+      "start": 38.292,
+      "end": 38.493
+    },
+    {
+      "w": "a",
+      "start": 38.504,
+      "end": 38.571
+    },
+    {
+      "w": "razor-thin",
+      "start": 38.583,
+      "end": 39.163
+    },
+    {
+      "w": "spinning",
+      "start": 39.174,
+      "end": 39.498
+    },
+    {
+      "w": "disk",
+      "start": 39.509,
+      "end": 39.844
+    },
+    {
+      "w": "where",
+      "start": 39.855,
+      "end": 39.978
+    },
+    {
+      "w": "the",
+      "start": 39.989,
+      "end": 40.067
+    },
+    {
+      "w": "planets",
+      "start": 40.078,
+      "end": 40.469
+    },
+    {
+      "w": "formed",
+      "start": 40.48,
+      "end": 40.971
+    },
+    {
+      "w": "Today",
+      "start": 41.741,
+      "end": 42.165
+    },
+    {
+      "w": "Mercury",
+      "start": 42.433,
+      "end": 42.812
+    },
+    {
+      "w": "tilts",
+      "start": 42.824,
+      "end": 43.158
+    },
+    {
+      "w": "by",
+      "start": 43.17,
+      "end": 43.315
+    },
+    {
+      "w": "just",
+      "start": 43.326,
+      "end": 43.56
+    },
+    {
+      "w": "seven",
+      "start": 43.571,
+      "end": 43.862
+    },
+    {
+      "w": "degrees",
+      "start": 43.873,
+      "end": 44.364
+    },
+    {
+      "w": "and",
+      "start": 44.632,
+      "end": 44.821
+    },
+    {
+      "w": "every",
+      "start": 44.833,
+      "end": 45.078
+    },
+    {
+      "w": "other",
+      "start": 45.089,
+      "end": 45.312
+    },
+    {
+      "w": "planet",
+      "start": 45.324,
+      "end": 45.692
+    },
+    {
+      "w": "sits",
+      "start": 45.703,
+      "end": 45.971
+    },
+    {
+      "w": "within",
+      "start": 45.982,
+      "end": 46.261
+    },
+    {
+      "w": "three",
+      "start": 46.272,
+      "end": 46.518
+    },
+    {
+      "w": "and",
+      "start": 46.529,
+      "end": 46.596
+    },
+    {
+      "w": "a",
+      "start": 46.607,
+      "end": 46.641
+    },
+    {
+      "w": "half",
+      "start": 46.652,
+      "end": 47.02
+    },
+    {
+      "w": "locked",
+      "start": 47.277,
+      "end": 47.589
+    },
+    {
+      "w": "into",
+      "start": 47.6,
+      "end": 47.768
+    },
+    {
+      "w": "one",
+      "start": 47.779,
+      "end": 48.002
+    },
+    {
+      "w": "flat",
+      "start": 48.013,
+      "end": 48.315
+    },
+    {
+      "w": "lane",
+      "start": 48.326,
+      "end": 48.583
+    },
+    {
+      "w": "because",
+      "start": 48.594,
+      "end": 48.85
+    },
+    {
+      "w": "they",
+      "start": 48.862,
+      "end": 48.973
+    },
+    {
+      "w": "all",
+      "start": 48.984,
+      "end": 49.23
+    },
+    {
+      "w": "inherited",
+      "start": 49.241,
+      "end": 49.732
+    },
+    {
+      "w": "the",
+      "start": 49.743,
+      "end": 49.799
+    },
+    {
+      "w": "exact",
+      "start": 49.81,
+      "end": 50.234
+    },
+    {
+      "w": "same",
+      "start": 50.246,
+      "end": 50.48
+    },
+    {
+      "w": "spin",
+      "start": 50.491,
+      "end": 50.915
+    }
+  ],
+  "totalDuration": 52.07
+}

@@ -1,0 +1,17 @@
+// ACT 1 — THE HOOK
+On Venus, the Sun rises in the west and sets in the east—and a single day lasts longer than an entire year. [src: S1, S3]
+
+// ACT 2 — THE WRONG ASSUMPTION
+Most people assume that’s because Venus orbits the Sun backward. It doesn't. [src: S4] It travels around the Sun in the exact same direction as Earth. [src: S1, S4, S6] What’s backward is its spin. [src: S1, S4]
+
+// ACT 3 — THE FLIP
+While almost every other planet spins counter-clockwise like an upright top, Venus is flipped nearly upside down at a 177-degree tilt, rotating clockwise in extreme slow motion. [src: S3, S4]
+
+// ACT 4 — THE TWO FORCES
+Scientists think two forces pulled off this cosmic flip. [src: S4, S5] First, a massive protoplanet likely slammed into young Venus off-center, knocking its spin off balance. [src: S4] Then, over billions of years, the Sun’s gravity tugged on Venus’s thick, crushing atmosphere—acting like a slow-motion brake that eventually reversed its rotation completely. [src: S3, S5]
+
+// ACT 5 — THE PAYOFF
+That brake worked so well that one full spin on Venus takes 243 Earth days, while a full trip around the Sun takes just 225. [src: S1, S3]
+
+// ACT 6 — THE VIEW FROM VENUS
+Meaning if you stood on Venus, you’d watch the Sun rise in the west—and wait nearly two months just for sunset, while one full spin outlasts its entire year. [src: S1, S3]

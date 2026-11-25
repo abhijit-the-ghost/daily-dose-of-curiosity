@@ -25,6 +25,7 @@ export default function KaraokeCaption({
   wordEase = easeOutCubic,
   wordDurationSec = 0.22,
   activeTextClass = 'text-amber-400',
+  dimUpcoming = true,
   entrance,
 }: {
   t: number
@@ -46,6 +47,8 @@ export default function KaraokeCaption({
   wordDurationSec?: number
   /** e.g. 'text-amber-400' â€” literal class per episode (Tailwind static scan) */
   activeTextClass?: string
+  /** false = upcoming words stay full white (phrase style, no grey text) */
+  dimUpcoming?: boolean
   /** 'slam': each chunk slams in from an alternating side (text-reel style) */
   entrance?: 'slam'
 }) {
@@ -95,7 +98,7 @@ export default function KaraokeCaption({
           return (
             <span
               key={i}
-              className={`font-block ${fontSizeClass} uppercase ${idleShadowClass} ${done ? 'text-white' : 'text-white/30'}`}
+              className={`font-block ${fontSizeClass} uppercase ${idleShadowClass} ${done || !dimUpcoming ? 'text-white' : 'text-white/30'}`}
             >
               {w.w.toUpperCase()}
             </span>

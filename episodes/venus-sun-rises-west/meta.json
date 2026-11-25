@@ -1,0 +1,36 @@
+{
+  "slug": "venus-sun-rises-west",
+  "series": "cosmic",
+  "title": "Why the Sun Rises in the West on Venus",
+  "hook": "On Venus, the Sun rises in the west and sets in the east—and a single day lasts longer than an entire year.",
+  "hookStyle": "contradiction",
+  "captionStyle": "phrase",
+  "endCard": false,
+  "durationSec": 66.398,
+  "wordCount": 183,
+  "voice": "en-US-AriaNeural",
+  "voiceRate": "+12%",
+  "question": "East or west sunrise — which would you rather wake up to?",
+  "questionAt": 38.884,
+  "pinnedComment": "East or west sunrise — which would you rather wake up to?",
+  "ctaStyle": "question",
+  "posted": {
+    "youtube": null,
+    "instagram": null,
+    "tiktok": null
+  },
+  "tags": [
+    "venus",
+    "sun rises in the west",
+    "venus rotation",
+    "retrograde rotation",
+    "venus facts",
+    "solar system",
+    "astronomy",
+    "space shorts",
+    "science shorts"
+  ],
+  "scriptTokenCount": 188,
+  "wordCountSource": "WordBoundary",
+  "manifest": "public/audio/venus-sun-rises-west/metadata.json"
+}

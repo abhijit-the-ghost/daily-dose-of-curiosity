@@ -88,4 +88,44 @@ export const HUD_PRESETS = {
     progressGradientClass:
       'from-amber-400 via-yellow-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
   },
+  uranusTiltedSideways: {
+    accent: 'amber' as const,
+    cornerBrackets: true,
+    badgeText: '[ COSMIC TELEMETRY // URANUS ]',
+    kickerBottomClass: 'hidden',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-amber-400 via-cyan-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
+  },
+  venusSunRisesWest: {
+    accent: 'amber' as const,
+    cornerBrackets: true,
+    badgeText: '[ COSMIC TELEMETRY // VENUS ]',
+    /** H6: one badge + one scene chip/question + phrase captions = 3 text zones max */
+    kickerBottomClass: 'hidden',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-amber-400 via-yellow-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
+    pulseDot: false,
+    hideTimecode: true,
+    hideBottomMeta: true,
+    hideProgress: true,
+  },
+  solarSystemFlatPlane: {
+    accent: 'amber' as const,
+    cornerBrackets: true,
+    badgeText: '[ COSMIC TELEMETRY // FLAT PLANE ]',
+    /** keep the badge inside the owner-confirmed x60–1020 / y170–1536 box */
+    badgeLeft: 60,
+    badgeTop: 180,
+    /** H6: one badge + one scene chip/question + phrase captions = 3 text zones max */
+    kickerBottomClass: 'hidden',
+    pbBottomClass: 'pb-7' as const,
+    progressGradientClass:
+      'from-amber-400 via-yellow-300 to-amber-200 shadow-[0_0_14px_rgba(245,158,11,0.55)]',
+    pulseDot: false,
+    hideTimecode: true,
+    hideBottomMeta: true,
+    hideProgress: true,
+  },
 } as const

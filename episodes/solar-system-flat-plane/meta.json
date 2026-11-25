@@ -1,0 +1,26 @@
+{
+  "slug": "solar-system-flat-plane",
+  "series": "cosmic",
+  "hook": "Gravity pulls equally in every direction—so why do all eight planets orbit the Sun on a flat pancake instead of crisscrossing in 3D like electrons around an atom?",
+  "hookStyle": "contradiction",
+  "captionStyle": "phrase",
+  "endCard": false,
+  "question": "Why do all the planets orbit the Sun in a flat plane instead of crisscrossing in 3D like electrons around an atom?",
+  "pinnedComment": "Oort Cloud comets still come from every direction — why didn't they flatten?",
+  "durationSec": 52.07,
+  "wordCount": 150,
+  "longFormException": "confirmed: 52.07s inside the owner-approved 45–60s band",
+  "posted": {
+    "youtube": null,
+    "instagram": null,
+    "tiktok": null
+  },
+  "scriptTokenCount": 150,
+  "wordCountSource": "WordBoundary",
+  "questionAt": 30.58,
+  "questionPct": 58.7,
+  "ctaStyle": "question",
+  "voice": "en-US-AriaNeural",
+  "voiceRate": "+12%",
+  "manifest": "public/audio/solar-system-flat-plane/metadata.json"
+}

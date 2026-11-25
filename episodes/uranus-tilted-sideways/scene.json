@@ -1,0 +1,15 @@
+{
+  "series": "cosmic",
+  "title": "Why Uranus Rolls Around the Sun on Its Side",
+  "slug": "uranus-tilted-sideways",
+  "voice": "en-US-AriaNeural",
+  "rate": "+12%",
+  "tail": 2.0,
+  "endCard": true,
+  "endCardRationale": "Owner requested branded end card + follow CTA. EndCard overlays final ~2.6s; a short 'Follow for more' SFX plays at end-card onset (t=24.192s).",
+  "acts": [
+    { "kicker": "", "template": "custom" },
+    { "kicker": "", "template": "custom" },
+    { "kicker": "", "template": "custom" }
+  ]
+}

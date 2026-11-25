@@ -1,6 +1,7 @@
 import logoUrl from '../../shared-assets/brand/logo-alpha.png'
 import { CuriosityStickman } from '@shared-assets/brand/CuriosityStickman'
 import { FACTS } from '../../episodes/everest-challenger-deep/facts'
+import { FACTS as VENUS_FACTS } from '../../episodes/venus-sun-rises-west/facts'
 
 /* ==================================================================
    Thumbnail — still still for YouTube / Instagram cover frames.
@@ -59,6 +60,24 @@ const COVERS: Record<
     title: ['EARTH NEVER', 'MADE ITS', 'OWN GOLD'],
     accent: '#f59e0b',
     tagline: 'Gaming · Science · Verified Facts',
+  },
+  'uranus-tilted-sideways': {
+    kicker: '[ COSMIC TELEMETRY // URANUS ]',
+    title: ['URANUS', 'ROLLS ON', 'ITS SIDE'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
+  },
+  'venus-sun-rises-west': {
+    kicker: '[ COSMIC TELEMETRY // VENUS ]',
+    title: ['DAY BEATS', 'YEAR', '243'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
+  },
+  'solar-system-flat-plane': {
+    kicker: '[ COSMIC TELEMETRY // FLAT PLANE ]',
+    title: ['ONE FLAT', 'PLANE', 'NOT ATOMS'],
+    accent: '#f59e0b',
+    tagline: 'Cosmic · Science · Verified Facts',
   },
   'why-youve-never-seen-a-real-photo-of-the-milky-way': {
     kicker: '[ COSMIC TELEMETRY // MILKY WAY ]',
@@ -441,6 +460,210 @@ function NuclearGandhiScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
+/* ------- uranus-tilted-sideways scene: sideways ice giant with rings ------- */
+function UranusThumbScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+  const cx = is169 ? 920 : 540
+  const cy = is169 ? 390 : 1120
+  const S = is169 ? 0.72 : 1
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(900px 640px at 72% 52%, rgba(103,232,249,0.16), transparent 58%),' +
+            'radial-gradient(640px 560px at 18% 40%, rgba(245,158,11,0.18), transparent 60%),' +
+            '#030712',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        <defs>
+          <radialGradient id="uranusThumb" cx="35%" cy="35%" r="65%">
+            <stop offset="0%" stopColor="#cffafe" />
+            <stop offset="55%" stopColor="#67e8f9" />
+            <stop offset="100%" stopColor="#155e75" />
+          </radialGradient>
+          <radialGradient id="sunThumb" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#fde68a" />
+            <stop offset="55%" stopColor="#f59e0b" />
+            <stop offset="100%" stopColor="#f59e0b" stopOpacity="0" />
+          </radialGradient>
+          <filter id="uGlow"><feGaussianBlur stdDeviation="8" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+        </defs>
+        <circle cx={is169 ? 180 : 170} cy={is169 ? 360 : 760} r={95 * S} fill="url(#sunThumb)" opacity="0.7" />
+        <circle cx={is169 ? 180 : 170} cy={is169 ? 360 : 760} r={42 * S} fill="#f59e0b" filter="url(#uGlow)" />
+        {[ -80,-40,0,40,80].map((dy,i)=>(<line key={i} x1={(is169?240:230)} y1={(is169?360:760)+dy*S*0.45} x2={cx-170*S} y2={cy+dy*S} stroke="rgba(253,230,138,0.18)" strokeWidth={4*S} strokeLinecap="round"/>))}
+        <g transform={`translate(${cx},${cy}) rotate(90)`}>
+          <circle r={150*S} fill="rgba(103,232,249,0.08)" />
+          <circle r={108*S} fill="url(#uranusThumb)" />
+          <ellipse rx={190*S} ry={44*S} fill="none" stroke="rgba(253,230,138,0.5)" strokeWidth={10*S} />
+          <ellipse rx={190*S} ry={44*S} fill="none" stroke="rgba(248,250,252,0.28)" strokeWidth={2*S} />
+          <line x1="0" y1={-170*S} x2="0" y2={170*S} stroke="rgba(248,250,252,0.7)" strokeWidth={4*S} strokeDasharray={`${10*S} ${12*S}`} />
+          <path d={`M 0 ${-108*S} A ${108*S} ${108*S} 0 0 1 0 ${108*S} L 0 ${-108*S} Z`} fill="rgba(253,230,138,0.16)" />
+          <path d={`M 0 ${-108*S} A ${108*S} ${108*S} 0 0 0 0 ${108*S} L 0 ${-108*S} Z`} fill="rgba(2,6,23,0.22)" />
+        </g>
+        <g fill="#f8fafc" fontFamily="ui-monospace, Consolas, monospace" fontSize={is169?20:28} letterSpacing="3">
+          <text x={cx} y={cy - 210*S} textAnchor="middle" fill="#fde68a">97.77° TILT</text>
+          <text x={cx - 170*S} y={cy + 210*S} textAnchor="middle" fill="#fde68a">42 YR SUN</text>
+          <text x={cx + 170*S} y={cy + 210*S} textAnchor="middle" fill="#bfdbfe">42 YR DARK</text>
+        </g>
+      </svg>
+    </>
+  )
+}
+
+/* ------- venus-sun-rises-west scene: west sunrise, backward spin, day > year ------- */
+function VenusThumbScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+  const cx = is169 ? 930 : 540
+  const cy = is169 ? 390 : 1180
+  const S = is169 ? 0.72 : 1
+
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(920px 680px at 74% 58%, rgba(245,158,11,0.20), transparent 58%),' +
+            'radial-gradient(680px 600px at 12% 78%, rgba(96,165,250,0.18), transparent 60%),' +
+            '#05070F',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        <defs>
+          <radialGradient id="venusThumb" cx="34%" cy="30%" r="70%">
+            <stop offset="0%" stopColor="#FDE68A" />
+            <stop offset="48%" stopColor="#F59E0B" />
+            <stop offset="100%" stopColor="#7C2D12" />
+          </radialGradient>
+          <radialGradient id="venusSunThumb" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#FEF3C7" />
+            <stop offset="45%" stopColor="#F59E0B" />
+            <stop offset="100%" stopColor="#F59E0B" stopOpacity="0" />
+          </radialGradient>
+          <marker id="venusThumbArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+            <path d="M 0 0 L 12 6 L 0 12 z" fill="#F59E0B" />
+          </marker>
+        </defs>
+
+        {/* the Sun breaks the western horizon on the left */}
+        <circle cx={is169 ? 190 : 150} cy={is169 ? 420 : 930} r={110 * S} fill="url(#venusSunThumb)" opacity="0.75" />
+        <circle cx={is169 ? 190 : 150} cy={is169 ? 420 : 930} r={40 * S} fill="#F59E0B" />
+        <path
+          d={`M ${is169 ? 110 : 70} ${is169 ? 470 : 1030} Q ${is169 ? 190 : 150} ${is169 ? 330 : 810} ${is169 ? 270 : 230} ${is169 ? 470 : 1030}`}
+          fill="none"
+          stroke="#F59E0B"
+          strokeWidth={6 * S}
+          strokeLinecap="round"
+          markerEnd="url(#venusThumbArrow)"
+          opacity="0.95"
+        />
+
+        {/* huge Venus hero with the reversed spin arrow */}
+        <g transform={`translate(${cx},${cy})`}>
+          <circle r={210 * S} fill="#F59E0B" opacity="0.12" />
+          <circle r={150 * S} fill="url(#venusThumb)" />
+          <ellipse cx={-36 * S} cy={-42 * S} rx={152 * S} ry={70 * S} fill="rgba(255,255,255,0.10)" />
+          <line x1="0" y1={-190 * S} x2="0" y2={190 * S} stroke="#F8FAFC" strokeWidth={3 * S} strokeDasharray={`${9 * S} ${11 * S}`} opacity="0.6" />
+          <path
+            d={`M ${-168 * S} ${-86 * S} A ${176 * S} ${176 * S} 0 1 1 ${-112 * S} ${134 * S}`}
+            fill="none"
+            stroke="#F59E0B"
+            strokeWidth={9 * S}
+            strokeLinecap="round"
+            markerEnd="url(#venusThumbArrow)"
+          />
+        </g>
+
+        {/* one visual proof: spin days outlast orbit days */}
+        <g fontFamily="ui-monospace, Consolas, monospace" textAnchor="middle">
+          <text x={cx - 175 * S} y={cy + 255 * S} fill="#FDE68A" fontSize={30 * S} letterSpacing={3 * S}>
+            {VENUS_FACTS.spinDays.value}
+          </text>
+          <text x={cx - 175 * S} y={cy + 292 * S} fill="rgba(245,158,11,0.78)" fontSize={17 * S} letterSpacing={4 * S}>
+            SPIN
+          </text>
+          <text x={cx + 175 * S} y={cy + 255 * S} fill="#BFDBFE" fontSize={30 * S} letterSpacing={3 * S}>
+            {VENUS_FACTS.orbitDays.value}
+          </text>
+          <text x={cx + 175 * S} y={cy + 292 * S} fill="rgba(96,165,250,0.82)" fontSize={17 * S} letterSpacing={4 * S}>
+            ORBIT
+          </text>
+        </g>
+      </svg>
+    </>
+  )
+}
+
+/* ------- solar-system-flat-plane: atom-shell myth vs one flat disk ------- */
+function FlatPlaneThumbScene({ ratio }: { ratio: '9x16' | '16x9' }) {
+  const is169 = ratio === '16x9'
+  const vb = is169 ? '0 0 1280 720' : '0 0 1080 1920'
+  const cx = is169 ? 640 : 540
+  const cy = is169 ? 360 : 1000
+  const S = is169 ? 0.72 : 1
+
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background:
+            'radial-gradient(920px 680px at 50% 44%, rgba(245,158,11,0.20), transparent 58%),' +
+            'radial-gradient(680px 600px at 18% 70%, rgba(96,165,250,0.18), transparent 60%),' +
+            '#05070F',
+        }}
+      />
+      <StarField />
+      <svg viewBox={vb} preserveAspectRatio="none" className="absolute inset-0 h-full w-full">
+        <defs>
+          <radialGradient id="flatPlaneThumbSun" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#FEF3C7" />
+            <stop offset="42%" stopColor="#F59E0B" />
+            <stop offset="100%" stopColor="#F59E0B" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <g transform={`translate(${cx},${cy})`}>
+          {[0, 60, 120].map((deg) => (
+            <ellipse
+              key={deg}
+              rx={330 * S} ry={118 * S}
+              transform={`rotate(${deg})`}
+              fill="none" stroke="#60A5FA" strokeWidth={3.5 * S}
+              strokeDasharray={`${16 * S} ${22 * S}`} opacity={0.72}
+            />
+          ))}
+          <ellipse rx={390 * S} ry={54 * S} fill="none" stroke="#F59E0B" strokeWidth={9 * S} opacity={0.95} />
+          <circle r={150 * S} fill="url(#flatPlaneThumbSun)" opacity={0.8} />
+          <circle r={44 * S} fill="#FEF3C7" />
+          {[0.3, 0.52, 0.74].map((f, i) => {
+            const a = f * Math.PI * 2
+            return (
+              <circle
+                key={i}
+                cx={Math.cos(a) * (170 + i * 58) * S}
+                cy={Math.sin(a) * 20 * S}
+                r={(6 + i * 2) * S}
+                fill="#F8FAFC"
+                opacity={0.8}
+              />
+            )
+          })}
+        </g>
+      </svg>
+    </>
+  )
+}
+
 /* ------- sun-never-black-hole scene: the red giant + faint ember ------- */
 function SunRedGiantScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   const is169 = ratio === '16x9'
@@ -478,13 +701,16 @@ function SunRedGiantScene({ ratio }: { ratio: '9x16' | '16x9' }) {
   )
 }
 
-function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' | 'nuclearGandhi' | 'sunNeverBlackHole' }) {
+function Scene({ ratio, variant }: { ratio: '9x16' | '16x9'; variant?: 'minecraft' | 'neverTouch' | 'everest' | 'touchAndFeel' | 'nuclearGandhi' | 'sunNeverBlackHole' | 'uranusTiltedSideways' | 'venusSunRisesWest' | 'flatPlane' }) {
   if (variant === 'minecraft') return <MinecraftScene ratio={ratio} />
   if (variant === 'neverTouch') return <NeverTouchScene ratio={ratio} />
   if (variant === 'everest') return <EverestScene ratio={ratio} />
   if (variant === 'touchAndFeel') return <TouchAndFeelScene ratio={ratio} />
   if (variant === 'nuclearGandhi') return <NuclearGandhiScene ratio={ratio} />
   if (variant === 'sunNeverBlackHole') return <SunRedGiantScene ratio={ratio} />
+  if (variant === 'uranusTiltedSideways') return <UranusThumbScene ratio={ratio} />
+  if (variant === 'venusSunRisesWest') return <VenusThumbScene ratio={ratio} />
+  if (variant === 'flatPlane') return <FlatPlaneThumbScene ratio={ratio} />
   const is169 = ratio === '16x9'
 
   // geometry per ratio
@@ -685,7 +911,7 @@ export default function Thumbnail() {
     >
       <Scene
         ratio={ratio}
-        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : slug === 'nuclear-gandhi' ? 'nuclearGandhi' : slug === 'sun-never-black-hole' ? 'sunNeverBlackHole' : undefined}
+        variant={slug === 'minecraft-edge' ? 'minecraft' : slug === 'never-touch' ? 'neverTouch' : slug === 'everest-challenger-deep' ? 'everest' : slug === 'touch-and-feel' ? 'touchAndFeel' : slug === 'nuclear-gandhi' ? 'nuclearGandhi' : slug === 'sun-never-black-hole' ? 'sunNeverBlackHole' : slug === 'uranus-tilted-sideways' ? 'uranusTiltedSideways' : slug === 'venus-sun-rises-west' ? 'venusSunRisesWest' : slug === 'solar-system-flat-plane' ? 'flatPlane' : undefined}
       />
 
       {/* kicker chip top-left */}
