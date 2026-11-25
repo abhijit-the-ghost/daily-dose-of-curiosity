@@ -34,7 +34,10 @@ const VIDEO = path.resolve(
 const OUT = opt('out', '')
 /* Owner-approved 1–2 min explainer formats get their own duration band.
    Everything else keeps the §9.1 Short band. */
-const DURATION_BANDS = { 'venus-sun-rises-west': [20, 75] }
+const DURATION_BANDS = {
+  'venus-sun-rises-west': [20, 75],
+  'solar-system-flat-plane': [20, 75],
+}
 const [dLo, dHi] = DURATION_BANDS[SLUG] ?? [20, 35]
 
 if (!VIDEO_ARG && !SLUG) {

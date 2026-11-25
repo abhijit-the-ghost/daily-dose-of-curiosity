@@ -22,5 +22,9 @@
   "ctaStyle": "question",
   "voice": "en-US-AriaNeural",
   "voiceRate": "+12%",
+  "audioVersion": "phase-a-phone-band",
+  "voiceProcess": true,
+  "bedGainDb": -2,
+  "sfx": "11 WordBoundary events; v2 harmonic low end; rate variation on repeated ticks/clicks",
   "manifest": "public/audio/solar-system-flat-plane/metadata.json"
 }

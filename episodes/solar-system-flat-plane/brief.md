@@ -193,3 +193,17 @@ No logo intro, raster assets, 3D library, second accent, `Math.random()` outside
 ## 10. Asset needs
 
 All visuals are SVG/JSX/CSS drawn in code. Stage 6 generated seven new deterministic SFX WAVs with `scripts/synth_sfx.py` alongside the two legacy assets; all nine are logged in `shared-assets/LICENSES.md` as original work. No raster asset is planned.
+
+---
+
+## 11. Phase A audio polish — v2 only
+
+Owner-approved review response, scoped to this episode only:
+
+- Added `sub_drop_v2.wav`, `sub_thump_v2.wav`, `disk_collapse_v2.wav` with 2nd/3rd harmonic partials so the pitch survives phone speakers (100–300 Hz carrier band). The nine v1 filenames are untouched, so legacy episodes cannot drift.
+- `sfx.json` uses `sub_thump_v2.wav` and `disk_collapse_v2.wav`, raises repeated tick/click gains from −22/−24 dB to −18 dB, and adds deterministic `rate` values (0.94–1.06) to repeated events.
+- `scene.json` enables `voiceProcess: true` (highpass 80 Hz, light compressor, +2 dB at 3.5 kHz before `adelay`) and `bedGainDb: -2` for the audibility A/B.
+- `qa_metrics.mjs` recognises this episode's 20–75 s long-form band.
+- No new tools were installed; only existing `numpy`, `ffmpeg`, and `ffprobe` are used.
+
+The verified v1 package remains in `results/videos/solar-system-flat-plane/`. Phase A outputs are written to a separate v2 package.

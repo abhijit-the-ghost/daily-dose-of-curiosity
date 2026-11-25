@@ -14,8 +14,10 @@
 
 1. `AGENTS.md` — hard rules (determinism, one clock, recorder hooks, ffmpeg audio, output spec, type gate).
 2. `INSTRUCTIONS.md` (this file) — the pipeline, the hook spec, the gates.
-3. `docs/conventions.md`, `docs/pipeline.md`, `docs/determinism.md` — implementation detail.
-4. `docs/reference-teardown-dexwonders-sun-vs-uranus.md` — the evidence behind §5 and §6.
+3. `SCRIPT_GUIDE.md` — narration drafting rules, length table, and `lint_script.mjs` contract.
+4. `ART_DIRECTION.md` — visual brief, asset-spec, safe-area, and one-accent rules.
+5. `docs/conventions.md`, `docs/pipeline.md`, `docs/determinism.md` — implementation detail.
+6. `docs/reference-teardown-dexwonders-sun-vs-uranus.md` — the evidence behind §5 and §6.
 
 If you are unsure whether something is allowed, read AGENTS.md §11 Anti-goals before you write code.
 
@@ -59,6 +61,7 @@ Do not invent a script. If a step has no command, §16 says what to add.
 | Stills | `bun scripts/dev_shot.mjs 0.5,3,9,14,22 --episode <slug>` | writes PNGs to `frames/` |
 | Audio | `uv run --with edge-tts,mutagen python scripts/generate_audio.py <slug> [--force] [--dry-run]` | reads `episodes/<slug>/scene.json` + `script.txt` |
 | Manifest check | `uv run --with edge-tts,mutagen python scripts/generate_audio.py <slug> --dry-run` | parse + word count + duration check, no TTS |
+| Script lint | `bun scripts/lint_script.mjs <slug> [--strict] [--ending question \| cta \| both]` | `SCRIPT_GUIDE.md` checks: structure, sources, digits, hooks, re-hooks, ending |
 | Smoke render | `bun scripts/render_video.mjs --episode <slug> --max-frames 90` | first ~3 s |
 | Full render | `bun scripts/render_video.mjs --episode <slug> [--crf 16] [--preset slow]` | → `output/<slug>-1080x1920.mp4`; ducked bed + two-pass loudnorm are **on by default** |
 | Audio-only render opts | `--no-bed`, `--no-loudnorm`, `--bed-gain <dB>`, `--pre-limit` | for A/B tests and legacy reproduction; default bed gain `-8 dB`; `--pre-limit` adds a light limiter before two-pass loudnorm for peak-heavy mixes |
@@ -71,6 +74,11 @@ Do not invent a script. If a step has no command, §16 says what to add.
 | Reference capture | `yt-dlp -f "bv*+ba/b" <url> -o ref.mp4` | for teardowns only, never republish |
 | Type gate | `bunx tsc -b` | must pass before any "done" |
 | Analyse a file | `ffmpeg` / `ffprobe` (on PATH) | §9 gate commands |
+
+Per-episode `scene.json` may set `voiceProcess: true` (light voice EQ/compression before
+`adelay`, so WordBoundary timing is unchanged) and `bedGainDb` (default −8). SFX events in
+`sfx.json` may set `rate` for deterministic pitch variation; v2 `*_v2.wav` assets add
+phone-band harmonics without touching legacy filenames.
 
 **Still not present** (do not pretend they exist): `bun run package`, `bun run stats`,
 `scripts/package.ts`, `scripts/stats.ts`. Package manually to §11.1 until those land.
@@ -136,6 +144,10 @@ the mute-test picture, the counter-argument, sources, the comment hook, the loop
 ---
 
 ## 4. Stage 2 — Script, sources, facts
+
+> Longer narration scripts use `SCRIPT_GUIDE.md` §1–2 and `bun scripts/lint_script.mjs <slug>`.
+> The 55–75 word / 20–35 s figures in this section remain the **legacy short-form** baseline;
+> do not apply them to a 60–120 s episode without owner approval.
 
 ### 4.1 Script shape (55–75 words, 3 acts, ~24–32 s)
 

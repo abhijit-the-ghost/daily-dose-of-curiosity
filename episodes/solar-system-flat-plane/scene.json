@@ -5,6 +5,8 @@
   "voice": "en-US-AriaNeural",
   "rate": "+12%",
   "tail": 0.35,
+  "voiceProcess": true,
+  "bedGainDb": -2,
   "endCard": false,
   "endCardRationale": "Seamless loop back to frame 1; ghosted atom shells return in the final 0.6 s.",
   "captionStyle": "phrase",

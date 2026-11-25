@@ -2,7 +2,10 @@
 """
 synth_sfx.py — deterministic code-synthesized cinematic SFX for Daily Dose of Curiosity.
 
-Nine deterministic assets, 100% synthetic output (no samples anywhere, ever):
+Twelve deterministic assets, 100% synthetic output (no samples anywhere, ever).
+The v1 nine stay byte-identical for legacy episodes; the v2 three add harmonic
+partials so the pitch survives phone speakers (100–300 Hz carrier band):
+
   sub_drop.wav       1.10s  48kHz 16-bit stereo — chest-thump sub impact (existing episodes)
   riser.wav          2.60s  48kHz 16-bit stereo — payoff riser (existing episodes)
   glass_chime.wav    1.20s  bright metallic partials — frame-1 reveal
@@ -12,6 +15,9 @@ Nine deterministic assets, 100% synthetic output (no samples anywhere, ever):
   collision_tick.wav 0.18s  short noise/body tick — vertical motion damping
   disk_collapse.wav  1.60s  descending bass settle — disk formation
   telemetry_click.wav 0.14s  two-tone click — angle readout landings
+  sub_drop_v2.wav    1.10s  phone-band harmonic sub impact (new filenames; v1 untouched)
+  sub_thump_v2.wav   0.95s  phone-band harmonic frame-1 weight
+  disk_collapse_v2.wav 1.60s phone-band harmonic disk settle
 
 Run from repo root:
   uv run --with numpy python scripts/synth_sfx.py
@@ -34,6 +40,11 @@ PEAK = 10 ** (-1.0 / 20)  # -1 dBFS
 def phase_from_freq(freq_per_t: np.ndarray) -> np.ndarray:
     """Cumulative-phase from a per-sample frequency array (Hz)."""
     return 2 * np.pi * np.cumsum(freq_per_t) / SR
+
+
+def phone_band(ph: np.ndarray) -> np.ndarray:
+    """Harmonic stack that carries sub-bass pitch on small phone speakers."""
+    return np.sin(ph) + 0.55 * np.sin(2 * ph) + 0.35 * np.sin(3 * ph)
 
 
 def write_wav(name: str, stereo: np.ndarray) -> None:
@@ -282,6 +293,75 @@ def telemetry_click() -> None:
     write_wav("telemetry_click.wav", np.stack([left, right], axis=1))
 
 
+def sub_drop_v2() -> None:
+    """Phone-band sub impact: same hit, with 100–300 Hz harmonics for small speakers."""
+    T = 1.10
+    n = int(SR * T)
+    t = np.linspace(0, T, n, endpoint=False)
+
+    f = 90.0 * (38.0 / 90.0) ** (t / T)
+    tone = phone_band(phase_from_freq(f)) * np.exp(-t * 3.1)
+    thump = phone_band(2 * np.pi * 55 * t) * 0.55 * np.exp(-t * 4.2)
+
+    click = np.zeros(n)
+    cn = int(0.025 * SR)
+    rng = np.random.default_rng(SEED)
+    click[:cn] = rng.standard_normal(cn) * np.exp(-t[:cn] * 175)
+
+    tail_rng = np.random.default_rng(SEED ^ 0x5EED)
+    tail = tail_rng.standard_normal(n) * np.exp(-t * 6.0) * 0.10
+    y = np.empty(n)
+    acc = 0.0
+    a = 0.08
+    for i in range(n):
+        acc = acc + a * (tail[i] - acc)
+        y[i] = tail[i] - acc
+    tail = y
+
+    env = np.minimum(1.0, t / 0.008) * np.exp(-t * 2.6)
+    left = (tone * 0.9 + thump + click * 0.7 + tail) * env
+    right = (tone * 0.85 + thump + click * 0.7 + np.roll(tail, 37)) * env
+    write_wav("sub_drop_v2.wav", np.stack([left, right], axis=1))
+
+
+def sub_thump_v2() -> None:
+    """Phone-band frame-1 weight: 65→38 Hz fundamental plus 2nd/3rd partials."""
+    T = 0.95
+    n = int(SR * T)
+    t = np.linspace(0, T, n, endpoint=False)
+    f = 65.0 * (38.0 / 65.0) ** (t / T)
+    tone = phone_band(phase_from_freq(f)) * np.exp(-t * 4.0)
+    fixed = phone_band(2 * np.pi * 48 * t) * 0.6 * np.exp(-t * 5.0)
+
+    rng = np.random.default_rng(SEED ^ 0x5EED)
+    cn = int(0.015 * SR)
+    click = np.zeros(n)
+    click[:cn] = rng.standard_normal(cn) * np.exp(-t[:cn] * 200) * np.minimum(1.0, t[:cn] / 0.0015)
+
+    attack = np.minimum(1.0, t / 0.006)
+    left = (tone + fixed + click * 0.8) * attack
+    right = (tone * 0.96 + fixed + np.roll(click, 19) * 0.8) * attack
+    write_wav("sub_thump_v2.wav", np.stack([left, right], axis=1))
+
+
+def disk_collapse_v2() -> None:
+    """Phone-band disk settle: descending bass with audible upper partials."""
+    T = 1.60
+    n = int(SR * T)
+    t = np.linspace(0, T, n, endpoint=False)
+    f = 120.0 * (42.0 / 120.0) ** (t / T)
+    tone = phone_band(phase_from_freq(f)) * np.exp(-t * 2.2)
+    sub = phone_band(2 * np.pi * 42 * t) * 0.5 * np.exp(-t * 2.8)
+
+    rng = np.random.default_rng(SEED ^ 0xD15C)
+    noise = _one_pole_lp(rng.standard_normal(n), np.full(n, 0.03))
+    tail = noise * np.exp(-t * 3.2) * 0.18
+    env = np.minimum(1.0, t / 0.01) * np.minimum((T - t) / 0.06, 1.0)
+    left = (tone + sub + tail) * env
+    right = (tone * 0.97 + sub + np.roll(tail, 23)) * env
+    write_wav("disk_collapse_v2.wav", np.stack([left, right], axis=1))
+
+
 def main() -> None:
     sub_drop()
     riser()
@@ -292,7 +372,10 @@ def main() -> None:
     collision_tick()
     disk_collapse()
     telemetry_click()
-    print("[sfx] done — 9 deterministic assets, seed 0xC0FFEE")
+    sub_drop_v2()
+    sub_thump_v2()
+    disk_collapse_v2()
+    print("[sfx] done — 12 deterministic assets (9 v1 + 3 phone-band v2), seed 0xC0FFEE")
 
 
 if __name__ == "__main__":

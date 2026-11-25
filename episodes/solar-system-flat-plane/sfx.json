@@ -1,5 +1,5 @@
 {
-  "comment": "SFX for solar-system-flat-plane, anchored to exact WordBoundary starts. Synthesized in repo by scripts/synth_sfx.py; no downloads.",
+  "comment": "SFX for solar-system-flat-plane, anchored to exact WordBoundary starts. Synthesized in repo by scripts/synth_sfx.py; no downloads. Phase A: *_v2.wav carries phone-band harmonics; rate adds seeded pitch variation on repeated ticks/clicks.",
   "events": [
     {
       "t": 0.095,
@@ -11,7 +11,7 @@
     },
     {
       "t": 0.095,
-      "file": "sub_thump.wav",
+      "file": "sub_thump_v2.wav",
       "gainDb": -12,
       "anchor": "Gravity",
       "cue": "Frame-1 weight",
@@ -41,7 +41,8 @@
     {
       "t": 28.716,
       "file": "collision_tick.wav",
-      "gainDb": -22,
+      "gainDb": -18,
+      "rate": 1.0,
       "anchor": "slamming",
       "cue": "Collision tick 1 / vertical arrow damps",
       "status": "synthesized"
@@ -49,7 +50,8 @@
     {
       "t": 30.1,
       "file": "collision_tick.wav",
-      "gainDb": -22,
+      "gainDb": -18,
+      "rate": 1.06,
       "anchor": "canceling",
       "cue": "Collision tick 2 / vertical arrow damps",
       "status": "synthesized"
@@ -57,7 +59,8 @@
     {
       "t": 30.871,
       "file": "collision_tick.wav",
-      "gainDb": -22,
+      "gainDb": -18,
+      "rate": 0.94,
       "anchor": "vertical",
       "cue": "Collision tick 3 / vx survives",
       "status": "synthesized"
@@ -65,14 +68,15 @@
     {
       "t": 32.69,
       "file": "collision_tick.wav",
-      "gainDb": -24,
+      "gainDb": -18,
+      "rate": 1.03,
       "anchor": "sideways",
       "cue": "Collision tick 4 / disk plane locks",
       "status": "synthesized"
     },
     {
       "t": 36.964,
-      "file": "disk_collapse.wav",
+      "file": "disk_collapse_v2.wav",
       "gainDb": -14,
       "anchor": "flattened",
       "cue": "Disk-collapse bass settle",
@@ -81,7 +85,8 @@
     {
       "t": 43.326,
       "file": "telemetry_click.wav",
-      "gainDb": -24,
+      "gainDb": -18,
+      "rate": 1.0,
       "anchor": "just",
       "cue": "Telemetry click 1 on FACTS.bandDeg chip",
       "status": "synthesized"
@@ -89,7 +94,8 @@
     {
       "t": 46.272,
       "file": "telemetry_click.wav",
-      "gainDb": -24,
+      "gainDb": -18,
+      "rate": 0.95,
       "anchor": "three",
       "cue": "Telemetry click 2 on FACTS.otherPlanetsDeg chip",
       "status": "synthesized"
